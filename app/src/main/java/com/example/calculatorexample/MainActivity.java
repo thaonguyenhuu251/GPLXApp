@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,39 +27,61 @@ public class MainActivity extends AppCompatActivity {
         EditText edtSecond = (EditText) findViewById(R.id.edtSecond);
 
         btnSum.setOnClickListener(v->{
-            long a = Long.parseLong(
-                    edtFirst.getText().toString()) + Long.parseLong(edtSecond.getText().toString()
-            );
-            txtResult.setText(
-                    edtFirst.getText().toString() + " + " + edtSecond.getText().toString() + " = " + a
-            );
+            try {
+                double a = Double.parseDouble(
+                        edtFirst.getText().toString()) + Double.parseDouble(edtSecond.getText().toString()
+                );
+                txtResult.setText(
+                        edtFirst.getText().toString() + " + " + edtSecond.getText().toString() + " = " + a
+                );
+            } catch (Exception e) {
+                Toast.makeText(MainActivity.this, "Không để trống", Toast.LENGTH_LONG).show();
+            }
         });
 
         btnMinus.setOnClickListener(v->{
-            long a = Long.parseLong(
-                    edtFirst.getText().toString()) - Long.parseLong(edtSecond.getText().toString()
-            );
-            txtResult.setText(
-                    edtFirst.getText().toString() + " - " + edtSecond.getText().toString() + " = " + a
-            );
+            try {
+                double a = Double.parseDouble(
+                        edtFirst.getText().toString()) - Double.parseDouble(edtSecond.getText().toString()
+                );
+                txtResult.setText(
+                        edtFirst.getText().toString() + " - " + edtSecond.getText().toString() + " = " + a
+                );
+            } catch (Exception e) {
+                Toast.makeText(MainActivity.this, "Không để trống", Toast.LENGTH_LONG).show();
+            }
         });
 
         btnMulti.setOnClickListener(v->{
-            long a = Long.parseLong(
-                    edtFirst.getText().toString()) * Long.parseLong(edtSecond.getText().toString()
-            );
-            txtResult.setText(
-                    edtFirst.getText().toString() + " * " + edtSecond.getText().toString() + " = " + a
-            );
+
+            try {
+                double a = Double.parseDouble(
+                        edtFirst.getText().toString()) * Double.parseDouble(edtSecond.getText().toString()
+                );
+                txtResult.setText(
+                        edtFirst.getText().toString() + " * " + edtSecond.getText().toString() + " = " + a
+                );
+            } catch (Exception e) {
+                Toast.makeText(MainActivity.this, "Không để trống", Toast.LENGTH_LONG).show();
+            }
         });
 
         btnDevi.setOnClickListener(v->{
-            float a = Float.parseFloat(
-                    edtFirst.getText().toString()) / Long.parseLong(edtSecond.getText().toString()
-            );
-            txtResult.setText(
-                    edtFirst.getText().toString() + " / " + edtSecond.getText().toString() + " = " + a
-            );
+            try {
+                if(Double.parseDouble(edtSecond.getText().toString())!=0) {
+                    double a = Double.parseDouble(
+                            edtFirst.getText().toString()) / Double.parseDouble(edtSecond.getText().toString()
+                    );
+                    txtResult.setText(
+                            edtFirst.getText().toString() + " / " + edtSecond.getText().toString() + " = " + a
+                    );
+                } else {
+                    Toast.makeText(MainActivity.this, "Mẫu khác 0", Toast.LENGTH_LONG).show();
+                }
+
+            } catch (Exception e) {
+                Toast.makeText(MainActivity.this, "Không để trống", Toast.LENGTH_LONG).show();
+            }
         });
     }
 }
