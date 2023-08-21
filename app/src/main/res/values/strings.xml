@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">GPLX App</string>
+    <string name="you_are_offline">You are offline, please check your internet!</string>
 </resources>
