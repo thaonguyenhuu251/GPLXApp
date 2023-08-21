@@ -14,7 +14,7 @@
         android:theme="@style/Theme.CalculatorExample"
         tools:targetApi="31">
         <activity
-            android:name="com.htnguyen.gplxapp.MainActivity"
+            android:name="com.htnguyen.gplxapp.view.activity.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
