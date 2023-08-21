@@ -1,6 +1,7 @@
 package com.htnguyen.gplxapp.view.base
 
 import android.app.ActionBar
+import android.content.Context
 import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
@@ -17,6 +18,8 @@ import androidx.viewbinding.ViewBinding
 import com.htnguyen.gplxapp.R
 import com.htnguyen.gplxapp.databinding.ActivityBaseBinding
 import com.htnguyen.gplxapp.view.base.customView.loading.BaseLoadingView
+import com.htnguyen.gplxapp.view.base.textview.htext.AnimationListener
+import com.htnguyen.gplxapp.view.base.textview.htext.HTextView
 import com.htnguyen.gplxapp.view.base.utils.NetworkUtil
 import org.greenrobot.eventbus.EventBus
 import org.greenrobot.eventbus.Subscribe
@@ -122,5 +125,13 @@ abstract class BaseActivity : AppCompatActivity() {
 
     fun toggleProgressLoading(isShow: Boolean) {
         rootView.hasLoading = isShow
+    }
+
+    internal class SimpleAnimationListener(
+        private val context: Context,
+    ) : AnimationListener {
+        override fun onAnimationEnd(hTextView: HTextView?) {
+
+        }
     }
 }

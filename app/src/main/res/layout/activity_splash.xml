@@ -27,5 +27,27 @@
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.75" />
 
+        <com.htnguyen.gplxapp.view.base.textview.fall.FallTextView
+            android:id="@+id/fallTextHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lottieAnimationView"
+            android:gravity="center"
+            android:textSize="@dimen/_16ssp" />
+
+        <com.htnguyen.gplxapp.view.base.textview.fall.FallTextView
+            android:id="@+id/fallTextContent"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fallTextHeader"
+            android:minLines="2"
+            android:inputType="textMultiLine"
+            android:gravity="center"
+            android:textSize="@dimen/_16ssp" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
