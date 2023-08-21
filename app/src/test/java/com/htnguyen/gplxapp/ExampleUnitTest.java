@@ -1,4 +1,4 @@
-package com.example.calculatorexample;
+package com.htnguyen.gplxapp;
 
 import org.junit.Test;
 
