@@ -1,8 +1,11 @@
 package com.htnguyen.gplxapp.view.base
 
 import android.app.ActionBar
+import android.content.Context
 import android.content.Intent
+import android.content.res.Resources
 import android.graphics.Color
+import android.os.Build
 import android.os.Bundle
 import android.view.View
 import android.view.WindowManager
@@ -17,6 +20,8 @@ import androidx.viewbinding.ViewBinding
 import com.htnguyen.gplxapp.R
 import com.htnguyen.gplxapp.databinding.ActivityBaseBinding
 import com.htnguyen.gplxapp.view.base.customView.loading.BaseLoadingView
+import com.htnguyen.gplxapp.view.base.textview.htext.AnimationListener
+import com.htnguyen.gplxapp.view.base.textview.htext.HTextView
 import com.htnguyen.gplxapp.view.base.utils.NetworkUtil
 import org.greenrobot.eventbus.EventBus
 import org.greenrobot.eventbus.Subscribe
@@ -30,7 +35,9 @@ abstract class BaseActivity : AppCompatActivity() {
         window.apply {
             clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
             addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
-            statusBarColor = Color.TRANSPARENT
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                statusBarColor = resources.getColor(R.color.primary_dark, this@BaseActivity.theme)
+            }
         }
         rootView = DataBindingUtil.inflate(layoutInflater, R.layout.activity_base, null, false)
         binding = getBindingView()
@@ -75,7 +82,7 @@ abstract class BaseActivity : AppCompatActivity() {
         }
         startActivity(intent)
         this.overridePendingTransition(
-            R.anim.enter_from_left, R.anim.exit_to_right
+            R.anim.enter_from_right, R.anim.exit_to_left
         )
         if (!canBack) {
             finish()
@@ -122,5 +129,13 @@ abstract class BaseActivity : AppCompatActivity() {
 
     fun toggleProgressLoading(isShow: Boolean) {
         rootView.hasLoading = isShow
+    }
+
+    internal class SimpleAnimationListener(
+        private val context: Context,
+    ) : AnimationListener {
+        override fun onAnimationEnd(hTextView: HTextView?) {
+
+        }
     }
 }

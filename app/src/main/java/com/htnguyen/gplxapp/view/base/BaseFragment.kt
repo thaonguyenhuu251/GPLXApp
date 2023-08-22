@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.EditText
 import androidx.annotation.AnimRes
 import androidx.annotation.IdRes
+import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.viewbinding.ViewBinding
 import com.htnguyen.gplxapp.R
@@ -15,33 +16,36 @@ import org.greenrobot.eventbus.EventBus
 import org.greenrobot.eventbus.Subscribe
 import org.greenrobot.eventbus.ThreadMode
 
-abstract class BaseFragment<VB : ViewBinding?> : Fragment() {
-    var binding: VB? = null
+abstract class BaseFragment<VB : ViewBinding> : Fragment() {
+    lateinit var binding: VB
     private val TAG = this::class.java.name
     private lateinit var activity: BaseActivity
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        if (getViewBinding(inflater, container) != null) {
+    ): View {
+        val root by lazy { binding.root }
+        if (!this::binding.isInitialized) {
             binding = getViewBinding(inflater, container)
+        } else {
+            (root.parent as ViewGroup?)?.endViewTransition(root)
         }
-
         activity = requireActivity() as BaseActivity
-        return binding!!.root
+        return root
+
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        initView(savedInstanceState, binding!!)
+        initView(savedInstanceState, binding)
         initData()
         initEvent()
     }
 
     protected abstract fun getViewBinding(inflater: LayoutInflater?, container: ViewGroup?): VB
 
-    abstract fun initView(savedInstanceState: Bundle?, binding: ViewBinding)
+    abstract fun initView(savedInstanceState: Bundle?, binding: VB)
 
     override fun onStart() {
         super.onStart()
