@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">GPLX App</string>
+    <string name="you_are_offline">You are offline, please check your internet!</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home_change_learning">Học bằng lái xe</string>
+    <string name="ic_home_change_rank">Thay đổi hạng bằng lái</string>
+    <string name="ic_home_manual">Hướng dẫn sử dụng</string>
+    <string name="ic_home_change_voice">Thay đổi giọng đọc</string>
+
+    <string name="footer_setting_app">Cài đặt ứng dụng</string>
+    <string name="footer_support_email">Email hỗ trợ</string>
+    <string name="footer_other_app">Các ứng dụng khác</string>
+    <string name="footer_share_app">Chia sẻ ứng dụng</string>
+    <string name="footer_rate_app">Đánh giá ứng dụng</string>
+    <string name="footer_policy">Chính sách và điều khoản</string>
 </resources>

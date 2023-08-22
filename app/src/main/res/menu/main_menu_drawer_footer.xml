@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <item
+        android:id="@+id/footerSettingApp"
+        android:icon="@drawable/ic_home_setting"
+        android:title="@string/footer_setting_app"/>
+    <item
+        android:id="@+id/footerSupportEmail"
+        android:icon="@drawable/ic_footer_email"
+        android:title="@string/footer_support_email"/>
+    <item
+        android:id="@+id/footerOtherApp"
+        android:icon="@drawable/ic_home_other_app"
+        android:title="@string/footer_other_app"/>
+
+    <item
+        android:id="@+id/footerShareApp"
+        android:icon="@drawable/ic_footer_email"
+        android:title="@string/footer_share_app"/>
+
+    <item
+        android:id="@+id/footerRateApp"
+        android:icon="@drawable/ic_footer_email"
+        android:title="@string/footer_rate_app"/>
+
+    <item
+        android:id="@+id/footerPolicy"
+        android:icon="@drawable/ic_footer_email"
+        android:title="@string/footer_policy"/>
+
+</menu>
