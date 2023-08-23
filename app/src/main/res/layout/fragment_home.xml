@@ -29,61 +29,22 @@
 
             </com.google.android.material.appbar.AppBarLayout>
 
-            <LinearLayout
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:weightSum="3">
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:padding="@dimen/_8sdp"
-                    android:text="THI THỬ SÁT HẠCH"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/_14ssp"
-                    app:drawableTopCompat="@drawable/ic_home_learning" />
-
-                <View
-                    android:layout_width="@dimen/_1sdp"
-                    android:layout_height="match_parent"
-                    android:background="@color/black"/>
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:padding="@dimen/_8sdp"
-                    android:text="HỌC LÝ THUYẾT"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/_14ssp"
-                    app:drawableTopCompat="@drawable/ic_home_book" />
-
-                <View
-                    android:layout_width="@dimen/_1sdp"
-                    android:layout_height="match_parent"
-                    android:background="@color/black"/>
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:padding="@dimen/_8sdp"
-                    android:text="BIỂN BÁO ĐƯỜNG BỘ"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/_14ssp"
-                    app:drawableTopCompat="@drawable/ic_home_stop" />
-
-            </LinearLayout>
+                android:fontFamily="@font/roboto_medium"
+                android:gravity="center"
+                android:padding="@dimen/_8sdp"
+                android:text="@string/home_learn_warning"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14ssp"
+                android:drawablePadding="@dimen/_14sdp"
+                app:drawableStartCompat="@drawable/ic_home_try_hard" />
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_1sdp"
-                android:background="@color/black"/>
+                android:background="@color/grey"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -95,50 +56,119 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:fontFamily="@font/roboto_medium"
                     android:gravity="center"
                     android:padding="@dimen/_8sdp"
-                    android:text="THI THỬ SÁT HẠCH"
+                    android:text="@string/home_test"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/_14ssp"
+                    android:textSize="@dimen/_12ssp"
+                    android:drawablePadding="@dimen/_14sdp"
                     app:drawableTopCompat="@drawable/ic_home_learning" />
 
                 <View
                     android:layout_width="@dimen/_1sdp"
                     android:layout_height="match_parent"
-                    android:background="@color/black"/>
+                    android:background="@color/grey"/>
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:fontFamily="@font/roboto_medium"
                     android:gravity="center"
                     android:padding="@dimen/_8sdp"
-                    android:text="HỌC LÝ THUYẾT"
+                    android:text="@string/home_learn"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/_14ssp"
+                    android:textSize="@dimen/_12ssp"
+                    android:drawablePadding="@dimen/_14sdp"
                     app:drawableTopCompat="@drawable/ic_home_book" />
 
                 <View
                     android:layout_width="@dimen/_1sdp"
                     android:layout_height="match_parent"
-                    android:background="@color/black"/>
+                    android:background="@color/grey"/>
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:fontFamily="@font/roboto_medium"
                     android:gravity="center"
                     android:padding="@dimen/_8sdp"
-                    android:text="BIỂN BÁO ĐƯỜNG BỘ"
+                    android:text="@string/home_stop"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/_14ssp"
+                    android:textSize="@dimen/_12ssp"
+                    android:drawablePadding="@dimen/_14sdp"
                     app:drawableTopCompat="@drawable/ic_home_stop" />
 
             </LinearLayout>
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_1sdp"
-                android:background="@color/black"/>
+                android:background="@color/grey"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center"
+                    android:padding="@dimen/_8sdp"
+                    android:text="@string/home_tips"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12ssp"
+                    android:drawablePadding="@dimen/_14sdp"
+                    app:drawableTopCompat="@drawable/ic_home_tips" />
+
+                <View
+                    android:layout_width="@dimen/_1sdp"
+                    android:layout_height="match_parent"
+                    android:background="@color/grey"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center"
+                    android:padding="@dimen/_8sdp"
+                    android:text="@string/home_search_law"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12ssp"
+                    android:drawablePadding="@dimen/_14sdp"
+                    app:drawableTopCompat="@drawable/ic_home_search_law" />
+
+                <View
+                    android:layout_width="@dimen/_1sdp"
+                    android:layout_height="match_parent"
+                    android:background="@color/grey"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center"
+                    android:padding="@dimen/_8sdp"
+                    android:text="@string/home_wrong_good"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12ssp"
+                    android:drawablePadding="@dimen/_14sdp"
+                    app:drawableTopCompat="@drawable/ic_home_wrong_good" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/grey"/>
 
 
         </LinearLayout>
