@@ -17,17 +17,17 @@
 
     <item
         android:id="@+id/footerShareApp"
-        android:icon="@drawable/ic_footer_email"
+        android:icon="@drawable/ic_home_share_app"
         android:title="@string/footer_share_app"/>
 
     <item
         android:id="@+id/footerRateApp"
-        android:icon="@drawable/ic_footer_email"
+        android:icon="@drawable/ic_home_rate"
         android:title="@string/footer_rate_app"/>
 
     <item
         android:id="@+id/footerPolicy"
-        android:icon="@drawable/ic_footer_email"
+        android:icon="@drawable/ic_home_policy"
         android:title="@string/footer_policy"/>
 
 </menu>
