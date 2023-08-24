@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.drawerlayout.widget.DrawerLayout
         android:id="@+id/drawerMain"
@@ -52,17 +51,12 @@
                 android:orientation="horizontal"
                 android:weightSum="3">
 
-                <TextView
+                <com.google.android.material.button.MaterialButton
+                    style="@style/myColoredButton"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:fontFamily="@font/roboto_medium"
-                    android:gravity="center"
-                    android:padding="@dimen/_8sdp"
                     android:text="@string/home_test"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/_12ssp"
-                    android:drawablePadding="@dimen/_14sdp"
                     app:drawableTopCompat="@drawable/ic_home_learning" />
 
                 <View
@@ -70,17 +64,12 @@
                     android:layout_height="match_parent"
                     android:background="@color/grey"/>
 
-                <TextView
+                <com.google.android.material.button.MaterialButton
+                    style="@style/myColoredButton"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:fontFamily="@font/roboto_medium"
-                    android:gravity="center"
-                    android:padding="@dimen/_8sdp"
                     android:text="@string/home_learn"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/_12ssp"
-                    android:drawablePadding="@dimen/_14sdp"
                     app:drawableTopCompat="@drawable/ic_home_book" />
 
                 <View
@@ -88,17 +77,13 @@
                     android:layout_height="match_parent"
                     android:background="@color/grey"/>
 
-                <TextView
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnHomeStop"
+                    style="@style/myColoredButton"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:fontFamily="@font/roboto_medium"
-                    android:gravity="center"
-                    android:padding="@dimen/_8sdp"
                     android:text="@string/home_stop"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/_12ssp"
-                    android:drawablePadding="@dimen/_14sdp"
                     app:drawableTopCompat="@drawable/ic_home_stop" />
 
             </LinearLayout>
@@ -114,17 +99,12 @@
                 android:orientation="horizontal"
                 android:weightSum="3">
 
-                <TextView
+                <com.google.android.material.button.MaterialButton
+                    style="@style/myColoredButton"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:fontFamily="@font/roboto_medium"
-                    android:gravity="center"
-                    android:padding="@dimen/_8sdp"
                     android:text="@string/home_tips"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/_12ssp"
-                    android:drawablePadding="@dimen/_14sdp"
                     app:drawableTopCompat="@drawable/ic_home_tips" />
 
                 <View
@@ -132,17 +112,12 @@
                     android:layout_height="match_parent"
                     android:background="@color/grey"/>
 
-                <TextView
+                <com.google.android.material.button.MaterialButton
+                    style="@style/myColoredButton"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:fontFamily="@font/roboto_medium"
-                    android:gravity="center"
-                    android:padding="@dimen/_8sdp"
                     android:text="@string/home_search_law"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/_12ssp"
-                    android:drawablePadding="@dimen/_14sdp"
                     app:drawableTopCompat="@drawable/ic_home_search_law" />
 
                 <View
@@ -150,17 +125,12 @@
                     android:layout_height="match_parent"
                     android:background="@color/grey"/>
 
-                <TextView
+                <com.google.android.material.button.MaterialButton
+                    style="@style/myColoredButton"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:fontFamily="@font/roboto_medium"
-                    android:gravity="center"
-                    android:padding="@dimen/_8sdp"
                     android:text="@string/home_wrong_good"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/_12ssp"
-                    android:drawablePadding="@dimen/_14sdp"
                     app:drawableTopCompat="@drawable/ic_home_wrong_good" />
 
             </LinearLayout>

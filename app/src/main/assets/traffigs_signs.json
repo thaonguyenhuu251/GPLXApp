@@ -1,0 +1,338 @@
+[
+ {
+   "id": 101,
+   "name": "Biển số 101: Đường cấm",
+   "content": "Cấm tất cả các phương tiện cơ giới, thô sơ đi lại cả hai hướng, trừ xe ưu tiên.",
+   "urlImage": 1
+ },
+ {
+   "id": 102,
+   "name": "Biển số 102: Cấm đi ngược chiều",
+   "content": "Cấm tất cả các phương tiện cơ giới và thô sơ đi vào theo chiều đặt biển cấm, trừ xe ưu tiên.",
+   "urlImage": 1
+ },
+ {
+   "id": 103,
+   "name": "Biển số 103a: Cấm ô tô",
+   "content": "Cấm tất cả các loại xe cơ giới kể cả môtô 3 bánh có thùng, trừ môtô 2 bánh, xe gắn máy và xe ưu tiên.",
+   "urlImage": 1
+ },
+ {
+   "id": 104,
+   "name": "Biển số 103b: Cấm ô tô rẽ phải",
+   "content": "Cấm xe cơ giới bao gồm cả môtô 3 bánh có thùng RẼ PHẢI, trừ môtô 2 bánh, xe gắn máy và xe ưu tiên.",
+   "urlImage": 1
+ },
+ {
+   "id": 105,
+   "name": "Biến số 103c: Cấm ô tô rẽ trái",
+   "content": "Cấm xe cơ giới bao gồm cả mô tô 3 bánh có thùng RẼ TRÁI, trừ mô tô 2 bánh, xe gắn máy và xe ưu tiên.",
+   "urlImage": 1
+ },
+ {
+   "id": 106,
+   "name": "Biển số 104: Cấm mô tô",
+   "content": "Cấm tất cả các loại mô tô, trừ mô tô được ưu tiên.",
+   "urlImage": 1
+ },
+ {
+   "id": 107,
+   "name": "Biển số 105: Cấm ô tô và mô tô",
+   "content": "Cấm tất cả các loại xe cơ giới và mô tô đi qua, trừ xe gắn máy và xe ưu tiên.",
+   "urlImage": 1
+ },
+ {
+   "id": 108,
+   "name": "Biển số 106a: Cấm xe tải",
+   "content": "Cấm tất cả các loại ô tô chở hàng có trọng tải từ 1,5 tấn trở lên, trừ xe ưu tiên. Biển có hiệu lực cả với xe máy kéo, xe máy chuyên dùng.",
+   "urlImage": 1
+ },
+ {
+   "id": 109,
+   "name": "Biển số 106b: Cấm xe tải từ 2,5 tấn",
+   "content": "Cấm xe có tổng trọng lượng (trọng lượng xe cộng hàng) vượt quá con số ghi trên biển. Biển có hiệu lực cả với xe máy kéo, xe máy chuyên dùng.",
+   "urlImage": 1
+ },
+ {
+   "id": 110,
+   "name": "Biển số 106c: Cấm xe chở hàng nguy hiểm",
+   "content": "Cấm xe chở hàng nguy hiểm",
+   "urlImage": 1
+ },
+ {
+   "id": 111,
+   "name": "Biển số 107: Cấm ô tô khách và ô tô tải",
+   "content": "Cấm ô tô chở khách và các loại ô tô tải kể cả máy kéo và xe máy thi công chuyên dùng, trừ xe ưu tiên.",
+   "urlImage": 1
+ },
+ {
+   "id": 112,
+   "name": "Biển số 108: Cấm ô tô, máy kéo kéo moóc và sơ mi rơ moóc",
+   "content": "Cấm tất cả các loại xe cơ giới kéo theo rơ-moóc kể cả mô tô, máy kéo, ô tô khách kéo theo rơ-moóc đi qua, trừ loại ô tô sơ-mi rơ-moóc và các xe ưu tiên.",
+   "urlImage": 1
+ },
+ {
+   "id": 113,
+   "name": "Biến số 109: Cấm máy kéo",
+   "content": "Cấm tất cả các loại máy kéo, kể cả máy kéo bánh hơi và bánh xích.",
+   "urlImage": 1
+ },
+ {
+   "id": 114,
+   "name": "Biển 110a: Cấm đi xe đạp",
+   "content": "Cấm xe đạp đi qua. Biển không có giá trị cấm người dắt xe đạp.",
+   "urlImage": 1
+ },
+ {
+   "id": 115,
+   "name": "Biển 110b: Cấm xe đạp thồ",
+   "content": "Cấm xe đạp thồ đi qua. Biển không cấm người dắt loại xe này.",
+   "urlImage": 1
+ },
+ {
+   "id": 116,
+   "name": "Biển báo 111a: Cấm xe gắn máy",
+   "content": "Cấm xe gắn máy. Biển không có giá trị với xe đạp.",
+   "urlImage": 1
+ },
+ {
+   "id": 117,
+   "name": "Biển số 111b: Cấm xe lam",
+   "content": "Cấm xe 3 bánh loại có động cơ như xe lam, xích lô máy...",
+   "urlImage": 1
+ },
+ {
+   "id": 118,
+   "name": "Biển báo cấm 111c: Cấm xe lôi máy",
+   "content": "Cấm xe ba bánh loại có động cơ như xe lôi máy...",
+   "urlImage": 1
+ },
+ {
+   "id": 119,
+   "name": "Biển số 111d: Cấm xe 3 bánh loại không có động cơ",
+   "content": "Cấm xe 3 bánh loại không có động cơ như xích lô, xe lôi đạp...",
+   "urlImage": 1
+ },
+ {
+   "id": 120,
+   "name": "Biển số 112: Cấm người đi bộ",
+   "content": "Cấm người đi bộ qua lại.",
+   "urlImage": 1
+ },
+ {
+   "id": 121,
+   "name": "Biển số 113: Cấm xe người kéo, đẩy",
+   "content": "Cấm xe thô sơ, chuyển động do người kéo, đẩy đi qua. Biển không có giá trị cấm xe nôi của trẻ em và phương tiện chuyên dùng để đi lại của người tàn tật.",
+   "urlImage": 1
+ },
+ {
+   "id": 122,
+   "name": "Biển số 114: Cấm xe xúc vật kéo",
+   "content": "Cấm súc vật vận tải hàng hóa hoặc hành khách dù kéo xe hay chở trên lưng.",
+   "urlImage": 1
+ },
+ {
+   "id": 123,
+   "name": "Biển số 115: Hạn chế trọng lượng xe",
+   "content": "Cấm các loại xe cơ giới và thô sơ, kể cả xe ưu tiên, có tổng trọng lượng (cả xe và hàng) vượt quá trị số ghi trên biển.",
+   "urlImage": 1
+ },
+ {
+   "id": 124,
+   "name": "Biển số 116: Hạn chế trọng lượng trên trục xe",
+   "content": "Cấm xe cơ giới và thô sơ, kể cả xe ưu tiên, có tổng trọng lượng (cả xe và hàng) phân bổ trên một trục bất kỳ của xe vượt quá trị số ghi trên biển.",
+   "urlImage": 1
+ },
+ {
+   "id": 125,
+   "name": "Biển số 117: Hạn chế chiều cao",
+   "content": "Cấm xe cơ giới và thô sơ có chiều cao vượt quá trị số ghi trên biển, kể cả các xe ưu tiên (chiều cao tính từ mặt đường, mặt cầu đến điểm cao nhất của xe hoặc hàng).",
+   "urlImage": 1
+ },
+ {
+   "id": 126,
+   "name": "Biển số 118: Hạn chế chiều ngang",
+   "content": "Cấm xe cơ giới và thô sơ, kể cả xe ưu tiên có chiều ngang (kể cả xe và hàng hóa) vượt quá trị số ghi trên biển.",
+   "urlImage": 1
+ },
+ {
+   "id": 127,
+   "name": "Biển số 119: Hạn chế chiều dài ô tô",
+   "content": "Cấm xe cơ giới và thô sơ, kể cả xe ưu tiên, có độ dài toàn bộ kể cả xe và hàng lớn hơn trị số ghi trên biển.",
+   "urlImage": 1
+ },
+ {
+   "id": 128,
+   "name": "Biển số 120: Hạn chế chiều dài ô tô, máy kéo kéo moóc, sơ mi rơ moóc",
+   "content": "Cấm xe cơ giới và thô sơ, kéo theo moóc kể cả ô tô sơ-mi rơ-moóc và các loại xe ưu tiên kéo moóc, có độ dài toàn bộ kể cả xe, moóc và hàng lớn hơn trị số ghi trên biển.",
+   "urlImage": 1
+ },
+ {
+   "id": 129,
+   "name": "Biển số 121: Cự ly tối thiểu giữa 2 xe",
+   "content": "2 xe phải đi cách nhau một khoảng tối thiểu ghi trên biển (đơn vị tính bằng mét).",
+   "urlImage": 1
+ },
+ {
+   "id": 130,
+   "name": "Biển số 122: Dừng lại",
+   "content": "Buộc xe cơ giới và thô sơ kể cả xe ưu tiên dừng lại trước biển hoặc trước vạch ngang đường và chỉ được phép đi khi thấy các tín hiệu (do người điều khiển giao thông hoặc đèn cờ) cho phép đi. Trong trường hợp trên đường không đặt tín hiệu đèn cờ, không có người điều khiển giao thông hoặc các tín hiệu đèn không bật sáng thì người lái xe chỉ được phép đi khi trên đường không còn nguy cơ mất an toàn giao thông.",
+   "urlImage": 1
+ },
+ {
+   "id": 131,
+   "name": "Biển số 123a: Cấm rẽ trái",
+   "content": "Cấm các loại xe cơ giới và thô sơ rẽ trái ở những vị trí đường giao nhau, trừ xe ưu tiên. Biển này không có giá trị cấm xe quay đầu.",
+   "urlImage": 1
+ },
+ {
+   "id": 132,
+   "name": "Biển số 123b: Cấm rẽ phải",
+   "content": "Cấm các loại xe cơ giới và thô sơ rẽ phải ở những vị trí đường giao nhau, trừ xe ưu tiên. Biển này không có giá trị cấm xe quay đầu.",
+   "urlImage": 1
+ },
+ {
+   "id": 133,
+   "name": "Biển số 124a: Cấm quay đầu xe",
+   "content": "Cấm các loại xe cơ giới và thô sơ quay đầu (theo kiểu chữ U) trừ các xe ưu tiên. Biển này không cấm rẽ trái.",
+   "urlImage": 1
+ },
+ {
+   "id": 134,
+   "name": "Biển số 124b: Cấm ô tô quay đầu xe",
+   "content": "Cấm ô tô và mô tô 3 bánh quay đầu (theo kiểu chữ U) trừ xe ưu tiên. Biển này không cấm rẽ trái.",
+   "urlImage": 1
+ },
+ {
+   "id": 135,
+   "name": "Biển số 124c: Cấm rẽ trái và quay đầu xe",
+   "content": "Cấm tất cả các loại xe thô sơ và cơ giới quay đầu (theo kiểu chữ U) và rẽ trái, trừ xe ưu tiên.",
+   "urlImage": 1
+ },
+ {
+   "id": 136,
+   "name": "Biển số 124d: Cấm rẽ phải và quay đầu xe",
+   "content": "Cấm tất cả các loại xe thô sơ và cơ giới quay đầu (theo kiểu chữ U) và rẽ phải, trừ xe ưu tiên.",
+   "urlImage": 1
+ },
+ {
+   "id": 137,
+   "name": "Biển số 124e: Cấm ô tô rẽ trái và quay đầu xe",
+   "content": "Cấm xe ô tô và mô tô 3 bánh quay đầu (theo kiểu chữ U) và rẽ trái, trừ xe ưu tiên.",
+   "urlImage": 1
+ },
+ {
+   "id": 138,
+   "name": "Biển số 124f: Cấm ô tô rẽ phải và quay đầu xe",
+   "content": "Cấm xe ô tô và mô tô 3 bánh quay đầu (theo kiểu chữ U) và rẽ phải, trừ xe ưu tiên.",
+   "urlImage": 1
+ },
+ {
+   "id": 139,
+   "name": "Biển số 125: Cấm vượt",
+   "content": "Cấm các loại xe cơ giới vượt nhau kể cả xe ưu tiên.",
+   "urlImage": 1
+ },
+ {
+   "id": 140,
+   "name": "Biển số 126: Cấm ô tô tải vượt",
+   "content": "Cấm các loại ô tô tải vượt xe cơ giới khác. Biển có hiệu lực cấm tất cả các loại ô tô tải có trọng lượng lớn nhất cho phép (bao gồm trọng lượng xe và hàng) trên 3,5 tấn kể cả xe ưu tiên vượt xe cơ giới khác.",
+   "urlImage": 1
+ },
+ {
+   "id": 141,
+   "name": "Biển số 127: Tốc độ tối đa cho phép",
+   "content": "Tốc độ tối đa mà xe cơ giới được phép chạy, trừ xe ưu tiên.",
+   "urlImage": 1
+ },
+ {
+   "id": 142,
+   "name": "Biển số 128: Cấm sử dụng còi",
+   "content": "Cấm các loại xe cơ giới sử dụng còi.",
+   "urlImage": 1
+ },
+ {
+   "id": 143,
+   "name": "Biển số 129: Kiểm tra",
+   "content": "Báo nơi đặt chốt kiểm tra, các loại phương tiện vận tải qua đó phải dừng lại để làm thủ tục kiểm tra theo quy định.",
+   "urlImage": 1
+ },
+ {
+   "id": 144,
+   "name": "Biển số 130: Cấm dừng đỗ xe",
+   "content": "Cấm các loại xe cơ giới dừng và đỗ ở phía đường có đặt biển trừ xe ưu tiên.",
+   "urlImage": 1
+ },
+ {
+   "id": 145,
+   "name": "Biển số 131a: Cấm đỗ xe",
+   "content": "Cấm đỗ xe, trừ xe được ưu tiên.",
+   "urlImage": 1
+ },
+ {
+   "id": 146,
+   "name": "Biển số 131b: Cấm đỗ xe ngày lẻ",
+   "content": "Cấm đỗ xe cơ giới vào ngày lẻ.",
+   "urlImage": 1
+ },
+ {
+   "id": 147,
+   "name": "Biển số 131c: Cấm đỗ xe ngày chẵn",
+   "content": "Cấm đỗ xe cơ giới vào ngày chẵn.",
+   "urlImage": 1
+ },
+ {
+   "id": 148,
+   "name": "Biển số 132: Nhường đường cho xe cơ giới đi ngược chiều qua đường hẹp",
+   "content": "Các loại xe cơ giới và thô sơ, kể cả xe ưu tiên phải nhường đường cho xe cơ giới đang đi theo hướng ngược lại qua các đoạn đường hẹp hoặc cầu hẹp.",
+   "urlImage": 1
+ },
+ {
+   "id": 149,
+   "name": "Biển số 133: Hết cấm vượt",
+   "content": "Hết đoạn đường cấm vượt.",
+   "urlImage": 1
+ },
+ {
+   "id": 150,
+   "name": "Biển số 134: Hết hạn chế tốc độ tối đa",
+   "content": "Hết đoạn đường hạn chế tốc độ tối đa.",
+   "urlImage": 1
+ },
+ {
+   "id": 151,
+   "name": "Biển số 135: Hết tất cả các lệnh cấm",
+   "content": "Hết đoạn đường có nhiều biển báo cấm cùng hết hiệu lực.",
+   "urlImage": 1
+ },
+ {
+   "id": 152,
+   "name": "Biển số 136: Cấm đi thẳng",
+   "content": "Cấm tất cả các loại xe đi thẳng trên đoạn đường phía trước",
+   "urlImage": 1
+ },
+ {
+   "id": 153,
+   "name": "Biển số 137: Cấm rẽ trái và rẽ phải",
+   "content": "Cấm tất cả các loại xe rẽ trái và rẽ phải trên các ngả đường phía trước.",
+   "urlImage": 1
+ },
+ {
+   "id": 154,
+   "name": "Biển số 138: Cấm đi thẳng và rẽ trái",
+   "content": "Đường qua nút giao cấm tất cả các loại xe đi thẳng và rẽ trái.",
+   "urlImage": 1
+ },
+ {
+   "id": 155,
+   "name": "Biển số 139: Cấm đi thẳng và rẽ phải",
+   "content": "Đường qua nút giao cấm tất cả các loại xe đi thẳng và rẽ phải.",
+   "urlImage": 1
+ },
+ {
+   "id": 156,
+   "name": "Biển số 140: Cấm xe công nông",
+   "content": "Đường cấm xe công nông đi vào.",
+   "urlImage": 1
+ }
+]
