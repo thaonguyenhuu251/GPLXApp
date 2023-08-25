@@ -44,15 +44,15 @@ class IntroductionAppFragment : BaseFragment<FragmentIntroductionAppBinding>() {
             val bundle = arguments
             if (bundle != null) {
                 fromHome = bundle.getString(BaseConst.ARG_FROM_HOME).toString()
-                if (fromHome.isEmpty()) {
-                    btnNext.setOnClickListener {
-                        replaceFragment(HomeFragment(), R.id.container, false)
-                        SharePreference.setBooleanPref(requireContext(), "isFirstOpenApp", false)
-                    }
-                } else {
+                if (fromHome.isNotEmpty()) {
                     btnNext.setOnClickListener {
                         onClickBack()
                     }
+                }
+            } else {
+                btnNext.setOnClickListener {
+                    replaceFragment(HomeFragment(), R.id.container, false)
+                    SharePreference.setBooleanPref(requireContext(), "isFirstOpenApp", false)
                 }
             }
 
