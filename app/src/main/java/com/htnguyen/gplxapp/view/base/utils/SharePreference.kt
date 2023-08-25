@@ -36,7 +36,7 @@ class SharePreference {
             val pref: SharedPreferences? =
                 context.getSharedPreferences(context.resources.getString(R.string.app_name), Context.MODE_PRIVATE)
 
-            return pref!!.getBoolean(key, false)
+            return pref!!.getBoolean(key, true)
         }
 
         fun setBooleanPref(context: Context, key: String, value: Boolean) {
