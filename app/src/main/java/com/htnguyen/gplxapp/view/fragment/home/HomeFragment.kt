@@ -3,7 +3,6 @@ package com.htnguyen.gplxapp.view.fragment.home
 import android.os.Bundle
 import android.view.*
 import androidx.core.view.GravityCompat
-import androidx.core.view.get
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.NavController
 import androidx.navigation.ui.AppBarConfiguration
@@ -13,9 +12,10 @@ import com.htnguyen.gplxapp.databinding.FragmentHomeBinding
 import com.htnguyen.gplxapp.view.base.BaseFragment
 import com.htnguyen.gplxapp.view.base.utils.BaseConst
 import com.htnguyen.gplxapp.view.fragment.chagevoice.ChangeVoiceFragment
-import com.htnguyen.gplxapp.view.fragment.tips.TipsFragment
+import com.htnguyen.gplxapp.view.fragment.learning.LearningFragment
 import com.htnguyen.gplxapp.view.fragment.choose_license.ChooseLicenseFragment
 import com.htnguyen.gplxapp.view.fragment.introduction_app.IntroductionAppFragment
+import com.htnguyen.gplxapp.view.fragment.tips.TipsFragment
 import com.htnguyen.gplxapp.view.fragment.trafficsigns.TrafficSignsFragment
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
@@ -62,6 +62,10 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(), NavigationView.OnNavig
 
     binding.btnTips.setOnClickListener {
       transitFragmentAnimation(TipsFragment(), R.id.container)
+    }
+
+    binding.btnHomeLearn.setOnClickListener {
+      transitFragmentAnimation(LearningFragment(), R.id.container)
     }
 
   }
