@@ -5,13 +5,19 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.viewpager2.widget.ViewPager2
+import com.htnguyen.gplxapp.R
 import com.htnguyen.gplxapp.databinding.FragmentIntroductionAppBinding
 import com.htnguyen.gplxapp.view.base.BaseFragment
+import com.htnguyen.gplxapp.view.base.utils.BaseConst
+import com.htnguyen.gplxapp.view.fragment.home.HomeFragment
+import com.htnguyen.smartcalculator.base.utils.SharePreference
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class IntroductionAppFragment : BaseFragment<FragmentIntroductionAppBinding>() {
 
     private val viewModel: IntroductionAppViewModel by viewModel()
+    var fromHome: String = ""
+
     override fun getViewBinding(
         inflater: LayoutInflater?,
         container: ViewGroup?
@@ -29,27 +35,38 @@ class IntroductionAppFragment : BaseFragment<FragmentIntroductionAppBinding>() {
     override fun initView(savedInstanceState: Bundle?, binding: FragmentIntroductionAppBinding) {
 
         val adapter = ViewPagerAdapter(childFragmentManager, lifecycle)
-        // Thêm các fragment vào adapter
         adapter.addFragment(FirstIntroductionFragment())
         adapter.addFragment(SecondIntroductionFragment())
         adapter.addFragment(ThirdIntroductionFragment())
         adapter.addFragment(FourthIntroductionFragment())
 
         binding.apply {
+            val bundle = arguments
+            if (bundle != null) {
+                fromHome = bundle.getString(BaseConst.ARG_FROM_HOME).toString()
+                if (fromHome.isEmpty()) {
+                    btnNext.setOnClickListener {
+                        replaceFragment(HomeFragment(), R.id.container, false)
+                        SharePreference.setBooleanPref(requireContext(), "isFirstOpenApp", false)
+                    }
+                } else {
+                    btnNext.setOnClickListener {
+                        onClickBack()
+                    }
+                }
+            }
+
             viewPager.adapter = adapter
             dotsIndicator.attachTo(binding.viewPager)
-            viewPager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback(){
+            viewPager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
                 override fun onPageSelected(position: Int) {
-                    if (position == 3){
+                    if (position == 3) {
                         btnNext.visibility = View.VISIBLE
-                    }else {
+                    } else {
                         btnNext.visibility = View.GONE
                     }
                 }
             })
-            btnNext.setOnClickListener {
-
-            }
         }
     }
 

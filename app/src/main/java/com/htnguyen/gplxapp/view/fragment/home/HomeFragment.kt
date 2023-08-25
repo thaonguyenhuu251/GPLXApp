@@ -11,7 +11,10 @@ import com.google.android.material.navigation.NavigationView
 import com.htnguyen.gplxapp.R
 import com.htnguyen.gplxapp.databinding.FragmentHomeBinding
 import com.htnguyen.gplxapp.view.base.BaseFragment
+import com.htnguyen.gplxapp.view.base.utils.BaseConst
 import com.htnguyen.gplxapp.view.fragment.chagevoice.ChangeVoiceFragment
+import com.htnguyen.gplxapp.view.fragment.choose_license.ChooseLicenseFragment
+import com.htnguyen.gplxapp.view.fragment.introduction_app.IntroductionAppFragment
 import com.htnguyen.gplxapp.view.fragment.trafficsigns.TrafficSignsFragment
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
@@ -84,11 +87,17 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(), NavigationView.OnNavig
       }
 
       R.id.nav_choose_grade -> {
-
+        mDrawerLayout.closeDrawer(GravityCompat.START)
+        val bundle = Bundle()
+        bundle.putString(BaseConst.ARG_FROM_HOME, BaseConst.ARG_FROM_HOME)
+        transitFragmentAnimation(ChooseLicenseFragment(), R.id.container,bundle)
       }
 
       R.id.nav_study_guide -> {
-
+        mDrawerLayout.closeDrawer(GravityCompat.START)
+        val bundle = Bundle()
+        bundle.putString(BaseConst.ARG_FROM_HOME, BaseConst.ARG_FROM_HOME)
+        transitFragmentAnimation(IntroductionAppFragment(), R.id.container,bundle)
       }
 
     }
