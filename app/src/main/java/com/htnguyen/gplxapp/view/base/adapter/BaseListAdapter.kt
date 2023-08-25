@@ -40,7 +40,6 @@ abstract class BaseListAdapter<T : Any> : ListAdapter<T, BaseListAdapter.VH>(TCo
         holder.binding.root.setOnClickListener {
             listener?.click(position, getItem(position))
         }
-//        observer?.subData...
     }
 
     interface Action<T> {

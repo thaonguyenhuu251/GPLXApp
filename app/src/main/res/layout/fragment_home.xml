@@ -100,6 +100,7 @@
                 android:weightSum="3">
 
                 <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnTips"
                     style="@style/myColoredButton"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"

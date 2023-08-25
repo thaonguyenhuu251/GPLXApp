@@ -1,11 +1,18 @@
 package com.htnguyen.gplxapp.model
 
-import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
+import com.htnguyen.gplxapp.R
+import com.htnguyen.gplxapp.view.base.adapter.BaseItem
+import java.io.Serializable
 
 data class TrafficSigns (
-    @SerializedName("id") @Expose val id : Int,
-    @SerializedName("name") @Expose val name : String?,
-    @SerializedName("content") @Expose val content : String?,
-    @SerializedName("urlImage") @Expose val urlImage : Int?,
-)
+    @SerializedName("type") val type : Int,
+    @SerializedName("id") val id : Int,
+    @SerializedName("name") val name : String?,
+    @SerializedName("content") val content : String?,
+    @SerializedName("urlImage") val urlImage : String?,
+) : BaseItem(), Serializable {
+    override val layoutResourceId: Int
+        get() = R.layout.item_turn_forbidden
+
+}

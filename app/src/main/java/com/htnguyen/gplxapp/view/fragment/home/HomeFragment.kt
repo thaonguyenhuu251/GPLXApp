@@ -12,6 +12,7 @@ import com.htnguyen.gplxapp.R
 import com.htnguyen.gplxapp.databinding.FragmentHomeBinding
 import com.htnguyen.gplxapp.view.base.BaseFragment
 import com.htnguyen.gplxapp.view.fragment.chagevoice.ChangeVoiceFragment
+import com.htnguyen.gplxapp.view.fragment.tips.TipsFragment
 import com.htnguyen.gplxapp.view.fragment.trafficsigns.TrafficSignsFragment
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
@@ -54,6 +55,10 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(), NavigationView.OnNavig
 
     binding.btnHomeStop.setOnClickListener {
       transitFragmentAnimation(TrafficSignsFragment(), R.id.container)
+    }
+
+    binding.btnTips.setOnClickListener {
+      transitFragmentAnimation(TipsFragment(), R.id.container)
     }
 
   }

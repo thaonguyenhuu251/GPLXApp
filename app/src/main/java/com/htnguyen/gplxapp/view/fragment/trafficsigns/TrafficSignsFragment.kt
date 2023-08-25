@@ -3,23 +3,26 @@ package com.htnguyen.gplxapp.view.fragment.trafficsigns
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.fragment.app.viewModels
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
+import com.htnguyen.gplxapp.R
 import com.htnguyen.gplxapp.databinding.FragmentTrafficSignsBinding
 import com.htnguyen.gplxapp.view.base.BaseFragment
 import com.htnguyen.gplxapp.view.base.BasePager
 import com.htnguyen.gplxapp.view.fragment.home.HomeFragment
 
 class TrafficSignsFragment : BaseFragment<FragmentTrafficSignsBinding>() {
-    private val titles = arrayOf("BIẾN BÁO CẤM", "BIỂN HIỆU LỆNH", "BIỂN CHỈ DẪN", "BIỂN BÁO NGUY HIỂM VÀ CẢNH BÁO", "BIẾN PHỤ")
+    private val titles = arrayOf("BIẾN BÁO CẤM", "BIỂN BÁO NGUY HIỂM", "BIỂN HIỆU LỆNH", "BIỂN CHỈ DẪN", "BIẾN PHỤ")
     private var pagerAdapter: BasePager? = null
     private val listFragment: List<BaseFragment<*>> = listOf(
-        TurnForbiddenFragment(),
-        TurnForbiddenFragment(),
-        TurnForbiddenFragment(),
-        TurnForbiddenFragment(),
-        TurnForbiddenFragment()
+        TurnForbiddenFragment.newInstance(1),
+        TurnForbiddenFragment.newInstance(2),
+        TurnForbiddenFragment.newInstance(3),
+        TurnForbiddenFragment.newInstance(5),
+        TurnForbiddenFragment.newInstance(6)
     )
+
 
     override fun getViewBinding(
         inflater: LayoutInflater?,
@@ -33,6 +36,13 @@ class TrafficSignsFragment : BaseFragment<FragmentTrafficSignsBinding>() {
     }
 
     override fun initEvent() {
+        binding.imgBack.setOnClickListener {
+            onClickBack()
+        }
+
+        binding.txtBack.setOnClickListener {
+            onClickBack()
+        }
 
     }
 
@@ -40,6 +50,8 @@ class TrafficSignsFragment : BaseFragment<FragmentTrafficSignsBinding>() {
         pagerAdapter = BasePager(titles, requireActivity(), listFragment)
         binding.viewPager.adapter = pagerAdapter
         setTabLayout()
+
+
     }
     private fun setTabLayout() {
         TabLayoutMediator(binding.tbLayout, binding.viewPager) { tab, position ->
@@ -60,6 +72,8 @@ class TrafficSignsFragment : BaseFragment<FragmentTrafficSignsBinding>() {
             }
         })
     }
+
+
 
 
 }

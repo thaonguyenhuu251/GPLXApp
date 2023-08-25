@@ -3,13 +3,20 @@ package com.htnguyen.gplxapp.view.fragment.trafficsigns
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.fragment.app.viewModels
 import com.htnguyen.gplxapp.databinding.FragmentTurnForbiddenBinding
+import com.htnguyen.gplxapp.model.TrafficSigns
 import com.htnguyen.gplxapp.view.base.BaseFragment
-import com.htnguyen.gplxapp.view.base.utils.loadJSONFromAsset
+import com.htnguyen.gplxapp.view.base.adapter.BaseRecyclerViewAdapter
 import com.htnguyen.gplxapp.view.base.utils.parseJsonToListTrafficSigns
 import com.htnguyen.gplxapp.view.base.utils.readJSONFromAsset
 
 class TurnForbiddenFragment : BaseFragment<FragmentTurnForbiddenBinding>() {
+
+    private val viewModel by viewModels<TurnForbiddenViewModel>()
+    private val adapter = BaseRecyclerViewAdapter<TrafficSigns>()
+    var type = 0
+
     override fun getViewBinding(
         inflater: LayoutInflater?,
         container: ViewGroup?
@@ -18,7 +25,13 @@ class TurnForbiddenFragment : BaseFragment<FragmentTurnForbiddenBinding>() {
     }
 
     override fun initData() {
-        var list = parseJsonToListTrafficSigns(readJSONFromAsset(requireContext(), "traffigs_signs.json" ) ?: "")
+        binding.lifecycleOwner = activity
+        binding.viewModel = viewModel
+        val json = readJSONFromAsset(requireContext(), "traffigs_signs.json" )
+        val list = parseJsonToListTrafficSigns(json)
+        binding.rcvTasks.adapter = adapter
+        adapter.setItems(list.toList().filter { it.type == type })
+
     }
 
     override fun initEvent() {
@@ -28,5 +41,14 @@ class TurnForbiddenFragment : BaseFragment<FragmentTurnForbiddenBinding>() {
     override fun initView(savedInstanceState: Bundle?, binding: FragmentTurnForbiddenBinding) {
 
     }
+    companion object {
+        fun newInstance(type: Int): TurnForbiddenFragment {
+            val args: Bundle = Bundle()
+            val fragment = TurnForbiddenFragment()
+            fragment.type = type
+            return fragment
+        }
+    }
+
 
 }

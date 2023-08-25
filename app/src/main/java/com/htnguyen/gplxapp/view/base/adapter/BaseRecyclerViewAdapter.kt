@@ -66,7 +66,7 @@ open class BaseRecyclerViewAdapter<T> :
         viewDataBinding.root
     ) {
         fun bind(model: BaseItem?) {
-            viewDataBinding.setVariable(BR.hasLoading, model)
+            viewDataBinding.setVariable(BR.model, model)
             viewDataBinding.executePendingBindings()
         }
     }

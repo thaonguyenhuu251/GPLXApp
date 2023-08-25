@@ -7,6 +7,7 @@ import androidx.databinding.ViewDataBinding
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.htnguyen.gplxapp.BR
 import com.htnguyen.gplxapp.R
 import com.htnguyen.gplxapp.databinding.ItemLoadingBinding
 
@@ -151,7 +152,7 @@ open class BaseRecyclerViewPagingAdapter<T> : RecyclerView.Adapter<RecyclerView.
         viewDataBinding.root
     ) {
         fun bind(model: BaseItem?) {
-            //viewDataBinding.setVariable(BR.model, model)
+            viewDataBinding.setVariable(BR.model, model)
             viewDataBinding.executePendingBindings()
         }
     }

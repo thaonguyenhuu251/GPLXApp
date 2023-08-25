@@ -1,338 +1,1325 @@
 [
- {
-   "id": 101,
-   "name": "Biển số 101: Đường cấm",
-   "content": "Cấm tất cả các phương tiện cơ giới, thô sơ đi lại cả hai hướng, trừ xe ưu tiên.",
-   "urlImage": 1
- },
- {
-   "id": 102,
-   "name": "Biển số 102: Cấm đi ngược chiều",
-   "content": "Cấm tất cả các phương tiện cơ giới và thô sơ đi vào theo chiều đặt biển cấm, trừ xe ưu tiên.",
-   "urlImage": 1
- },
- {
-   "id": 103,
-   "name": "Biển số 103a: Cấm ô tô",
-   "content": "Cấm tất cả các loại xe cơ giới kể cả môtô 3 bánh có thùng, trừ môtô 2 bánh, xe gắn máy và xe ưu tiên.",
-   "urlImage": 1
- },
- {
-   "id": 104,
-   "name": "Biển số 103b: Cấm ô tô rẽ phải",
-   "content": "Cấm xe cơ giới bao gồm cả môtô 3 bánh có thùng RẼ PHẢI, trừ môtô 2 bánh, xe gắn máy và xe ưu tiên.",
-   "urlImage": 1
- },
- {
-   "id": 105,
-   "name": "Biến số 103c: Cấm ô tô rẽ trái",
-   "content": "Cấm xe cơ giới bao gồm cả mô tô 3 bánh có thùng RẼ TRÁI, trừ mô tô 2 bánh, xe gắn máy và xe ưu tiên.",
-   "urlImage": 1
- },
- {
-   "id": 106,
-   "name": "Biển số 104: Cấm mô tô",
-   "content": "Cấm tất cả các loại mô tô, trừ mô tô được ưu tiên.",
-   "urlImage": 1
- },
- {
-   "id": 107,
-   "name": "Biển số 105: Cấm ô tô và mô tô",
-   "content": "Cấm tất cả các loại xe cơ giới và mô tô đi qua, trừ xe gắn máy và xe ưu tiên.",
-   "urlImage": 1
- },
- {
-   "id": 108,
-   "name": "Biển số 106a: Cấm xe tải",
-   "content": "Cấm tất cả các loại ô tô chở hàng có trọng tải từ 1,5 tấn trở lên, trừ xe ưu tiên. Biển có hiệu lực cả với xe máy kéo, xe máy chuyên dùng.",
-   "urlImage": 1
- },
- {
-   "id": 109,
-   "name": "Biển số 106b: Cấm xe tải từ 2,5 tấn",
-   "content": "Cấm xe có tổng trọng lượng (trọng lượng xe cộng hàng) vượt quá con số ghi trên biển. Biển có hiệu lực cả với xe máy kéo, xe máy chuyên dùng.",
-   "urlImage": 1
- },
- {
-   "id": 110,
-   "name": "Biển số 106c: Cấm xe chở hàng nguy hiểm",
-   "content": "Cấm xe chở hàng nguy hiểm",
-   "urlImage": 1
- },
- {
-   "id": 111,
-   "name": "Biển số 107: Cấm ô tô khách và ô tô tải",
-   "content": "Cấm ô tô chở khách và các loại ô tô tải kể cả máy kéo và xe máy thi công chuyên dùng, trừ xe ưu tiên.",
-   "urlImage": 1
- },
- {
-   "id": 112,
-   "name": "Biển số 108: Cấm ô tô, máy kéo kéo moóc và sơ mi rơ moóc",
-   "content": "Cấm tất cả các loại xe cơ giới kéo theo rơ-moóc kể cả mô tô, máy kéo, ô tô khách kéo theo rơ-moóc đi qua, trừ loại ô tô sơ-mi rơ-moóc và các xe ưu tiên.",
-   "urlImage": 1
- },
- {
-   "id": 113,
-   "name": "Biến số 109: Cấm máy kéo",
-   "content": "Cấm tất cả các loại máy kéo, kể cả máy kéo bánh hơi và bánh xích.",
-   "urlImage": 1
- },
- {
-   "id": 114,
-   "name": "Biển 110a: Cấm đi xe đạp",
-   "content": "Cấm xe đạp đi qua. Biển không có giá trị cấm người dắt xe đạp.",
-   "urlImage": 1
- },
- {
-   "id": 115,
-   "name": "Biển 110b: Cấm xe đạp thồ",
-   "content": "Cấm xe đạp thồ đi qua. Biển không cấm người dắt loại xe này.",
-   "urlImage": 1
- },
- {
-   "id": 116,
-   "name": "Biển báo 111a: Cấm xe gắn máy",
-   "content": "Cấm xe gắn máy. Biển không có giá trị với xe đạp.",
-   "urlImage": 1
- },
- {
-   "id": 117,
-   "name": "Biển số 111b: Cấm xe lam",
-   "content": "Cấm xe 3 bánh loại có động cơ như xe lam, xích lô máy...",
-   "urlImage": 1
- },
- {
-   "id": 118,
-   "name": "Biển báo cấm 111c: Cấm xe lôi máy",
-   "content": "Cấm xe ba bánh loại có động cơ như xe lôi máy...",
-   "urlImage": 1
- },
- {
-   "id": 119,
-   "name": "Biển số 111d: Cấm xe 3 bánh loại không có động cơ",
-   "content": "Cấm xe 3 bánh loại không có động cơ như xích lô, xe lôi đạp...",
-   "urlImage": 1
- },
- {
-   "id": 120,
-   "name": "Biển số 112: Cấm người đi bộ",
-   "content": "Cấm người đi bộ qua lại.",
-   "urlImage": 1
- },
- {
-   "id": 121,
-   "name": "Biển số 113: Cấm xe người kéo, đẩy",
-   "content": "Cấm xe thô sơ, chuyển động do người kéo, đẩy đi qua. Biển không có giá trị cấm xe nôi của trẻ em và phương tiện chuyên dùng để đi lại của người tàn tật.",
-   "urlImage": 1
- },
- {
-   "id": 122,
-   "name": "Biển số 114: Cấm xe xúc vật kéo",
-   "content": "Cấm súc vật vận tải hàng hóa hoặc hành khách dù kéo xe hay chở trên lưng.",
-   "urlImage": 1
- },
- {
-   "id": 123,
-   "name": "Biển số 115: Hạn chế trọng lượng xe",
-   "content": "Cấm các loại xe cơ giới và thô sơ, kể cả xe ưu tiên, có tổng trọng lượng (cả xe và hàng) vượt quá trị số ghi trên biển.",
-   "urlImage": 1
- },
- {
-   "id": 124,
-   "name": "Biển số 116: Hạn chế trọng lượng trên trục xe",
-   "content": "Cấm xe cơ giới và thô sơ, kể cả xe ưu tiên, có tổng trọng lượng (cả xe và hàng) phân bổ trên một trục bất kỳ của xe vượt quá trị số ghi trên biển.",
-   "urlImage": 1
- },
- {
-   "id": 125,
-   "name": "Biển số 117: Hạn chế chiều cao",
-   "content": "Cấm xe cơ giới và thô sơ có chiều cao vượt quá trị số ghi trên biển, kể cả các xe ưu tiên (chiều cao tính từ mặt đường, mặt cầu đến điểm cao nhất của xe hoặc hàng).",
-   "urlImage": 1
- },
- {
-   "id": 126,
-   "name": "Biển số 118: Hạn chế chiều ngang",
-   "content": "Cấm xe cơ giới và thô sơ, kể cả xe ưu tiên có chiều ngang (kể cả xe và hàng hóa) vượt quá trị số ghi trên biển.",
-   "urlImage": 1
- },
- {
-   "id": 127,
-   "name": "Biển số 119: Hạn chế chiều dài ô tô",
-   "content": "Cấm xe cơ giới và thô sơ, kể cả xe ưu tiên, có độ dài toàn bộ kể cả xe và hàng lớn hơn trị số ghi trên biển.",
-   "urlImage": 1
- },
- {
-   "id": 128,
-   "name": "Biển số 120: Hạn chế chiều dài ô tô, máy kéo kéo moóc, sơ mi rơ moóc",
-   "content": "Cấm xe cơ giới và thô sơ, kéo theo moóc kể cả ô tô sơ-mi rơ-moóc và các loại xe ưu tiên kéo moóc, có độ dài toàn bộ kể cả xe, moóc và hàng lớn hơn trị số ghi trên biển.",
-   "urlImage": 1
- },
- {
-   "id": 129,
-   "name": "Biển số 121: Cự ly tối thiểu giữa 2 xe",
-   "content": "2 xe phải đi cách nhau một khoảng tối thiểu ghi trên biển (đơn vị tính bằng mét).",
-   "urlImage": 1
- },
- {
-   "id": 130,
-   "name": "Biển số 122: Dừng lại",
-   "content": "Buộc xe cơ giới và thô sơ kể cả xe ưu tiên dừng lại trước biển hoặc trước vạch ngang đường và chỉ được phép đi khi thấy các tín hiệu (do người điều khiển giao thông hoặc đèn cờ) cho phép đi. Trong trường hợp trên đường không đặt tín hiệu đèn cờ, không có người điều khiển giao thông hoặc các tín hiệu đèn không bật sáng thì người lái xe chỉ được phép đi khi trên đường không còn nguy cơ mất an toàn giao thông.",
-   "urlImage": 1
- },
- {
-   "id": 131,
-   "name": "Biển số 123a: Cấm rẽ trái",
-   "content": "Cấm các loại xe cơ giới và thô sơ rẽ trái ở những vị trí đường giao nhau, trừ xe ưu tiên. Biển này không có giá trị cấm xe quay đầu.",
-   "urlImage": 1
- },
- {
-   "id": 132,
-   "name": "Biển số 123b: Cấm rẽ phải",
-   "content": "Cấm các loại xe cơ giới và thô sơ rẽ phải ở những vị trí đường giao nhau, trừ xe ưu tiên. Biển này không có giá trị cấm xe quay đầu.",
-   "urlImage": 1
- },
- {
-   "id": 133,
-   "name": "Biển số 124a: Cấm quay đầu xe",
-   "content": "Cấm các loại xe cơ giới và thô sơ quay đầu (theo kiểu chữ U) trừ các xe ưu tiên. Biển này không cấm rẽ trái.",
-   "urlImage": 1
- },
- {
-   "id": 134,
-   "name": "Biển số 124b: Cấm ô tô quay đầu xe",
-   "content": "Cấm ô tô và mô tô 3 bánh quay đầu (theo kiểu chữ U) trừ xe ưu tiên. Biển này không cấm rẽ trái.",
-   "urlImage": 1
- },
- {
-   "id": 135,
-   "name": "Biển số 124c: Cấm rẽ trái và quay đầu xe",
-   "content": "Cấm tất cả các loại xe thô sơ và cơ giới quay đầu (theo kiểu chữ U) và rẽ trái, trừ xe ưu tiên.",
-   "urlImage": 1
- },
- {
-   "id": 136,
-   "name": "Biển số 124d: Cấm rẽ phải và quay đầu xe",
-   "content": "Cấm tất cả các loại xe thô sơ và cơ giới quay đầu (theo kiểu chữ U) và rẽ phải, trừ xe ưu tiên.",
-   "urlImage": 1
- },
- {
-   "id": 137,
-   "name": "Biển số 124e: Cấm ô tô rẽ trái và quay đầu xe",
-   "content": "Cấm xe ô tô và mô tô 3 bánh quay đầu (theo kiểu chữ U) và rẽ trái, trừ xe ưu tiên.",
-   "urlImage": 1
- },
- {
-   "id": 138,
-   "name": "Biển số 124f: Cấm ô tô rẽ phải và quay đầu xe",
-   "content": "Cấm xe ô tô và mô tô 3 bánh quay đầu (theo kiểu chữ U) và rẽ phải, trừ xe ưu tiên.",
-   "urlImage": 1
- },
- {
-   "id": 139,
-   "name": "Biển số 125: Cấm vượt",
-   "content": "Cấm các loại xe cơ giới vượt nhau kể cả xe ưu tiên.",
-   "urlImage": 1
- },
- {
-   "id": 140,
-   "name": "Biển số 126: Cấm ô tô tải vượt",
-   "content": "Cấm các loại ô tô tải vượt xe cơ giới khác. Biển có hiệu lực cấm tất cả các loại ô tô tải có trọng lượng lớn nhất cho phép (bao gồm trọng lượng xe và hàng) trên 3,5 tấn kể cả xe ưu tiên vượt xe cơ giới khác.",
-   "urlImage": 1
- },
- {
-   "id": 141,
-   "name": "Biển số 127: Tốc độ tối đa cho phép",
-   "content": "Tốc độ tối đa mà xe cơ giới được phép chạy, trừ xe ưu tiên.",
-   "urlImage": 1
- },
- {
-   "id": 142,
-   "name": "Biển số 128: Cấm sử dụng còi",
-   "content": "Cấm các loại xe cơ giới sử dụng còi.",
-   "urlImage": 1
- },
- {
-   "id": 143,
-   "name": "Biển số 129: Kiểm tra",
-   "content": "Báo nơi đặt chốt kiểm tra, các loại phương tiện vận tải qua đó phải dừng lại để làm thủ tục kiểm tra theo quy định.",
-   "urlImage": 1
- },
- {
-   "id": 144,
-   "name": "Biển số 130: Cấm dừng đỗ xe",
-   "content": "Cấm các loại xe cơ giới dừng và đỗ ở phía đường có đặt biển trừ xe ưu tiên.",
-   "urlImage": 1
- },
- {
-   "id": 145,
-   "name": "Biển số 131a: Cấm đỗ xe",
-   "content": "Cấm đỗ xe, trừ xe được ưu tiên.",
-   "urlImage": 1
- },
- {
-   "id": 146,
-   "name": "Biển số 131b: Cấm đỗ xe ngày lẻ",
-   "content": "Cấm đỗ xe cơ giới vào ngày lẻ.",
-   "urlImage": 1
- },
- {
-   "id": 147,
-   "name": "Biển số 131c: Cấm đỗ xe ngày chẵn",
-   "content": "Cấm đỗ xe cơ giới vào ngày chẵn.",
-   "urlImage": 1
- },
- {
-   "id": 148,
-   "name": "Biển số 132: Nhường đường cho xe cơ giới đi ngược chiều qua đường hẹp",
-   "content": "Các loại xe cơ giới và thô sơ, kể cả xe ưu tiên phải nhường đường cho xe cơ giới đang đi theo hướng ngược lại qua các đoạn đường hẹp hoặc cầu hẹp.",
-   "urlImage": 1
- },
- {
-   "id": 149,
-   "name": "Biển số 133: Hết cấm vượt",
-   "content": "Hết đoạn đường cấm vượt.",
-   "urlImage": 1
- },
- {
-   "id": 150,
-   "name": "Biển số 134: Hết hạn chế tốc độ tối đa",
-   "content": "Hết đoạn đường hạn chế tốc độ tối đa.",
-   "urlImage": 1
- },
- {
-   "id": 151,
-   "name": "Biển số 135: Hết tất cả các lệnh cấm",
-   "content": "Hết đoạn đường có nhiều biển báo cấm cùng hết hiệu lực.",
-   "urlImage": 1
- },
- {
-   "id": 152,
-   "name": "Biển số 136: Cấm đi thẳng",
-   "content": "Cấm tất cả các loại xe đi thẳng trên đoạn đường phía trước",
-   "urlImage": 1
- },
- {
-   "id": 153,
-   "name": "Biển số 137: Cấm rẽ trái và rẽ phải",
-   "content": "Cấm tất cả các loại xe rẽ trái và rẽ phải trên các ngả đường phía trước.",
-   "urlImage": 1
- },
- {
-   "id": 154,
-   "name": "Biển số 138: Cấm đi thẳng và rẽ trái",
-   "content": "Đường qua nút giao cấm tất cả các loại xe đi thẳng và rẽ trái.",
-   "urlImage": 1
- },
- {
-   "id": 155,
-   "name": "Biển số 139: Cấm đi thẳng và rẽ phải",
-   "content": "Đường qua nút giao cấm tất cả các loại xe đi thẳng và rẽ phải.",
-   "urlImage": 1
- },
- {
-   "id": 156,
-   "name": "Biển số 140: Cấm xe công nông",
-   "content": "Đường cấm xe công nông đi vào.",
-   "urlImage": 1
- }
+  {
+    "type": 1,
+    "id": 101,
+    "name": "Biển số 101 “Đường cấm”",
+    "content": "Báo đường cấm tất cả các loại phương tiện (cơ giới và thô sơ) đi lại cả hai hướng, trừ các xe được ưu tiên theo quy định",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-101.jpg"
+  },
+  {
+    "type": 1,
+    "id": 102,
+    "name": "Biển số 102 “Cấm đi ngược chiều”",
+    "content": "Báo đường cấm tất cả các loại xe (cơ giới và thô sơ) đi vào theo chiều đặt biển, trừ các xe được ưu tiên theo quy định",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-102.jpg"
+  },
+  {
+    "type": 1,
+    "id": 103,
+    "name": "Biển số 103a “Cấm ô tô”",
+    "content": "Biển báo cấm này báo đường cấm tất cả các loại xe cơ giới kể cả môtô 3 bánh có thùng đi qua, trừ môtô hai bánh, xe gắn máy và các xe được ưu tiên theo quy định",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-103.jpg"
+  },
+  {
+    "type": 1,
+    "id": 104,
+    "name": "Biển số 103b “Cấm ô tô rẽ phải”",
+    "content": "Biển báo giao thông báo này cấm tất cả các loại xe cơ giới kể cả môtô 3 bánh có thùng rẽ phải, trừ môtô hai bánh, xe gắn máy và các xe được ưu tiên theo quy định",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-103-b.jpg"
+  },
+  {
+    "type": 1,
+    "id": 105,
+    "name": "Biển số 103c “Cấm ô tô rẽ trái”",
+    "content": "Biển báo giao thông này báo đường cấm tất cả các loại xe cơ giới kể cả môtô 3 bánh có thùng rẽ trái, trừ môtô hai bánh, xe gắn máy và các xe được ưu tiên theo quy định",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-103c.jpg"
+  },
+  {
+    "type": 1,
+    "id": 106,
+    "name": "Biển số 104 “Cấm mô tô”",
+    "content": "Báo đường cấm tất cả các loại môtô đi qua, trừ các xe môtô được ưu tiên theo quy định",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-104.jpg"
+  },
+  {
+    "type": 1,
+    "id": 107,
+    "name": "Biển số 105 “Cấm ô tô và mô tô”",
+    "content": "Biển báo cấm này báo đường cấm tất cả các loại xe cơ giới và môtô đi qua trừ xe gắn máy và các xe được ưu tiên theo quy định",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-105.jpg"
+  },
+  {
+    "type": 1,
+    "id": 108,
+    "name": "Biển số 106a “Cấm ô tô tải”",
+    "content": "Biển báo giao thông đường bộ báo đường cấm tất cả các loại ôtô chở hàng có trọng tải từ 1,5 tấn trở lên trừ các xe được ưu tiên theo quy định. Biển có hiệu lực cấm đối với cả máy kéo và các xe máy chuyên dùng.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-106a.jpg"
+  },
+  {
+    "type": 1,
+    "id": 109,
+    "name": "Biển số 106b “Cấm ô tô tải”",
+    "content": "Có tổng trọng lượng (trọng lượng xe cộng hàng) vượt quá con số đã quy định trên biển. Biển báo cấm này có hiệu lực cấm đối với cả máy kéo và các xe máy chuyên dùng đi vào đoạn đường đặt biển.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-106b.jpg"
+  },
+  {
+    "type": 1,
+    "id": 110,
+    "name": "Biển số 106c “Cấm xe chở hàng nguy hiểm”",
+    "content": "Báo đường cấm các xe chở hàng nguy hiểm",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-106c.jpg"
+  },
+  {
+    "type": 1,
+    "id": 111,
+    "name": "Biển số 107 “Cấm ô tô khách và ô tô tải”",
+    "content": "Biển báo giao thông đường bộ này báo đường cấm ôtô chở khách và các loại ôtô tải kể cả các loại máy kéo và xe máy thi công chuyên dùng đi qua trừ các xe được ưu tiên theo quy định",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-107.jpg"
+  },
+  {
+    "type": 1,
+    "id": 112,
+    "name": "Biển số 108 “Cấm ô tô",
+    "content": "Máy kéo kéo moóc hoặc sơ mi rơ moóc”, báo đường cấm tất cả các loại xe cơ giới kéo theo rơ-moóc kể cả môtô, máy kéo, ôtô khách kéo theo rơ-moóc đi qua, trừ loại ôtô sơ-mi rơ-moóc và các xe được ưu tiên (có kéo theo rơ-moóc) theo luật lệ nhà nước quy định",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-108.jpg"
+  },
+  {
+    "type": 1,
+    "id": 113,
+    "name": "Biển số 109 “Cấm máy kéo”",
+    "content": "Báo đường cấm tất cả các loại máy kéo, kể cả máy kéo bánh hơi và bánh xích đi qua",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-109.jpg"
+  },
+  {
+    "type": 1,
+    "id": 114,
+    "name": "Biển số 110a “Cấm đi xe đạp”",
+    "content": "Biển báo cấm này báo đường cấm xe đạp đi qua. Biển không có giá trị cấm những người dắt xe đạp.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-110a.jpg"
+  },
+  {
+    "type": 1,
+    "id": 115,
+    "name": "Biển số 110b “Cấm xe đạp thồ”",
+    "content": "Báo đường cấm xe đạp thồ đi qua. Biển không có giá trị cấm những người dắt xe đạp. Biển này không cấm người dắt loại xe này.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-110b.jpg"
+  },
+  {
+    "type": 1,
+    "id": 116,
+    "name": "Biển số 111a “Cấm xe gắn máy”",
+    "content": "Báo đường cấm xe gắn máy đi qua. Biển không có giá trị đối với xe đạp.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-111a.jpg"
+  },
+  {
+    "type": 1,
+    "id": 117,
+    "name": "Biển số 111b “Cấm xe ba bánh loại có động cơ”",
+    "content": "Báo đường cấm xe ba bánh loại có động cơ như xe lam, xích lô máy v.v…",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-111b.jpg"
+  },
+  {
+    "type": 1,
+    "id": 118,
+    "name": "Biển số 111c “Cấm xe ba bánh loại có động cơ”",
+    "content": "Báo đường cấm xe ba bánh loại có động cơ như xe lôi máy v.v…",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-111c.jpg"
+  },
+  {
+    "type": 1,
+    "id": 119,
+    "name": "Biển số 111d “Cấm xe ba bánh loại không có động cơ”",
+    "content": "Biển báo giao thông này báo đường cấm xe ba bánh loại không có động cơ như xích lô, xe lôi đạp v.v…",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-111d.jpg"
+  },
+  {
+    "type": 1,
+    "id": 120,
+    "name": "Biển số 112 “Cấm người đi bộ”",
+    "content": "Báo đường cấm người đi bộ qua lại",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-112.jpg"
+  },
+  {
+    "type": 1,
+    "id": 121,
+    "name": "Biển số 113 “Cấm xe người kéo",
+    "content": "Đẩy”, báo đường cấm xe thô sơ, chuyển động do người kéo, đẩy đi qua. Biển không có giá trị cấm những xe nôi của trẻ em và phương tiện chuyên dùng để đi lại của những người tàn tật.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-113.jpg"
+  },
+  {
+    "type": 1,
+    "id": 122,
+    "name": "Biển số 114 “Cấm xe súc vật kéo”",
+    "content": "Biển báo cấm này báo đường cấm súc vật vận tải hàng hóa hoặc hành khách dù kéo xe hay chở trên lưng đi qua",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-114.jpg"
+  },
+  {
+    "type": 1,
+    "id": 123,
+    "name": "Biển số 115 “Hạn chế trọng lượng xe”",
+    "content": "Báo đường cấm các loại xe (cơ giới và thô sơ) kể cả các xe được ưu tiên theo quy định, có trọng lượng toàn bộ (cả xe và hàng) vượt quá trị số ghi trên biển đi qua",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-115.jpg"
+  },
+  {
+    "type": 1,
+    "id": 124,
+    "name": "Biển số 116 “Hạn chế trọng lượng trên trục xe”",
+    "content": "Báo đường cấm các loại xe (cơ giới và thô sơ) kể cả các xe được ưu tiên theo quy định, có trọng lượng toàn bộ (cả xe và hàng) phân bổ trên một trục bất kỳ của xe vượt quá trị số ghi trên biển đi qua",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-116.jpg"
+  },
+  {
+    "type": 1,
+    "id": 125,
+    "name": "Biển số 117 “Hạn chế chiều cao”",
+    "content": "Biển báo giao thông đường bộ này báo hạn chế chiều cao của xe, cấm các xe (cơ giới và thô sơ) có chiều cao vượt quá trị số ghi trên biển không được đi qua, kể cả các xe được ưu tiên theo quy định (chiều cao tính từ mặt đường, mặt cầu đến điểm cao nhất của xe hoặc hàng).",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-117.jpg"
+  },
+  {
+    "type": 1,
+    "id": 126,
+    "name": "Biển số 118 “Hạn chế chiều ngang”",
+    "content": "Báo hạn chế chiều ngang của xe, cấm các xe (cơ giới và thô sơ) kể cả các xe được ưu tiên theo quy định có chiều ngang (kể cả xe và hàng hóa) vượt quá trị số ghi trên biển không được đi qua.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-118.jpg"
+  },
+  {
+    "type": 1,
+    "id": 127,
+    "name": "Biển số 119 “Hạn chế chiều dài ôtô”",
+    "content": "Báo đường cấm các loại xe (cơ giới và thô sơ) kể cả các xe được ưu tiên theo quy định, có độ dài toàn bộ kể cả xe và hàng lớn hơn trị số ghi trên biển đi qua",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-119.jpg"
+  },
+  {
+    "type": 1,
+    "id": 128,
+    "name": "Biển số 120 “Hạn chế chiều dài ôtô",
+    "content": "Máy kéo kéo moóc hoặc sơ mi rơ moóc”, biển báo cấm này báo đường cấm các loại xe (cơ giới và thô sơ) kéo theo moóc kể cả ôtô sơ-mi rơ-moóc và các loại xe được ưu tiên kéo moóc theo luật lệ nhà nước quy định, có độ dài toàn bộ kể cả xe, moóc và hàng lớn hơn trị số ghi trên biển đi qua",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-120.jpg"
+  },
+  {
+    "type": 1,
+    "id": 129,
+    "name": "Biển số 121 “Cự ly tối thiểu giữa hai xe”",
+    "content": "Báo xe ôtô phải đi cách nhau một khoảng tối thiểu tính bằng mét",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-121.jpg"
+  },
+  {
+    "type": 1,
+    "id": 130,
+    "name": "Biển số 122 “Dừng lại”",
+    "content": "Buộc các loại xe cơ giới và thô sơ kể cả xe được ưu tiên theo quy định dừng lại trước biển hoặc trước vạch ngang đường và chỉ được phép đi khi thấy các tín hiệu (do người điều khiển giao thông hoặc đèn cờ) cho phép đi. Trong trường hợp trên đường không đặt tín hiệu đèn cờ, không có người điều khiển giao thông hoặc các tín hiệu đèn không bật sáng thì người lái xe chỉ được phép đi khi trên đường không còn nguy cơ mất an toàn giao thông.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-122.jpg"
+  },
+  {
+    "type": 1,
+    "id": 131,
+    "name": "Biển số 123a “Cấm rẽ trái”",
+    "content": "Cấm các loại xe (cơ giới và thô sơ) rẽ sang phía trái ở những vị trí đường giao nhau trừ các xe được ưu tiên theo quy định. Biển này cũng cấm xe quay đầu.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-123a.jpg"
+  },
+  {
+    "type": 1,
+    "id": 132,
+    "name": "Biển số 123b “Cấm rẽ phải”",
+    "content": "Biển báo giao thông này cấm các loại xe (cơ giới và thô sơ) rẽ sang phía phải ở những vị trí đường giao nhau trừ các xe được ưu tiên theo quy định.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-123b.jpg"
+  },
+  {
+    "type": 1,
+    "id": 133,
+    "name": "Biển số 124a “Cấm quay xe”",
+    "content": "Báo cấm các loại xe cơ giới và thô sơ quay đầu (theo kiểu chữ U) trừ các xe được ưu tiên theo quy định. Biển này không cấm rẽ trái.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-124a.jpg"
+  },
+  {
+    "type": 1,
+    "id": 134,
+    "name": "Biển số 124b “Cấm ô tô quay đầu xe”",
+    "content": "Báo cấm xe ôtô và mô tô 3 bánh quay đầu (theo kiểu chữ U), trừ các xe được ưu tiên theo quy định. Biển này không cấm rẽ trái.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-124b.jpg"
+  },
+  {
+    "type": 1,
+    "id": 135,
+    "name": "Biển số 125 “Cấm vượt”",
+    "content": "Báo cấm các loại xe cơ giới vượt nhau kể cả xe được ưu tiên theo quy định.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-125.jpg"
+  },
+  {
+    "type": 1,
+    "id": 136,
+    "name": "Biển số 126 “Cấm ôtô tải vượt”",
+    "content": "Báo cấm các loại ôtô tải vượt xe cơ giới khác. Biển có hiệu lực cấm tất cả các loại ôtô tải có trọng lượng lớn nhất cho phép (bao gồm trọng lượng xe và hàng) trên 3,5Tấn kể cả các xe được ưu tiên theo quy định vượt xe cơ giới khác.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-126.jpg"
+  },
+  {
+    "type": 1,
+    "id": 137,
+    "name": "Biển số 127 “Tốc độ tối đa cho phép”",
+    "content": "Biển báo cấm này báo tốc độ tối đa cho phép các xe cơ giới chạy, trừ các xe được ưu tiên theo quy định.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-127.jpg"
+  },
+  {
+    "type": 1,
+    "id": 138,
+    "name": "Biển số 128 “Cấm sử dụng còi”",
+    "content": "Báo cấm các loại xe cơ giới sử dụng còi",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-128.jpg"
+  },
+  {
+    "type": 1,
+    "id": 139,
+    "name": "Biển số 129 “Kiểm tra”",
+    "content": "Báo nơi đặt trạm kiểm tra; các loại phương tiện vận tải qua đó phải dừng lại để làm thủ tục kiểm tra, kiểm soát theo quy định.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-129.jpg"
+  },
+  {
+    "type": 1,
+    "id": 140,
+    "name": "Biển số 130 “Cấm dừng xe và đỗ xe”",
+    "content": "Báo nơi cấm dừng xe và đỗ xe. Biển có hiệu lực cấm các loại xe cơ giới dừng và đỗ ở phía đường có đặt biển trừ các xe được ưu tiên theo quy định.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-130.jpg"
+  },
+  {
+    "type": 1,
+    "id": 141,
+    "name": "Biển số 131a “Cấm đỗ xe”",
+    "content": "Biển báo giao thông này báo nơi cấm đỗ xe trừ các xe được ưu tiên theo quy định",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-131a.jpg"
+  },
+  {
+    "type": 1,
+    "id": 142,
+    "name": "Biển số 131b “Cấm đỗ xe”",
+    "content": "Báo nơi cấm đỗ xe cơ giới vào những ngày lẻ",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-131b.jpg"
+  },
+  {
+    "type": 1,
+    "id": 143,
+    "name": "Biển số 131c “Cấm đỗ xe”",
+    "content": "Báo nơi cấm đỗ xe cơ giới vào những ngày chẵn",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-131c.jpg"
+  },
+  {
+    "type": 1,
+    "id": 144,
+    "name": "Biển số 132 “Nhường đường cho xe cơ giới đi ngược chiều qua đường hẹp”",
+    "content": "Báo các loại xe (cơ giới và thô sơ) kể cả các xe được ưu tiên theo quy định phải nhường đường cho các loại xe cơ giới đang đi theo hướng ngược lại qua các đoạn đường hẹp hoặc cầu hẹp",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-132.jpg"
+  },
+  {
+    "type": 1,
+    "id": 145,
+    "name": "Biển số 133 “Hết cấm vượt”",
+    "content": "Biển báo giao thông đường bộ này báo hết đoạn đường cấm vượt",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-133.jpg"
+  },
+  {
+    "type": 1,
+    "id": 146,
+    "name": "Biển số 134 “Hết hạn chế tốc độ tối đa”",
+    "content": "Báo hết đoạn đường hạn chế tốc độ tối đa",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-134.jpg"
+  },
+  {
+    "type": 1,
+    "id": 147,
+    "name": "Biển số 135 “Hết tất cả các lệnh cấm”",
+    "content": "Báo hết đoạn đường mà nhiều biển báo cấm cùng hết hiệu lực",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-135.jpg"
+  },
+  {
+    "type": 1,
+    "id": 148,
+    "name": "Biển số 136 “Cấm đi thẳng”",
+    "content": "Biển báo cấm này cấm tất cả các loại xe đi thẳng trên đoạn đường phía trước",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-136.jpg"
+  },
+  {
+    "type": 1,
+    "id": 149,
+    "name": "Biển số 137 “Cấm rẽ trái và rẽ phải”",
+    "content": "Cấm tất cả các lại xe rẽ trái hay rẽ phải trên các ngả đường phía trước",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-137.jpg"
+  },
+  {
+    "type": 1,
+    "id": 150,
+    "name": "Biển số 138 “Cấm đi thẳng và rẽ trái”",
+    "content": "Biểu thị đường qua nút giao cấm tất cả các loại xe đi thẳng và rẽ trái",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-138.jpg"
+  },
+  {
+    "type": 1,
+    "id": 151,
+    "name": "Biển số 139 “Cấm đi thẳng và rẽ phải”",
+    "content": "Biển báo cấm này biểu thị đường qua nút giao cấm tất cả các loại xe đi thẳng và rẽ phải",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-139.jpg"
+  },
+  {
+    "type": 1,
+    "id": 152,
+    "name": "Biển số 140 “Cấm xe công nông”",
+    "content": "Để báo đường cấm công nông",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-140.jpg"
+  },
+  {
+    "type": 2,
+    "id": 201,
+    "name": "Biển số 201a “Chỗ ngoặt nguy hiểm vòng bên trái”",
+    "content": "Báo trước sắp đến một chỗ ngoặt nguy hiểm phía bên trái",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-201a.jpg"
+  },
+  {
+    "type": 2,
+    "id": 202,
+    "name": "Biển số 201b “chỗ ngoặt nguy hiểm vòng bên phải”",
+    "content": "Biển báo giao thông này báo trước sắp đến một chỗ ngoặt nguy hiểm phía bên phải",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-201b.jpg"
+  },
+  {
+    "type": 2,
+    "id": 203,
+    "name": "Biển số 202a “Nhiều chỗ ngoặt nguy hiểm liên tiếp”",
+    "content": "Báo trước sắp đến nhiều chỗ ngoặt nguy hiểm liên tiếp trong đó chỗ ngoặt đầu tiên hướng vòng bên trái",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-202a.jpg"
+  },
+  {
+    "type": 2,
+    "id": 204,
+    "name": "Biển số 202b “Nhiều chỗ ngoặt nguy hiểm liên tiếp”",
+    "content": "Biển báo nguy hiểm này báo trước sắp đến nhiều chỗ ngoặt nguy hiểm liên tiếp trong đó chỗ ngoặt đầu tiên hướng vòng bên phải",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-202b.jpg"
+  },
+  {
+    "type": 2,
+    "id": 205,
+    "name": "Biển số 203a “Đường bị hẹp cả hai bên”",
+    "content": "Báo trước sắp đến một đoạn đường bị hẹp đột ngột cả hai bên",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-203a.jpg"
+  },
+  {
+    "type": 2,
+    "id": 206,
+    "name": "Biển số 203b “Đường bị hẹp về phía trái”",
+    "content": "Biển báo giao thông báo trước sắp đến một đoạn đường bị hẹp đột ngột phía bên trái",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-203b.jpg"
+  },
+  {
+    "type": 2,
+    "id": 207,
+    "name": "Biển số 203c “Đường bị hẹp về phía phải”",
+    "content": "Báo trước sắp đến một đoạn đường bị hẹp đột ngột phía bên phải",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-203c1.jpg"
+  },
+  {
+    "type": 2,
+    "id": 208,
+    "name": "Biển số 204 “Đường hai chiều”",
+    "content": "Biển bảo nguy hiểm này báo trước sắp đến đoạn đường do sửa chữa hoặc có trở ngại ở một phía đường mà phải tổ chức đi lại cho phương tiện cả hai chiều trên phía đường còn lại hoặc để báo trước đoạn đường đôi tạm thời hoặc đoạn đường có chiều xe đi và về đi chung",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-204.jpg"
+  },
+  {
+    "type": 2,
+    "id": 209,
+    "name": "Biển số 205a “Đường giao nhau cùng cấp”",
+    "content": "Biển báo nguy hiểm này báo trước sắp đến nơi giao nhau cùng mức của các tuyến đường cùng cấp (không có đường nào ưu tiên) trên cùng một mặt bằng",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-205a.jpg"
+  },
+  {
+    "type": 2,
+    "id": 210,
+    "name": "Biển số 205b “Đường giao nhau cùng cấp”",
+    "content": "Biển báo giao thông báo trước sắp đến nơi giao nhau cùng mức của các tuyến đường cùng cấp (không có đường nào ưu tiên) trên cùng một mặt bằng",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-205b.jpg"
+  },
+  {
+    "type": 2,
+    "id": 211,
+    "name": "Biển số 205c “Đường giao nhau cùng cấp”",
+    "content": "Báo trước sắp đến nơi giao nhau cùng mức của các tuyến đường cùng cấp (không có đường nào ưu tiên) trên cùng một mặt bằng",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-205c.jpg"
+  },
+  {
+    "type": 2,
+    "id": 212,
+    "name": "Biển số 205d “Đường giao nhau cùng cấp”",
+    "content": "Báo trước sắp đến nơi giao nhau cùng mức của các tuyến đường cùng cấp (không có đường nào ưu tiên) trên cùng một mặt bằng",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-205d.jpg"
+  },
+  {
+    "type": 2,
+    "id": 213,
+    "name": "Biển số 205e “Đường giao nhau cùng cấp”",
+    "content": "Biển báo nguy hiểm báo trước sắp đến nơi giao nhau cùng mức của các tuyến đường cùng cấp (không có đường nào ưu tiên) trên cùng một mặt bằng",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-205e.jpg"
+  },
+  {
+    "type": 2,
+    "id": 214,
+    "name": "Biển số 206 “Giao nhau chạy theo vòng xuyến”",
+    "content": "Báo trước nơi giao nhau có bố trí đảo an toàn ở giữa nút giao, các loại xe qua nút giao phải đi vòng xuyến quanh đảo an toàn theo chiều mũi tên.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-206.jpg"
+  },
+  {
+    "type": 2,
+    "id": 215,
+    "name": "Biển số 207a “Giao nhau với đường không ưu tiên”",
+    "content": "Biển báo giao thông đường bộ báo trước sắp đến nơi giao nhau với đường không ưu tiên",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-207a.jpg"
+  },
+  {
+    "type": 2,
+    "id": 216,
+    "name": "Biển số 207b “Giao nhau với đường không ưu tiên”",
+    "content": "Biển báo giao thông báo trước sắp đến nơi giao nhau với đường không ưu tiên",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-207b.jpg"
+  },
+  {
+    "type": 2,
+    "id": 217,
+    "name": "Biển số 207c “Giao nhau với đường không ưu tiên”",
+    "content": "Biển báo nguy hiểm báo trước sắp đến nơi giao nhau với đường không ưu tiên",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-207c.jpg"
+  },
+  {
+    "type": 2,
+    "id": 218,
+    "name": "Biển số 207d “Giao nhau với đường không ưu tiên”",
+    "content": "Báo trước sắp đến nơi giao nhau với đường không ưu tiên",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-207d.jpg"
+  },
+  {
+    "type": 2,
+    "id": 219,
+    "name": "Biển số 207e – “Giao nhau với đường không ưu tiên”",
+    "content": "Báo trước sắp đến nơi giao nhau với đường không ưu tiên",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-207e.jpg"
+  },
+  {
+    "type": 2,
+    "id": 220,
+    "name": "Biển số 207f “Giao nhau với đường không ưu tiên”",
+    "content": "Báo trước sắp đến nơi giao nhau với đường không ưu tiên",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-207f.jpg"
+  },
+  {
+    "type": 2,
+    "id": 221,
+    "name": "Biển số 207g “Giao nhau với đường không ưu tiên”",
+    "content": "Biển báo giao thông đường bộ báo trước sắp đến nơi giao nhau với đường không ưu tiên",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-207g.jpg"
+  },
+  {
+    "type": 2,
+    "id": 222,
+    "name": "Biển số 207h “Giao nhau với đường không ưu tiên”",
+    "content": "Báo trước sắp đến nơi giao nhau với đường không ưu tiên",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-207h.jpg"
+  },
+  {
+    "type": 2,
+    "id": 223,
+    "name": "Biển số 207i “Giao nhau với đường không ưu tiên”",
+    "content": "Báo trước sắp đến nơi giao nhau với đường không ưu tiên",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-207i.jpg"
+  },
+  {
+    "type": 2,
+    "id": 224,
+    "name": "Biển số 207k “Giao nhau với đường không ưu tiên”",
+    "content": "Biển báo nguy hiểm báo trước sắp đến nơi giao nhau với đường không ưu tiên",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-207k.jpg"
+  },
+  {
+    "type": 2,
+    "id": 225,
+    "name": "Biển số 208 “Giao nhau với đường ưu tiên”",
+    "content": "Để báo trước sắp đến nơi giao nhau với đường ưu tiênChú ý: biển này tương tự, chỉ quay lộn ngược đầu so với biển báo nguy hiểm số 247.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-208.jpg"
+  },
+  {
+    "type": 2,
+    "id": 226,
+    "name": "Biển số 209 “Giao nhau có tín hiệu đèn”",
+    "content": "Biển báo nguy hiểm này báo trước nơi giao nhau có điều khiển giao thông bằng tín hiệu đèn trong trường hợp người lái xe khó quan sát để kịp thời xử lý",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-209.jpg"
+  },
+  {
+    "type": 2,
+    "id": 227,
+    "name": "Biển số 210 ” Giao nhau với đường sắt có rào chắn”",
+    "content": "Biển báo giao thông đường bộ báo trước sắp đến chỗ giao nhau giữa đường bộ và đường sắt có rào chắn kín hay rào chắn nửa kín và có nhân viên ngành đường sắt điều khiển giao thông",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-210.jpg"
+  },
+  {
+    "type": 2,
+    "id": 228,
+    "name": "Biển số 211a “Giao nhau với đường sắt không có rào chắn”",
+    "content": "Báo trước sắp đến chỗ giao nhau giữa đường bộ và đường sắt không có rào chắn, không có người điều khiển giao thông",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-211a.jpg"
+  },
+  {
+    "type": 2,
+    "id": 229,
+    "name": "Biển số 211b “Giao nhau với đường tàu điện”",
+    "content": "Biển báo nguy hiểm chỉ nơi đường bộ giao nhau cùng mức với đường tàu điện",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-211b.jpg"
+  },
+  {
+    "type": 2,
+    "id": 230,
+    "name": "Biển số 212″Cầu hẹp”",
+    "content": "Biển báo giao thông đường bộ báo trước sắp đến cầu hẹp là loại cầu có chiều rộng phần xe chạy nhỏ hơn hoặc bằng 4,5m",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-212.jpg"
+  },
+  {
+    "type": 2,
+    "id": 231,
+    "name": "Biển số 213 “Cầu tạm”",
+    "content": "Biển báo nguy hiểm báo trước sắp đến cầu tạm là loại cầu được làm để sử dụng tạm thời cho xe cộ qua lại",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-213.jpg"
+  },
+  {
+    "type": 2,
+    "id": 232,
+    "name": "Biển số 214 “Cầu quay-cầu cất”",
+    "content": "Báo phía trước gặp cầu xoay, cầu cất là loại cầu trong từng thời gian có cắt giao thông đường bộ bằng cách quay hoặc nâng nhịp thông thuyền để cho tàu thuyền qua lại",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-214.jpg"
+  },
+  {
+    "type": 2,
+    "id": 233,
+    "name": "Biển số 215 “Kè",
+    "content": "Vực sâu phía trước”, biển báo giao thông báo trước sắp tới những vị trí có kè chắn vực sâu, hoặc sông suối đi sát đường, cần đề phòng tình huống nguy hiểm rơi xuống vực sâu hoặc sông su ối (thường có ở những chỗ ngoặt nguy hiểm)",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-215.jpg"
+  },
+  {
+    "type": 2,
+    "id": 234,
+    "name": "Biển số 216 “Đường ngầm”",
+    "content": "Biển báo giao thông đường bộ báo trước những vị trí có đường ngầm (đường tràn) phải đặt biển số 216 “Đường ngầm”",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-216.jpg"
+  },
+  {
+    "type": 2,
+    "id": 235,
+    "name": "Biển số 217 “Bến phà”",
+    "content": "Báo trước sắp đến bến phà",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-217.jpg"
+  },
+  {
+    "type": 2,
+    "id": 236,
+    "name": "Biển số 218 “Cửa chui”",
+    "content": "Để báo trước sắp đến đường có cổng chắn ngang, kiểu cổng như đường hầm, cổng thành, cầu vượt đường bộ dạng cầu vòm v.v…",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-218.jpg"
+  },
+  {
+    "type": 2,
+    "id": 237,
+    "name": "Biển số 219 “Dốc xuống nguy hiểm”",
+    "content": "Biển báo giao thông báo trước sắp tới đoạn đường xuống dốc nguy hiểm",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-219.jpg"
+  },
+  {
+    "type": 2,
+    "id": 238,
+    "name": "Biển số 220 “Dốc lên nguy hiểm”",
+    "content": "Báo trước sắp tới đoạn đường lên dốc nguy hiểm",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-220.jpg"
+  },
+  {
+    "type": 2,
+    "id": 239,
+    "name": "Biển số 221a “Đường có ổ gà",
+    "content": "Lồi lõm” đặt trong trường hợp đường đang tốt, xe chạy nhanh, chuyển sang những đoạn lồi lõm, gập ghềnh, ổ gà, lượn sóng",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-221a.jpg"
+  },
+  {
+    "type": 2,
+    "id": 240,
+    "name": "Biển số 221b “Đường có sóng mấp mô nhân tạo” để hạn chế tốc độ xe chạy (biển được cắm kèm theo biển số 227 “Hạn chế tốc độ tối đa”)",
+    "content": "Bắt buộc lái xe phải chạy với tốc độ chậm trước khi qua những điểm cần kiểm soát, kiểm tra hoặc giảm tốc độ trước khi vào đoạn đường hạn chế tốc độ tối đa",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-221b.jpg"
+  },
+  {
+    "type": 2,
+    "id": 241,
+    "name": "Biển số 222a “Đường trơn”",
+    "content": "Biển báo nguy hiểm báo trước sắp tới đoạn đường có thể xảy ra trơn trượt đặc biệt là khi thời tiết xấu, mưa phùn (hệ số bám của lốp với mặt đường < 0,3) cần tránh hãm phanh, tăng ga, sang số đột ngột hoặc xe chạy với tốc độ cao sẽ bị nguy hiểm",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-222a.jpg"
+  },
+  {
+    "type": 2,
+    "id": 242,
+    "name": "Biển số 222b “Lề đường nguy hiểm”",
+    "content": "Báo những nơi lề đường không ổn định, khi xe đi vào dễ gây văng đất đá hoặc bánh xe quay tại chỗ",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-222b.jpg"
+  },
+  {
+    "type": 2,
+    "id": 243,
+    "name": "Biển số 223a “Vách núi nguy hiểm”",
+    "content": "Báo hiệu sắp đi vào đoạn đường đi sát vách núi nằm ở bên tay trái, đường vừa hẹp vừa hạn chế tầm nhìn, người lái xe phải cẩn thận",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-223a.jpg"
+  },
+  {
+    "type": 2,
+    "id": 244,
+    "name": "Biển số 223b “Vách núi nguy hiểm”",
+    "content": "Báo hiệu sắp đi vào đoạn đường đi sát vách núi nằm ở bên tay phải, đường vừa hẹp vừa hạn chế tầm nhìn, người lái xe phải cẩn thận",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-223b.jpg"
+  },
+  {
+    "type": 2,
+    "id": 245,
+    "name": "Biển số 224 “Đường người đi bộ cắt ngang”",
+    "content": "Báo trước sắp tới phần đường dành cho người đi bộ sang qua đường. Gặp biển này các xe phải giảm tốc độ, nhường ưu tiên cho người đi bộ và chỉ được chạy xe khi không gây nguy hiểm cho người đi bộ.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-224.jpg"
+  },
+  {
+    "type": 2,
+    "id": 246,
+    "name": "Biển số 225 “Trẻ em”",
+    "content": "Báo trước là gần đến đoạn đường thường có trẻ em đi ngang qua hoặc tụ tập trên đường như ở vườn trẻ, trường học, câu lạc bộ",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-225.jpg"
+  },
+  {
+    "type": 2,
+    "id": 247,
+    "name": "Biển số 226 “Đường người đi xe đạp cắt ngang”",
+    "content": "Báo trước là gần tới vị trí thường có người đi xe đạp từ những đường nhỏ cắt ngang qua hoặc từ đường dành cho xe đạp đi nhập vào đường ôtô",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-226.jpg"
+  },
+  {
+    "type": 2,
+    "id": 248,
+    "name": "Biển số 227 “Công trường”",
+    "content": "Biển báo giao thông đường bộ báo trước gần tới đoạn đường đang tiến hành thi công sửa chữa, cải tạo, nâng cấp có người và máy móc đang làm việc trên mặt đường. Khi gặp biển báo này tốc độ xe chạy phải giảm cho thích hợp, không gây nguy hiểm cho người và máy móc trên đoạn đường đó",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-227.jpg"
+  },
+  {
+    "type": 2,
+    "id": 249,
+    "name": "Biển số 228a “Đá lở”",
+    "content": "Báo trước gần tới đoạn đường có hiện tượng đất đá từ trên ta luy dương sụt lở bất ngờ gây nguy hiểm cho xe cộ và người đi đường, đặc biệt là ở những đoạn đường miền núi. Gặp biển này, người lái xe phải chú ý; đặc biệt khi thời tiết xấu, hạn chế tầm nhìn, không dừng hay đỗ xe trong khu vực đá lở sau những trận mưa lớn.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-228a.jpg"
+  },
+  {
+    "type": 2,
+    "id": 250,
+    "name": "Biển số 228b “Đá lở”",
+    "content": "Báo trước gần tới đoạn đường có hiện tượng đất đá từ trên ta luy dương sụt lở bất ngờ gây nguy hiểm cho xe cộ và người đi đường, đặc biệt là ở những đoạn đường miền núi. Gặp biển này, người lái xe phải chú ý; đặc biệt khi thời tiết xấu, hạn chế tầm nhìn, không dừng hay đỗ xe trong khu vực đá lở sau những trận mưa lớn.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-228b.jpg"
+  },
+  {
+    "type": 2,
+    "id": 251,
+    "name": "Biển số 228c “Sỏi đá bắn lên”",
+    "content": "Báo trước nơi có kết cấu mặt đường rời rạc, khi phương tiện đi qua, làm cho các viên đá, sỏi băng lên gây nguy hiểm và mất an toàn cho người và phương tiện tham gia giao thông",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-228c.jpg"
+  },
+  {
+    "type": 2,
+    "id": 252,
+    "name": "Biển số 229 “Giải máy bay lên xuống”",
+    "content": "Biển báo giao thông báo trước đoạn đường ở vùng sát đường băng sân bay và cắt ngang qua hướng máy bay lên xuống ở độ cao không lớn.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-229.jpg"
+  },
+  {
+    "type": 2,
+    "id": 253,
+    "name": "Biển số 230 “Gia súc”",
+    "content": "Báo trước gần tới đoạn đường thường có gia súc thả rông hoặc lùa qua ngang đường, đường ở vùng đồng cỏ của nông trường chăn nuôi, vùng thảo nguyên… Người lái xe có trách nhiệm đi chậm, quan sát và dừng lại bảo đảm cho gia súc có thể qua đường không bị nguy hiểm.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-230.jpg"
+  },
+  {
+    "type": 2,
+    "id": 254,
+    "name": "Biển số 231 “Thú rừng vượt qua đường”",
+    "content": "Báo trước gần tới đoạn đường thường có thú rừng qua đường như đường đi qua rừng hay khu vực bảo tồn thiên nhiên cấm săn bắn. Người lái xe phải đi chậm, chú ý quan sát hai bên đường và thận trọng đề phòng tai nạn.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-231.jpg"
+  },
+  {
+    "type": 2,
+    "id": 255,
+    "name": "Biển số 232 “Gió ngang”",
+    "content": "Báo trước gần tới đoạn đường thường có gió ngang thổi mạnh gây nguy hiểm. Người lái xe cần phải điều chỉnh tốc độ xe chạy cho thích hợp, đề phòng gió thổi mạnh gây lật xe.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-232.jpg"
+  },
+  {
+    "type": 2,
+    "id": 256,
+    "name": "Biển số 233 “Nguy hiểm khác”",
+    "content": "Biển báo nguy hiểm báo trên đường có những nguy hiểm mà không thể vận dụng được các kiểu biển từ biển số 201a đến biển số 232",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-233.jpg"
+  },
+  {
+    "type": 2,
+    "id": 257,
+    "name": "Biển số 234 “Giao nhau với đường hai chiều”",
+    "content": "Đặt trên đường một chiều, để báo trước sắp đến vị trí giao nhau với đường hai chiều",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-234.jpg"
+  },
+  {
+    "type": 2,
+    "id": 258,
+    "name": "Biển số 235 “Đường đôi”",
+    "content": "Báo trước sắp đến đoạn đường có chiều đi và chiều về phân biệt bằng giải phân cách cứng",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-235.jpg"
+  },
+  {
+    "type": 2,
+    "id": 259,
+    "name": "Biển số 236 “Hết đường đôi”",
+    "content": "Báo trước sắp kết thúc đoạn đường có chiều đi và chiều về phân biệt bằng giải phân cách cứng",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-236.jpg"
+  },
+  {
+    "type": 2,
+    "id": 260,
+    "name": "Biển số 237 “Cầu vồng”",
+    "content": "Đặt ở trên đoạn đường sắp đến công trình có độ vồng lớn ảnh hưởng tới tầm nhìn, nhắc nhở lái xe lái cẩn thận",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-237.jpg"
+  },
+  {
+    "type": 2,
+    "id": 261,
+    "name": "Biển số 238 “Đường cao tốc phía trước”",
+    "content": "Được đặt trên đường nhánh nhập vào đường cao tốc để báo cho các phương tiện đi trên đường này biết có Đường cao tốc ở phía trước",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-238.jpg"
+  },
+  {
+    "type": 2,
+    "id": 262,
+    "name": "Biển số 239 “Đường cáp điện ở phía trên”",
+    "content": "Biển báo giao thông đường bộ này được đặt Ở những nơi có đường dây điện cắt ngang phía trên tuyến đường",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-239.jpg"
+  },
+  {
+    "type": 2,
+    "id": 263,
+    "name": "Biển báo 240 ” Đường hầm”",
+    "content": "Nhắc lái xe chú ý chuẩn bị đi vào hầm đường bộ. Biển đặt ở bên phải chiều đi trước khi vào hầm.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-240.jpg"
+  },
+  {
+    "type": 2,
+    "id": 264,
+    "name": "Biển số 241 “Ùn tắc giao thông”",
+    "content": "Báo đoạn đường hay xảy ra ùn tắc giao thông",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-241.jpg"
+  },
+  {
+    "type": 2,
+    "id": 265,
+    "name": "Biển số 242a “Nơi đường sắt giao vuông góc với đường bộ”",
+    "content": "Bổ sung cho biển số 211 “Giao nhau với đường sắt không có rào chắn”, để chỉ chỗ đường sắt giao vuông góc đường bộ, và tại chỗ giao nhau đường sắt chỉ có một đường cắt ngang đường bộ",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-242a.jpg"
+  },
+  {
+    "type": 2,
+    "id": 266,
+    "name": "Biển số 242b “Nơi đường sắt giao vuông góc với đường bộ”",
+    "content": "Bổ sung cho biển số 211 “Giao nhau với đường sắt không có rào chắn”, để chỉ chỗ đường sắt giao vuông góc đường bộ, và tại chỗ giao nhau đường sắt có từ hai đường cắt ngang đường bộ",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-242b.jpg"
+  },
+  {
+    "type": 2,
+    "id": 267,
+    "name": "Biển báo số 243a “Nơi đường sắt giao không vuông góc với đường bộ “",
+    "content": "Biển báo nguy hiểm này đặt ở nơi cách ray ngoài cùng nơi giao đường sắt 50m, báo trước sắp đến vị trí giao cắt đường bộ với đường sắt cùng mức, không vuông góc và không có người gác, không có rào chắn.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-243a.jpg"
+  },
+  {
+    "type": 2,
+    "id": 268,
+    "name": "Biển báo số 243b “Nơi đường sắt giao không vuông góc với đường bộ “",
+    "content": "Biển báo giao thông đường bộ đặt ở nơi cách ray ngoài cùng nơi giao đường sắt 100m, báo trước sắp đến vị trí giao cắt đường bộ với đường sắt cùng mức, không vuông góc và không có người gác, không có rào chắn.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-243b.jpg"
+  },
+  {
+    "type": 2,
+    "id": 269,
+    "name": "Biển báo số 243c “Nơi đường sắt giao không vuông góc với đường bộ “",
+    "content": "Đặt ở nơi cách ray ngoài cùng nơi giao đường sắt 150m, báo trước sắp đến vị trí giao cắt đường bộ với đường sắt cùng mức, không vuông góc và không có người gác, không có rào chắn.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-243c.jpg"
+  },
+  {
+    "type": 2,
+    "id": 270,
+    "name": "Biển số 244 “Đoạn đường hay xảy ra tai nạn”",
+    "content": "Biển báo giao thông cảnh báo nguy hiểm đoạn đường phía trước thường xảy ra tai nạn để lái xe cần đặc biệt chú ý",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-244.jpg"
+  },
+  {
+    "type": 2,
+    "id": 271,
+    "name": "Biển số 245a “Đi chậm”",
+    "content": "Biển báo nguy hiểm này nhắc lái xe giảm tốc độ đi chậm",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-245a.jpg"
+  },
+  {
+    "type": 2,
+    "id": 272,
+    "name": "Biển số 245b “Đi chậm”",
+    "content": "Nhắc lái xe giảm tốc độ đi chậm, đối với các tuyến đường đối ngoại",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-245b.jpg"
+  },
+  {
+    "type": 2,
+    "id": 273,
+    "name": "Biển số 246a “Chú ý chướng ngại vật – Vòng tránh ra hai bên”",
+    "content": "Biển báo giao thông đường bộ báo trước cho lái xe biết phía trước có chướng ngại vật, xe cần giảm tốc độ và đi vòng tránh ra hai bên",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-246a.jpg"
+  },
+  {
+    "type": 2,
+    "id": 274,
+    "name": "Biển số 246b “Chú ý chướng ngại vật – Vòng tránh sang bên trái”",
+    "content": "Báo trước cho lái xe biết phía trước có chướng ngại vật, xe cần giảm tốc độ và đi vòng tránh sang bên trái",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-246b.jpg"
+  },
+  {
+    "type": 2,
+    "id": 275,
+    "name": "Biển số 246c “Chú ý chướng ngại vật – Vòng tránh sang bên phải”",
+    "content": "Biển báo nguy hiểm này báo trước cho lái xe biết phía trước có chướng ngại vật, xe cần giảm tốc độ và đi vòng tránh sang bên phải",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-246c.jpg"
+  },
+  {
+    "type": 2,
+    "id": 276,
+    "name": "Biển số 247 “Chú ý xe đỗ”",
+    "content": "Cảnh báo có các loại xe ô tô; máy kéo; rơ moóc hoặc sơ mi rơ moóc được kéo bởi xe ô tô hoặc ôtô đầu kéo; xe máy chuyên dùng đang đỗ chiếm một phần đường xe chạy (biển này tương tự, chỉ lộn ngược đầu so với biển báo nguy hiểm số 208 “Giao nhau với đường ưu tiên”)",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-247.jpg"
+  },
+  {
+    "type": 3,
+    "id": 301,
+    "name": "Biển số 301a ” Hướng đi phải theo “",
+    "content": "Các xe chỉ được đi thẳng (trừ xe được quyền ưu tiên theo quy định)",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-hieu-lenh-301a.jpg"
+  },
+  {
+    "type": 3,
+    "id": 302,
+    "name": "Biển số 301b ” Hướng đi phải theo “",
+    "content": "Các xe chỉ được rẽ phải (trừ xe được quyền ưu tiên theo quy định). Biển hiệu lệnh này được đặt ở sau nơi đường giao nhau.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-hieu-lenh-301b.jpg"
+  },
+  {
+    "type": 3,
+    "id": 303,
+    "name": "Biển số 301c ” Hướng đi phải theo “",
+    "content": "Theo biển hiệu lệnh này các xe chỉ được rẽ trái (trừ xe được quyền ưu tiên theo quy định). Biển báo giao thông này được đặt ở sau nơi đường giao nhau.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-hieu-lenh-301c.jpg"
+  },
+  {
+    "type": 3,
+    "id": 304,
+    "name": "Biển số 301d ” Hướng đi phải theo “",
+    "content": "Các xe chỉ được rẽ phải (trừ xe được quyền ưu tiên theo quy định). Biển này được đặt ở trước nơi đường giao nhau, có tác dụng tại nơi giao nhau đằng sau mặt biển.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-hieu-lenh-301d.jpg"
+  },
+  {
+    "type": 3,
+    "id": 305,
+    "name": "Biển số 301e ” Hướng đi phải theo “",
+    "content": "Theo biển báo giao thông này các xe chỉ được rẽ trái (trừ xe được quyền ưu tiên theo quy định). Biển báo hiệu lệnh này được đặt ở trước nơi đường giao nhau, có tác dụng tại nơi giao nhau đằng sau mặt biển.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-hieu-lenh-301e.jpg"
+  },
+  {
+    "type": 3,
+    "id": 306,
+    "name": "Biển số 301f ” Hướng đi phải theo “",
+    "content": "Các xe chỉ được đi thẳng và rẽ phải (trừ xe được quyền ưu tiên theo quy định)",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-hieu-lenh-301f.jpg"
+  },
+  {
+    "type": 3,
+    "id": 307,
+    "name": "Biển số 301h ” Hướng đi phải theo “",
+    "content": "Các xe chỉ được đi thẳng và rẽ trái (trừ xe được quyền ưu tiên theo quy định)",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-hieu-lenh-301h.jpg"
+  },
+  {
+    "type": 3,
+    "id": 308,
+    "name": "Biển số 301i ” Hướng đi phải theo “",
+    "content": "Các xe chỉ được rẽ phải và rẽ trái (trừ xe được quyền ưu tiên theo quy định)",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-hieu-lenh-301i.jpg"
+  },
+  {
+    "type": 3,
+    "id": 309,
+    "name": "Biển số 302a “Hướng phải đi vòng chướng ngại vật”",
+    "content": "Biển báo giao thông báo các loại xe (cơ giới và thô sơ) hướng đi vòng sang phải để qua một chướng ngại vật",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-hieu-lenh-302a.jpg"
+  },
+  {
+    "type": 3,
+    "id": 310,
+    "name": "Biển số 302b “Hướng phải đi vòng chướng ngại vật”",
+    "content": "Biển hiệu lệnh này báo các loại xe (cơ giới và thô sơ) hướng đi vòng sang trái để qua một chướng ngại vật",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-hieu-lenh-302b.jpg"
+  },
+  {
+    "type": 3,
+    "id": 311,
+    "name": "Biển số 303 “Nơi giao nhau chạy theo vòng xuyến”",
+    "content": "Biển báo giao thông này báo cho các loại xe (thô sơ và cơ giới) phải chạy vòng theo đảo an toàn ở nơi đường giao nhau.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-hieu-lenh-303.jpg"
+  },
+  {
+    "type": 3,
+    "id": 312,
+    "name": "Biển số 304 ” Đường dành cho xe thô sơ”",
+    "content": "Biển báo hiệu lệnh này báo đường dành cho xe thô sơ (kể cả xe của người tàn tật) và người đi bộ. Biển bắt buộc các loại xe thô sơ (kể cả xe của người tàn tật) và người đi bộ phải dùng đường dành riêng này để đi và cấm các xe cơ giới kể cả xe gắn máy, các xe được ưu tiên theo quy định đi vào đường đã đặt biển này.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-hieu-lenh-304.jpg"
+  },
+  {
+    "type": 3,
+    "id": 313,
+    "name": "Biển số 305 “Đường dành cho người đi bộ”",
+    "content": "Báo đường dành cho người đi bộ. Các loại xe cơ giới và thô sơ kể cả các xe được ưu tiên theo quy định không được phép đi vào đường đã đặt biển này, trừ trường hợp đi cắt ngang qua nhưng phải đảm bảo tuyệt đối an toàn cho người đi bộ.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-hieu-lenh-305.jpg"
+  },
+  {
+    "type": 3,
+    "id": 314,
+    "name": "Biển số 306 “Tốc độ tối thiểu cho phép”",
+    "content": "Biển báo giao thông báo tốc độ tối thiểu cho phép các xe cơ giới chạy. Biển cấm các loại xe cơ giới chạy với tốc độ nhỏ hơn trị số ghi trên biển.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-hieu-lenh-306.jpg"
+  },
+  {
+    "type": 3,
+    "id": 315,
+    "name": "Biển số 307 “Hết hạn chế tốc độ tối thiểu”",
+    "content": "Biển báo hiệu lệnh báo hết đoạn đường hạn chế tốc độ tối thiểu. Kể từ biển này các xe được phép chạy chậm hơn trị số ghi trên biển nhưng không được gây cản trở các xe khác.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-hieu-lenh-307.jpg"
+  },
+  {
+    "type": 3,
+    "id": 316,
+    "name": "Biển số 308a “Tuyến đường cầu vượt cắt qua”",
+    "content": "Biển báo giao thông biểu thị phía trước có cầu vượt, xe có thể đi thẳng hoặc theo chỉ dẫn trên hình vẽ để rẽ trái",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-hieu-lenh-308a.jpg"
+  },
+  {
+    "type": 3,
+    "id": 317,
+    "name": "Biển số 308b “Tuyến đường cầu vượt cắt qua”",
+    "content": "Biểu thị phía trước có cầu vượt, xe có thể đi thẳng hoặc theo chỉ dẫn trên hình vẽ để rẽ phải",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-hieu-lenh-308b.jpg"
+  },
+  {
+    "type": 3,
+    "id": 318,
+    "name": "Biển số 309 “Ấn còi”",
+    "content": "Biểu thị xe cộ đi đến vị trí cắm biển đó thì phải ấn còi.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-hieu-lenh-309.jpg"
+  },
+  {
+    "type": 3,
+    "id": 319,
+    "name": "Biển số 310a ” Hướng đi phải theo cho các xe chở hàng nguy hiểm”",
+    "content": "Biển báo giao thông đường bộ này báo cho các loại xe chở hàng nguy hiểm phải đi theo hướng quy định (rẽ trái)",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-hieu-lenh-310a.jpg"
+  },
+  {
+    "type": 3,
+    "id": 320,
+    "name": "Biển số 310b ” Hướng đi phải theo cho các xe chở hàng nguy hiểm”",
+    "content": "Báo cho các loại xe chở hàng nguy hiểm phải đi theo hướng quy định (đi thẳng)",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-hieu-lenh-310b.jpg"
+  },
+  {
+    "type": 3,
+    "id": 321,
+    "name": "Biển số 310c ” Hướng đi phải theo cho các xe chở hàng nguy hiểm”",
+    "content": "Báo cho các loại xe chở hàng nguy hiểm phải đi theo hướng quy định (rẽ phải)",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-hieu-lenh-310c.jpg"
+  },
+  {
+    "type": 5,
+    "id": 501,
+    "name": "Biển báo 501",
+    "content": "Phạm vi tác dụng của biển\nĐể thông báo chiều dài đoạn đường nguy hiểm hay đoạn đường phải thi hành lệnh cấm hoặc hạn chế.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-phu-501.jpg"
+  },
+  {
+    "type": 5,
+    "id": 502,
+    "name": "Biển báo 502",
+    "content": "Khoảng cách đến đối tượng báo hiệu\nĐể thông báo khoảng cách thực tế từ vị trí đặt biển đến đối tượng báo hiệu ở phía trước.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-phu-502.jpg"
+  },
+  {
+    "type": 5,
+    "id": 503,
+    "name": "Biển báo 503a",
+    "content": "Hướng tác dụng của biển\nĐặt bên dưới các biển báo cấm, biển hiệu lệnh để chỉ hướng tác dụng của biển là hướng vuông góc với chiều đi.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-phu-503.jpg"
+  },
+  {
+    "type": 5,
+    "id": 504,
+    "name": "Biển báo 503b",
+    "content": "Hướng tác dụng của biển\nĐể chỉ đồng thời 2 hướng tác dụng (trái và phải) của biển chính hoặc được đặt với biển báo nhắc lại lệnh cấm và hiệu lệnh.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-phu-503b.jpg"
+  },
+  {
+    "type": 5,
+    "id": 505,
+    "name": "Biển báo 503c",
+    "content": "Hướng tác dụng của biển\nBiển báo giao thông này đặt bên dưới các biển báo cấm, biển hiệu lệnh để chỉ hướng tác dụng của biển là hướng vuông góc với chiều đi.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-phu-503c.jpg"
+  },
+  {
+    "type": 5,
+    "id": 506,
+    "name": "Biển báo 503d",
+    "content": "Hướng tác dụng của biển\nĐể chỉ hướng tác dụng của biển là hướng song song với chiều đi.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-phu-503d.jpg"
+  },
+  {
+    "type": 5,
+    "id": 507,
+    "name": "Biển báo 503e",
+    "content": "Hướng tác dụng của biển\nĐể chỉ đồng thời 2 hướng tác dụng (xuôi và ngược) của biển báo nhắc lại lệnh cấm dừng và cấm đỗ xe.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-phu-503e.jpg"
+  },
+  {
+    "type": 5,
+    "id": 508,
+    "name": "Biển báo 503f",
+    "content": "Hướng tác dụng của biển\nĐể chỉ hướng tác dụng của biển là hướng song song với chiều đi.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-phu-503f.jpg"
+  },
+  {
+    "type": 5,
+    "id": 509,
+    "name": "Biển báo 504",
+    "content": "Làn đường\nBiển được đặt bên dưới các biển báo cấm và biển hiệu lệnh hay bên dưới đèn hiệu để chỉ làn đường chịu hiệu lực của biển (hay đèn hiệu) báo lệnh cấm – và hiệu lệnh trên làn đường đó.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-phu-504.jpg"
+  },
+  {
+    "type": 5,
+    "id": 510,
+    "name": "Biển báo 505",
+    "content": "Loại xe\nBiển được đặt bên dưới các biển báo cấm và biển hiệu lệnh hay biển chỉ dẫn để chỉ loại xe chịu hiệu lực của biển báo cấm, biển hiệu lệnh hay biển chỉ dẫn đối với riêng loại xe đó.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-phu-505.jpg"
+  },
+  {
+    "type": 5,
+    "id": 511,
+    "name": "Biển báo 506a",
+    "content": "Hướng đường ưu tiên\nBiển báo giao thông đường bộ này được đặt bên dưới biển chỉ dẫn số 401 trên đường ưu tiên để chỉ dẫn cho người lái xe trên đường này biết hướng đường ưu tiên ở ngã tư.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-phu-506a.jpg"
+  },
+  {
+    "type": 5,
+    "id": 512,
+    "name": "Biển báo 506b",
+    "content": "Hướng đường ưu tiên\nBiển được đặt bên dưới biển số 208 và biển số 122 trên đường không ưu tiên để chỉ dẫn cho người lái xe trên đường này biết hướng đường ưu tiên ở ngã tư.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-phu-506b.jpg"
+  },
+  {
+    "type": 5,
+    "id": 513,
+    "name": "Biển báo 508",
+    "content": "Hướng rẽ\nBiển được sử dụng độc lập để báo trước cho người biết gần đến chỗ rẽ nguy hiểm và để chỉ hướng rẽ.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-phu-508.jpg"
+  },
+  {
+    "type": 5,
+    "id": 514,
+    "name": "Biển báo 509",
+    "content": "Biểu thị thời gian\nBiểu thị thời gian.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-phu-509.jpg"
+  },
+  {
+    "type": 5,
+    "id": 515,
+    "name": "Biển báo 510",
+    "content": "Chiều cao an toàn\nĐể bổ sung cho biển 239 “Đường cáp điện ở phía trên”, phải đặt biển số 509 “chiều cao an toàn”, biển này chỉ rõ chiều cao an toàn cho các phương tiện đi qua đoạn đường có dây điện bên trên.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-phu-510.jpg"
+  },
+  {
+    "type": 6,
+    "id": 601,
+    "name": " ",
+    "content": "Vạch liền, nét màu trắng, rộng 10 cm, dùng để phân chia 2 dòng phương tiện giao thông đi ngược chiều nhau, xác định ranh giới phần đường cấm, ranh giới nơi đỗ xe, ranh giới của làn xe ở vị trí nguy hiểm. Đối với vạch này xe không được đè lên vạch.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/vach-ke-duong-1.jpg"
+  },
+  {
+    "type": 6,
+    "id": 602,
+    "name": " ",
+    "content": "Vạch liền, màu trắng, rộng 20 cm, dùng để xác định mép phần xe chạy trên các trục đường. Xe chạy được phép cắt ngang hoặc đè lên vạch khi cần thiết.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/vach-ke-duong-2.jpg"
+  },
+  {
+    "type": 6,
+    "id": 603,
+    "name": " ",
+    "content": "Là vạch kép (2 vạch liên tục) màu trắng, có chiều rộng bằng nhau và bằng 10 cm, cách nhau là 10 cm, dùng để phân chia 2 dòng phương tiện giao thông từ 2 hướng ngược chiều nhau trên những đường có từ 4 làn đường trở lên. Xe chạy không được đè qua vạch.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/vach-ke-duong-3.jpg"
+  },
+  {
+    "type": 6,
+    "id": 604,
+    "name": " ",
+    "content": "Là vạch liên tục màu vàng có chiều rộng 10 cm, để xác định nơi cấm dừng và cấm đỗ xe.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/vach-ke-duong-4.jpg"
+  },
+  {
+    "type": 6,
+    "id": 605,
+    "name": " ",
+    "content": "Là vạch kể đường đứt quãng, màu trắng, rộng 10 cm, tỷ lệ L1:L2 = 1:3. Vạch dùng để phân chia 2 dòng phương tiện giao thông từ 2 hướng ngược chiều nhau trên các đường có 2 hoặc 3 làn xe chạy. Xác định ranh giới làn xe khi có 2 hoặc trên 2 làn xe chạy theo một hướng.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/vach-ke-duong-5.jpg"
+  },
+  {
+    "type": 6,
+    "id": 606,
+    "name": " ",
+    "content": "Là vạch đứt quãng màu trắng, rộng 10 cm. Tỷ lệ L1:L2 = 3:1, dùng để báo hiệu gần đến vạch 1-1 hay 1-11, để phân chia dòng xe ngược chiều hay cùng chiều.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/vach-ke-duong-6.jpg"
+  },
+  {
+    "type": 6,
+    "id": 607,
+    "name": " ",
+    "content": "Đây là là vạch kẻ đường đứt quãng màu trắng rộng 0,1m, khoảng cách giữa hai vạch là 0,5m. Vạch được kẻ Theo đường cong Theo chiều xe chạy ở chỗ giao nhau khi lái xe cần định hướng chung để đảm bảo an toàn khi qua chỗ giao nhau.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/vach-ke-duong-7.jpg"
+  },
+  {
+    "type": 6,
+    "id": 608,
+    "name": " ",
+    "content": "Là vạch đứt quãng màu trắng rộng0,4m. Vạch dùng để quay định danh giới làn xe tăng tốc độ hoặc giảm tốc độ (gọi là chuyển tới làn đường) và làn xe chính của phần xe chạy.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/vach-ke-duong-8.jpg"
+  },
+  {
+    "type": 6,
+    "id": 609,
+    "name": " ",
+    "content": "Là loại vạch kép (hai vạch) đứt quãng, song song, màu trắng rộng 0,1m và cách nhau 0,1 m.Vạch quay định danh giới làn xe dự trữ mà trên làn này chiều xe chạy có thể thay đổi hoặc hoặc chiều thuận hoặc chiều đi ngược lại. Sự thay đổi hướng xe được điều khiển bằng tín hiệu đèn xanh và đỏ đặt trên làn xe.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/vach-ke-duong-9.jpg"
+  },
+  {
+    "type": 6,
+    "id": 610,
+    "name": " ",
+    "content": "Là vạch đứt quãng màu vàng. Vạch xác định vị trí hay khu vực cấm đỗ xe.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/vach-ke-duong-10.jpg"
+  },
+  {
+    "type": 6,
+    "id": 611,
+    "name": " ",
+    "content": "Là hai vạch song song (vạch kép) màu trắng, một vạch đứt quãng và một vạch liền liền nét. Vạch kẻ đường này dùng để phân chia dòng phương tiện hai hướng ngược chiều nhau trên các đường có hai hoặc ba làn xe chạy. Lái xe được phép cắt ngang qua vạch từ phía có vạch đứt quãng.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/vach-ke-duong-11.jpg"
+  },
+  {
+    "type": 6,
+    "id": 612,
+    "name": " ",
+    "content": "Vạch chỉ rõ vị trí xe phải dừng lại khi có biển báo số 122 “Stop” hoặc khi có tín hiệu đèn đỏ. Vạch này kẻ ngang toàn bộ đường của hướng xe chạy. Trong trường hợp không có biển 122 hoặc không có đèn hay người điều khiển thì vạch 1.12 không có hiệu lực.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/vach-ke-duong-12.jpg"
+  },
+  {
+    "type": 6,
+    "id": 613,
+    "name": " ",
+    "content": "Là vạch hình tam giác cân màu trắng vạch chỉ rõ vị trí mà lái xe phải dừng để nhường cho các phương tiện khác ở đường ưu tiên.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/vach-ke-duong-13.jpg"
+  },
+  {
+    "type": 6,
+    "id": 614,
+    "name": " ",
+    "content": "Là vạch “sọc ngựa vằn” gồm các đường màu trắng song song với tim đường, rộng 40 cm, cách nhau 60 cm. Vạch quy định nơi người đi bộ qua đường.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/vach-ke-duong-14.jpg"
+  },
+  {
+    "type": 6,
+    "id": 615,
+    "name": " ",
+    "content": "Vạch kẻ đường gồm 2 vạch đứt quãng chạy song song, cách nhau 1.8 mét, chiều dài, chiều rộng và khỏng cách giữa các vạch của vạch đứt quãng bằng nhau và bằng 40 cm.Vạch xác định vị trí chỗ xe đạp đi ngang qua xe đường của xe cơ giới. Xe đạp phải nhường đường cho phương tiện cơ giới chạy trên tuyến đường cắt ngang đường xe đạp.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/vach-ke-duong-15.jpg"
+  },
+  {
+    "type": 6,
+    "id": 616,
+    "name": " ",
+    "content": "“Ngựa vằn” màu trắng, xác định đảo phân chia dòng phương tiện ngược chiều nhau.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/vach-ke-duong-16.jpg"
+  },
+  {
+    "type": 6,
+    "id": 617,
+    "name": " ",
+    "content": "Vạch xác định đảo phân chia dòng phương tiện Theo cùng một hướng. Tại đó dòng phương tiện chạy cùng hướng được phân chia ra nhiều dòng (làn ) khác nhau.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/vach-ke-duong-17.jpg"
+  },
+  {
+    "type": 6,
+    "id": 618,
+    "name": " ",
+    "content": "Đảo nhập dòng phương tiện. Tại đó dòng phương tiện chạy cùng hướng nhập với nhau.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/vach-ke-duong-18.jpg"
+  },
+  {
+    "type": 6,
+    "id": 619,
+    "name": " ",
+    "content": "Vạch sơn sóng màu vàng quay định vị trí dừng của xe các phương tiện vận tải Theo tuyến quay định hoặc nơi tập kết của tắc xi, cấm dừng hoặc đỗ của bất kì một lọai phương tiện nào về cả hai phía và cách vạch 15cm.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/vach-ke-duong-19.jpg"
+  },
+  {
+    "type": 6,
+    "id": 620,
+    "name": " ",
+    "content": "Màu trắng chỉ dẫn các hướng đi cho phép của các làn xe ở nơi giao nhau. Lái xe khi gặp biển này bắt buộc phải tuân theo mũi tên chỉ hướng đi.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/vach-ke-duong-20.jpg"
+  },
+  {
+    "type": 6,
+    "id": 621,
+    "name": " ",
+    "content": "Vạch màu trắng, vạch xác định sắp đến vị trí thắt hẹp của phần xe chạy, báo cho người lái xe biết rằng số làn xe Theo hướng mũi tên bị giảm và lái xe phải từ từ chuyển làn Theo hướng mũi tên.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/vach-ke-duong-21.jpg"
+  },
+  {
+    "type": 6,
+    "id": 622,
+    "name": " ",
+    "content": "Màu trắng, xác định sắp đến gần vạch 113 và biển báo số 108, khoảng cách đến vạch 1.13 Theo tim đường từ 2-2,5m (đường cao tốc có thể lớn hơn), lái xe được phép chạy đè lên vạch 1.13 không cần dừng lại.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/vach-ke-duong-22.jpg"
+  },
+  {
+    "type": 6,
+    "id": 623,
+    "name": " ",
+    "content": "Là chữ “Stop” (dừng lại) màu trắng, xác định gần đến vị trí dừng lại vạch 1.12 và biển báo số 122. Vạch 1.21 cách vạch dừng xe từ 2-2,5m.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/vach-ke-duong-23.jpg"
+  },
+  {
+    "type": 6,
+    "id": 624,
+    "name": " ",
+    "content": "Là vạch chỉ số hiệu đường, được kẻ trên đường quốc lộ và được kẻ trực tiếp trên mặt đường xe chạy.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/vach-ke-duong-24.jpg"
+  },
+  {
+    "type": 6,
+    "id": 625,
+    "name": " ",
+    "content": "Là vạch chỉ làn xe dành cho ô tôkhách chạy Theo tuyến quay định.",
+    "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/vach-ke-duong-25.jpg"
+  }
 ]
