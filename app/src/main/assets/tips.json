@@ -1,0 +1,112 @@
+[
+ {
+   "id": 1,
+   "title": "Cấp phép",
+   "content": "- Đường cấm dừng, cấm đỗ, cấm đi do UBND cấp tỉnh cấp\n- Xe tải quá khổ, quá tải do: cơ quan quản lý đường bộ có thẩm quyền cấp phép"
+ },
+ {
+   "id": 2,
+   "title": "Nồng độ cồn",
+   "content": "Người điều khiển xe mô tô, ô tô, máy kéo trên đường mà trong máu hoặc hơi thở có nồng độ cồn: Bị nghiêm cấm"
+ },
+ {
+   "id": 3,
+   "title": "Khoảng cách an toàn tối thiểu",
+   "content": "- 35m nếu vận tốc lưu hành(V) = 60km/h\n- 55m nếu 60 <V< 80\n- 70m nếu 80< V <= 100\n- 100m nếu 100<= V<=120\n- Dưới 60km/h: Chủ động và đảm bảo khoảng cách"
+ },
+ {
+   "id": 4,
+   "title": "Hỏi về tuổi(T)",
+   "content": "- Gắn máy: 16T(dưới 50cm3)\n- Mô tô +B1,B2 : 18T"
+ },
+ {
+   "id": 5,
+   "title": "Trên đường cao tốc, trong đường hầm,đường vòng, đầu dốc, nơi tầm nhìn hạn chế",
+   "content": "- Không được quay đầu xe, không lùi,không vượt\n- Không được vựt trên cầu hẹp có 1 làn xe\n- Không được phép quay đầu xe ở phần đường dành cho người đi bộ qua đường\n- Cấm lùi xe ở khu vực cấm dừng và nơi đường bộ giao nhau\n- Cấm lùi xe ở khu vực cấm dừng và nơi đường bộ giao nhau"
+ },
+ {
+   "id": 6,
+   "title": "Tại nơi giao nhau không có tín hiệu đèn",
+   "content": "- Có vòng xuyến:Nhường đường bên trái\n- Không có vòng xuyến ngường bên phải"
+ },
+ {
+   "id": 7,
+   "title": "Biển báo cấm",
+   "content": "- Cấm ô tô: Mô tô 3 bánh, Xe lam,xe khách, xe tải, máy kéo, rơ mooc, sơ mi rơ mooc"
+ },
+ {
+   "id": 8,
+   "title": "Nhất chớm,nhì ưu,tam đường,tứ hướng",
+   "content": "- Nhất chớm: Xe nào chớm tới vạch trước thì được đi trước\n- Nhì ưu: Xe ưu tiên được đi trước. Thứ tự xe ưu tiên :Cứu Hoả- Quân Sự- Công An- Cứu Thương- Hộ đê- Đoàn xe tang\n- Tam đường: Xe ở đường chính, đường ưu tiên\n- Tứ hướng: Thứ tự hướng: bên phải trống- Rẽ phải- Đi thẳng- Rẽ Trái"
+ },
+ {
+   "id": 9,
+   "title": "Thứ tự xe ưu tiên :Hoả- Sự- An- Thương",
+   "content": "- Hoả:Xe cứu hoả\n- Sự: Xe Quân Sự\n- An: Xe Công An\n- Thương:Xe cứu thương\n- Xe hộ đê,xe đi làm nhiệm vụ khẩn cấp\n- Đoàn xe tang"
+ },
+ {
+   "id": 10,
+   "title": "Các hạng GPLX",
+   "content": "- A1 mô tô dưới 175cm3 và xe 3 bánh của người khuyết tật\n- A2 mô tô 175cm3 trở lên"
+ },
+ {
+   "id": 11,
+   "title": "Phân nhóm biển báo hiệu bao gồm",
+   "content": "- Biển nguy hiểm (hình tam giác vàng)\n- Biển Cấm(Vòng tròn đỏ)\n- Biển hiệu lệnh(Vòng tròn xanh)\n- Biển chỉ dẫn(Vuông hoặc hình chữ nhật xanh)\n- Biển phụ(Vuông, chữ nhật đen trắng):Hiệu lực nằm ở biển phụ khi có đặt biển phụ"
+ },
+ {
+   "id": 12,
+   "title": "Tốc độ tối da Trong khu vực đông dân cư",
+   "content": "- 60km/h: Đối với đường đôi hoặc đường 1 chiều có từ 2 làn đường xe cơ giới trở lên\n- 50km/h:Đối với đường 2 chiều hoặc đường 1 chiều có 1 làn xe cơi giới"
+ },
+ {
+   "id": 13,
+   "title": "Tốc độ tối đa Ngoài khu vực đông dân cư(trừ đường cao tốc)",
+   "content": "Tốc độ tối đa cho phép đối với\n- Xe máy chuyên dùng, xe gắn máy(kể cả xe máy điện) và các laoij xe tương tự trên đường bộ(trừ đường cao tốc):40km/h\n- Tốc độ tối đa cho phép của các loại xe cơ giới, xe máy chuyên dùng trên đường cao tốc phải tuân thủ tốc độ tối đa, tốc độ tối thiểu và không vượt quá 120km/h\n"
+ },
+ {
+   "id": 14,
+   "title": "Tăng số, giảm số",
+   "content": "- Tăng 1 giảm 2(giảm số chọn ý có từ vù ga)"
+ },
+ {
+   "id": 15,
+   "title": "Phương tiện giao thông đường bộ",
+   "content": "- Bao gồm phương tiện giao thông cơ giới đường bộ và phương tiện thô sơ đường bộ"
+ },
+ {
+   "id": 16,
+   "title": "Phương tiện tham gia giao thông đường bộ",
+   "content": "Gồm phương tiện giao thông đường bộ và xe máy chuyên dụng"
+ },
+ {
+   "id": 17,
+   "title": "Xe máy chuyên dụng",
+   "content": "Gồm xe máy thi công, xe máy nông nghiệp, lâm nghiệp và các loại xe đặc chủng khác sử dụng và mục đích quốc phòng, an ninh có tham gia giao thông đường bộ"
+ },
+ {
+   "id": 18,
+   "title": "Hiệu lệnh người điều khiển giao thông",
+   "content": "- Giơ tay thẳng đứng: Tất cả dừng, trừ xe đã ở trong ngã tư được phép đi\n- Giang tay ngang:Trái phải đi; Trước sau dừng\n- Tay phải dơ trước: Sau, phải dừng, trước rẽ phải, trái đi các hướng, người đi bộ qua đường đi sau người điều khiển"
+ },
+ {
+   "id": 19,
+   "title": "Khái niệm và quy tắc",
+   "content": "- Tất cả các câu có đáp án bị nghiêm cấm, không được phép hoặc không cho phép thì chọn đáo án đó.\n- Tốc độ chậm đi về bên phải\n- Chỉ sử dụng còi từ 5 giờ sáng đến 22 giờ tối.\n- Trong đô thị sử dụng đèn chiếu gần\n- Không được phép lắp đặt còi đèn không đúng thiết kế, trừ phi đưuocj chấp thuận của cơ qua có thẩm quyền\n- Xe mô tô không được kéo xe khác\n- 5 năm không cấp lại nếu sử dụng bằng lái đã khai báo mất\n- Chuyển làn đường phải có tín hiệu báo trước\n- Xe thô sơ phải đi làn đường bên phải trong cùng\n- Tránh xe ngược chiều thì nhường đường qua đường hẹp và nhường xe lên dốc\n- Đứng cách ray đường sắt 5m\n- Vào cao tốc phải nhường đường cho xe đang chạy trên đường\n- Xe thiết kế nhỏ hơn 70km/h không được vào cao tốc\n- Trên cao tốc chỉ được dừng xe, đỗ xe nơi quy định\n- Trong hầm chỉ được dừng xe, đỗ xe ở nơi quy định\n- Xe quá tải trọng phải do cơ quan quản lý đường bộ cấp phép\n- Trọng lượng xe kéo rơ móoc phải lớn hơn rơ móoc\n- Kéo xe không hệ thống hãm phải dùng thanh nối cứng\n- Xe gắn máy tối đa 40km/h\n- Xe cơ giới không bao gồm xe gắn máy\n- Đường có giải phân cách được xem là đường đôi\n- Giảm tốc độ, chú ý quan sát khi gặp biển báo nguy hiểm\n- Giảm tốc độ, đi sát về bên phải khi xe sau xin vượt\n- Điểm giao cắt đường sắt thì ưu tiên đường sắt\n- Nhường đường cho xe ưu tiên có tín hiệu còi, cờ đèn\n- Không vượt xe khác trên đường vòng, khuất tầm nhìn\n- Nơi có vạch kẻ đường dành cho người đi bộ thì nhường đường\n- Dừng xe, đỗ xe cách lề đường, hè phố không quá 0,25 mét\n- Dừng xe, đỗ xe trên đường hẹpcachs xe khác 20 mét\n- Giảm tốc độ trên đường ướt, đường hẹp và đừo dốc\n- Xe buýt đang dừng đón trả khách thì giảm tốc độ và từ từ vượt qua xe buýt"
+ },
+ {
+   "id": 20,
+   "title": "Nghiệp vụ vận tải",
+   "content": "- Không lái xe liên tục quá 4h\n- Không làm việc 1 ngày của lái xe quá 10 giờ\n- Người kinh doanh vận tải không được tự ý thay đổi vị trí đón trả khách\n- Vận chuyển hàng nguy hiểm phải có giấy phép"
+ },
+ {
+   "id": 21,
+   "title": "Kỹ thuật lái xe",
+   "content": "- Xe mô tô xuống dốc dài cần sử dụng cả phanh trước và phanh sau để giảm tốc độ\n- Thực hiện quay đầu xe với tốc độ thấp"
+ },
+ {
+   "id": 22,
+   "title": "Các quy tắc sa hình khác",
+   "content": "- Thứ tự ưu tiên không vòng xuyến: Xe vào ngã ba, ngã tư trước- Xe ưu tiên- Đường ưu tiên- Đường cùng cấp theo thứ tự bên phải trống - rẽ phải- đi thẳng- rẽ trái\n- Giao nhau cùng cấp có vòng xuyến thì ưu tiên xe bên phải ; đã vào vòng xuyến ưu tiên xe bên trái tới.\n- Xe xuống dốc phải nhường đường cho xe đang lên dốc"
+ }
+]

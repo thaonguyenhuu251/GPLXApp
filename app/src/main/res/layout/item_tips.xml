@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="model"
+            type="com.htnguyen.gplxapp.model.Tips" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_rounded"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/_6sdp"
+        android:paddingVertical="@dimen/_4sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:text="@{model.title}"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textSize="@dimen/_12ssp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_gravity="center_vertical"/>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_drop_down"
+                        android:layout_gravity="center_vertical"
+                        android:visibility="@{!model.isSelected ? View.VISIBLE : View.GONE}"/>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_drop_up"
+                        android:layout_gravity="center_vertical"
+                        android:visibility="@{model.isSelected ? View.VISIBLE : View.GONE}"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@{model.content}"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11ssp"
+                    android:visibility="@{model.isSelected ? View.VISIBLE : View.GONE}"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+</layout>
