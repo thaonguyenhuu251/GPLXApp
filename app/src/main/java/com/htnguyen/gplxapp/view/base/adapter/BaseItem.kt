@@ -12,7 +12,6 @@ abstract class BaseItem : BaseObservable() {
 
     abstract val layoutResourceId: Int
 
-    open var itemKey: Any? = null
     open var dataType: Int = 0
 
 }

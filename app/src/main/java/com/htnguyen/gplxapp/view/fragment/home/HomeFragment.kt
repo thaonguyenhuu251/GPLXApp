@@ -15,6 +15,7 @@ import com.htnguyen.gplxapp.view.fragment.chagevoice.ChangeVoiceFragment
 import com.htnguyen.gplxapp.view.fragment.learning.LearningFragment
 import com.htnguyen.gplxapp.view.fragment.choose_license.ChooseLicenseFragment
 import com.htnguyen.gplxapp.view.fragment.introduction_app.IntroductionAppFragment
+import com.htnguyen.gplxapp.view.fragment.setting.SettingFragment
 import com.htnguyen.gplxapp.view.fragment.tips.TipsFragment
 import com.htnguyen.gplxapp.view.fragment.trafficsigns.TrafficSignsFragment
 import org.koin.androidx.viewmodel.ext.android.viewModel
@@ -54,6 +55,7 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(), NavigationView.OnNavig
     )
 
     navHeader.setNavigationItemSelectedListener(this)
+    navFooter.setNavigationItemSelectedListener(this)
     navHeader.menu.getItem(0).isChecked = true
 
     binding.btnHomeStop.setOnClickListener {
@@ -107,6 +109,11 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(), NavigationView.OnNavig
         val bundle = Bundle()
         bundle.putString(BaseConst.ARG_FROM_HOME, BaseConst.ARG_FROM_HOME)
         transitFragmentAnimation(IntroductionAppFragment(), R.id.container,bundle)
+      }
+
+      R.id.footerSettingApp -> {
+        mDrawerLayout.closeDrawer(GravityCompat.START)
+        transitFragmentAnimation(SettingFragment(), R.id.container)
       }
 
     }
