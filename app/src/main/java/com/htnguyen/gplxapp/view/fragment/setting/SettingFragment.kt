@@ -7,9 +7,11 @@ import android.content.Context
 import android.media.RingtoneManager
 import android.os.Build
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.SeekBar
+import android.widget.ShareActionProvider
 import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
 import androidx.core.content.ContextCompat.getColor
@@ -29,6 +31,7 @@ class SettingFragment : BaseFragment<FragmentSettingBinding>() {
     var hour = 10
     var minutes = 0
     var changeData: Boolean = false
+    var progressChange = 4
     override fun getViewBinding(
         inflater: LayoutInflater?,
         container: ViewGroup?
@@ -42,10 +45,11 @@ class SettingFragment : BaseFragment<FragmentSettingBinding>() {
 
     override fun initEvent() {
         binding.txtTimeNotification.text = SharePreference.timeNotification
-
+        progressChange =  SharePreference.fontText
         binding.imgBack.setOnClickListener {
             if (changeData) {
                 openActivity(MainActivity::class.java, false)
+                SharePreference.fontText = progressChange
             } else {
                 onClickBack()
             }
@@ -55,6 +59,7 @@ class SettingFragment : BaseFragment<FragmentSettingBinding>() {
         binding.txtBack.setOnClickListener {
             if (changeData) {
                 openActivity(MainActivity::class.java, false)
+                SharePreference.fontText = progressChange
             } else {
                 onClickBack()
             }
@@ -128,15 +133,15 @@ class SettingFragment : BaseFragment<FragmentSettingBinding>() {
 
         binding.seekbarDiscrete.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener{
             override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
-                SharePreference.fontText = progress
                 changeData = true
-                binding.txtTitleChangeFont.textSize = 12.0F + progress
-                binding.switchNotification.textSize = 12.0F + progress
-                binding.switchMode.textSize = 12.0F + progress
-                binding.rdDark.textSize = 12.0F + progress
-                binding.rdLight.textSize = 12.0F + progress
-                binding.txtTimeNotification.textSize = 12.0F + progress
-                binding.txtBack.textSize = 12.0F + progress
+                binding.txtTitleChangeFont.textSize = (8.0F + progress * 1.8F)/resources.configuration.fontScale
+                binding.switchNotification.textSize = (8.0F + progress * 1.8F)/resources.configuration.fontScale
+                binding.switchMode.textSize = (8.0F + progress * 1.8F)/resources.configuration.fontScale
+                binding.rdDark.textSize = (8.0F + progress * 1.8F)/resources.configuration.fontScale
+                binding.rdLight.textSize = (8.0F + progress * 1.8F)/resources.configuration.fontScale
+                binding.txtTimeNotification.textSize = (8.0F + progress * 1.8F)/resources.configuration.fontScale
+                binding.txtBack.textSize = (8.0F + progress * 1.8F)/resources.configuration.fontScale
+                progressChange = progress
             }
 
             override fun onStartTrackingTouch(seekBar: SeekBar?) {

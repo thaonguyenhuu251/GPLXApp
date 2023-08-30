@@ -131,7 +131,7 @@
                 android:text="Kích thước hiển thị chữ"
                 android:textSize="@dimen/_12ssp"
                 android:fontFamily="@font/roboto_condensed_bold"
-                android:gravity="center"
+                android:gravity="start"
                 android:layout_gravity="start|center_vertical"
                 android:textColor="?android:textColorPrimary"/>
 
