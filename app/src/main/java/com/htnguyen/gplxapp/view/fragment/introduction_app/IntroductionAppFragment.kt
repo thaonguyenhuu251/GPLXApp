@@ -10,6 +10,7 @@ import com.htnguyen.gplxapp.base.BaseFragment
 import com.htnguyen.gplxapp.base.utils.BaseConst
 import com.htnguyen.gplxapp.base.utils.SharePreference
 import com.htnguyen.gplxapp.databinding.FragmentIntroductionAppBinding
+import com.htnguyen.gplxapp.view.adapter.ViewPagerAdapter
 import com.htnguyen.gplxapp.view.fragment.home.HomeFragment
 import org.koin.androidx.viewmodel.ext.android.viewModel
 

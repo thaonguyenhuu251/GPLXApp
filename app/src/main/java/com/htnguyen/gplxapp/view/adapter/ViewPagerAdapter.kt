@@ -1,4 +1,4 @@
-package com.htnguyen.gplxapp.view.fragment.introduction_app
+package com.htnguyen.gplxapp.view.adapter
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager

@@ -8,6 +8,7 @@ import com.htnguyen.gplxapp.base.utils.parseJsonToListTips
 import com.htnguyen.gplxapp.base.utils.readJSONFromAsset
 import com.htnguyen.gplxapp.databinding.FragmentTipsBinding
 import com.htnguyen.gplxapp.model.Tips
+import com.htnguyen.gplxapp.view.adapter.TipsExpendAdapter
 
 
 class TipsFragment : BaseFragment<FragmentTipsBinding>() {

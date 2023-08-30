@@ -1,4 +1,4 @@
-package com.htnguyen.gplxapp.view.fragment.tips
+package com.htnguyen.gplxapp.view.adapter
 
 
 import androidx.recyclerview.widget.RecyclerView
