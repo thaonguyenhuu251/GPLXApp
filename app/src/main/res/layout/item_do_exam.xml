@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="model"
+            type="com.htnguyen.gplxapp.model.Exam" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:background="@drawable/ripple_all"
+        android:orientation="horizontal"
+        android:padding="@dimen/_4sdp">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_48sdp"
+            android:layout_weight="1"
+            android:src="@{model.completeExam != 0 ? (model.completeExam == 1 ? @drawable/ic_do_exam_yellow : @drawable/ic_do_exam_red ) : @drawable/ic_do_exam_green}" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="4"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{model.name}"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="bold"
+                tools:text="在庫管理" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{model.content}"
+                android:textSize="@dimen/_10ssp"
+                tools:text="在庫管理" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_28sdp"
+            android:layout_gravity="center_vertical"
+            android:background="@{model.completeExam != 0 ? (model.completeExam == 1 ? @drawable/bg_status_exam_yellow_button : @drawable/bg_status_exam_red_button ) : @drawable/bg_status_exam_green_button}"
+            android:text="@{model.completeExam != 0 ? (model.completeExam == 1 ? @string/label_continue : @string/label_fail ) : @string/label_start}"
+            android:textColor="@{model.completeExam != 0 ? (model.completeExam == 1 ? @color/text_yellow : @color/text_red ) : @color/text_green}"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</layout>

@@ -15,10 +15,14 @@
     <string name="footer_policy">Chính sách và điều khoản</string>
     <string name="home_test">THI THỬ SÁT HẠCH</string>
     <string name="home_learn">HỌC LÝ THUYẾT</string>
+    <string name="home_exam">THI SÁT HẠCH</string>
     <string name="home_stop">BIỂN BÁO ĐƯỜNG BỘ</string>
     <string name="home_learn_warning"><font color="#FF0000" size="18"> BẠN CẦN NỖ LỰC HƠN NỮA! </font>\n Tỉ lệ đỗ của bạn là: %d</string>
     <string name="home_tips">MẸO THI KẾT QUẢ CAO</string>
     <string name="home_search_law">TRA CỨU LUẬT</string>
     <string name="home_wrong_good">CÁC CÂU HAY SAI</string>
+    <string name="label_start">LÀM BÀI</string>
+    <string name="label_continue">TIẾP TỤC</string>
+    <string name="label_fail">TRƯỢT</string>
 
 </resources>
