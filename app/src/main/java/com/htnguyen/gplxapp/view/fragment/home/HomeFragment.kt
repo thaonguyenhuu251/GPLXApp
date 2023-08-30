@@ -14,9 +14,10 @@ import com.htnguyen.gplxapp.view.base.BaseActivity
 import com.htnguyen.gplxapp.view.base.BaseFragment
 import com.htnguyen.gplxapp.view.base.utils.BaseConst
 import com.htnguyen.gplxapp.view.fragment.chagevoice.ChangeVoiceFragment
-import com.htnguyen.gplxapp.view.fragment.learning.LearningFragment
+import com.htnguyen.gplxapp.view.fragment.exam.ExamFragment
 import com.htnguyen.gplxapp.view.fragment.choose_license.ChooseLicenseFragment
 import com.htnguyen.gplxapp.view.fragment.introduction_app.IntroductionAppFragment
+import com.htnguyen.gplxapp.view.fragment.learning.LearningFragment
 import com.htnguyen.gplxapp.view.fragment.setting.SettingFragment
 import com.htnguyen.gplxapp.view.fragment.tips.TipsFragment
 import com.htnguyen.gplxapp.view.fragment.trafficsigns.TrafficSignsFragment
@@ -70,6 +71,10 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(), NavigationView.OnNavig
 
     binding.btnHomeLearn.setOnClickListener {
       transitFragmentAnimation(LearningFragment(), R.id.container)
+    }
+
+    binding.btnHomeExam.setOnClickListener {
+      transitFragmentAnimation(ExamFragment(), R.id.container)
     }
 
   }
