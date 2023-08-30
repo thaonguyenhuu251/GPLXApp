@@ -3,14 +3,12 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
-import com.htnguyen.gplxapp.database.TrafficLearnDatabase
+import com.htnguyen.gplxapp.base.BaseFragment
+import com.htnguyen.gplxapp.base.adapter.BaseRecyclerViewAdapter
+import com.htnguyen.gplxapp.base.utils.observe
 import com.htnguyen.gplxapp.databinding.FragmentLearningBinding
 import com.htnguyen.gplxapp.model.TrafficsLearn
-import com.htnguyen.gplxapp.view.base.BaseFragment
-import com.htnguyen.gplxapp.view.base.adapter.BaseRecyclerViewAdapter
-import com.htnguyen.gplxapp.view.base.utils.observe
-import com.htnguyen.gplxapp.view.fragment.trafficsigns.TurnForbiddenViewModel
-import org.koin.androidx.viewmodel.ext.android.viewModel
+
 
 class LearningFragment : BaseFragment<FragmentLearningBinding>() {
     private val adapter = BaseRecyclerViewAdapter<TrafficsLearn>()

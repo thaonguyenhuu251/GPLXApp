@@ -1,6 +1,6 @@
 package com.htnguyen.gplxapp.view.fragment.trafficsigns
 
-import com.htnguyen.gplxapp.view.base.BaseViewModel
+import com.htnguyen.gplxapp.base.BaseViewModel
 
 class TurnForbiddenViewModel : BaseViewModel() {
 

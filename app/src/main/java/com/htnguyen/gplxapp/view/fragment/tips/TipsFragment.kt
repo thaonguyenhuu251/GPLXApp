@@ -3,15 +3,12 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
+import com.htnguyen.gplxapp.base.BaseFragment
+import com.htnguyen.gplxapp.base.utils.parseJsonToListTips
+import com.htnguyen.gplxapp.base.utils.readJSONFromAsset
 import com.htnguyen.gplxapp.databinding.FragmentTipsBinding
 import com.htnguyen.gplxapp.model.Tips
-import com.htnguyen.gplxapp.model.TrafficSigns
-import com.htnguyen.gplxapp.view.base.BaseFragment
-import com.htnguyen.gplxapp.view.base.adapter.BaseRecyclerViewAdapter
-import com.htnguyen.gplxapp.view.base.utils.parseJsonToListTips
-import com.htnguyen.gplxapp.view.base.utils.parseJsonToListTrafficSigns
-import com.htnguyen.gplxapp.view.base.utils.readJSONFromAsset
-import com.htnguyen.gplxapp.view.fragment.trafficsigns.TurnForbiddenViewModel
+
 
 class TipsFragment : BaseFragment<FragmentTipsBinding>() {
 

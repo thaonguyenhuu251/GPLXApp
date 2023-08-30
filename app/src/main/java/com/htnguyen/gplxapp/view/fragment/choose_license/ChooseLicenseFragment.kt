@@ -5,11 +5,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.htnguyen.gplxapp.R
+import com.htnguyen.gplxapp.base.BaseFragment
+import com.htnguyen.gplxapp.base.utils.BaseConst
+import com.htnguyen.gplxapp.base.utils.SharePreference
 import com.htnguyen.gplxapp.databinding.FragmentChooseLicenseBinding
-import com.htnguyen.gplxapp.view.base.BaseFragment
-import com.htnguyen.gplxapp.view.base.utils.BaseConst
 import com.htnguyen.gplxapp.view.fragment.information_app.InformationAppFragment
-import com.htnguyen.gplxapp.view.base.utils.SharePreference
 import java.util.*
 import kotlin.concurrent.timerTask
 

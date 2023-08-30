@@ -6,11 +6,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.viewpager2.widget.ViewPager2
 import com.htnguyen.gplxapp.R
+import com.htnguyen.gplxapp.base.BaseFragment
+import com.htnguyen.gplxapp.base.utils.BaseConst
+import com.htnguyen.gplxapp.base.utils.SharePreference
 import com.htnguyen.gplxapp.databinding.FragmentIntroductionAppBinding
-import com.htnguyen.gplxapp.view.base.BaseFragment
-import com.htnguyen.gplxapp.view.base.utils.BaseConst
 import com.htnguyen.gplxapp.view.fragment.home.HomeFragment
-import com.htnguyen.gplxapp.view.base.utils.SharePreference
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class IntroductionAppFragment : BaseFragment<FragmentIntroductionAppBinding>() {

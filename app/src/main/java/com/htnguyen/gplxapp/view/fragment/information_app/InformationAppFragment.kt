@@ -6,11 +6,11 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import com.htnguyen.gplxapp.R
 import com.htnguyen.gplxapp.databinding.FragmentInformationAppBinding
-import com.htnguyen.gplxapp.view.base.BaseFragment
 import com.htnguyen.gplxapp.view.fragment.introduction_app.IntroductionAppFragment
 import java.util.*
 import kotlin.concurrent.timerTask
 import android.os.Handler
+import com.htnguyen.gplxapp.base.BaseFragment
 
 
 class InformationAppFragment : BaseFragment<FragmentInformationAppBinding>() {

@@ -28,7 +28,7 @@
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.75" />
 
-        <com.htnguyen.gplxapp.view.base.textview.fall.FallTextView
+        <com.htnguyen.gplxapp.base.textview.fall.FallTextView
             android:id="@+id/fallTextHeader"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -38,7 +38,7 @@
             android:gravity="center"
             android:textSize="@dimen/_16ssp" />
 
-        <com.htnguyen.gplxapp.view.base.textview.fall.FallTextView
+        <com.htnguyen.gplxapp.base.textview.fall.FallTextView
             android:id="@+id/fallTextContent"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_60sdp"

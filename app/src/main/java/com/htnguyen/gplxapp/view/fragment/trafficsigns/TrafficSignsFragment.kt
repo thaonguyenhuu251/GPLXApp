@@ -3,14 +3,11 @@ package com.htnguyen.gplxapp.view.fragment.trafficsigns
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.fragment.app.viewModels
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
-import com.htnguyen.gplxapp.R
+import com.htnguyen.gplxapp.base.BaseFragment
+import com.htnguyen.gplxapp.base.BasePager
 import com.htnguyen.gplxapp.databinding.FragmentTrafficSignsBinding
-import com.htnguyen.gplxapp.view.base.BaseFragment
-import com.htnguyen.gplxapp.view.base.BasePager
-import com.htnguyen.gplxapp.view.fragment.home.HomeFragment
 
 class TrafficSignsFragment : BaseFragment<FragmentTrafficSignsBinding>() {
     private val titles = arrayOf("BIẾN BÁO CẤM", "BIỂN BÁO NGUY HIỂM", "BIỂN HIỆU LỆNH", "BIỂN CHỈ DẪN", "BIẾN PHỤ")

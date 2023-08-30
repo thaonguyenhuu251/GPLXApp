@@ -4,7 +4,7 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 import com.google.gson.annotations.SerializedName
 import com.htnguyen.gplxapp.R
-import com.htnguyen.gplxapp.view.base.adapter.BaseItem
+import com.htnguyen.gplxapp.base.adapter.BaseItem
 import java.io.Serializable
 
 @Entity(tableName = "TrafficsLearn")

@@ -2,17 +2,15 @@ package com.htnguyen.gplxapp.view.fragment.home
 
 import android.os.Bundle
 import android.view.*
-import android.widget.SeekBar
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.NavController
 import androidx.navigation.ui.AppBarConfiguration
 import com.google.android.material.navigation.NavigationView
 import com.htnguyen.gplxapp.R
+import com.htnguyen.gplxapp.base.BaseFragment
+import com.htnguyen.gplxapp.base.utils.BaseConst
 import com.htnguyen.gplxapp.databinding.FragmentHomeBinding
-import com.htnguyen.gplxapp.view.base.BaseActivity
-import com.htnguyen.gplxapp.view.base.BaseFragment
-import com.htnguyen.gplxapp.view.base.utils.BaseConst
 import com.htnguyen.gplxapp.view.fragment.chagevoice.ChangeVoiceFragment
 import com.htnguyen.gplxapp.view.fragment.exam.ExamFragment
 import com.htnguyen.gplxapp.view.fragment.choose_license.ChooseLicenseFragment

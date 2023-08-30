@@ -3,8 +3,8 @@ package com.htnguyen.gplxapp.view.fragment.chagevoice
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import com.htnguyen.gplxapp.base.BaseFragment
 import com.htnguyen.gplxapp.databinding.FragmentChangeVoiceBinding
-import com.htnguyen.gplxapp.view.base.BaseFragment
 
 class ChangeVoiceFragment : BaseFragment<FragmentChangeVoiceBinding>() {
     override fun getViewBinding(

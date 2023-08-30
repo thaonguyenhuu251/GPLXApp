@@ -3,11 +3,11 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
+import com.htnguyen.gplxapp.base.BaseFragment
+import com.htnguyen.gplxapp.base.adapter.BaseRecyclerViewAdapter
+import com.htnguyen.gplxapp.base.utils.observe
 import com.htnguyen.gplxapp.databinding.FragmentExamBinding
 import com.htnguyen.gplxapp.model.Exam
-import com.htnguyen.gplxapp.view.base.BaseFragment
-import com.htnguyen.gplxapp.view.base.adapter.BaseRecyclerViewAdapter
-import com.htnguyen.gplxapp.view.base.utils.observe
 import com.htnguyen.gplxapp.view.fragment.learning.ExamViewModel
 
 class ExamFragment : BaseFragment<FragmentExamBinding>() {

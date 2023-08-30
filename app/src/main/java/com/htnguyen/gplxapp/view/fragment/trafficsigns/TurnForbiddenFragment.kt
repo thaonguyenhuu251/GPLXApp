@@ -4,12 +4,12 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
+import com.htnguyen.gplxapp.base.BaseFragment
+import com.htnguyen.gplxapp.base.adapter.BaseRecyclerViewAdapter
+import com.htnguyen.gplxapp.base.utils.parseJsonToListTrafficSigns
+import com.htnguyen.gplxapp.base.utils.readJSONFromAsset
 import com.htnguyen.gplxapp.databinding.FragmentTurnForbiddenBinding
 import com.htnguyen.gplxapp.model.TrafficSigns
-import com.htnguyen.gplxapp.view.base.BaseFragment
-import com.htnguyen.gplxapp.view.base.adapter.BaseRecyclerViewAdapter
-import com.htnguyen.gplxapp.view.base.utils.parseJsonToListTrafficSigns
-import com.htnguyen.gplxapp.view.base.utils.readJSONFromAsset
 
 class TurnForbiddenFragment : BaseFragment<FragmentTurnForbiddenBinding>() {
 

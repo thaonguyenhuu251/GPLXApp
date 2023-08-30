@@ -2,8 +2,8 @@ package com.htnguyen.gplxapp.view.fragment.home
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import com.htnguyen.gplxapp.base.BaseCustomBottomSheet
 import com.htnguyen.gplxapp.databinding.FragmentPolicyBottomSheetBinding
-import com.htnguyen.gplxapp.view.base.BaseCustomBottomSheet
 
 class PolicyBottomSheet : BaseCustomBottomSheet<FragmentPolicyBottomSheetBinding>() {
 

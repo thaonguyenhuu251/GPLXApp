@@ -7,24 +7,19 @@ import android.content.Context
 import android.media.RingtoneManager
 import android.os.Build
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.SeekBar
-import android.widget.ShareActionProvider
 import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
 import androidx.core.content.ContextCompat.getColor
 import com.htnguyen.gplxapp.MainApp
 import com.htnguyen.gplxapp.R
+import com.htnguyen.gplxapp.base.BaseFragment
+import com.htnguyen.gplxapp.base.utils.SharePreference
 import com.htnguyen.gplxapp.databinding.FragmentSettingBinding
 import com.htnguyen.gplxapp.service.RemindersManager
 import com.htnguyen.gplxapp.view.activity.MainActivity
-import com.htnguyen.gplxapp.view.base.BaseActivity
-import com.htnguyen.gplxapp.view.base.BaseFragment
-import com.htnguyen.gplxapp.view.base.utils.SharePreference
-import com.htnguyen.gplxapp.view.fragment.home.HomeFragment
-
 
 class SettingFragment : BaseFragment<FragmentSettingBinding>() {
 
@@ -92,9 +87,9 @@ class SettingFragment : BaseFragment<FragmentSettingBinding>() {
         binding.switchNotification.setOnClickListener {
             if (!NotificationManagerCompat.from(requireContext()).areNotificationsEnabled()) {
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-                    (activity as BaseActivity).checkNotification()
+                    (activity as com.htnguyen.gplxapp.base.BaseActivity).checkNotification()
                 } else {
-                    (activity as BaseActivity).dialogSetNotification()
+                    (activity as com.htnguyen.gplxapp.base.BaseActivity).dialogSetNotification()
                 }
                 binding.switchNotification.isChecked =
                     SharePreference.isNotification
@@ -127,6 +122,7 @@ class SettingFragment : BaseFragment<FragmentSettingBinding>() {
                 MainApp.instance.setNightMode()
                 onClickBack()
             }
+            SharePreference.fontText = progressChange
         }
 
         binding.seekbarDiscrete.progress = SharePreference.fontText
