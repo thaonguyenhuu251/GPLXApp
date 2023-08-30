@@ -17,15 +17,18 @@ import com.htnguyen.gplxapp.MainApp
 import com.htnguyen.gplxapp.R
 import com.htnguyen.gplxapp.databinding.FragmentSettingBinding
 import com.htnguyen.gplxapp.service.RemindersManager
+import com.htnguyen.gplxapp.view.activity.MainActivity
 import com.htnguyen.gplxapp.view.base.BaseActivity
 import com.htnguyen.gplxapp.view.base.BaseFragment
 import com.htnguyen.gplxapp.view.base.utils.SharePreference
+import com.htnguyen.gplxapp.view.fragment.home.HomeFragment
 
 
 class SettingFragment : BaseFragment<FragmentSettingBinding>() {
 
     var hour = 10
     var minutes = 0
+    var changeData: Boolean = false
     override fun getViewBinding(
         inflater: LayoutInflater?,
         container: ViewGroup?
@@ -41,11 +44,20 @@ class SettingFragment : BaseFragment<FragmentSettingBinding>() {
         binding.txtTimeNotification.text = SharePreference.timeNotification
 
         binding.imgBack.setOnClickListener {
-            onClickBack()
+            if (changeData) {
+                openActivity(MainActivity::class.java, false)
+            } else {
+                onClickBack()
+            }
+
         }
 
         binding.txtBack.setOnClickListener {
-            onClickBack()
+            if (changeData) {
+                openActivity(MainActivity::class.java, false)
+            } else {
+                onClickBack()
+            }
         }
         binding.txtTimeNotification.setOnClickListener {
             val timePicker = TimePickerDialog(
@@ -117,13 +129,14 @@ class SettingFragment : BaseFragment<FragmentSettingBinding>() {
         binding.seekbarDiscrete.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener{
             override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
                 SharePreference.fontText = progress
-                binding.txtTitleChangeFont.textSize = (0.5F + SharePreference.fontText/8.0F) * 10
-                binding.switchNotification.textSize = (0.5F + SharePreference.fontText/8.0F) * 10
-                binding.switchMode.textSize = (0.5F + SharePreference.fontText/8.0F) * 10
-                binding.rdDark.textSize = (0.5F + SharePreference.fontText/8.0F) * 10
-                binding.rdLight.textSize = (0.5F + SharePreference.fontText/8.0F) * 10
-                binding.txtTimeNotification.textSize = (0.5F + SharePreference.fontText/8.0F) * 10
-                binding.txtBack.textSize = (0.5F + SharePreference.fontText/8.0F) * 10
+                changeData = true
+                binding.txtTitleChangeFont.textSize = 12.0F + progress
+                binding.switchNotification.textSize = 12.0F + progress
+                binding.switchMode.textSize = 12.0F + progress
+                binding.rdDark.textSize = 12.0F + progress
+                binding.rdLight.textSize = 12.0F + progress
+                binding.txtTimeNotification.textSize = 12.0F + progress
+                binding.txtBack.textSize = 12.0F + progress
             }
 
             override fun onStartTrackingTouch(seekBar: SeekBar?) {
