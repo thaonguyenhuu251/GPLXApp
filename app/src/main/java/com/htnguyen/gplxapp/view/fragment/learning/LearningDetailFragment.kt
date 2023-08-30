@@ -39,22 +39,11 @@ class LearningDetailFragment : BaseFragment<FragmentLearningDetailBinding>() {
     }
 
     override fun initView(savedInstanceState: Bundle?, binding: FragmentLearningDetailBinding) {
-        val changePasswordSheet = BaseBottomSheet(
-            layoutRes = R.layout.layout_bottomsheet_check_answer,
-            corneredTheme = R.style.MyBottomSheetStyle,
-            isCornered = true,
-            onBind = { view, _binding ->
-                val bind = _binding as LayoutBottomsheetCheckAnswerBinding
-                with(bind) {
-                    // do what you want
-                }
-            })
-        changePasswordSheet.show(childFragmentManager, "")
-        //setBottomSheetBehavior()
+        setBottomSheetBehavior()
     }
 
     private fun setBottomSheetBehavior() {
-        /*layoutBottomSheet = binding.layoutBottomsheet.bottomSheet
+        layoutBottomSheet = binding.layoutBottomsheet.bottomSheet
         bottomSheetBehavior = BottomSheetBehavior.from(layoutBottomSheet!!)
         (bottomSheetBehavior as BottomSheetBehavior<*>).addBottomSheetCallback(object : BottomSheetBehavior.BottomSheetCallback() {
             override fun onStateChanged(bottomSheet: View, newState: Int) {}
@@ -66,7 +55,7 @@ class LearningDetailFragment : BaseFragment<FragmentLearningDetailBinding>() {
             } else {
                 (bottomSheetBehavior as BottomSheetBehavior<*>).setState(BottomSheetBehavior.STATE_COLLAPSED)
             }
-        }*/
+        }
     }
 
 }
