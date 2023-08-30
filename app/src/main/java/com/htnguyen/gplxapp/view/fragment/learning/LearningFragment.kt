@@ -3,6 +3,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
+import com.htnguyen.gplxapp.R
 import com.htnguyen.gplxapp.base.BaseFragment
 import com.htnguyen.gplxapp.base.adapter.BaseRecyclerViewAdapter
 import com.htnguyen.gplxapp.base.utils.observe
@@ -43,6 +44,10 @@ class LearningFragment : BaseFragment<FragmentLearningBinding>() {
 
         binding.txtBack.setOnClickListener {
             onClickBack()
+        }
+
+        adapter.onClickItem = { i, e ->
+            transitFragmentAnimation(LearningDetailFragment(), R.id.container)
         }
     }
 
