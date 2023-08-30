@@ -96,7 +96,7 @@ class SettingFragment : BaseFragment<FragmentSettingBinding>() {
         }
 
         binding.rgMode.check(
-            if (!SharePreference.isModeLight) R.id.rdLight
+            if (SharePreference.isModeLight) R.id.rdLight
             else R.id.rdDark
         )
 

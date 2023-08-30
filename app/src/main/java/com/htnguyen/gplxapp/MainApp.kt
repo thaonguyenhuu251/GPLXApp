@@ -9,6 +9,7 @@ import android.view.WindowManager
 import androidx.appcompat.app.AppCompatDelegate
 import com.htnguyen.gplxapp.di.adapterModule
 import com.htnguyen.gplxapp.di.viewModelModule
+import com.htnguyen.gplxapp.view.base.utils.SharePreference
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin
@@ -33,6 +34,12 @@ class MainApp : Application() {
 
         }
         instance = this
+
+        if (SharePreference.isModeLight) {
+            setDayModeOrSth()
+        } else {
+            setNightMode()
+        }
     }
 
     fun setCurrentActivity(currentActivity: Activity) {
