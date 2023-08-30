@@ -35,7 +35,7 @@
                 android:gravity="center"
                 android:padding="@dimen/_8sdp"
                 android:text="@string/home_learn_warning"
-                android:textColor="@color/black"
+                android:textColor="?android:textColorPrimary"
                 android:textSize="@dimen/_14ssp"
                 android:drawablePadding="@dimen/_14sdp"
                 app:drawableStartCompat="@drawable/ic_home_try_hard" />
@@ -54,7 +54,7 @@
                 <com.google.android.material.button.MaterialButton
                     style="@style/myColoredButton"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="@string/home_test"
                     app:drawableTopCompat="@drawable/ic_home_learning" />
@@ -141,7 +141,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_1sdp"
                 android:background="@color/grey"/>
-
 
         </LinearLayout>
 

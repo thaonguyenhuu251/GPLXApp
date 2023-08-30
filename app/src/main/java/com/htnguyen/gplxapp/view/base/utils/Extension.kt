@@ -1,10 +1,16 @@
 package com.htnguyen.gplxapp.view.base.utils
 
 import android.content.Context
+import android.view.LayoutInflater
+import android.view.View
+import android.widget.Button
 import android.widget.ImageView
+import android.widget.TextView
+import androidx.appcompat.app.AlertDialog
 import com.bumptech.glide.Glide
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
+import com.htnguyen.gplxapp.R
 import com.htnguyen.gplxapp.model.Tips
 import com.htnguyen.gplxapp.model.TrafficSigns
 import java.io.*
@@ -52,5 +58,40 @@ fun ImageView.loadImageUrl(url: String?) {
             .load(url)
             .into(this)
 
+    }
+}
+
+fun Context.showAlertDialog(
+    message: String,
+    positiveLabel: String,
+    negativeLabel: String,
+    onPositiveClickListener: () -> Unit = {},
+    onNegativeClickListener: () -> Unit = {},
+) {
+    val builder = AlertDialog.Builder(this, R.style.FinishActionDialog)
+
+    val mLayoutInflater = LayoutInflater.from(this)
+    val mView: View = mLayoutInflater.inflate(R.layout.dialog_alert, null)
+    val mTextView = mView.findViewById(R.id.message) as TextView
+    mTextView.text = message
+
+    val positiveButton = mView.findViewById<Button>(R.id.btn_positive)
+    positiveButton.text = positiveLabel
+
+    val negativeButton = mView.findViewById<Button>(R.id.btn_negative)
+    negativeButton.text = negativeLabel
+
+    builder.setCustomTitle(mView)
+
+    val dialog = builder.show()
+    positiveButton.setOnClickListener {
+        dialog.dismiss()
+        onPositiveClickListener()
+    }
+
+
+    negativeButton.setOnClickListener {
+        dialog.dismiss()
+        onNegativeClickListener()
     }
 }

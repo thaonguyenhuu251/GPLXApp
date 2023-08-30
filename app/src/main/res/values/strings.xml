@@ -21,4 +21,9 @@
     <string name="home_search_law">TRA CỨU LUẬT</string>
     <string name="home_wrong_good">CÁC CÂU HAY SAI</string>
 
+    <string name="reminders_notification_channel_id">com.htnguyen.gplxapp</string>
+    <string name="title_notification_reminder">CÁC CÂU HAY SAI</string>
+    <string name="description_notification_reminder">CÁC CÂU HAY</string>
+    <string name="reminder_everyday">Nhắc nhở hằng ngày</string>
+
 </resources>

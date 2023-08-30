@@ -1,20 +1,15 @@
 package com.htnguyen.gplxapp.view.fragment.choose_license
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.htnguyen.gplxapp.R
 import com.htnguyen.gplxapp.databinding.FragmentChooseLicenseBinding
-import com.htnguyen.gplxapp.databinding.FragmentHomeBinding
-import com.htnguyen.gplxapp.databinding.FragmentInformationAppBinding
-import com.htnguyen.gplxapp.view.activity.MainActivity
 import com.htnguyen.gplxapp.view.base.BaseFragment
 import com.htnguyen.gplxapp.view.base.utils.BaseConst
 import com.htnguyen.gplxapp.view.fragment.information_app.InformationAppFragment
-import com.htnguyen.gplxapp.view.fragment.introduction_app.IntroductionAppFragment
-import com.htnguyen.smartcalculator.base.utils.SharePreference
+import com.htnguyen.gplxapp.view.base.utils.SharePreference
 import java.util.*
 import kotlin.concurrent.timerTask
 
@@ -46,7 +41,7 @@ class ChooseLicenseFragment : BaseFragment<FragmentChooseLicenseBinding>() {
                     btnBack.visibility = View.GONE
                 } else {
                     btnBack.visibility = View.VISIBLE
-                    var license = SharePreference.getStringPref(requireContext(), "license")
+                    var license = SharePreference.lience
                     if (license == "A1") {
                         icCheckA1.visibility = View.VISIBLE
                         icCheckA2.visibility = View.INVISIBLE
@@ -60,7 +55,7 @@ class ChooseLicenseFragment : BaseFragment<FragmentChooseLicenseBinding>() {
             btnLicenseA1.setOnClickListener {
                 icCheckA1.visibility = View.VISIBLE
                 icCheckA2.visibility = View.INVISIBLE
-                SharePreference.setStringPref(requireContext(), "license", "A1")
+                SharePreference.lience =  "A1"
                 if (fromHome.isEmpty()) {
                     Timer().schedule(timerTask {
                         replaceFragment(InformationAppFragment(), R.id.container, false)
@@ -74,7 +69,7 @@ class ChooseLicenseFragment : BaseFragment<FragmentChooseLicenseBinding>() {
             btnLicenseA2.setOnClickListener {
                 icCheckA1.visibility = View.INVISIBLE
                 icCheckA2.visibility = View.VISIBLE
-                SharePreference.setStringPref(requireContext(), "license", "A2")
+                SharePreference.lience = "A2"
                 if (fromHome.isEmpty()) {
                     Timer().schedule(timerTask {
                         replaceFragment(InformationAppFragment(), R.id.container, false)

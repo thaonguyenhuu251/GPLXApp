@@ -32,4 +32,5 @@ object PermissionHelper : BasePermissionHelper() {
     override fun permissions(): Array<String> {
         return arrayOf(Manifest.permission.CAMERA)
     }
+
 }

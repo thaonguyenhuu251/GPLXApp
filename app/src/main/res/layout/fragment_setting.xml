@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/white"
+        android:background="@color/grey"
         android:orientation="vertical">
 
         <LinearLayout
@@ -12,15 +13,15 @@
             android:layout_height="wrap_content"
             android:background="@color/primary_dark"
             android:gravity="center_vertical"
-            android:paddingHorizontal="@dimen/_8sdp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/_8sdp">
 
             <ImageView
                 android:id="@+id/imgBack"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:backgroundTint="@color/white"
-                android:background="@drawable/ic_back"/>
+                android:background="@drawable/ic_back"
+                android:backgroundTint="@color/white" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/txtBack"
@@ -28,12 +29,124 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/footer_setting_app"
-                android:textColor="@color/white"/>
+                android:textColor="@color/white" />
 
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:background="@drawable/bg_rounded_all"
+            android:orientation="vertical"
+            android:padding="@dimen/_8sdp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <com.google.android.material.switchmaterial.SwitchMaterial
+                    android:id="@+id/switchNotification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:foreground="@drawable/ripple_transparent_all"
+                    android:layoutDirection="rtl"
+                    android:text="@string/reminder_everyday"
+                    android:textColor="?android:textColorPrimary"
+                    app:switchPadding="@dimen/_8sdp" />
+
+                <TextView
+                    android:id="@+id/txtTimeNotification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="21:00"
+                    android:textSize="@dimen/_14ssp"
+                    android:fontFamily="@font/roboto_condensed_bold"
+                    android:gravity="center"
+                    android:layout_gravity="end|center_vertical"
+                    android:textColor="@color/primary_dark"/>
 
 
+            </FrameLayout>
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switchMode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:foreground="@drawable/ripple_transparent_all"
+                android:layoutDirection="rtl"
+                android:textColor="?android:textColorPrimary"
+                android:text="Phát âm thanh khi chọn đáp án"
+                app:switchPadding="@dimen/_8sdp" />
+
+            <RadioGroup
+                android:id="@+id/rgMode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:checkedButton="@id/rdLight"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rdLight"
+                    style="@style/text_normal"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="Light more"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@drawable/ic_setting_light"
+                    android:drawableBottom="@drawable/selector_radio"
+                    android:button="@null" />
+
+                <RadioButton
+                    android:id="@+id/rdDark"
+                    style="@style/text_normal"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="Dark more"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@drawable/ic_setting_dark"
+                    android:drawableBottom="@drawable/selector_radio"
+                    android:button="@null" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:background="@drawable/bg_rounded_all"
+            android:orientation="vertical"
+            android:padding="@dimen/_8sdp">
+
+            <TextView
+                android:id="@+id/txtTitleChangeFont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kích thước hiển thị chữ"
+                android:textSize="@dimen/_12ssp"
+                android:fontFamily="@font/roboto_condensed_bold"
+                android:gravity="center"
+                android:layout_gravity="start|center_vertical"
+                android:textColor="?android:textColorPrimary"/>
+
+            <SeekBar
+                android:id="@+id/seekbarDiscrete"
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp"
+                android:max="8"
+                android:progress="0"/>
+
+
+        </LinearLayout>
 
     </LinearLayout>
 

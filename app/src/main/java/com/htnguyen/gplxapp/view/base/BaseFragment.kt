@@ -1,13 +1,18 @@
 package com.htnguyen.gplxapp.view.base
 
+import android.content.Context
 import android.content.Intent
+import android.content.res.Configuration
 import android.os.Bundle
+import android.util.DisplayMetrics
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.WindowManager
 import android.widget.EditText
 import androidx.annotation.AnimRes
 import androidx.annotation.IdRes
+import androidx.core.content.ContextCompat.getSystemService
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.viewbinding.ViewBinding
@@ -214,4 +219,6 @@ abstract class BaseFragment<VB : ViewBinding> : Fragment() {
     }
     protected abstract fun initData()
     protected abstract fun initEvent()
+
+
 }

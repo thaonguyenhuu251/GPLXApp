@@ -10,7 +10,7 @@ import com.htnguyen.gplxapp.databinding.FragmentIntroductionAppBinding
 import com.htnguyen.gplxapp.view.base.BaseFragment
 import com.htnguyen.gplxapp.view.base.utils.BaseConst
 import com.htnguyen.gplxapp.view.fragment.home.HomeFragment
-import com.htnguyen.smartcalculator.base.utils.SharePreference
+import com.htnguyen.gplxapp.view.base.utils.SharePreference
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class IntroductionAppFragment : BaseFragment<FragmentIntroductionAppBinding>() {
@@ -52,7 +52,7 @@ class IntroductionAppFragment : BaseFragment<FragmentIntroductionAppBinding>() {
             } else {
                 btnNext.setOnClickListener {
                     replaceFragment(HomeFragment(), R.id.container, false)
-                    SharePreference.setBooleanPref(requireContext(), "isFirstOpenApp", false)
+                    SharePreference.isLoginFirst = false
                 }
             }
 
