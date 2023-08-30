@@ -118,6 +118,11 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(), NavigationView.OnNavig
         transitFragmentAnimation(SettingFragment(), R.id.container)
       }
 
+      R.id.footerPolicy -> {
+        mDrawerLayout.closeDrawer(GravityCompat.START)
+        PolicyBottomSheet().show(requireActivity().supportFragmentManager, "PolicyBottomSheet")
+      }
+
     }
 
     return true

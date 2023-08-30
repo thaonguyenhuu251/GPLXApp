@@ -1,13 +1,17 @@
 package com.htnguyen.gplxapp.view.base.utils
 
+import android.app.Dialog
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
+import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.annotation.Px
 import androidx.appcompat.app.AlertDialog
 import com.bumptech.glide.Glide
+import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import com.htnguyen.gplxapp.R
@@ -95,3 +99,4 @@ fun Context.showAlertDialog(
         onNegativeClickListener()
     }
 }
+
