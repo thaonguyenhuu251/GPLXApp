@@ -8,6 +8,7 @@ import com.htnguyen.gplxapp.base.BaseFragment
 import com.htnguyen.gplxapp.base.adapter.BaseRecyclerViewAdapter
 import com.htnguyen.gplxapp.base.utils.observe
 import com.htnguyen.gplxapp.databinding.FragmentLearningBinding
+import com.htnguyen.gplxapp.model.ChangeVoice
 import com.htnguyen.gplxapp.model.TrafficsLearn
 
 

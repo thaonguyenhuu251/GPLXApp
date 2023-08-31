@@ -19,6 +19,7 @@ abstract class BaseCustomBottomSheet<B : ViewBinding> : BottomSheetDialogFragmen
     private var _binding: B? = null
     val binding get() = _binding!!
     override fun getTheme(): Int = R.style.BaseBottomSheetDialog
+    override fun isCancelable(): Boolean = true
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
