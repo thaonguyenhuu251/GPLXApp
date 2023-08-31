@@ -2,14 +2,18 @@ package com.htnguyen.gplxapp.view.fragment.home
 
 import android.os.Bundle
 import android.view.*
+import android.widget.FrameLayout
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.NavController
 import androidx.navigation.ui.AppBarConfiguration
 import com.google.android.material.navigation.NavigationView
 import com.htnguyen.gplxapp.R
+import com.htnguyen.gplxapp.base.BaseBottomBehavior
+import com.htnguyen.gplxapp.base.BaseBottomSheet
 import com.htnguyen.gplxapp.base.BaseFragment
 import com.htnguyen.gplxapp.base.utils.BaseConst
+import com.htnguyen.gplxapp.databinding.BottomBehaviorListAnswerBinding
 import com.htnguyen.gplxapp.databinding.FragmentHomeBinding
 import com.htnguyen.gplxapp.view.fragment.chagevoice.ChangeVoiceFragment
 import com.htnguyen.gplxapp.view.fragment.exam.ExamFragment
@@ -57,7 +61,7 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(), NavigationView.OnNavig
 
     navHeader.setNavigationItemSelectedListener(this)
     navFooter.setNavigationItemSelectedListener(this)
-    navHeader.menu.getItem(0).isChecked = true
+    navHeader.menu.findItem(R.id.nav_home).isChecked = true
 
     binding.btnHomeStop.setOnClickListener {
       transitFragmentAnimation(TrafficSignsFragment(), R.id.container)
@@ -80,7 +84,7 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(), NavigationView.OnNavig
 
   override fun onResume() {
     super.onResume()
-    navHeader.menu.getItem(0).isChecked = true
+    navHeader.menu.findItem(R.id.nav_home).isChecked = true
   }
 
   override fun initData() {
@@ -94,7 +98,7 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(), NavigationView.OnNavig
   override fun onNavigationItemSelected(item: MenuItem): Boolean {
     when (item.itemId) {
       R.id.nav_home -> {
-
+        mDrawerLayout.closeDrawer(GravityCompat.START)
       }
 
       R.id.nav_change_voice -> {

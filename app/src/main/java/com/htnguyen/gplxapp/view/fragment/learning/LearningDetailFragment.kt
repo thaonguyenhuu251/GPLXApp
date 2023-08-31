@@ -6,19 +6,16 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.viewpager2.widget.ViewPager2
+import androidx.viewpager2.widget.ViewPager2.OnPageChangeCallback
 import com.google.android.material.bottomsheet.BottomSheetBehavior
-import com.htnguyen.gplxapp.R
-import com.htnguyen.gplxapp.base.BaseBottomSheet
 import com.htnguyen.gplxapp.base.BaseFragment
-import com.htnguyen.gplxapp.base.adapter.BaseRecyclerViewAdapter
 import com.htnguyen.gplxapp.base.utils.parseJsonToListTrafficLearn
 import com.htnguyen.gplxapp.base.utils.readJSONFromAsset
 import com.htnguyen.gplxapp.databinding.FragmentLearningDetailBinding
-import com.htnguyen.gplxapp.databinding.LayoutBottomsheetCheckAnswerBinding
-import com.htnguyen.gplxapp.model.TrafficsLearn
-import com.htnguyen.gplxapp.model.TrafficsLearnDetail
 import com.htnguyen.gplxapp.view.adapter.TraffigsLearnDetailAdapter
-import java.util.Locale
+import java.util.*
+
 
 class LearningDetailFragment : BaseFragment<FragmentLearningDetailBinding>(), TextToSpeech.OnInitListener {
     var bottomSheetBehavior: BottomSheetBehavior<*>? = null
@@ -46,20 +43,11 @@ class LearningDetailFragment : BaseFragment<FragmentLearningDetailBinding>(), Te
         binding.txtBack.setOnClickListener {
             onClickBack()
         }
-        
-        adapter.sendDataItem = { position, trafficsLearn ->
-            if (position == binding.viewPager.currentItem) {
-                var text = trafficsLearn?.ask
-                trafficsLearn?.answer_list?.forEachIndexed { index, s ->
-                    if (s.isNotEmpty()) {
-                        val result = "Đáp án ${index + 1} ${s}"
-                        text += result
-                    }
 
-                }
-                text?.let { speakOut(it) }
-            }
+        adapter.nextItem = {
+            binding.viewPager.setCurrentItem(binding.viewPager.currentItem + 1, true)
         }
+
     }
 
     override fun initView(savedInstanceState: Bundle?, binding: FragmentLearningDetailBinding) {
@@ -69,6 +57,34 @@ class LearningDetailFragment : BaseFragment<FragmentLearningDetailBinding>(), Te
         val list = parseJsonToListTrafficLearn(json)
         binding.viewPager.adapter = adapter
         adapter.setItems(list.toList())
+
+        binding.viewPager.registerOnPageChangeCallback(object: ViewPager2.OnPageChangeCallback() {
+            override fun onPageScrolled(
+                position: Int,
+                positionOffset: Float,
+                positionOffsetPixels: Int
+            ) {
+                super.onPageScrolled(position, positionOffset, positionOffsetPixels)
+            }
+
+            override fun onPageSelected(position: Int) {
+                super.onPageSelected(position)
+                val trafficsLearn = list[position]
+                var text = trafficsLearn.ask
+                trafficsLearn.answer_list?.forEachIndexed { index, s ->
+                    if (s.isNotEmpty()) {
+                        val result = "Đáp án ${index + 1} ${s}"
+                        text += result
+                    }
+
+                }
+                text?.let { speakOut(it) }
+            }
+
+            override fun onPageScrollStateChanged(state: Int) {
+                super.onPageScrollStateChanged(state)
+            }
+        })
     }
 
     private fun setBottomSheetBehavior() {
@@ -82,10 +98,10 @@ class LearningDetailFragment : BaseFragment<FragmentLearningDetailBinding>(), Te
         })
         binding.layoutBottomsheet.bottomSheet.setOnClickListener { v: View? ->
             if ((bottomSheetBehavior as BottomSheetBehavior<*>).state != BottomSheetBehavior.STATE_EXPANDED) {
-                (bottomSheetBehavior as BottomSheetBehavior<*>).setState(BottomSheetBehavior.STATE_EXPANDED)
+                (bottomSheetBehavior as BottomSheetBehavior<*>).state = BottomSheetBehavior.STATE_EXPANDED
                 binding.lnTopbar.visibility = View.GONE
             } else {
-                (bottomSheetBehavior as BottomSheetBehavior<*>).setState(BottomSheetBehavior.STATE_COLLAPSED)
+                (bottomSheetBehavior as BottomSheetBehavior<*>).state = BottomSheetBehavior.STATE_COLLAPSED
                 binding.lnTopbar.visibility = View.VISIBLE
             }
         }

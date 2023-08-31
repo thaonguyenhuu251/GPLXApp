@@ -23,8 +23,6 @@ open class BaseBottomSheet(
     private val onBind: (View, binding: ViewDataBinding) -> Unit,
 ) : BottomSheetDialogFragment() {
 
-    //REMINDER :  your layout must have data binding syntax <layout> </layout> to avoid null exception...
-
     lateinit var binding: ViewDataBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -46,16 +44,19 @@ open class BaseBottomSheet(
                 null
             } else {
                 binding = DataBindingUtil.inflate(inflater, layoutRes!!, container, false)
-                /*dialog?.setOnShowListener { dialog ->
+                dialog?.setOnShowListener { dialog ->
                     val sheetDialog = dialog as BottomSheetDialog
-                    val bottomSheet = sheetDialog.findViewById<View>(R.id.design_bottom_sheet) as FrameLayout
+                    val bottomSheet = sheetDialog.findViewById<View>(R.id.frameBTS) as FrameLayout
                     val bottomSheetBehavior = BottomSheetBehavior.from(bottomSheet)
                     setupHeight(bottomSheet)
                     bottomSheetBehavior.state = BottomSheetBehavior.STATE_EXPANDED
                     bottomSheetBehavior.isFitToContents = true
                     bottomSheetBehavior.isDraggable = true
                     bottomSheetBehavior.isHideable = true
-                }*/
+                    bottomSheetBehavior.peekHeight = 50
+                    bottomSheetBehavior.isFitToContents = false
+                    bottomSheetBehavior.expandedOffset = 50
+                }
                 binding.root
             }
         } catch (e: Exception) {

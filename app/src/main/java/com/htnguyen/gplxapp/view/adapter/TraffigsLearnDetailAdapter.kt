@@ -8,6 +8,8 @@ import com.htnguyen.gplxapp.model.TrafficsLearnResult
 
 class TraffigsLearnDetailAdapter : BaseRecyclerViewAdapter<TrafficsLearnDetail>(){
     var sendDataItem: (position: Int, trafficsLearn: TrafficsLearnDetail?) -> Unit = { _: Int, _: TrafficsLearnDetail? -> }
+
+    var nextItem: () -> Unit = {}
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
         val model: TrafficsLearnDetail = getItems(position)
         sendDataItem(position, model)
@@ -28,6 +30,12 @@ class TraffigsLearnDetailAdapter : BaseRecyclerViewAdapter<TrafficsLearnDetail>(
         }
         baseViewHolder.viewDataBinding.root.findViewById<RecyclerView>(R.id.listResult).adapter = adapter
         adapter.setItems(list)
+
+        adapter.onClickItem = { position, view ->
+            if (model.answer_list?.get(position)?.equals(model.result) == true) {
+                nextItem()
+            }
+        }
     }
 
     fun setItems(listItems: ArrayList<TrafficsLearnDetail>) {
