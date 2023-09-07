@@ -3,11 +3,14 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
+import com.htnguyen.gplxapp.R
 import com.htnguyen.gplxapp.base.BaseFragment
 import com.htnguyen.gplxapp.base.adapter.BaseRecyclerViewAdapter
+import com.htnguyen.gplxapp.base.utils.BaseConst
 import com.htnguyen.gplxapp.base.utils.observe
 import com.htnguyen.gplxapp.databinding.FragmentExamBinding
 import com.htnguyen.gplxapp.model.Exam
+import com.htnguyen.gplxapp.view.fragment.exam_detail.ExamDetailFragment
 import com.htnguyen.gplxapp.view.fragment.learning.ExamViewModel
 
 class ExamFragment : BaseFragment<FragmentExamBinding>() {
@@ -43,6 +46,12 @@ class ExamFragment : BaseFragment<FragmentExamBinding>() {
 
         binding.txtBack.setOnClickListener {
             onClickBack()
+        }
+
+        adapter.onClickItem = { i,v ->
+            val bundle = Bundle()
+            bundle.putInt("id_Exam", i)
+            transitFragmentAnimation(ExamDetailFragment(), R.id.container,bundle)
         }
     }
 

@@ -15,10 +15,7 @@ import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import com.htnguyen.gplxapp.R
-import com.htnguyen.gplxapp.model.Tips
-import com.htnguyen.gplxapp.model.TrafficSigns
-import com.htnguyen.gplxapp.model.TrafficsLearn
-import com.htnguyen.gplxapp.model.TrafficsLearnDetail
+import com.htnguyen.gplxapp.model.*
 import java.io.*
 
 fun loadJSONFromAsset(context: Context): String {
@@ -61,6 +58,13 @@ fun parseJsonToListTrafficLearn(json: String) : Array<TrafficsLearnDetail> {
     val gson = Gson()
     val arrayTutorialType = object : TypeToken<Array<TrafficsLearnDetail>>() {}.type
     val tutorials: Array<TrafficsLearnDetail> = gson.fromJson(json, arrayTutorialType)
+    return tutorials
+}
+
+fun parseJsonToListExam(json: String) : Array<ExamDetail> {
+    val gson = Gson()
+    val arrayTutorialType = object : TypeToken<Array<ExamDetail>>() {}.type
+    val tutorials: Array<ExamDetail> = gson.fromJson(json, arrayTutorialType)
     return tutorials
 }
 

@@ -13,8 +13,8 @@ data class Exam(
     @SerializedName("id") val id : Int,
     @SerializedName("name") val name : String?,
     @SerializedName("content") val content : String?,
-    @SerializedName("allLesson") val allLesson : Int?,
-    @SerializedName("completeLesson") val completeExam : Int?,
+    @SerializedName("time") val time : String?,
+    @SerializedName("completeExam") val completeExam : Int?,
 ) : BaseItem(), Serializable {
     override val layoutResourceId: Int
         get() = R.layout.item_do_exam
