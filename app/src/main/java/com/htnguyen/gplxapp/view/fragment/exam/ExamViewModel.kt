@@ -24,10 +24,78 @@ class ExamViewModel(application: Application) : AndroidViewModel(application) {
 
     fun addData() {
         viewModelScope.launch(Dispatchers.IO) {
-            repository.insert(Exam(1, "80 CÂU HỎI ĐIỂM LIỆT", "80 câu hoir điểm liệt", 60, 0))
-            repository.insert(Exam(2, "80 CÂU HỎI ĐIỂM LIỆT", "80 câu hoir điểm liệt", 60, 1))
-            repository.insert(Exam(3, "80 CÂU HỎI ĐIỂM LIỆT", "80 câu hoir điểm liệt", 60, 2))
-            repository.insert(Exam(4, "80 CÂU HỎI ĐIỂM LIỆT", "80 câu hoir điểm liệt", 60, 3))
+            repository.insert(
+                Exam(
+                    1,
+                    "Đề số 1",
+                    "25 câu/19 phút",
+                    "0",
+                    0
+                )
+            )
+            repository.insert(
+                Exam(
+                    2,
+                    "Đề số 2",
+                    "25 câu/19 phút",
+                    "0",
+                    0
+                )
+            )
+            repository.insert(
+                Exam(
+                    3,
+                    "Đề số 3",
+                    "25 câu/19 phút",
+                    "0",
+                    0,
+                )
+            )
+            repository.insert(
+                Exam(
+                    4,
+                    "Đề số 4",
+                    "25 câu/19 phút",
+                    "0",
+                    0
+                )
+            )
+            repository.insert(
+                Exam(
+                    5,
+                    "Đề số 5",
+                    "25 câu/19 phút",
+                    "0",
+                    0
+                )
+            )
+            repository.insert(
+                Exam(
+                    6,
+                    "Đề số 6",
+                    "25 câu/19 phút",
+                    "0",
+                    0
+                )
+            )
+            repository.insert(
+                Exam(
+                    7,
+                    "Đề số 7",
+                    "25 câu/19 phút",
+                    "0",
+                    0
+                )
+            )
+            repository.insert(
+                Exam(
+                    8,
+                    "Đề số 8",
+                    "25 câu/19 phút",
+                    "0",
+                    0
+                )
+            )
         }
     }
 
