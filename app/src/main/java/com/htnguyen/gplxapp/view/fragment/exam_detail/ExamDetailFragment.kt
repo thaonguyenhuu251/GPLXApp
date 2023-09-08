@@ -129,14 +129,14 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
             binding.viewPager.setCurrentItem(binding.viewPager.currentItem + 1, true)
             positionNextPageExam = (binding.viewPager.currentItem +1)
             Log.e("AAA", positionNextPageExam.toString())
-            binding.layoutBottomsheet.txtSetting.text = "Câu $positionNextPageExam/25"
+            binding.layoutBottomsheet.txtAsk.text = "Câu $positionNextPageExam/25"
         }
 
         binding.layoutBottomsheet.imgPrevious.setOnClickListener {
             binding.viewPager.setCurrentItem(binding.viewPager.currentItem - 1, true)
             positionPreviousPageExam = positionNextPageExam - (positionNextPageExam - binding.viewPager.currentItem) +1
             Log.e("AAA", positionNextPageExam.toString())
-            binding.layoutBottomsheet.txtSetting.text = "Câu $positionPreviousPageExam/25"
+            binding.layoutBottomsheet.txtAsk.text = "Câu $positionPreviousPageExam/25"
         }
 
     }
