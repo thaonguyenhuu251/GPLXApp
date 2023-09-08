@@ -1,6 +1,8 @@
 package com.htnguyen.gplxapp.view.fragment.exam_detail
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.speech.tts.TextToSpeech
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -99,7 +101,10 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
         })
     }
 
+    @SuppressLint("SetTextI18n")
     private fun setBottomSheetBehavior() {
+        var positionNextPageExam = 0
+        var positionPreviousPageExam = 0
         layoutBottomSheet = binding.layoutBottomsheet.bottomSheet
         bottomSheetBehavior = BottomSheetBehavior.from(layoutBottomSheet!!).apply {
             this.state = BottomSheetBehavior.STATE_COLLAPSED
@@ -122,13 +127,18 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
 
         binding.layoutBottomsheet.imgNext.setOnClickListener {
             binding.viewPager.setCurrentItem(binding.viewPager.currentItem + 1, true)
+            positionNextPageExam = (binding.viewPager.currentItem +1)
+            Log.e("AAA", positionNextPageExam.toString())
+            binding.layoutBottomsheet.txtSetting.text = "Câu $positionNextPageExam/25"
         }
 
         binding.layoutBottomsheet.imgPrevious.setOnClickListener {
             binding.viewPager.setCurrentItem(binding.viewPager.currentItem - 1, true)
+            positionPreviousPageExam = positionNextPageExam - (positionNextPageExam - binding.viewPager.currentItem) +1
+            Log.e("AAA", positionNextPageExam.toString())
+            binding.layoutBottomsheet.txtSetting.text = "Câu $positionPreviousPageExam/25"
         }
 
-        binding.layoutBottomsheet.rcvList.adapter
     }
 
     override fun onInit(status: Int) {
