@@ -13,6 +13,7 @@ import com.htnguyen.gplxapp.base.BaseBottomBehavior
 import com.htnguyen.gplxapp.base.BaseBottomSheet
 import com.htnguyen.gplxapp.base.BaseFragment
 import com.htnguyen.gplxapp.base.utils.BaseConst
+import com.htnguyen.gplxapp.base.utils.showChangeSizeDialog
 import com.htnguyen.gplxapp.databinding.BottomBehaviorListAnswerBinding
 import com.htnguyen.gplxapp.databinding.FragmentHomeBinding
 import com.htnguyen.gplxapp.view.fragment.chagevoice.ChangeVoiceFragment
@@ -78,6 +79,10 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(), NavigationView.OnNavig
     binding.btnHomeExam.setOnClickListener {
       transitFragmentAnimation(ExamFragment(), R.id.container)
     }
+
+    context?.showChangeSizeDialog(
+
+    )
 
   }
 

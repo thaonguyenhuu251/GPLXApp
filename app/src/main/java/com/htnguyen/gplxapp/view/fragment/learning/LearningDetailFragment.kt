@@ -10,6 +10,7 @@ import androidx.viewpager2.widget.ViewPager2
 import androidx.viewpager2.widget.ViewPager2.OnPageChangeCallback
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.htnguyen.gplxapp.base.BaseFragment
+import com.htnguyen.gplxapp.base.utils.BaseConst
 import com.htnguyen.gplxapp.base.utils.parseJsonToListTrafficLearn
 import com.htnguyen.gplxapp.base.utils.readJSONFromAsset
 import com.htnguyen.gplxapp.databinding.FragmentLearningDetailBinding
@@ -54,9 +55,13 @@ class LearningDetailFragment : BaseFragment<FragmentLearningDetailBinding>(), Te
         tts = TextToSpeech(requireContext(), this)
         setBottomSheetBehavior()
         val json = readJSONFromAsset(requireContext(), "learn_traffic.json" )
-        val list = parseJsonToListTrafficLearn(json)
+        val list = parseJsonToListTrafficLearn(json).filter {
+            it.type == arguments?.getInt(BaseConst.ARG_TRAFFIC_LEARN_TYPE)
+            || it.type % 10 == arguments?.getInt(BaseConst.ARG_TRAFFIC_LEARN_TYPE)
+            || (it.type / 10 == arguments?.getInt(BaseConst.ARG_TRAFFIC_LEARN_TYPE) && it.type >= 10)
+        }
         binding.viewPager.adapter = adapter
-        adapter.setItems(list.toList())
+        adapter.setItems(list)
 
         binding.viewPager.registerOnPageChangeCallback(object: ViewPager2.OnPageChangeCallback() {
             override fun onPageScrolled(

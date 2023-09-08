@@ -23,7 +23,7 @@ class LearningViewModel(application: Application) : AndroidViewModel(application
         viewModelScope.launch(Dispatchers.IO) {
             repository.insert(
                 TrafficsLearn(
-                    1,
+                    0,
                     "80 CÂU HỎI ĐIỂM LIỆT",
                     "80 câu hỏi điểm liệt",
                     "https://www.vba.vic.gov.au/__data/assets/image/0003/103971/warning-sign.png",
@@ -33,7 +33,7 @@ class LearningViewModel(application: Application) : AndroidViewModel(application
             )
             repository.insert(
                 TrafficsLearn(
-                    2,
+                    1,
                     "KHÁI NIỆM VÀ QUY TẮC",
                     "Gồm 80 câu hỏi(20 câu điểm liệt)",
                     "https://banner2.cleanpng.com/20180422/qge/kisspng-computer-icons-concept-font-concepts-5add2c9c3e81e2.7797215615244443162561.jpg",
@@ -43,7 +43,7 @@ class LearningViewModel(application: Application) : AndroidViewModel(application
             )
             repository.insert(
                 TrafficsLearn(
-                    3,
+                    2,
                     "VĂN HOÁ VÀ ĐẠO ĐỨC LÁI",
                     "Gồm 5 câu hỏi",
                     "https://banner2.cleanpng.com/20180706/xcx/kisspng-stock-photography-good-ethical-5b3f2b473a9c71.9277581915308665032401.jpg",
@@ -53,7 +53,7 @@ class LearningViewModel(application: Application) : AndroidViewModel(application
             )
             repository.insert(
                 TrafficsLearn(
-                    4,
+                    3,
                     "KĨ THUẬT LÁI XE",
                     "Gồm 15 câu hỏi (5 câu điểm liệt)",
                     "https://png.pngtree.com/png-vector/20190130/ourlarge/pngtree-simple-green-car-cartoon-material-png-image_603239.jpg",
@@ -63,7 +63,7 @@ class LearningViewModel(application: Application) : AndroidViewModel(application
             )
             repository.insert(
                 TrafficsLearn(
-                    5,
+                    4,
                     "BIỂN BÁO ĐƯỜNG BỘ",
                     "Gồm 65 câu hỏi",
                     "https://cdn.pixabay.com/photo/2011/04/14/21/05/traffic-sign-6682_960_720.png",
@@ -73,7 +73,7 @@ class LearningViewModel(application: Application) : AndroidViewModel(application
             )
             repository.insert(
                 TrafficsLearn(
-                    6,
+                    5,
                     "SA HÌNH",
                     "Gồm 35 câu hỏi",
                     "https://banglaixegiare.com/wp-content/uploads/2021/07/sa-hinh-bang-b2-b1-c-2.png",

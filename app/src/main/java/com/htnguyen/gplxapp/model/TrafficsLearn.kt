@@ -9,7 +9,7 @@ import java.io.Serializable
 
 @Entity(tableName = "TrafficsLearn")
 data class TrafficsLearn (
-    @PrimaryKey(autoGenerate = true)
+    @PrimaryKey()
     @SerializedName("id") val id : Int,
     @SerializedName("name") val name : String?,
     @SerializedName("content") val content : String?,

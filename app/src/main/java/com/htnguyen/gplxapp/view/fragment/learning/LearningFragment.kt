@@ -6,14 +6,15 @@ import androidx.fragment.app.viewModels
 import com.htnguyen.gplxapp.R
 import com.htnguyen.gplxapp.base.BaseFragment
 import com.htnguyen.gplxapp.base.adapter.BaseRecyclerViewAdapter
+import com.htnguyen.gplxapp.base.utils.BaseConst
 import com.htnguyen.gplxapp.base.utils.observe
 import com.htnguyen.gplxapp.databinding.FragmentLearningBinding
-import com.htnguyen.gplxapp.model.ChangeVoice
 import com.htnguyen.gplxapp.model.TrafficsLearn
+import com.htnguyen.gplxapp.view.adapter.TraffigLearnAdapter
 
 
 class LearningFragment : BaseFragment<FragmentLearningBinding>() {
-    private val adapter = BaseRecyclerViewAdapter<TrafficsLearn>()
+    private val adapter = TraffigLearnAdapter()
     private val learningViewModel by viewModels<LearningViewModel>()
 
     override fun getViewBinding(
@@ -47,8 +48,10 @@ class LearningFragment : BaseFragment<FragmentLearningBinding>() {
             onClickBack()
         }
 
-        adapter.onClickItem = { i, e ->
-            transitFragmentAnimation(LearningDetailFragment(), R.id.container)
+        adapter.sendDataItem = { i, e ->
+            val bundle = Bundle()
+            e?.let { bundle.putInt(BaseConst.ARG_TRAFFIC_LEARN_TYPE, it.id) }
+            transitFragmentAnimation(LearningDetailFragment(), R.id.container, bundle)
         }
     }
 

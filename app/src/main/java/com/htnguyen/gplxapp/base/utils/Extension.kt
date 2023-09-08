@@ -1,7 +1,9 @@
 package com.htnguyen.gplxapp.base.utils
 
+import android.app.ActionBar.LayoutParams
 import android.app.Dialog
 import android.content.Context
+import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -97,6 +99,35 @@ fun Context.showAlertDialog(
     builder.setCustomTitle(mView)
 
     val dialog = builder.show()
+    positiveButton.setOnClickListener {
+        dialog.dismiss()
+        onPositiveClickListener()
+    }
+
+
+    negativeButton.setOnClickListener {
+        dialog.dismiss()
+        onNegativeClickListener()
+    }
+}
+
+fun Context.showChangeSizeDialog(
+    onPositiveClickListener: () -> Unit = {},
+    onNegativeClickListener: () -> Unit = {},
+) {
+    val builder = AlertDialog.Builder(this, R.style.FinishActionDialog)
+
+    val mLayoutInflater = LayoutInflater.from(this)
+    val mView: View = mLayoutInflater.inflate(R.layout.dialog_alert_change_size, null)
+
+    val positiveButton = mView.findViewById<TextView>(R.id.btn_positive)
+    val negativeButton = mView.findViewById<TextView>(R.id.btn_negative)
+
+    builder.setCustomTitle(mView)
+    val dialog = builder.create()
+    dialog.show()
+    dialog.window?.setGravity(Gravity.BOTTOM)
+    dialog.window?.setLayout(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT)
     positiveButton.setOnClickListener {
         dialog.dismiss()
         onPositiveClickListener()
