@@ -20,6 +20,7 @@ import com.htnguyen.gplxapp.base.utils.parseJsonToListTrafficLearn
 import com.htnguyen.gplxapp.base.utils.readJSONFromAsset
 import com.htnguyen.gplxapp.databinding.FragmentLearningDetailBinding
 import com.htnguyen.gplxapp.model.StatusLearn
+import com.htnguyen.gplxapp.model.TrafficsLearn
 import com.htnguyen.gplxapp.view.adapter.TraffigLearnResultAdapter
 import com.htnguyen.gplxapp.view.adapter.TraffigsLearnDetailAdapter
 import com.htnguyen.gplxapp.viewModels.LearningDetailViewModel
@@ -37,6 +38,7 @@ class LearningDetailFragment : BaseFragment<FragmentLearningDetailBinding>(),
     private var tts: TextToSpeech? = null
     private val learningViewModel by viewModels<LearningDetailViewModel>()
     var listStatusLearn: ArrayList<StatusLearn> = arrayListOf()
+    var trafficsLearn: TrafficsLearn? = null
     override fun getViewBinding(
         inflater: LayoutInflater?,
         container: ViewGroup?
@@ -51,14 +53,19 @@ class LearningDetailFragment : BaseFragment<FragmentLearningDetailBinding>(),
     override fun initEvent() {
         binding.imgBack.setOnClickListener {
             onClickBack()
+            updateTrafficLearn()
         }
 
         binding.txtBack.setOnClickListener {
             onClickBack()
+            updateTrafficLearn()
         }
 
-        adapter.nextItem = {
-            binding.viewPager.setCurrentItem(binding.viewPager.currentItem + 1, true)
+        adapter.nextItem = { position, model, result ->
+            learningViewModel.updateStatusLearn(
+                StatusLearn(model.id, model.type,  result)
+            )
+            updateTrafficLearn()
         }
 
     }
@@ -74,16 +81,17 @@ class LearningDetailFragment : BaseFragment<FragmentLearningDetailBinding>(),
         }
 
         with(learningViewModel) {
+            observe(responseStatusLearn) {
+                listStatusLearn = it?.filter {
+                    it.idType == arguments?.getInt(BaseConst.ARG_TRAFFIC_LEARN_TYPE)
+                            || it.idType % 10 == arguments?.getInt(BaseConst.ARG_TRAFFIC_LEARN_TYPE)
+                            || (it.idType / 10 == arguments?.getInt(BaseConst.ARG_TRAFFIC_LEARN_TYPE) && it.idType >= 10)
+                } as ArrayList<StatusLearn>
+                adapterResult.setItems(listStatusLearn)
+            }
+
             observe(responseTrafficLearn) {
-                it?.let { trafficsLearns ->
-                    val listFilter = trafficsLearns.first {
-                        it.id == arguments?.getInt(BaseConst.ARG_TRAFFIC_LEARN_TYPE)
-                    }.statusLesson
-                    listFilter.forEach {
-                        listStatusLearn.add(StatusLearn(it.idAsk, it.statusAsk))
-                    }
-                    adapterResult.setItems(listStatusLearn)
-                }
+                trafficsLearn = it?.first { it.id == arguments?.getInt(BaseConst.ARG_TRAFFIC_LEARN_TYPE) }
             }
         }
 
@@ -162,8 +170,13 @@ class LearningDetailFragment : BaseFragment<FragmentLearningDetailBinding>(),
         tts!!.speak(text, TextToSpeech.QUEUE_FLUSH, null, "")
     }
 
+    fun updateTrafficLearn() {
+        Log.d("ThaoNH", trafficsLearn.toString())
+        trafficsLearn?.completeLesson = listStatusLearn.count { it.statusAsk == 1 }
+        trafficsLearn?.let { learningViewModel.updateTrafficLearn(it) }
+    }
     override fun onDestroy() {
-
+        updateTrafficLearn()
         if (tts != null) {
             tts!!.stop()
             tts!!.shutdown()

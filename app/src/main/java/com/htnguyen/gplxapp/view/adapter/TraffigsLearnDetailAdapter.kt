@@ -3,13 +3,14 @@ package com.htnguyen.gplxapp.view.adapter
 import androidx.recyclerview.widget.RecyclerView
 import com.htnguyen.gplxapp.R
 import com.htnguyen.gplxapp.base.adapter.BaseRecyclerViewAdapter
+import com.htnguyen.gplxapp.model.StatusLearn
 import com.htnguyen.gplxapp.model.TrafficsLearnDetail
 import com.htnguyen.gplxapp.model.TrafficsLearnResult
 
 class TraffigsLearnDetailAdapter : BaseRecyclerViewAdapter<TrafficsLearnDetail>(){
     var sendDataItem: (position: Int, trafficsLearn: TrafficsLearnDetail?) -> Unit = { _: Int, _: TrafficsLearnDetail? -> }
 
-    var nextItem: () -> Unit = {}
+    var nextItem: (position: Int, trafficsLearn: TrafficsLearnDetail, result: Int) -> Unit = { _: Int, _: TrafficsLearnDetail, _: Int -> }
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
         val model: TrafficsLearnDetail = getItems(position)
         sendDataItem(position, model)
@@ -33,7 +34,9 @@ class TraffigsLearnDetailAdapter : BaseRecyclerViewAdapter<TrafficsLearnDetail>(
 
         adapter.onClickItem = { position, view ->
             if (model.answer_list?.get(position)?.equals(model.result) == true) {
-                nextItem()
+                nextItem(position, model, 1)
+            } else {
+                nextItem(position, model, -1)
             }
         }
     }

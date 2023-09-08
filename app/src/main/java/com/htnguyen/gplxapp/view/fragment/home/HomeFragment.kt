@@ -3,11 +3,13 @@ package com.htnguyen.gplxapp.view.fragment.home
 import android.os.Bundle
 import android.view.*
 import android.widget.FrameLayout
+import android.widget.TextView
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.NavController
 import androidx.navigation.ui.AppBarConfiguration
 import com.google.android.material.navigation.NavigationView
+import com.htnguyen.gplxapp.BuildConfig
 import com.htnguyen.gplxapp.R
 import com.htnguyen.gplxapp.base.BaseBottomBehavior
 import com.htnguyen.gplxapp.base.BaseBottomSheet
@@ -24,6 +26,7 @@ import com.htnguyen.gplxapp.view.fragment.learning.LearningFragment
 import com.htnguyen.gplxapp.view.fragment.setting.SettingFragment
 import com.htnguyen.gplxapp.view.fragment.tips.TipsFragment
 import com.htnguyen.gplxapp.view.fragment.trafficsigns.TrafficSignsFragment
+import org.koin.android.ext.android.bind
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 
@@ -79,6 +82,8 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(), NavigationView.OnNavig
     binding.btnHomeExam.setOnClickListener {
       transitFragmentAnimation(ExamFragment(), R.id.container)
     }
+
+    binding.navViewHeader.getHeaderView(0).findViewById<TextView>(R.id.txtVersionName).text = BuildConfig.VERSION_NAME
 
     context?.showChangeSizeDialog(
 
