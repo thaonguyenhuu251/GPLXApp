@@ -15,8 +15,7 @@ data class TrafficsLearn(
     @SerializedName("content") val content: String?,
     @SerializedName("urlImage") val urlImage: String?,
     @SerializedName("allLesson") val allLesson: Int?,
-    @SerializedName("completeLesson") val completeLesson: Int?,
-    @SerializedName("statusLesson") var statusLesson: List<StatusLearn>,
+    @SerializedName("completeLesson") var completeLesson: Int?,
 ) : BaseItem(), Serializable {
     override val layoutResourceId: Int
         get() = R.layout.item_trafic_learn
