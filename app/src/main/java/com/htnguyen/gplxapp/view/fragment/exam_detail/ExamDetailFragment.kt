@@ -7,16 +7,25 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
+import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.htnguyen.gplxapp.R
 import com.htnguyen.gplxapp.base.BaseFragment
+import com.htnguyen.gplxapp.base.utils.BaseConst
+import com.htnguyen.gplxapp.base.utils.observe
 import com.htnguyen.gplxapp.base.utils.parseJsonToListExam
 import com.htnguyen.gplxapp.base.utils.readJSONFromAsset
 import com.htnguyen.gplxapp.databinding.FragmentExamDetailBinding
 import com.htnguyen.gplxapp.model.ExamDetail
+import com.htnguyen.gplxapp.model.StatusExam
+import com.htnguyen.gplxapp.model.StatusLearn
 import com.htnguyen.gplxapp.view.adapter.ExamDetailAdapter
+import com.htnguyen.gplxapp.view.adapter.ExamTableResultAdapter
+import com.htnguyen.gplxapp.view.adapter.TraffigLearnResultAdapter
+import com.htnguyen.gplxapp.viewModels.ExamDetailViewModel
+import com.htnguyen.gplxapp.viewModels.LearningDetailViewModel
 import java.util.*
 
 
@@ -25,8 +34,12 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
     var layoutBottomSheet: LinearLayout? = null
     var layoutManager: LinearLayoutManager? = null
     private val adapter = ExamDetailAdapter()
+    private val adapterResult = ExamTableResultAdapter()
     private var tts: TextToSpeech? = null
     var idExam : Int = -1
+    private val examDetailViewModel by viewModels<ExamDetailViewModel>()
+    var listStatusExam: ArrayList<StatusExam> = arrayListOf()
+
     override fun getViewBinding(
         inflater: LayoutInflater?,
         container: ViewGroup?
@@ -70,7 +83,18 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
                 listExam.add(it)
             }
         }
+        with(examDetailViewModel) {
+            observe(responseExam) {
+                it?.let { exam ->
+                    adapterResult.setItems(listStatusExam)
+                }
+            }
+        }
         adapter.setItems(listExam.toList())
+
+        binding.layoutBottomsheet.rcvList.adapter = adapterResult
+        adapterResult.setItems(listStatusExam)
+
 
         binding.viewPager.registerOnPageChangeCallback(object: ViewPager2.OnPageChangeCallback() {
             override fun onPageScrolled(
@@ -128,14 +152,12 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
         binding.layoutBottomsheet.imgNext.setOnClickListener {
             binding.viewPager.setCurrentItem(binding.viewPager.currentItem + 1, true)
             positionNextPageExam = (binding.viewPager.currentItem +1)
-            Log.e("AAA", positionNextPageExam.toString())
             binding.layoutBottomsheet.txtAsk.text = "Câu $positionNextPageExam/25"
         }
 
         binding.layoutBottomsheet.imgPrevious.setOnClickListener {
             binding.viewPager.setCurrentItem(binding.viewPager.currentItem - 1, true)
             positionPreviousPageExam = positionNextPageExam - (positionNextPageExam - binding.viewPager.currentItem) +1
-            Log.e("AAA", positionNextPageExam.toString())
             binding.layoutBottomsheet.txtAsk.text = "Câu $positionPreviousPageExam/25"
         }
 
