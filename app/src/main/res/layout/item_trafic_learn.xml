@@ -64,7 +64,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/roboto_medium"
                     android:gravity="end|center_vertical"
-                    android:text="@{model.completeLesson.toString()}"
+                    android:text="@{@string/label_complete_ask(model.completeLesson, model.allLesson)}"
                     android:textSize="@dimen/_12ssp" />
 
             </LinearLayout>

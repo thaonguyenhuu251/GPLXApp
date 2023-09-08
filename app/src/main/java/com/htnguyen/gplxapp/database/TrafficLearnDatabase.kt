@@ -4,11 +4,13 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import androidx.sqlite.db.SupportSQLiteDatabase
+import androidx.room.TypeConverters
 import com.htnguyen.gplxapp.dao.TrafficLearnDao
+import com.htnguyen.gplxapp.model.StatusLearnConverter
 import com.htnguyen.gplxapp.model.TrafficsLearn
 
 @Database(entities = [TrafficsLearn::class], version = 1)
+@TypeConverters(StatusLearnConverter::class)
 abstract class TrafficLearnDatabase : RoomDatabase() {
     abstract fun trafficLearnDao(): TrafficLearnDao
 

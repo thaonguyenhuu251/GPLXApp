@@ -28,8 +28,6 @@ class LearningFragment : BaseFragment<FragmentLearningBinding>() {
         binding.lifecycleOwner = activity
         binding.rcvLearn.adapter = adapter
 
-        learningViewModel.addData()
-
         with(learningViewModel) {
             observe(responseTrafficLearn) {
                 it?.let {

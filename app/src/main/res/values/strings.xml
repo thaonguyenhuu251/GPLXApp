@@ -24,10 +24,12 @@
     <string name="label_start">LÀM BÀI</string>
     <string name="label_continue">TIẾP TỤC</string>
     <string name="label_fail">TRƯỢT</string>
+    <string name="label_complete_ask">%d/%d</string>
 
     <string name="reminders_notification_channel_id">com.htnguyen.gplxapp</string>
     <string name="title_notification_reminder">CÁC CÂU HAY SAI</string>
     <string name="description_notification_reminder">CÁC CÂU HAY</string>
     <string name="reminder_everyday">Nhắc nhở hằng ngày</string>
+    <string name="label_number_ask">Câu %d/%d</string>
 
 </resources>

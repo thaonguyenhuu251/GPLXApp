@@ -8,14 +8,15 @@ import com.htnguyen.gplxapp.base.adapter.BaseItem
 import java.io.Serializable
 
 @Entity(tableName = "TrafficsLearn")
-data class TrafficsLearn (
-    @PrimaryKey()
-    @SerializedName("id") val id : Int,
-    @SerializedName("name") val name : String?,
-    @SerializedName("content") val content : String?,
-    @SerializedName("urlImage") val urlImage : String?,
-    @SerializedName("allLesson") val allLesson : Int?,
-    @SerializedName("completeLesson") val completeLesson : Int?,
+data class TrafficsLearn(
+    @PrimaryKey
+    @SerializedName("id") val id: Int,
+    @SerializedName("name") val name: String?,
+    @SerializedName("content") val content: String?,
+    @SerializedName("urlImage") val urlImage: String?,
+    @SerializedName("allLesson") val allLesson: Int?,
+    @SerializedName("completeLesson") val completeLesson: Int?,
+    @SerializedName("statusLesson") var statusLesson: List<StatusLearn>,
 ) : BaseItem(), Serializable {
     override val layoutResourceId: Int
         get() = R.layout.item_trafic_learn

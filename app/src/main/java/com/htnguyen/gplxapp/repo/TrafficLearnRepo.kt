@@ -8,6 +8,10 @@ class TrafficLearnRepo(private val trafficLearnDao: TrafficLearnDao) {
     suspend fun insert(trafficLearn: TrafficsLearn) {
         trafficLearnDao.add(trafficLearn)
     }
+    suspend fun update(trafficLearn: TrafficsLearn) {
+        trafficLearnDao.update(trafficLearn)
+    }
+
 
     fun getAll() : LiveData<List<TrafficsLearn>> = trafficLearnDao.getAll()
 

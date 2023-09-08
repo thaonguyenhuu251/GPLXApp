@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <LinearLayout
         android:id="@+id/bottomSheet"
@@ -9,7 +10,7 @@
         android:background="@color/primary_dark"
         android:orientation="vertical"
         app:behavior_hideable="false"
-        app:behavior_peekHeight="@dimen/_35sdp"
+        app:behavior_peekHeight="@dimen/_40sdp"
         app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
 
         <LinearLayout
@@ -57,7 +58,7 @@
                     app:layout_constraintVertical_bias="0.0" />
 
                 <TextView
-                    android:id="@+id/txtSetting"
+                    android:id="@+id/txtAsk"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_15ssp"
@@ -93,11 +94,26 @@
 
         </LinearLayout>
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rcv_list"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_300sdp"
-            android:background="@color/white" />
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcv_list"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_250sdp"
+                android:background="@color/white"
+                android:layout_gravity="center"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:spanCount="4"
+                tools:itemCount="100"
+                tools:listitem="@layout/item_result_all"/>
+
+        </LinearLayout>
+
     </LinearLayout>
 
 </layout>

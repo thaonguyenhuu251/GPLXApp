@@ -1,29 +1,42 @@
 package com.htnguyen.gplxapp.view.fragment.learning
+
 import android.os.Bundle
 import android.speech.tts.TextToSpeech
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
+import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.viewpager2.widget.ViewPager2
 import androidx.viewpager2.widget.ViewPager2.OnPageChangeCallback
 import com.google.android.material.bottomsheet.BottomSheetBehavior
+import com.htnguyen.gplxapp.R
 import com.htnguyen.gplxapp.base.BaseFragment
+import com.htnguyen.gplxapp.base.adapter.BaseRecyclerViewAdapter
 import com.htnguyen.gplxapp.base.utils.BaseConst
+import com.htnguyen.gplxapp.base.utils.observe
 import com.htnguyen.gplxapp.base.utils.parseJsonToListTrafficLearn
 import com.htnguyen.gplxapp.base.utils.readJSONFromAsset
 import com.htnguyen.gplxapp.databinding.FragmentLearningDetailBinding
+import com.htnguyen.gplxapp.model.StatusLearn
+import com.htnguyen.gplxapp.view.adapter.TraffigLearnResultAdapter
 import com.htnguyen.gplxapp.view.adapter.TraffigsLearnDetailAdapter
+import com.htnguyen.gplxapp.viewModels.LearningDetailViewModel
 import java.util.*
+import kotlin.collections.ArrayList
 
 
-class LearningDetailFragment : BaseFragment<FragmentLearningDetailBinding>(), TextToSpeech.OnInitListener {
+class LearningDetailFragment : BaseFragment<FragmentLearningDetailBinding>(),
+    TextToSpeech.OnInitListener {
     var bottomSheetBehavior: BottomSheetBehavior<*>? = null
     var layoutBottomSheet: LinearLayout? = null
     var layoutManager: LinearLayoutManager? = null
     private val adapter = TraffigsLearnDetailAdapter()
+    private val adapterResult = TraffigLearnResultAdapter()
     private var tts: TextToSpeech? = null
+    private val learningViewModel by viewModels<LearningDetailViewModel>()
+    var listStatusLearn: ArrayList<StatusLearn> = arrayListOf()
     override fun getViewBinding(
         inflater: LayoutInflater?,
         container: ViewGroup?
@@ -33,7 +46,6 @@ class LearningDetailFragment : BaseFragment<FragmentLearningDetailBinding>(), Te
 
     override fun initData() {
         binding.lifecycleOwner = activity
-
     }
 
     override fun initEvent() {
@@ -54,23 +66,34 @@ class LearningDetailFragment : BaseFragment<FragmentLearningDetailBinding>(), Te
     override fun initView(savedInstanceState: Bundle?, binding: FragmentLearningDetailBinding) {
         tts = TextToSpeech(requireContext(), this)
         setBottomSheetBehavior()
-        val json = readJSONFromAsset(requireContext(), "learn_traffic.json" )
+        val json = readJSONFromAsset(requireContext(), "learn_traffic.json")
         val list = parseJsonToListTrafficLearn(json).filter {
             it.type == arguments?.getInt(BaseConst.ARG_TRAFFIC_LEARN_TYPE)
-            || it.type % 10 == arguments?.getInt(BaseConst.ARG_TRAFFIC_LEARN_TYPE)
-            || (it.type / 10 == arguments?.getInt(BaseConst.ARG_TRAFFIC_LEARN_TYPE) && it.type >= 10)
+                    || it.type % 10 == arguments?.getInt(BaseConst.ARG_TRAFFIC_LEARN_TYPE)
+                    || (it.type / 10 == arguments?.getInt(BaseConst.ARG_TRAFFIC_LEARN_TYPE) && it.type >= 10)
         }
+
+        with(learningViewModel) {
+            observe(responseTrafficLearn) {
+                it?.let { trafficsLearns ->
+                    val listFilter = trafficsLearns.first {
+                        it.id == arguments?.getInt(BaseConst.ARG_TRAFFIC_LEARN_TYPE)
+                    }.statusLesson
+                    listFilter.forEach {
+                        listStatusLearn.add(StatusLearn(it.idAsk, it.statusAsk))
+                    }
+                    adapterResult.setItems(listStatusLearn)
+                }
+            }
+        }
+
         binding.viewPager.adapter = adapter
         adapter.setItems(list)
 
-        binding.viewPager.registerOnPageChangeCallback(object: ViewPager2.OnPageChangeCallback() {
-            override fun onPageScrolled(
-                position: Int,
-                positionOffset: Float,
-                positionOffsetPixels: Int
-            ) {
-                super.onPageScrolled(position, positionOffset, positionOffsetPixels)
-            }
+        binding.layoutBottomsheet.rcvList.adapter = adapterResult
+        adapterResult.setItems(listStatusLearn)
+
+        binding.viewPager.registerOnPageChangeCallback(object : OnPageChangeCallback() {
 
             override fun onPageSelected(position: Int) {
                 super.onPageSelected(position)
@@ -84,11 +107,10 @@ class LearningDetailFragment : BaseFragment<FragmentLearningDetailBinding>(), Te
 
                 }
                 text?.let { speakOut(it) }
+                binding.layoutBottomsheet.txtAsk.text =
+                    resources.getString(R.string.label_number_ask, position + 1, list.size)
             }
 
-            override fun onPageScrollStateChanged(state: Int) {
-                super.onPageScrollStateChanged(state)
-            }
         })
     }
 
@@ -97,16 +119,19 @@ class LearningDetailFragment : BaseFragment<FragmentLearningDetailBinding>(), Te
         bottomSheetBehavior = BottomSheetBehavior.from(layoutBottomSheet!!).apply {
             this.state = BottomSheetBehavior.STATE_COLLAPSED
         }
-        (bottomSheetBehavior as BottomSheetBehavior<*>).addBottomSheetCallback(object : BottomSheetBehavior.BottomSheetCallback() {
+        (bottomSheetBehavior as BottomSheetBehavior<*>).addBottomSheetCallback(object :
+            BottomSheetBehavior.BottomSheetCallback() {
             override fun onStateChanged(bottomSheet: View, newState: Int) {}
             override fun onSlide(bottomSheet: View, slideOffset: Float) {}
         })
         binding.layoutBottomsheet.bottomSheet.setOnClickListener { v: View? ->
             if ((bottomSheetBehavior as BottomSheetBehavior<*>).state != BottomSheetBehavior.STATE_EXPANDED) {
-                (bottomSheetBehavior as BottomSheetBehavior<*>).state = BottomSheetBehavior.STATE_EXPANDED
+                (bottomSheetBehavior as BottomSheetBehavior<*>).state =
+                    BottomSheetBehavior.STATE_EXPANDED
                 binding.lnTopbar.visibility = View.GONE
             } else {
-                (bottomSheetBehavior as BottomSheetBehavior<*>).state = BottomSheetBehavior.STATE_COLLAPSED
+                (bottomSheetBehavior as BottomSheetBehavior<*>).state =
+                    BottomSheetBehavior.STATE_COLLAPSED
                 binding.lnTopbar.visibility = View.VISIBLE
             }
         }
@@ -132,8 +157,9 @@ class LearningDetailFragment : BaseFragment<FragmentLearningDetailBinding>(), Te
             }
         }
     }
+
     private fun speakOut(text: String) {
-        tts!!.speak(text, TextToSpeech.QUEUE_FLUSH, null,"")
+        tts!!.speak(text, TextToSpeech.QUEUE_FLUSH, null, "")
     }
 
     override fun onDestroy() {
