@@ -62,7 +62,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_15ssp"
-                    android:text="Câu 1 / 25"
+                    android:text="Câu 1/25"
                     android:textColor="@color/white"
                     android:textSize="@dimen/_14ssp"
                     app:layout_constraintBottom_toBottomOf="parent"

@@ -21,7 +21,7 @@ class ExamDetailAdapter : BaseRecyclerViewAdapter<ExamDetail>(){
             onClickItem(position, p0)
         }
 
-        val adapter = BaseRecyclerViewAdapter<ExamResult>()
+        val adapter = ExamResultAdapter()
         val list = arrayListOf<ExamResult>()
         model.answer_list?.forEachIndexed { index, result ->
             if (result.isNotEmpty()) {
