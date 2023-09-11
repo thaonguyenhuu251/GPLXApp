@@ -14,6 +14,7 @@ data class StatusExam(
     @SerializedName("idExam") val idExam : Int,
     @SerializedName("idType") val idType: Int,
     @SerializedName("statusAsk") val statusAsk : Int?,
+    var isSelected : Boolean = false
 ) : BaseItem(), Serializable {
     override val layoutResourceId: Int
         get() = R.layout.item_result_all_exam

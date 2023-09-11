@@ -18,7 +18,7 @@
             android:id="@+id/txtNumberAsk"
             android:layout_width="@dimen/_50sdp"
             android:layout_height="@dimen/_50sdp"
-            android:background="@drawable/bg_circle_border"
+            android:background="@{!model.isSelected ? @drawable/bg_circle_border : @drawable/bg_circle_green }"
             android:padding="@dimen/_8sdp"
             android:layout_marginVertical="@dimen/_8sdp"
             android:layout_marginHorizontal="@dimen/_8sdp"

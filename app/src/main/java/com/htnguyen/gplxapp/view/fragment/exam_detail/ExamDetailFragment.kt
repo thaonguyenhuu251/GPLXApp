@@ -22,6 +22,7 @@ import com.htnguyen.gplxapp.model.*
 import com.htnguyen.gplxapp.view.adapter.ExamDetailAdapter
 import com.htnguyen.gplxapp.view.adapter.ExamTableResultAdapter
 import com.htnguyen.gplxapp.viewModels.ExamDetailViewModel
+import java.text.FieldPosition
 import java.util.*
 
 
@@ -98,6 +99,7 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
                 listStatusExam =  it?.filter {
                     it.idExam == idExam
                 } as ArrayList<StatusExam>
+                listStatusExam[0].isSelected = true
                 adapterResult.setItems(listStatusExam)
             }
         }
@@ -105,6 +107,7 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
         adapter.setItems(listExam.toList())
         adapterResult.onClickItem = { position, view ->
             binding.viewPager.setCurrentItem(position, true)
+            setTextPageCurrent(position +1)
         }
         binding.layoutBottomsheet.rcvList.adapter = adapterResult
 
@@ -131,6 +134,7 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
 
                 }
                 text?.let { speakOut(it) }
+                setTextPageCurrent(position +1)
             }
 
             override fun onPageScrollStateChanged(state: Int) {
@@ -169,14 +173,13 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
         binding.layoutBottomsheet.imgNext.setOnClickListener {
             binding.viewPager.setCurrentItem(binding.viewPager.currentItem + 1, true)
             positionNextPageExam = (binding.viewPager.currentItem + 1)
-            binding.layoutBottomsheet.txtAsk.text = "Câu $positionNextPageExam/25"
+            setTextPageCurrent(positionNextPageExam)
         }
 
         binding.layoutBottomsheet.imgPrevious.setOnClickListener {
             binding.viewPager.setCurrentItem(binding.viewPager.currentItem - 1, true)
-            positionPreviousPageExam =
-                positionNextPageExam - (positionNextPageExam - binding.viewPager.currentItem) + 1
-            binding.layoutBottomsheet.txtAsk.text = "Câu $positionPreviousPageExam/25"
+            positionPreviousPageExam = positionNextPageExam - (positionNextPageExam - binding.viewPager.currentItem) + 1
+            setTextPageCurrent(positionPreviousPageExam)
         }
 
     }
@@ -201,9 +204,19 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
     private fun updateCountDownText() {
         val minutes = (mTimeLeftInMillis / 1000).toInt() / 60
         val seconds = (mTimeLeftInMillis / 1000).toInt() % 60
-        val timeLeftFormatted =
-            java.lang.String.format(Locale.getDefault(), "%02d:%02d", minutes, seconds)
-        binding.txtCountDownTimer.setText(timeLeftFormatted)
+        val timeLeftFormatted = String.format(Locale.getDefault(), "%02d:%02d", minutes, seconds)
+        binding.txtCountDownTimer.text = timeLeftFormatted
+    }
+
+    private fun setTextPageCurrent(position: Int){
+        binding.layoutBottomsheet.txtAsk.text = "Câu $position/25"
+        if (listStatusExam.isNotEmpty()){
+            listStatusExam.forEach {
+                it.isSelected = false
+            }
+            listStatusExam[position-1].isSelected = true
+            adapterResult.updateItems(listStatusExam)
+        }
     }
 
     override fun onDestroy() {
