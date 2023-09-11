@@ -201,7 +201,7 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
         listExam.forEachIndexed { index, examDetail ->
             viewModelScope.launch(Dispatchers.IO) {
                 repositoryStatusExam.insert(
-                    StatusExam(examDetail.id, examDetail.type, 0)
+                    StatusExam(examDetail.id,examDetail.id_exam, examDetail.type, 0)
                 )
             }
         }

@@ -19,6 +19,7 @@ class ExamTableResultAdapter : BaseRecyclerViewAdapter<StatusExam>(){
         baseViewHolder.viewDataBinding.root.setOnClickListener { p0 ->
             notifyItemChanged(position)
             sendDataItem(position, model)
+            onClickItem(position, p0)
         }
     }
 

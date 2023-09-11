@@ -11,6 +11,7 @@ import java.io.Serializable
 data class StatusExam(
     @PrimaryKey
     @SerializedName("idAsk") val idAsk : Int,
+    @SerializedName("idExam") val idExam : Int,
     @SerializedName("idType") val idType: Int,
     @SerializedName("statusAsk") val statusAsk : Int?,
 ) : BaseItem(), Serializable {

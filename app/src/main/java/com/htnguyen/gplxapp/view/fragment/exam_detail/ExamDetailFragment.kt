@@ -2,8 +2,8 @@ package com.htnguyen.gplxapp.view.fragment.exam_detail
 
 import android.annotation.SuppressLint
 import android.os.Bundle
+import android.os.CountDownTimer
 import android.speech.tts.TextToSpeech
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -14,7 +14,6 @@ import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.htnguyen.gplxapp.R
 import com.htnguyen.gplxapp.base.BaseFragment
-import com.htnguyen.gplxapp.base.utils.BaseConst
 import com.htnguyen.gplxapp.base.utils.observe
 import com.htnguyen.gplxapp.base.utils.parseJsonToListExam
 import com.htnguyen.gplxapp.base.utils.readJSONFromAsset
@@ -22,9 +21,7 @@ import com.htnguyen.gplxapp.databinding.FragmentExamDetailBinding
 import com.htnguyen.gplxapp.model.*
 import com.htnguyen.gplxapp.view.adapter.ExamDetailAdapter
 import com.htnguyen.gplxapp.view.adapter.ExamTableResultAdapter
-import com.htnguyen.gplxapp.view.adapter.TraffigLearnResultAdapter
 import com.htnguyen.gplxapp.viewModels.ExamDetailViewModel
-import com.htnguyen.gplxapp.viewModels.LearningDetailViewModel
 import java.util.*
 
 
@@ -39,6 +36,11 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
     private val examDetailViewModel by viewModels<ExamDetailViewModel>()
     var listStatusExam: ArrayList<StatusExam> = arrayListOf()
     var exam: Exam? = null
+
+    private val START_TIME_IN_MILLIS: Long = 1140000
+    private var mCountDownTimer: CountDownTimer? = null
+    private var mTimeLeftInMillis = START_TIME_IN_MILLIS
+
 
     override fun getViewBinding(
         inflater: LayoutInflater?,
@@ -57,13 +59,25 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
             onClickBack()
         }
 
-        binding.txtBack.setOnClickListener {
+        binding.txtFinish.setOnClickListener {
             onClickBack()
         }
 
     }
 
     override fun initView(savedInstanceState: Bundle?, binding: FragmentExamDetailBinding) {
+
+        mCountDownTimer = object : CountDownTimer(mTimeLeftInMillis, 1000) {
+            override fun onTick(millisUntilFinished: Long) {
+                mTimeLeftInMillis = millisUntilFinished
+                updateCountDownText()
+            }
+
+            override fun onFinish() {
+            }
+        }.start()
+
+
         tts = TextToSpeech(requireContext(), this)
         setBottomSheetBehavior()
         val json = readJSONFromAsset(requireContext(), "exam.json")
@@ -81,14 +95,17 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
         }
         with(examDetailViewModel) {
             observe(responseStatusExam) { it ->
-                it?.forEach{ statusExam ->
-                    listStatusExam.add(statusExam)
-                }
+                listStatusExam =  it?.filter {
+                    it.idExam == idExam
+                } as ArrayList<StatusExam>
                 adapterResult.setItems(listStatusExam)
             }
         }
 
         adapter.setItems(listExam.toList())
+        adapterResult.onClickItem = { position, view ->
+            binding.viewPager.setCurrentItem(position, true)
+        }
         binding.layoutBottomsheet.rcvList.adapter = adapterResult
 
 
@@ -179,6 +196,14 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
 
     private fun speakOut(text: String) {
         tts!!.speak(text, TextToSpeech.QUEUE_FLUSH, null, "")
+    }
+
+    private fun updateCountDownText() {
+        val minutes = (mTimeLeftInMillis / 1000).toInt() / 60
+        val seconds = (mTimeLeftInMillis / 1000).toInt() % 60
+        val timeLeftFormatted =
+            java.lang.String.format(Locale.getDefault(), "%02d:%02d", minutes, seconds)
+        binding.txtCountDownTimer.setText(timeLeftFormatted)
     }
 
     override fun onDestroy() {
