@@ -116,6 +116,7 @@
                     android:background="@color/grey"/>
 
                 <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnHomeSearch"
                     style="@style/myColoredButton"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -129,6 +130,7 @@
                     android:background="@color/grey"/>
 
                 <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnAskWrong"
                     style="@style/myColoredButton"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"

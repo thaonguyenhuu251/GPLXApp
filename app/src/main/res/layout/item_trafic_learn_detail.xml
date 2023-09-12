@@ -51,20 +51,24 @@
                 tools:listitem="@layout/item_trafic_learn_result" />
 
             <TextView
+                android:id="@+id/txtTitleComplain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/complain_result"
+                android:visibility="@{model.isAnswer &amp;&amp; model.isSelected != -1 &amp;&amp; !model.complain.empty ? View.VISIBLE : View.GONE}"
+                android:textColor="@color/primary_dark"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold"
+                app:drawableStartCompat="@drawable/ic_complaint" />
+
+            <TextView
+                android:id="@+id/txtDescriptionComplain"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@{model.complain}"
+                android:visibility="@{model.isAnswer &amp;&amp; model.isSelected != -1 &amp;&amp; !model.complain.empty ? View.VISIBLE : View.GONE}"
                 android:textColor="@color/black"
-                android:textSize="@dimen/_14ssp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@{model.result}"
-                android:textColor="@color/black"
-                android:textSize="@dimen/_14ssp"
-                android:textStyle="bold" />
+                android:textSize="@dimen/_14ssp" />
 
         </LinearLayout>
 

@@ -13,6 +13,8 @@ data class StatusLearn(
     @SerializedName("idAsk") val idAsk : Int,
     @SerializedName("idType") val idType: Int,
     @SerializedName("statusAsk") val statusAsk : Int?,
+    @SerializedName("statusAsk") val statusAskFail : Boolean? = false,
+    val isSelected : Int? = -1
 ) : BaseItem(), Serializable {
     override val layoutResourceId: Int
         get() = R.layout.item_result_all

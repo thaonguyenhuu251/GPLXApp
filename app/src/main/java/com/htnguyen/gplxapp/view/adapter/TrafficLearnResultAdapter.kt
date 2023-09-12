@@ -5,11 +5,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.htnguyen.gplxapp.R
 import com.htnguyen.gplxapp.base.adapter.BaseRecyclerViewAdapter
 import com.htnguyen.gplxapp.model.StatusLearn
-import com.htnguyen.gplxapp.model.TrafficsLearn
-import com.htnguyen.gplxapp.model.TrafficsLearnDetail
-import com.htnguyen.gplxapp.model.TrafficsLearnResult
 
-class TraffigLearnResultAdapter : BaseRecyclerViewAdapter<StatusLearn>(){
+class TrafficLearnResultAdapter : BaseRecyclerViewAdapter<StatusLearn>(){
     var sendDataItem: (position: Int, trafficsLearn: StatusLearn?) -> Unit = { _: Int, _: StatusLearn? -> }
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {

@@ -5,16 +5,14 @@ import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import com.htnguyen.gplxapp.R
 import com.htnguyen.gplxapp.base.BaseFragment
-import com.htnguyen.gplxapp.base.adapter.BaseRecyclerViewAdapter
 import com.htnguyen.gplxapp.base.utils.BaseConst
 import com.htnguyen.gplxapp.base.utils.observe
 import com.htnguyen.gplxapp.databinding.FragmentLearningBinding
-import com.htnguyen.gplxapp.model.TrafficsLearn
-import com.htnguyen.gplxapp.view.adapter.TraffigLearnAdapter
+import com.htnguyen.gplxapp.view.adapter.TrafficLearnAdapter
 
 
 class LearningFragment : BaseFragment<FragmentLearningBinding>() {
-    private val adapter = TraffigLearnAdapter()
+    private val adapter = TrafficLearnAdapter()
     private val learningViewModel by viewModels<LearningViewModel>()
 
     override fun getViewBinding(

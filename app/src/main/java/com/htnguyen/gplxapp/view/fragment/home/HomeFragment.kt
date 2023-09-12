@@ -22,10 +22,12 @@ import com.htnguyen.gplxapp.view.fragment.chagevoice.ChangeVoiceFragment
 import com.htnguyen.gplxapp.view.fragment.exam.ExamFragment
 import com.htnguyen.gplxapp.view.fragment.choose_license.ChooseLicenseFragment
 import com.htnguyen.gplxapp.view.fragment.introduction_app.IntroductionAppFragment
+import com.htnguyen.gplxapp.view.fragment.learning.LearningDetailFragment
 import com.htnguyen.gplxapp.view.fragment.learning.LearningFragment
 import com.htnguyen.gplxapp.view.fragment.setting.SettingFragment
 import com.htnguyen.gplxapp.view.fragment.tips.TipsFragment
 import com.htnguyen.gplxapp.view.fragment.trafficsigns.TrafficSignsFragment
+import com.htnguyen.gplxapp.view.fragment.webview.WebViewFragment
 import org.koin.android.ext.android.bind
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
@@ -81,6 +83,18 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(), NavigationView.OnNavig
 
     binding.btnHomeExam.setOnClickListener {
       transitFragmentAnimation(ExamFragment(), R.id.container)
+    }
+
+    binding.btnAskWrong.setOnClickListener {
+      val bundle = Bundle()
+      bundle.putInt(BaseConst.ARG_TRAFFIC_LEARN_TYPE, -1)
+      transitFragmentAnimation(LearningDetailFragment(), R.id.container, bundle)
+    }
+
+    binding.btnHomeSearch.setOnClickListener {
+      val bundle = Bundle()
+      bundle.putString(BaseConst.ARG_TITLE_FROM_HOME, binding.btnHomeSearch.text.toString())
+      transitFragmentAnimation(WebViewFragment(), R.id.container, bundle)
     }
 
     binding.navViewHeader.getHeaderView(0).findViewById<TextView>(R.id.txtVersionName).text = BuildConfig.VERSION_NAME

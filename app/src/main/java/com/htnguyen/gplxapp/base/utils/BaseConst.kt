@@ -4,4 +4,5 @@ object BaseConst{
     const val ARG_CHANGE_FONT_TEXT = "arg_change_font_text"
 
     const val ARG_TRAFFIC_LEARN_TYPE= "ARG_TRAFFIC_LEARN_TYPE"
+    const val ARG_TITLE_FROM_HOME= "ARG_TITLE_FROM_HOME"
 }
