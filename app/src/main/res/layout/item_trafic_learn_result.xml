@@ -19,25 +19,26 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginVertical="@dimen/_4sdp"
                 android:text="@{model.number.toString()}"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_14ssp"
-                android:padding="@dimen/_8sdp"
-                android:textStyle="bold" />
+                android:gravity="center"
+                android:background="@drawable/bg_circle"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@{model.answer}"
-                android:textColor="@color/black"
+                android:textColor="@{model.isSelected ? @color/primary_dark: @color/black}"
                 android:textSize="@dimen/_14ssp"
-                android:padding="@dimen/_8sdp"
-                android:textStyle="bold" />
+                android:padding="@dimen/_8sdp"/>
 
         </LinearLayout>
 

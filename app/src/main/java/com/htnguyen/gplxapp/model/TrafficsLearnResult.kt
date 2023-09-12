@@ -7,6 +7,7 @@ import java.io.Serializable
 data class TrafficsLearnResult (
     val number : Int?,
     val answer : String?,
+    var isSelected: Boolean? = false
 ) : BaseItem(), Serializable {
     override val layoutResourceId: Int
         get() = R.layout.item_trafic_learn_result

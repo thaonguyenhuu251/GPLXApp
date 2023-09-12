@@ -11,7 +11,7 @@
     ],
     "urlImage": "",
     "result": "Phần đường xe chạy.",
-    "complain": "Giải thích: Phần đường xe chạy là phần của đường bộ được sử dụng cho phương tiện giao thông qua lại."
+    "complain": "Phần đường xe chạy là phần của đường bộ được sử dụng cho phương tiện giao thông qua lại."
   },
   {
     "type": 1,
@@ -25,7 +25,7 @@
     ],
     "urlImage": "",
     "result": "Là một phần của phần đường xe chạy được chia theo chiều dọc của đường, có bề rộng đủ cho xe chạy an toàn.",
-    "complain": "Giải thích: Làn đường có bề rộng đủ cho xe chạy an toàn."
+    "complain": "Làn đường có bề rộng đủ cho xe chạy an toàn."
   },
   {
     "type": 1,
@@ -39,7 +39,7 @@
     ],
     "urlImage": "",
     "result": "Là bộ phận của đường để phân chia mặt đường thành hai chiều xe chạy riêng biệt hoặc để phân chia phần đường của xe cơ giới và xe thô sơ.",
-    "complain": "Giải thích: Dải phân cách phân chia mặt đường thành hai chiều xe chạy riêng biệt."
+    "complain": "Dải phân cách phân chia mặt đường thành hai chiều xe chạy riêng biệt."
   },
   {
     "type": 1,
@@ -53,7 +53,7 @@
     ],
     "urlImage": "",
     "result": "Dải phân cách gồm loại cố định và loại di động.",
-    "complain": "Giải thích: Dải phân cách gồm cố định và di động."
+    "complain": "Dải phân cách gồm cố định và di động."
   },
   {
     "type": 1,
@@ -67,7 +67,7 @@
     ],
     "urlImage": "",
     "result": "Là người điều khiển xe cơ giới.",
-    "complain": "Giải thích: Người lái xe là người điều khiển xe cơ giới."
+    "complain": "Người lái xe là người điều khiển xe cơ giới."
   },
   {
     "type": 1,
@@ -81,7 +81,7 @@
     ],
     "urlImage": "",
     "result": "Đường ưu tiên.",
-    "complain": "Giải thích: Đường ưu tiên được nhường đường khi qua nơi giao nhau."
+    "complain": "Đường ưu tiên được nhường đường khi qua nơi giao nhau."
   },
   {
     "type": 1,
@@ -95,7 +95,7 @@
     ],
     "urlImage": "",
     "result": "Gồm ô tô; máy kéo; rơ moóc hoặc sơ mi rơ moóc được kéo bởi xe ô tô, máy kéo; xe mô tô hai bánh; xe mô tô ba bánh, xe gắn máy (kể cả xe máy điện) và các loại xe tương tự.",
-    "complain": "Giải thích: Phương tiện giao thông cơ giới không có xe máy chuyên dùng."
+    "complain": "Phương tiện giao thông cơ giới không có xe máy chuyên dùng."
   },
   {
     "type": 1,
@@ -109,7 +109,7 @@
     ],
     "urlImage": "",
     "result": "Gồm xe đạp (kể cả xe đạp máy, xe đạp điện), xe xích lô, xe lăn dùng cho người khuyết tật, xe súc vật kéo và các loại xe tương tự.",
-    "complain": "Giải thích: Phương tiện giao thông thô sơ không có xe máy chuyên dùng; xe ô tô."
+    "complain": "Phương tiện giao thông thô sơ không có xe máy chuyên dùng; xe ô tô."
   },
   {
     "type": 1,
@@ -123,7 +123,7 @@
     ],
     "urlImage": "",
     "result": "Cả ý 1 và ý 2.",
-    "complain": "Giải thích: Phương tiện giao thông gồm tất cả các loại phương tiện."
+    "complain": "Phương tiện giao thông gồm tất cả các loại phương tiện."
   },
   {
     "type": 1,
@@ -137,7 +137,7 @@
     ],
     "urlImage": "",
     "result": "Cả ý 1 và ý 2.",
-    "complain": "Giải thích: Người tham gia giao thông gồm người sử dụng phương tiện và người đi bộ."
+    "complain": "Người tham gia giao thông gồm người sử dụng phương tiện và người đi bộ."
   },
   {
     "type": 1,
@@ -151,7 +151,7 @@
     ],
     "urlImage": "",
     "result": "Cả ý 1 và ý 2.",
-    "complain": "Giải thích: Người điều khiển phương tiện gồm cả xe cơ giới và xe máy chuyên dùng."
+    "complain": "Người điều khiển phương tiện gồm cả xe cơ giới và xe máy chuyên dùng."
   },
   {
     "type": 1,
@@ -165,7 +165,7 @@
     ],
     "urlImage": "",
     "result": "Là cảnh sát giao thông, người được giao nhiệm vụ hướng dẫn giao thông tại nơi thi công, nơi ùn tắc giao thông, ở bến phà, tại cầu đường bộ đi chung với đường sắt.",
-    "complain": "Giải thích: Người điều khiển giao thông là cảnh sát giao thông."
+    "complain": "Người điều khiển giao thông là cảnh sát giao thông."
   },
   {
     "type": 1,
@@ -179,7 +179,7 @@
     ],
     "urlImage": "",
     "result": "Là trạng thái đứng yên tạm thời của phương tiện giao thông trong một khoảng thời gian cần thiết đủ để cho người lên, xuống phương tiện, xếp dỡ hàng hóa hoặc thực hiện công việc khác.",
-    "complain": "Giải thích: Dừng xe là đứng yên tạm thời."
+    "complain": "Dừng xe là đứng yên tạm thời."
   },
   {
     "type": 1,
@@ -193,7 +193,7 @@
     ],
     "urlImage": "",
     "result": "Là trạng thái đứng yên của phương tiện giao thông không giới hạn thời gian.",
-    "complain": "Giải thích: Đỗ xe là đứng yên không giới hạn thời gian."
+    "complain": "Đỗ xe là đứng yên không giới hạn thời gian."
   },
   {
     "type": 10,
@@ -207,7 +207,7 @@
     ],
     "urlImage": "",
     "result": "Được cơ quan có thẩm quyền cấp phép.",
-    "complain": "Giải thích: Cuộc đua xe cần cấp phép."
+    "complain": "Cuộc đua xe cần cấp phép."
   },
   {
     "type": 10,
@@ -221,7 +221,7 @@
     ],
     "urlImage": "",
     "result": "Không bị nghiêm cấm, nếu có chất ma túy ở mức nhẹ, có thể điều khiển phương tiện tham gia giao thông.",
-    "complain": "Giải thích: Có ma tuý bị nghiêm cấm."
+    "complain": "Có ma tuý bị nghiêm cấm."
   },
   {
     "type": 10,
@@ -235,7 +235,7 @@
     ],
     "urlImage": "",
     "result": "Không bị xử lý hình sự.",
-    "complain": "Giải thích: Sử dụng rượu, bia khi lái xe bị phạt hành chính hoặc xử lý hình sự."
+    "complain": "Sử dụng rượu, bia khi lái xe bị phạt hành chính hoặc xử lý hình sự."
   },
   {
     "type": 10,
@@ -249,7 +249,7 @@
     ],
     "urlImage": "",
     "result": "Cả ý 1 và ý 2.",
-    "complain": "Giải thích: Người điều khiển bị cấm sử dụng rượu, bia khi tham gia giao thông."
+    "complain": "Người điều khiển bị cấm sử dụng rượu, bia khi tham gia giao thông."
   },
   {
     "type": 10,
@@ -277,7 +277,7 @@
     ],
     "urlImage": "",
     "result": "Từ 23 giờ đêm đến 5 giờ sáng hôm sau.",
-    "complain": "Giải thích: Chỉ sử dụng còi từ 5 giời sáng đến 22 giờ tối."
+    "complain": "Chỉ sử dụng còi từ 5 giời sáng đến 22 giờ tối."
   },
   {
     "type": 1,
@@ -291,7 +291,7 @@
     ],
     "urlImage": "",
     "result": "Đèn chiếu gần (đèn cốt).",
-    "complain": "Giải thích: Trong đô thị sử dụng đèn chiếu gần."
+    "complain": "Trong đô thị sử dụng đèn chiếu gần."
   },
   {
     "type": 1,
@@ -305,7 +305,7 @@
     ],
     "urlImage": "",
     "result": "Phải được chấp thuận của cơ quan có thẩm quyền.",
-    "complain": "Giải thích: Lắp đặt còi đèn không đúng thiết kế phải được chấp thuận của cơ quan có thẩm quyền."
+    "complain": "Lắp đặt còi đèn không đúng thiết kế phải được chấp thuận của cơ quan có thẩm quyền."
   },
   {
     "type": 10,
@@ -319,7 +319,7 @@
     ],
     "urlImage": "",
     "result": "Không được phép.",
-    "complain": "Giải thích: Không được phép quay đầu xe ở phần đường dành cho người đi bộ qua đường."
+    "complain": "Không được phép quay đầu xe ở phần đường dành cho người đi bộ qua đường."
   },
   {
     "type": 1,
@@ -333,7 +333,7 @@
     ],
     "urlImage": "",
     "result": "Được vượt khi đảm bảo an toàn.",
-    "complain": "Giải thích: Được vượt khi xe không phát tín hiệu ưu tiên."
+    "complain": "Được vượt khi xe không phát tín hiệu ưu tiên."
   },
   {
     "type": 1,
@@ -347,7 +347,7 @@
     ],
     "urlImage": "",
     "result": "Không được vượt.",
-    "complain": "Giải thích: Không được vượt khi đang phát tín hiệu ưu tiên."
+    "complain": "Không được vượt khi đang phát tín hiệu ưu tiên."
   },
   {
     "type": 10,
@@ -403,7 +403,7 @@
     ],
     "urlImage": "",
     "result": "Không được mang, vác.",
-    "complain": "Giải thích: Xe mô tô không được mang vác vật cồng kềnh."
+    "complain": "Xe mô tô không được mang vác vật cồng kềnh."
   },
   {
     "type": 10,
@@ -417,7 +417,7 @@
     ],
     "urlImage": "",
     "result": "Không được phép.",
-    "complain": "Giải thích: Xe mô tô không được kéo xe khác."
+    "complain": "Xe mô tô không được kéo xe khác."
   },
   {
     "type": 10,
@@ -431,7 +431,7 @@
     ],
     "urlImage": "",
     "result": "Không được sử dụng.",
-    "complain": "Giải thích: Không được sử dụng ô."
+    "complain": "Không được sử dụng ô."
   },
   {
     "type": 10,
@@ -445,7 +445,7 @@
     ],
     "urlImage": "",
     "result": "Không được phép.",
-    "complain": "Giải thích: Xe mô tô không được kéo xe khác."
+    "complain": "Xe mô tô không được kéo xe khác."
   },
   {
     "type": 10,
@@ -459,7 +459,7 @@
     ],
     "urlImage": "",
     "result": "Không được phép.",
-    "complain": "Giải thích: Xe mô tô không được kéo xe khác."
+    "complain": "Xe mô tô không được kéo xe khác."
   },
   {
     "type": 10,
@@ -473,7 +473,7 @@
     ],
     "urlImage": "",
     "result": "Không được vận chuyển.",
-    "complain": "Giải thích: Xe mô tô không được mang vác vật cồng kềnh."
+    "complain": "Xe mô tô không được mang vác vật cồng kềnh."
   },
   {
     "type": 1,
@@ -487,7 +487,7 @@
     ],
     "urlImage": "",
     "result": "18 tuổi.",
-    "complain": "Giải thích: Độ tuổi lấy bằng theo hạng (cách nhau 3 tuổi): 16: Xe dưới 50cm3; 18: Hạng A, B1, B2; 21: Hạng C, FB; 24: Hạng D, FC; 27: Hạng E, FD."
+    "complain": "Độ tuổi lấy bằng theo hạng (cách nhau 3 tuổi): 16: Xe dưới 50cm3; 18: Hạng A, B1, B2; 21: Hạng C, FB; 24: Hạng D, FC; 27: Hạng E, FD."
   },
   {
     "type": 1,
@@ -501,7 +501,7 @@
     ],
     "urlImage": "",
     "result": "Xe gắn máy có dung tích xi lanh dưới 50 cm3.",
-    "complain": "Giải thích: Độ tuổi lấy bằng theo hạng (cách nhau 3 tuổi): 16: Xe dưới 50cm3; 18: Hạng A, B1, B2; 21: Hạng C, FB; 24: Hạng D, FC; 27: Hạng E, FD."
+    "complain": "Độ tuổi lấy bằng theo hạng (cách nhau 3 tuổi): 16: Xe dưới 50cm3; 18: Hạng A, B1, B2; 21: Hạng C, FB; 24: Hạng D, FC; 27: Hạng E, FD."
   },
   {
     "type": 1,
@@ -515,7 +515,7 @@
     ],
     "urlImage": "",
     "result": "Xe mô tô có dung tích xi lanh từ 175 cm3 trở lên.",
-    "complain": "Giải thích: A1 mô tô dưới 175cm3 và xe 3 bánh của người khuyết tật; A2 mô tô 175cm3 trở lên; A3 xe 3 bánh."
+    "complain": "A1 mô tô dưới 175cm3 và xe 3 bánh của người khuyết tật; A2 mô tô 175cm3 trở lên; A3 xe 3 bánh."
   },
   {
     "type": 1,
@@ -529,7 +529,7 @@
     ],
     "urlImage": "",
     "result": "Cả ý 1 và ý 2.",
-    "complain": "Giải thích: A1 mô tô dưới 175cm3 và xe 3 bánh của người khuyết tật; A2 mô tô 175cm3 trở lên; A3 xe 3 bánh."
+    "complain": "A1 mô tô dưới 175cm3 và xe 3 bánh của người khuyết tật; A2 mô tô 175cm3 trở lên; A3 xe 3 bánh."
   },
   {
     "type": 1,
@@ -543,7 +543,7 @@
     ],
     "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-101.jpg",
     "result": "Biển báo cấm.",
-    "complain": "Giải thích: Biển cấm: vòng tròn đỏ."
+    "complain": "Biển cấm: vòng tròn đỏ."
   },
   {
     "type": 1,
@@ -557,7 +557,7 @@
     ],
     "urlImage": "https://xetaicenter.com/wp-content/uploads/2018/08/bien-bao-nguy-hiem-201a.jpg",
     "result": "Biển báo nguy hiểm.",
-    "complain": "Giải thích: Biển nguy hiểm: Hình tam giác vàng."
+    "complain": "Biển nguy hiểm: Hình tam giác vàng."
   },
   {
     "type": 1,
@@ -571,7 +571,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-3.png",
     "result": "Biển báo hiệu lệnh phải thi hành.",
-    "complain": "Giải thích: Biển hiệu lệnh: Vòng tròn xanh."
+    "complain": "Biển hiệu lệnh: Vòng tròn xanh."
   },
   {
     "type": 1,
@@ -585,7 +585,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-4.png",
     "result": "Biển báo chỉ dẫn.",
-    "complain": "Giải thích: Biển chỉ dẫn: Hình vuông hoặc hình chữ nhật xanh."
+    "complain": "Biển chỉ dẫn: Hình vuông hoặc hình chữ nhật xanh."
   },
   {
     "type": 1,
@@ -599,7 +599,7 @@
     ],
     "urlImage": "",
     "result": "05 năm.",
-    "complain": "Giải thích: 05 năm không cấp lại nếu sử dụng bằng lái đã khai báo mất."
+    "complain": "05 năm không cấp lại nếu sử dụng bằng lái đã khai báo mất."
   },
   {
     "type": 1,
@@ -613,7 +613,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-5.png",
     "result": "Người tham gia giao thông ở phía trước và phía sau người điều khiển phải dừng lại; người tham gia giao thông ở phía bên phải và phía bên trái người điều khiển được đi tất cả các hướng.",
-    "complain": "Giải thích: Người điều khiển giao thông tay giang ngang thì trước mặt và sau lưng dừng lại."
+    "complain": "Người điều khiển giao thông tay giang ngang thì trước mặt và sau lưng dừng lại."
   },
   {
     "type": 1,
@@ -627,7 +627,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-6.png",
     "result": "Người tham gia giao thông ở các hướng đều phải dừng lại trừ các xe ở trong khu vực giao nhau.",
-    "complain": "Giải thích: người điều khiển giao thông giơ tay thẳng đứng thì ở tất cả các hướng phải dừng lại."
+    "complain": "người điều khiển giao thông giơ tay thẳng đứng thì ở tất cả các hướng phải dừng lại."
   },
   {
     "type": 1,
@@ -641,7 +641,7 @@
     ],
     "urlImage": "",
     "result": "Báo hiệu tạm thời.",
-    "complain": "Giải thích: ưu tiên biển báo tạm thời."
+    "complain": "ưu tiên biển báo tạm thời."
   },
   {
     "type": 1,
@@ -655,7 +655,7 @@
     ],
     "urlImage": "",
     "result": "Phải cho xe đi trong một làn đường và chỉ được chuyển làn đường ở những nơi cho phép; khi chuyển làn phải có tín hiệu báo trước và phải bảo đảm an toàn.",
-    "complain": "Giải thích: Chuyển làn đường phải có tín hiệu báo trước."
+    "complain": "Chuyển làn đường phải có tín hiệu báo trước."
   },
   {
     "type": 1,
@@ -669,7 +669,7 @@
     ],
     "urlImage": "",
     "result": "Xe thô sơ phải đi trên làn đường bên phải trong cùng, xe cơ giới, xe máy chuyên dùng đi trên làn đường bên trái.",
-    "complain": "Giải thích: Xe thô sơ phải đi làn đường bên phải trong cùng."
+    "complain": "Xe thô sơ phải đi làn đường bên phải trong cùng."
   },
   {
     "type": 1,
@@ -683,7 +683,7 @@
     ],
     "urlImage": "",
     "result": "Chỉ báo hiệu bằng đèn.",
-    "complain": "Giải thích: Chỉ sử dụng còi từ 5 giờ sáng đến 22 giờ tối. Nên phải sử dụng đèn để báo hiệu."
+    "complain": "Chỉ sử dụng còi từ 5 giờ sáng đến 22 giờ tối. Nên phải sử dụng đèn để báo hiệu."
   },
   {
     "type": 1,
@@ -711,7 +711,7 @@
     ],
     "urlImage": "",
     "result": "Quan sát gương, giảm tốc độ, ra tín hiệu chuyển hướng, quan sát an toàn và chuyển hướng.",
-    "complain": "Giải thích: Chuyển hướng phải giảm tốc độ."
+    "complain": "Chuyển hướng phải giảm tốc độ."
   },
   {
     "type": 1,
@@ -725,7 +725,7 @@
     ],
     "urlImage": "",
     "result": "Cả ý 1 và ý 2.",
-    "complain": "Giải thích: Tránh xe ngược chiều thì nhường đường qua đường hẹp và nhường xe lên dốc."
+    "complain": "Tránh xe ngược chiều thì nhường đường qua đường hẹp và nhường xe lên dốc."
   },
   {
     "type": 1,
@@ -739,7 +739,7 @@
     ],
     "urlImage": "",
     "result": "Nhường đường cho xe lên dốc.",
-    "complain": "Giải thích: Nhường đường cho xe lên dốc."
+    "complain": "Nhường đường cho xe lên dốc."
   },
   {
     "type": 1,
@@ -753,7 +753,7 @@
     ],
     "urlImage": "",
     "result": "Nhường đường cho xe đi trên đường ưu tiên hoặc đường chính từ bất kỳ hướng nào tới.",
-    "complain": "Giải thích: Đường không ưu tiên nhường đường cho xe trên đường ưu tiên."
+    "complain": "Đường không ưu tiên nhường đường cho xe trên đường ưu tiên."
   },
   {
     "type": 1,
@@ -767,7 +767,7 @@
     ],
     "urlImage": "",
     "result": "Phải nhường đường cho xe đi đến từ bên phải.",
-    "complain": "Giải thích: Giao nhau không có vòng xuyến thì nhường xe đến từ bên phải."
+    "complain": "Giao nhau không có vòng xuyến thì nhường xe đến từ bên phải."
   },
   {
     "type": 1,
@@ -781,7 +781,7 @@
     ],
     "urlImage": "",
     "result": "5 mét.",
-    "complain": "Giải thích: Đứng cách ray đường sắt 5m."
+    "complain": "Đứng cách ray đường sắt 5m."
   },
   {
     "type": 1,
@@ -795,7 +795,7 @@
     ],
     "urlImage": "",
     "result": "Xe cơ giới, xe máy chuyên dùng phải bật đèn; xe thô sơ phải bật đèn hoặc có vật phát sáng báo hiệu; chỉ được dùng xe, đỗ xe ở nơi quy định.",
-    "complain": "Giải thích: Trong hầm chỉ đường dừng xe, đỗ xe ở nơi quy định."
+    "complain": "Trong hầm chỉ đường dừng xe, đỗ xe ở nơi quy định."
   },
   {
     "type": 10,
@@ -837,7 +837,7 @@
     ],
     "urlImage": "",
     "result": "Đi vào phần đường dành cho người đi bộ và phương tiện khác; sử dụng ô, điện thoại di động, thiết bị âm thanh (trừ thiết bị trợ thính), đi xe dàn hàng ngang.",
-    "complain": "Giải thích: Xe mô tô 2 bánh không được đi vào phần đường cho người đi bộ."
+    "complain": "Xe mô tô 2 bánh không được đi vào phần đường cho người đi bộ."
   },
   {
     "type": 10,
@@ -879,7 +879,7 @@
     ],
     "urlImage": "",
     "result": "Nhường đường cho người đi bộ đang đi trên phần đường dành cho người đi bộ sang đường; nhường đường cho xe đi trên đường ưu tiên, đường chính từ bất kỳ hướng nào tới; nhường đường cho xe ưu tiên, xe đi từ bên phải đến.",
-    "complain": "Giải thích: Người lái xe phải nhường đường cho xe ưu tiên."
+    "complain": "Người lái xe phải nhường đường cho xe ưu tiên."
   },
   {
     "type": 1,
@@ -893,7 +893,7 @@
     ],
     "urlImage": "",
     "result": "Trước khi thay đổi làn đường.",
-    "complain": "Giải thích: Phải bật đèn tín hiệu rẽ trước khi thay đổi làn đường."
+    "complain": "Phải bật đèn tín hiệu rẽ trước khi thay đổi làn đường."
   },
   {
     "type": 1,
@@ -907,7 +907,7 @@
     ],
     "urlImage": "",
     "result": "Cả ý 1 và ý 3.",
-    "complain": "Giải thích: Không được vượt khi xe bị vượt bất ngờ tăng tốc hoặc phát hiện có xe đi ngược chiều."
+    "complain": "Không được vượt khi xe bị vượt bất ngờ tăng tốc hoặc phát hiện có xe đi ngược chiều."
   },
   {
     "type": 1,
@@ -921,7 +921,7 @@
     ],
     "urlImage": "",
     "result": "Nếu đủ điều kiện an toàn, người lái xe phải giảm tốc độ, đi sát về bên phải của phần đường xe chạy cho đến khi xe sau đã vượt qua, không được gây trở ngại đối với xe xin vượt.",
-    "complain": "Giải thích: Xử lý cho xe sau vượt thì giảm tốc độ và đi về bên phải."
+    "complain": "Xử lý cho xe sau vượt thì giảm tốc độ và đi về bên phải."
   },
   {
     "type": 1,
@@ -949,7 +949,7 @@
     ],
     "urlImage": "",
     "result": "Là đoạn đường bộ nằm trong khu vực nội thành phố, nội thị xã, nội thị trấn và những đoạn đường có đông dân cư sinh sống sát dọc theo đường, có các hoạt động ảnh hưởng đến an toàn giao thông; được xác định bằng biển báo hiệu là đường khu đông dân cư.",
-    "complain": "Giải thích: Đường bộ trong khu vực đông dân cư được xác định bằng biển báo."
+    "complain": "Đường bộ trong khu vực đông dân cư được xác định bằng biển báo."
   },
   {
     "type": 1,
@@ -963,7 +963,7 @@
     ],
     "urlImage": "",
     "result": "40 km/h.",
-    "complain": "Giải thích: Xe gắn máy tối đa 40km/h."
+    "complain": "Xe gắn máy tối đa 40km/h."
   },
   {
     "type": 1,
@@ -977,7 +977,7 @@
     ],
     "urlImage": "",
     "result": "60 km/h.",
-    "complain": "Giải thích: Có giải phân cách giữa thì được xem là đường đôi. Trong khu vực đông dân cư, đường đôi; đường một chiều có từ hai làn xe cơ giới trở lên: 60km/h."
+    "complain": "Có giải phân cách giữa thì được xem là đường đôi. Trong khu vực đông dân cư, đường đôi; đường một chiều có từ hai làn xe cơ giới trở lên: 60km/h."
   },
   {
     "type": 1,
@@ -991,7 +991,7 @@
     ],
     "urlImage": "",
     "result": "50 km/h.",
-    "complain": "Giải thích: Trong khu vực đông dân cư, đường hai chiều; đường một chiều có một làn xe cơ giới: 50km/h."
+    "complain": "Trong khu vực đông dân cư, đường hai chiều; đường một chiều có một làn xe cơ giới: 50km/h."
   },
   {
     "type": 1,
@@ -1005,7 +1005,7 @@
     ],
     "urlImage": "",
     "result": "Ô tô con, ô tô tải, ô tô chỏ người trên 30 chỗ.",
-    "complain": "Giải thích: Xe cơ giới không bao gồm xe gắn máy. Trong khu vực đông dân cư, đường hai chiều; đường một chiều có một làn xe cơ giới: 50km/h."
+    "complain": "Xe cơ giới không bao gồm xe gắn máy. Trong khu vực đông dân cư, đường hai chiều; đường một chiều có một làn xe cơ giới: 50km/h."
   },
   {
     "type": 1,
@@ -1019,7 +1019,7 @@
     ],
     "urlImage": "",
     "result": "Cả ý 1 và ý 2.",
-    "complain": "Giải thích: Khoảng cách an toàn dưới 60km/h: Chủ động và đảm bảo khoảng cách."
+    "complain": "Khoảng cách an toàn dưới 60km/h: Chủ động và đảm bảo khoảng cách."
   },
   {
     "type": 1,
@@ -1033,7 +1033,7 @@
     ],
     "urlImage": "",
     "result": "Gặp biển báo nguy hiểm trên đường.",
-    "complain": "Giải thích: Giảm tốc độ, chú ý quan sát khi gặp biển báo nguy hiểm."
+    "complain": "Giảm tốc độ, chú ý quan sát khi gặp biển báo nguy hiểm."
   },
   {
     "type": 1,
@@ -1075,7 +1075,7 @@
     ],
     "urlImage": "",
     "result": "Nhường đường cho xe đi trên ưu tiên từ bất kỳ hướng nào tới.",
-    "complain": "Giải thích: Đứng cách ray đường sắt 5m."
+    "complain": "Đứng cách ray đường sắt 5m."
   },
   {
     "type": 10,
@@ -1089,7 +1089,7 @@
     ],
     "urlImage": "",
     "result": "Giảm tốc độ, có thể dừng lại nếu cần thiết trước vạch dừng xe để nhường đường cho người đi bộ qua đường.",
-    "complain": "Giải thích: Nơi có vạch kẻ đường dành cho người đi bộ thì nhường đường."
+    "complain": "Nơi có vạch kẻ đường dành cho người đi bộ thì nhường đường."
   },
   {
     "type": 1,
@@ -1117,7 +1117,7 @@
     ],
     "urlImage": "",
     "result": "Cả ý 1 và ý 2.",
-    "complain": "Giải thích: Đèn vàng dừng lại trước vạch dừng hoặc nhấp nháy thì đi chậm."
+    "complain": "Đèn vàng dừng lại trước vạch dừng hoặc nhấp nháy thì đi chậm."
   },
   {
     "type": 1,
@@ -1131,7 +1131,7 @@
     ],
     "urlImage": "",
     "result": "Bạn phải có tín hiệu bằng đèn hoặc còi.",
-    "complain": "Giải thích: Muốn vượt xe thì phải báo hiệu bằng đèn hoặc còi."
+    "complain": "Muốn vượt xe thì phải báo hiệu bằng đèn hoặc còi."
   },
   {
     "type": 1,
@@ -1145,7 +1145,7 @@
     ],
     "urlImage": "",
     "result": "Tất cả các ý nêu trên.",
-    "complain": "Giải thích: Giảm tốc độ trên đường ướt, đường hẹp và đèo dốc."
+    "complain": "Giảm tốc độ trên đường ướt, đường hẹp và đèo dốc."
   },
   {
     "type": 1,
@@ -1159,7 +1159,7 @@
     ],
     "urlImage": "",
     "result": "Giảm tốc độ đến mức an toàn có thể và quan sát người qua đường và từ từ vượt qua xe buýt.",
-    "complain": "Giải thích: Xe buýt đang dừng đón trả khách thì giảm tốc độ và từ từ vượt qua xe buýt."
+    "complain": "Xe buýt đang dừng đón trả khách thì giảm tốc độ và từ từ vượt qua xe buýt."
   },
   {
     "type": 2,
@@ -1243,20 +1243,6 @@
     ],
     "urlImage": "",
     "result": "Giữ tay ga ở mức độ phù hợp, sử dụng phanh trước và phanh sau để giảm tốc độ.",
-    "complain": "Giải thích: Xe mô tô xuống dốc dài cần sử dụng cả phanh trước và phanh sau để giảm tốc độ."
-  },
-  {
-    "type": 3,
-    "id": 89,
-    "ask": "Khi điều khiển xe mô tô tay ga chạy xuống đường dốc dài, độ dốc cao, người lái xe cần thực hiện những thao tác nào dưới đây để đảm bảo an toàn?",
-    "answer_list": [
-      "Giữ tay ga ở mức độ phù hợp, sử dụng phanh trước và phanh sau để giảm tốc độ.",
-      "Nhả hết tay ga, tắt động cơ, sử dụng phanh trước và phanh sau để giảm tốc độ.",
-      "Sử dụng phanh trước để giảm tốc độ kết hợp tắt chìa khóa điện của xe.",
-      ""
-    ],
-    "urlImage": "",
-    "result": "Giữ tay ga ở mức độ phù hợp, sử dụng phanh trước và phanh sau để giảm tốc độ.",
     "complain": "Xe mô tô xuống dốc dài cần sử dụng cả phanh trước và phanh sau để giảm tốc độ."
   },
   {
@@ -1271,7 +1257,7 @@
     ],
     "urlImage": "",
     "result": "Quan sát biển báo hiệu để biết nơi được phép quay đầu; quan sát kỹ địa hình nơi chọn để quay đầu; lựa chọn quỹ đạo quay đầu xe cho thích hợp; quay đầu xe với tốc độ thấp; thường xuyên báo tín hiệu để người, các phương tiện xung quanh được biết; nếu quay đầu xe ở nơi nguy hiểm thì đưa đầu xe về phía nguy hiểm đưa đuôi xe về phía an toàn.",
-    "complain": "Giải thích: Thực hiện quay đầu xe với tốc độ thấp."
+    "complain": "Thực hiện quay đầu xe với tốc độ thấp."
   },
   {
     "type": 3,
@@ -1285,7 +1271,7 @@
     ],
     "urlImage": "",
     "result": "Cả ý 1 và ý 2.",
-    "complain": "Giải thích: Cả ý 1 và 2 đều đúng. Ý 3 tránh nhau ban đêm bật đèn pha là sai."
+    "complain": "Cả ý 1 và 2 đều đúng. Ý 3 tránh nhau ban đêm bật đèn pha là sai."
   },
   {
     "type": 3,
@@ -1299,7 +1285,7 @@
     ],
     "urlImage": "",
     "result": "Quan sát cẩn thận các chướng ngại vật và báo hiệu bằng còi, đèn; giảm tốc độ tới mức cần thiết, về số thấp và thực hiện quay vòng với tốc độ phù hợp với bán kính cong của đường vòng.",
-    "complain": "Giải thích: Điều khiển xe trên đường vòng cần giảm tốc độ."
+    "complain": "Điều khiển xe trên đường vòng cần giảm tốc độ."
   },
   {
     "type": 3,
@@ -1313,7 +1299,7 @@
     ],
     "urlImage": "",
     "result": "Giảm hết ga; sử dụng đồng thời cả phanh sau và phanh trước.",
-    "complain": "Giải thích: Khi phanh xe mô tô thì giảm hết ga."
+    "complain": "Khi phanh xe mô tô thì giảm hết ga."
   },
   {
     "type": 30,
@@ -1327,7 +1313,7 @@
     ],
     "urlImage": "",
     "result": "Giảm tốc độ để dừng xe ở nơi cho phép dừng xe sau đó sử dụng điện thoại để liên lạc.",
-    "complain": "GIải thích: Khi cần nghe điện thoại thì giảm tốc độ và dừng xe ở nơi cho phép dừng xe."
+    "complain": "Khi cần nghe điện thoại thì giảm tốc độ và dừng xe ở nơi cho phép dừng xe."
   },
   {
     "type": 3,
@@ -1341,7 +1327,7 @@
     ],
     "urlImage": "",
     "result": "Chỉ sử dụng phanh trước.",
-    "complain": "Giải thích: Xe mô tô tay ga chỉ sử dụng phanh trước thì rất nguy hiểm."
+    "complain": "Xe mô tô tay ga chỉ sử dụng phanh trước thì rất nguy hiểm."
   },
   {
     "type": 3,
@@ -1425,7 +1411,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-101.png",
     "result": "Cả hai biển.",
-    "complain": "Giải thích: Biển 104 “Cấm mô tô” và biển 103a “Cấm ô tô” không cấm xe gắn máy (không phải mô tô). Nên cả 2 biển đều cho phép xe gắn máy đi vào."
+    "complain": "Biển 104 “Cấm mô tô” và biển 103a “Cấm ô tô” không cấm xe gắn máy (không phải mô tô). Nên cả 2 biển đều cho phép xe gắn máy đi vào."
   },
   {
     "type": 4,
@@ -1467,7 +1453,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-104.png",
     "result": "Biển 2.",
-    "complain": "Giải thích: P. 123a “Cấm rẽ trái” không cấm quay đầu xe; Biển 2: P.124a “Cấm quay xe” không cấm rẽ trái."
+    "complain": "P. 123a “Cấm rẽ trái” không cấm quay đầu xe; Biển 2: P.124a “Cấm quay xe” không cấm rẽ trái."
   },
   {
     "type": 4,
@@ -1481,7 +1467,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-105.png",
     "result": "Biển 1.",
-    "complain": "Giải thích: P. 123a “Cấm rẽ trái” không cấm quay đầu xe; Biển 2: P.124a “Cấm quay xe” không cấm rẽ trái. Nên Biển 1 là đáp án đúng."
+    "complain": "P. 123a “Cấm rẽ trái” không cấm quay đầu xe; Biển 2: P.124a “Cấm quay xe” không cấm rẽ trái. Nên Biển 1 là đáp án đúng."
   },
   {
     "type": 4,
@@ -1495,7 +1481,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-106.png",
     "result": "Biển 2.",
-    "complain": "Giải thích: P. 123a “Cấm rẽ trái” không cấm quay đầu xe; Biển 2: P.124a “Cấm quay xe” không cấm rẽ trái. Nên Biển 2 là đáp án đúng."
+    "complain": "P. 123a “Cấm rẽ trái” không cấm quay đầu xe; Biển 2: P.124a “Cấm quay xe” không cấm rẽ trái. Nên Biển 2 là đáp án đúng."
   },
   {
     "type": 4,
@@ -1509,7 +1495,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-107.png",
     "result": "Biển 1 và 2.",
-    "complain": "Giải thích: P. 123b “Cấm rẽ phải” ; Biển 2: P.124d “Cấm rẽ phải và cấm quay xe”; Biển 3: 124f “cấm ô tô rẽ phải và quay xe”. Nên Biển 3 chỉ cấm ô tô, còn biển 1 và biển 2 cấm toàn bộ phương tiện rẽ phải."
+    "complain": "P. 123b “Cấm rẽ phải” ; Biển 2: P.124d “Cấm rẽ phải và cấm quay xe”; Biển 3: 124f “cấm ô tô rẽ phải và quay xe”. Nên Biển 3 chỉ cấm ô tô, còn biển 1 và biển 2 cấm toàn bộ phương tiện rẽ phải."
   },
   {
     "type": 4,
@@ -1523,7 +1509,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-108.png",
     "result": "Biển 1 và 2.",
-    "complain": "Giải thích: 124a “cấm rẽ trái”; Biển 2: 124c “cấm rẽ trái và quay xe”; Biển 3: 124e “cấm ô tô rẽ trái và quay xe”. Nên biển 3 chỉ cấm xe ô tô, còn biển 1 và biển 2 cấm toàn bộ phương tiện rẽ trái"
+    "complain": "124a “cấm rẽ trái”; Biển 2: 124c “cấm rẽ trái và quay xe”; Biển 3: 124e “cấm ô tô rẽ trái và quay xe”. Nên biển 3 chỉ cấm xe ô tô, còn biển 1 và biển 2 cấm toàn bộ phương tiện rẽ trái"
   },
   {
     "type": 4,
@@ -1537,7 +1523,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-109.png",
     "result": "Biển 2.",
-    "complain": "Giải thích: Theo QCVN41:2019 thì biển 2: I.410 “Khu vực quay xe” chỉ dẫn khu vưc được phép quay đầu xe. Biển này thuộc nhóm biển chỉ dẫn nên KHÔNG cấm rẽ trái. Do đó, đáp án đúng là câu 2."
+    "complain": "Theo QCVN41:2019 thì biển 2: I.410 “Khu vực quay xe” chỉ dẫn khu vưc được phép quay đầu xe. Biển này thuộc nhóm biển chỉ dẫn nên KHÔNG cấm rẽ trái. Do đó, đáp án đúng là câu 2."
   },
   {
     "type": 4,
@@ -1551,7 +1537,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-110.png",
     "result": "Biển 1.",
-    "complain": "Giải thích: Biển 1: P.123a “cấm rẽ trái” không cấm quay đầu xe; Biển 2: I.410 “Khu vực quay xe” . Nên cả 2 biển cho phép quay đầu xe là đáp án đúng."
+    "complain": "Biển 1: P.123a “cấm rẽ trái” không cấm quay đầu xe; Biển 2: I.410 “Khu vực quay xe” . Nên cả 2 biển cho phép quay đầu xe là đáp án đúng."
   },
   {
     "type": 4,
@@ -1565,7 +1551,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-111.png",
     "result": "Biển 1.",
-    "complain": "Giải thích: Biển 1: 123a “cấm rẽ trái” nhưng không cấm quay đầu xe. Biển 2: R.301e đặt trước ngã ba ngã tư chỉ được rẽ trái ở phạm vi ngã ba, ngã tư phía sau mặt biển nên không thể quay đầu xe."
+    "complain": "Biển 1: 123a “cấm rẽ trái” nhưng không cấm quay đầu xe. Biển 2: R.301e đặt trước ngã ba ngã tư chỉ được rẽ trái ở phạm vi ngã ba, ngã tư phía sau mặt biển nên không thể quay đầu xe."
   },
   {
     "type": 4,
@@ -1579,7 +1565,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-112.png",
     "result": "Biển 2.",
-    "complain": "Giải thích: Biển 1: P.101 “Đường cấm”; Biển 2: P.102 “cấm đi ngược chiều”; Biển 3: P.301a “Cấm đỗ xe”. Nên biển 2 là cấm đi ngược chiều."
+    "complain": "Biển 1: P.101 “Đường cấm”; Biển 2: P.102 “cấm đi ngược chiều”; Biển 3: P.301a “Cấm đỗ xe”. Nên biển 2 là cấm đi ngược chiều."
   },
   {
     "type": 4,
@@ -1593,7 +1579,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-112.png",
     "result": "Biển 1 và 2.",
-    "complain": "Giải thích: Biển 1: P.101 “Đường cấm”;\nBiển 2: P.102 “Cấm đi ngược chiều” cấm đi vào theo chiều đặt biển;\nBiển 3: P.301a “Cấm đỗ xe”.\nNên biển 1 và biển 2 là cấm các phương tiện không được phép đi vào."
+    "complain": "Biển 1: P.101 “Đường cấm”;\nBiển 2: P.102 “Cấm đi ngược chiều” cấm đi vào theo chiều đặt biển;\nBiển 3: P.301a “Cấm đỗ xe”.\nNên biển 1 và biển 2 là cấm các phương tiện không được phép đi vào."
   },
   {
     "type": 4,
@@ -1607,7 +1593,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-114.png",
     "result": "Biển 2.",
-    "complain": "Giải thích: P.101 “Đườn cấm” không cấm xe ưu tiên;\nBiển 2: R.122 “Dừng lại” áp dụng với cả xe ưu tiên;\nBiển 3: P.102 “Cấm đi ngược chiều” không áp dụng với xe ưu tiên;\nNên Biển 2 là đáp án đúng, áp dụng với cả xe ưu tiên."
+    "complain": "P.101 “Đườn cấm” không cấm xe ưu tiên;\nBiển 2: R.122 “Dừng lại” áp dụng với cả xe ưu tiên;\nBiển 3: P.102 “Cấm đi ngược chiều” không áp dụng với xe ưu tiên;\nNên Biển 2 là đáp án đúng, áp dụng với cả xe ưu tiên."
   },
   {
     "type": 4,
@@ -1621,7 +1607,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/Bien-cau-115.png",
     "result": "Biển 1.",
-    "complain": "Giải thích: P.101 “Đườn cấm” không cấm xe ưu tiên;\nBiển 2: R.122 “Dừng lại” áp dụng với cả xe ưu tiên;\nNên biển 1 là đáp án đúng."
+    "complain": "P.101 “Đườn cấm” không cấm xe ưu tiên;\nBiển 2: R.122 “Dừng lại” áp dụng với cả xe ưu tiên;\nNên biển 1 là đáp án đúng."
   },
   {
     "type": 4,
@@ -1677,7 +1663,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/Bien-cau-119.png",
     "result": "Không được phép.",
-    "complain": "Giải thích: Biển phụ là biển S.501 “Phạm vi tác dụng của biển” xác định chiều dài áp dụng biển chính từ nơi đặt biển."
+    "complain": "Biển phụ là biển S.501 “Phạm vi tác dụng của biển” xác định chiều dài áp dụng biển chính từ nơi đặt biển."
   },
   {
     "type": 4,
@@ -1691,7 +1677,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-120.png",
     "result": "Biển 1 và 3.",
-    "complain": "Giải thích: Biển chính là P.101 “Đường cấm”, có biển phụ thì áp dụng cấm theo biển phụ. Nên Biển 1 và Biển 3 không áp dụng với xe mô tô là câu trả lời đúng."
+    "complain": "Biển chính là P.101 “Đường cấm”, có biển phụ thì áp dụng cấm theo biển phụ. Nên Biển 1 và Biển 3 không áp dụng với xe mô tô là câu trả lời đúng."
   },
   {
     "type": 4,
@@ -1705,7 +1691,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-120.png",
     "result": "Biển 2.",
-    "complain": "Giải thích: Biển chính là P.101 “Đường cấm”, có biển phụ thì áp dụng cấm theo biển phụ. Nên Biển 2 áp dụng với xe mô tô là câu trả lời đúng."
+    "complain": "Biển chính là P.101 “Đường cấm”, có biển phụ thì áp dụng cấm theo biển phụ. Nên Biển 2 áp dụng với xe mô tô là câu trả lời đúng."
   },
   {
     "type": 4,
@@ -1733,7 +1719,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-123.png",
     "result": "Biển 1.",
-    "complain": "Giải thích: Biển 1: W.224 “Đường người đi bộ cắt ngang”;\nBiển 2: P.112 “Cấm người đi bộ”; Biển 3: R.305 “Đường dành cho người đi bộ”.\nBiển 1 báo ưu tiên cho người đi bộ nên phải nhường đường."
+    "complain": "Biển 1: W.224 “Đường người đi bộ cắt ngang”;\nBiển 2: P.112 “Cấm người đi bộ”; Biển 3: R.305 “Đường dành cho người đi bộ”.\nBiển 1 báo ưu tiên cho người đi bộ nên phải nhường đường."
   },
   {
     "type": 4,
@@ -1747,7 +1733,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-123.png",
     "result": "Biển 3.",
-    "complain": "Giải thích: Biển 1: W.224 “Đường người đi bộ cắt ngang”;\nBiển 2: P.112 “Cấm người đi bộ”; Biển 3: R.305 “Đường dành cho người đi bộ”.\nBiển 3 báo đường dành cho người đi bộ nên phương tiện khác không được đi vào."
+    "complain": "Biển 1: W.224 “Đường người đi bộ cắt ngang”;\nBiển 2: P.112 “Cấm người đi bộ”; Biển 3: R.305 “Đường dành cho người đi bộ”.\nBiển 3 báo đường dành cho người đi bộ nên phương tiện khác không được đi vào."
   },
   {
     "type": 4,
@@ -1775,7 +1761,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/Biển-câu-126.png",
     "result": "Cả ba biển.",
-    "complain": "Giải thích: Biển 1: W.210 “Giao nhau với đường sắt có rào chắn”; Biển : W.208 “Giao nhau với đường ưu tiên”; Biển 3: W209 “Giao nhau có tín hiệu đèn”"
+    "complain": "Biển 1: W.210 “Giao nhau với đường sắt có rào chắn”; Biển : W.208 “Giao nhau với đường ưu tiên”; Biển 3: W209 “Giao nhau có tín hiệu đèn”"
   },
   {
     "type": 4,
@@ -1789,7 +1775,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/Biển-câu-126.png",
     "result": "Biển 1.",
-    "complain": "Giải thích: Biển 1: W.210 “Giao nhau với đường sắt có rào chắn”; Biển : W.208 “Giao nhau với đường ưu tiên”; Biển 3: W209 “Giao nhau có tín hiệu đèn”"
+    "complain": "Biển 1: W.210 “Giao nhau với đường sắt có rào chắn”; Biển : W.208 “Giao nhau với đường ưu tiên”; Biển 3: W209 “Giao nhau có tín hiệu đèn”"
   },
   {
     "type": 4,
@@ -1803,7 +1789,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/Biển-câu-126.png",
     "result": "Biển 3.",
-    "complain": "Giải thích: Biển 1: W.210 “Giao nhau với đường sắt có rào chắn”; Biển : W.208 “Giao nhau với đường ưu tiên”; Biển 3: W209 “Giao nhau có tín hiệu đèn”"
+    "complain": "Biển 1: W.210 “Giao nhau với đường sắt có rào chắn”; Biển : W.208 “Giao nhau với đường ưu tiên”; Biển 3: W209 “Giao nhau có tín hiệu đèn”"
   },
   {
     "type": 4,
@@ -1817,7 +1803,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/Bien-cau-129.png",
     "result": "Biển 1 và 3.",
-    "complain": "Giải thích: Biển 1: W.210 “Giao nhau với đường sắt có rào chắn”; Biển 2: W.234 “Giao nhau với đường 2 chiều”; Biển 3: W.242a “Nơi đường sắt giao vuông gốc với đường bộ”."
+    "complain": "Biển 1: W.210 “Giao nhau với đường sắt có rào chắn”; Biển 2: W.234 “Giao nhau với đường 2 chiều”; Biển 3: W.242a “Nơi đường sắt giao vuông gốc với đường bộ”."
   },
   {
     "type": 4,
@@ -2041,7 +2027,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-145.png",
     "result": "Biển 2.",
-    "complain": "Giải thích: W.224 “Đường người đi bộ cắt ngang”;\nBiển 2: I.423c “Điểm bắt đầu đường đi bộ”\nBiển3: W.225 “trẻ em”"
+    "complain": "W.224 “Đường người đi bộ cắt ngang”;\nBiển 2: I.423c “Điểm bắt đầu đường đi bộ”\nBiển3: W.225 “trẻ em”"
   },
   {
     "type": 4,
@@ -2055,7 +2041,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-146.png",
     "result": "Báo hiệu đường có gồ giảm tốc phía trước.",
-    "complain": "Giải thích: Biển W221b “Đường có sóng mấp mô nhân tạo”."
+    "complain": "Biển W221b “Đường có sóng mấp mô nhân tạo”."
   },
   {
     "type": 4,
@@ -2069,7 +2055,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-147.png",
     "result": "Không biển nào.",
-    "complain": "Giải thích: Biển 1: R.301a “Hướng đi phải theo” chỉ được đi thẳng đặt trước ngã ba, ngã tư;\nBiển 2: R.301h “Hướng đi phải theo” chỉ được rẽ trái hoặc rẽ phải đặt sau ngã ba, ngã tư;\nNên đáp án đúng là không có biển nào."
+    "complain": "Biển 1: R.301a “Hướng đi phải theo” chỉ được đi thẳng đặt trước ngã ba, ngã tư;\nBiển 2: R.301h “Hướng đi phải theo” chỉ được rẽ trái hoặc rẽ phải đặt sau ngã ba, ngã tư;\nNên đáp án đúng là không có biển nào."
   },
   {
     "type": 4,
@@ -2083,7 +2069,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-148.png",
     "result": "Biển 1.",
-    "complain": "Giải thích: Biển 1: R.301a “Hướng đi phải theo” chỉ được đi thẳng đặt trước ngã ba, ngã tư;\nBiển 2: I.407a “Đường một chiều” không liên quan hướng đi phải theo.\nNên Biển 1 là đáp án đúng."
+    "complain": "Biển 1: R.301a “Hướng đi phải theo” chỉ được đi thẳng đặt trước ngã ba, ngã tư;\nBiển 2: I.407a “Đường một chiều” không liên quan hướng đi phải theo.\nNên Biển 1 là đáp án đúng."
   },
   {
     "type": 4,
@@ -2097,7 +2083,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-148.png",
     "result": "Biển 2.",
-    "complain": "Giải thích: Biển 1: R.301a “Hướng đi phải theo” chỉ được đi thẳng đặt trước ngã ba, ngã tư;\nBiển 2: I.407a “Đường một chiều” không liên quan hướng đi phải theo.\nNên biển 2 là đáp án đúng."
+    "complain": "Biển 1: R.301a “Hướng đi phải theo” chỉ được đi thẳng đặt trước ngã ba, ngã tư;\nBiển 2: I.407a “Đường một chiều” không liên quan hướng đi phải theo.\nNên biển 2 là đáp án đúng."
   },
   {
     "type": 4,
@@ -2111,7 +2097,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-150.png",
     "result": "Biển 1.",
-    "complain": "Giải thích:\nBiển 1: DP134 “Hết hạn chế tốc độ tối đa”\nBiển 2: DP135 “Hết mọi lệnh cấm”;\nBiển 3: R307 “Hết hạn chế tốc độ tối thiểu”.\nNên biển 1 là biển “Hết hạn chế tốc độ tối đa”. Chú ý câu này hỏi ý nghĩa của biển."
+    "complain": "Biển 1: DP134 “Hết hạn chế tốc độ tối đa”\nBiển 2: DP135 “Hết mọi lệnh cấm”;\nBiển 3: R307 “Hết hạn chế tốc độ tối thiểu”.\nNên biển 1 là biển “Hết hạn chế tốc độ tối đa”. Chú ý câu này hỏi ý nghĩa của biển."
   },
   {
     "type": 4,
@@ -2125,7 +2111,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-150.png",
     "result": "Biển 1 và 2.",
-    "complain": "Giải thích:\nBiển 1: DP134 “Hết hạn chế tốc độ tối đa”\nBiển 2: DP135 “Hết mọi lệnh cấm”;\nBiển 3: R307 “Hết hạn chế tốc độ tối thiểu”.\nNên Biển 1 và Biển 2 là biển “Hết hạn chế tốc độ tối đa”. Chú ý câu hỏi các biển hết hạn chế, không phải hỏi ý nghĩa của biển."
+    "complain": "Biển 1: DP134 “Hết hạn chế tốc độ tối đa”\nBiển 2: DP135 “Hết mọi lệnh cấm”;\nBiển 3: R307 “Hết hạn chế tốc độ tối thiểu”.\nNên Biển 1 và Biển 2 là biển “Hết hạn chế tốc độ tối đa”. Chú ý câu hỏi các biển hết hạn chế, không phải hỏi ý nghĩa của biển."
   },
   {
     "type": 4,
@@ -2139,7 +2125,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-150.png",
     "result": "Biển 3.",
-    "complain": "Giải thích:\nBiển 1: DP134 “Hết hạn chế tốc độ tối đa”\nBiển 2: DP135 “Hết mọi lệnh cấm”;\nBiển 3: R307 “Hết hạn chế tốc độ tối thiểu”.\nNên Biển 3 là biển “Hết hạn chế tốc độ tối thiểu”. Câu này hỏi ý nghĩa của biển."
+    "complain": "Biển 1: DP134 “Hết hạn chế tốc độ tối đa”\nBiển 2: DP135 “Hết mọi lệnh cấm”;\nBiển 3: R307 “Hết hạn chế tốc độ tối thiểu”.\nNên Biển 3 là biển “Hết hạn chế tốc độ tối thiểu”. Câu này hỏi ý nghĩa của biển."
   },
   {
     "type": 4,
@@ -2153,7 +2139,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-153.png",
     "result": "Biển 2 và 3.",
-    "complain": "Giải thích:\nBiển 1: DP134 “Hết hạn chế tốc độ tối đa”\nBiển 2: DP135 “Hết mọi lệnh cấm”;\nBiển 3: DP.133 “Hết cấm vượt”\nNên đáp án đúng phải là Biển 2 và Biển 3."
+    "complain": "Biển 1: DP134 “Hết hạn chế tốc độ tối đa”\nBiển 2: DP135 “Hết mọi lệnh cấm”;\nBiển 3: DP.133 “Hết cấm vượt”\nNên đáp án đúng phải là Biển 2 và Biển 3."
   },
   {
     "type": 4,
@@ -2167,7 +2153,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-150.png",
     "result": "Biển 2.",
-    "complain": "Giải thích:\nBiển 1: DP134 “Hết hạn chế tốc độ tối đa”\nBiển 2: DP135 “Hết mọi lệnh cấm”;\nBiển 3: R307 “Hết hạn chế tốc độ tối thiểu”."
+    "complain": "Biển 1: DP134 “Hết hạn chế tốc độ tối đa”\nBiển 2: DP135 “Hết mọi lệnh cấm”;\nBiển 3: R307 “Hết hạn chế tốc độ tối thiểu”."
   },
   {
     "type": 4,
@@ -2181,7 +2167,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/Bien-cau-155.png",
     "result": "Biển 1.",
-    "complain": "Giải thích:\nBiển 1: I424a “Cầu vượt qua đường cho người đi bộ; Biển 2: I424c “Hầm chui qua đường cho người đi bộ” nên đáp án đúng là biển 1."
+    "complain": "Biển 1: I424a “Cầu vượt qua đường cho người đi bộ; Biển 2: I424c “Hầm chui qua đường cho người đi bộ” nên đáp án đúng là biển 1."
   },
   {
     "type": 4,
@@ -2195,7 +2181,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-156.png",
     "result": "Biển 2.",
-    "complain": "Giải thích: Biển 1: I424b “Cầu vượt qua đường cho người đi bộ”; Biển 2: I424d “Hầm chui qua đường cho người đi bộ” nên đáp án đúng là biển 2."
+    "complain": "Biển 1: I424b “Cầu vượt qua đường cho người đi bộ”; Biển 2: I424d “Hầm chui qua đường cho người đi bộ” nên đáp án đúng là biển 2."
   },
   {
     "type": 4,
@@ -2321,7 +2307,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-165.png",
     "result": "Vị trí dừng xe của các phương tiện vận tải hành khách công cộng.",
-    "complain": "Giải thích: Vạch 9.2: Vạch quy đình vị trí dừng đỗ của phương tiện giao thông công cộng trên đường."
+    "complain": "Vạch 9.2: Vạch quy đình vị trí dừng đỗ của phương tiện giao thông công cộng trên đường."
   },
   {
     "type": 5,
@@ -2335,7 +2321,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-166.png",
     "result": "Xe tải, mô tô, xe khách, xe con.",
-    "complain": "Giải thích:\nThứ tự ưu tiên: Xe ưu tiên- Đường ưu tiên- Đường cùng cấp theo thứ tự bên phải trống – rẽ phải – đi thẳng – rẽ trái.\n1. Xe tải: Đường ưu tiên và đi thẳng;\n2. Mô tô: Đường ưu tiên và rẽ trái;\n3. Xe khách: Đường không ưu tiên, đi thẳng.\n4. Xe con: Đường không ưu tiên, rẽ trái."
+    "complain": "Thứ tự ưu tiên: Xe ưu tiên- Đường ưu tiên- Đường cùng cấp theo thứ tự bên phải trống – rẽ phải – đi thẳng – rẽ trái.\n1. Xe tải: Đường ưu tiên và đi thẳng;\n2. Mô tô: Đường ưu tiên và rẽ trái;\n3. Xe khách: Đường không ưu tiên, đi thẳng.\n4. Xe con: Đường không ưu tiên, rẽ trái."
   },
   {
     "type": 5,
@@ -2349,7 +2335,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-167.png",
     "result": "Mô tô, xe con, xe tải.",
-    "complain": "Giải thích:\nThứ tự ưu tiên: Xe ưu tiên- Đường ưu tiên- Đường cùng cấp theo thứ tự bên phải trống – rẽ phải – đi thẳng – rẽ trái.\nXe mô tô: Bên phải trống;\nXe con: Đi thẳng;\nXe tải: Rẽ trái;"
+    "complain": "Thứ tự ưu tiên: Xe ưu tiên- Đường ưu tiên- Đường cùng cấp theo thứ tự bên phải trống – rẽ phải – đi thẳng – rẽ trái.\nXe mô tô: Bên phải trống;\nXe con: Đi thẳng;\nXe tải: Rẽ trái;"
   },
   {
     "type": 5,
@@ -2363,7 +2349,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-168.png",
     "result": "Xe con.",
-    "complain": "Giải thích: Xe con được đi trước vì mô tô có biển STOP trước mặt."
+    "complain": "Xe con được đi trước vì mô tô có biển STOP trước mặt."
   },
   {
     "type": 5,
@@ -2377,7 +2363,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-169.png",
     "result": "Xe cứu thương.",
-    "complain": "Giải thích: Xe ưu tiên đi trước."
+    "complain": "Xe ưu tiên đi trước."
   },
   {
     "type": 5,
@@ -2391,7 +2377,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-170.png",
     "result": "Xe con và xe khách.",
-    "complain": "Giải thích: Xe con và xe khách đang ở làn đường có tín hiệu đèn xanh nên được phép đi."
+    "complain": "Xe con và xe khách đang ở làn đường có tín hiệu đèn xanh nên được phép đi."
   },
   {
     "type": 5,
@@ -2405,7 +2391,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-171.png",
     "result": "Xe khách, xe tải, mô tô.",
-    "complain": "Giải thích:\n1. Xe khách: Sai làn, đi thẳng đèn đang đỏ;\n2. Xe tải: Sai làn: Đi trên làn đi thẳng trong khi thực hiện rẽ trái.\n3. Xe mô tô: Sai làn: Đi trên làn rẽ trái trong khi thực hiện rẽ phải.\nNên đáp án đúng là xe khách, xe tải và xe mô tô đều vi phạm quy tắc giao thông."
+    "complain": "1. Xe khách: Sai làn, đi thẳng đèn đang đỏ;\n2. Xe tải: Sai làn: Đi trên làn đi thẳng trong khi thực hiện rẽ trái.\n3. Xe mô tô: Sai làn: Đi trên làn rẽ trái trong khi thực hiện rẽ phải.\nNên đáp án đúng là xe khách, xe tải và xe mô tô đều vi phạm quy tắc giao thông."
   },
   {
     "type": 5,
@@ -2419,7 +2405,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-172.png",
     "result": "Mô tô, xe tải, xe khách, xe con.",
-    "complain": "Giải thích: Giao nhau cùng cấp có vòng xuyến: Chưa vào vòng xuyến thì ưu tiên xe bên phải; đã vào vòng xuyến ưu tiên xe từ bên trái tới.\nToàn bộ các xe chưa vào vòng xuyến nên ưu tiên xe bên phải.\nThứ tự sẽ là mô tô, xe tải, xe khách, xe con."
+    "complain": "Giao nhau cùng cấp có vòng xuyến: Chưa vào vòng xuyến thì ưu tiên xe bên phải; đã vào vòng xuyến ưu tiên xe từ bên trái tới.\nToàn bộ các xe chưa vào vòng xuyến nên ưu tiên xe bên phải.\nThứ tự sẽ là mô tô, xe tải, xe khách, xe con."
   },
   {
     "type": 5,
@@ -2433,7 +2419,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-173.png",
     "result": "Xe tải.",
-    "complain": "Giải thích: Biển cấm đỗ xe tải (ở biển phụ) nên chỉ có xe tải vi phạm."
+    "complain": "Biển cấm đỗ xe tải (ở biển phụ) nên chỉ có xe tải vi phạm."
   },
   {
     "type": 5,
@@ -2447,7 +2433,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-174.png",
     "result": "Cả ba hướng.",
-    "complain": "Giải thích:\nBạn lưu ý câu hỏi này về hướng đi của xe GẮN MÁY. Hướng 1 và 3 chắn chắn là đi được rồi.\nVới hướng 2, biển báo cấm mô tô đi vào chỉ có tác dụng với xe mô tô nên xe gắn máy không có hiệu lực. DO đó vẫn đi vào bình thường."
+    "complain": "Bạn lưu ý câu hỏi này về hướng đi của xe GẮN MÁY. Hướng 1 và 3 chắn chắn là đi được rồi.\nVới hướng 2, biển báo cấm mô tô đi vào chỉ có tác dụng với xe mô tô nên xe gắn máy không có hiệu lực. DO đó vẫn đi vào bình thường."
   },
   {
     "type": 5,
@@ -2461,7 +2447,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-175.png",
     "result": "Cả hai xe.",
-    "complain": "Giải thích: Biển cấm đỗ xe ở cả phía trước và phía sau biển (ở biển báo phụ) nên cả 2 xe vi phạm."
+    "complain": "Biển cấm đỗ xe ở cả phía trước và phía sau biển (ở biển báo phụ) nên cả 2 xe vi phạm."
   },
   {
     "type": 5,
@@ -2475,7 +2461,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-176.png",
     "result": "Cả ba xe.",
-    "complain": "Giải thích: Xe tải đậu trái đường; Xe con và mô tô đậu xe đè vạch nên cả 3 xe vi phạm."
+    "complain": "Xe tải đậu trái đường; Xe con và mô tô đậu xe đè vạch nên cả 3 xe vi phạm."
   },
   {
     "type": 5,
@@ -2489,7 +2475,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-177.png",
     "result": "",
-    "complain": "Giải thích: Xe tải kéo xe mô tô 3 bánh như trên hình là không đúng vì đi vào đường có biển P.108 “Cấm ô tô kéo moóc” kể cả xe máy, xe ô tô khách kéo theo rơ moóc đi qua."
+    "complain": "Xe tải kéo xe mô tô 3 bánh như trên hình là không đúng vì đi vào đường có biển P.108 “Cấm ô tô kéo moóc” kể cả xe máy, xe ô tô khách kéo theo rơ moóc đi qua."
   },
   {
     "type": 5,
@@ -2503,7 +2489,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-178.png",
     "result": "Xe mô tô.",
-    "complain": "Giải thích:\nCả 2 xe đều gặp đèn xanh nên áp dụng quy tắc đường cùng cấp: Bên phải trống – Rẽ phải – Đi thẳng – Rẽ trái.\nNên đáp án đúng là xe mô tô rẽ phải được quyền đi trước. Xe con rẽ trái phải nhường đường."
+    "complain": "Cả 2 xe đều gặp đèn xanh nên áp dụng quy tắc đường cùng cấp: Bên phải trống – Rẽ phải – Đi thẳng – Rẽ trái.\nNên đáp án đúng là xe mô tô rẽ phải được quyền đi trước. Xe con rẽ trái phải nhường đường."
   },
   {
     "type": 5,
@@ -2517,7 +2503,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-179.png",
     "result": "Mô tô + xe đạp, xe con (A), xe con (B).",
-    "complain": "Giải thích:\nThứ tự ưu tiên đường cùng cấp: Xe ưu tiên – Đường ưu tiên – Bên phải trống – Rẽ phải – Đi thẳng – Rẽ trái."
+    "complain": "Thứ tự ưu tiên đường cùng cấp: Xe ưu tiên – Đường ưu tiên – Bên phải trống – Rẽ phải – Đi thẳng – Rẽ trái."
   },
   {
     "type": 5,
@@ -2531,7 +2517,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-180.png",
     "result": "Mô tô.",
-    "complain": "Giải thích: Thứ tự ưu tiên: Xe ưu tiên – Đường ưu tiên – Bên phải trống – Rẽ trái – Đi thẳng – Rẽ trái. Xe mô tô rẽ trái từ đường ưu tiên vào đường ưu tiên (theo biển báo và biển phụ) nên được quyền đi trước."
+    "complain": "Thứ tự ưu tiên: Xe ưu tiên – Đường ưu tiên – Bên phải trống – Rẽ trái – Đi thẳng – Rẽ trái. Xe mô tô rẽ trái từ đường ưu tiên vào đường ưu tiên (theo biển báo và biển phụ) nên được quyền đi trước."
   },
   {
     "type": 5,
@@ -2545,7 +2531,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-181.png",
     "result": "Xe con.",
-    "complain": "Giải thích: Xe con quay đầu đè vạch liền trên đường nên vi phạm."
+    "complain": "Xe con quay đầu đè vạch liền trên đường nên vi phạm."
   },
   {
     "type": 5,
@@ -2559,7 +2545,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-182.png",
     "result": "Tất cả các xe phải dừng lại trước ngã tư, trừ những xe đã ở trong ngã tư được phép tiếp tục đi.",
-    "complain": "Giải thích: Giơ tay thẳng đứng: Tất cả dừng, trừ xe đã ở trong ngã tư được phép đi;\nGiang tay ngang: Trái phải đi; Trước sau dừng;\nTay phải giơ trước: sau, phải dừng, trước rẽ trái, trái đi các hướng, người đi bộ qua đường đi sau người điều khiển."
+    "complain": "Giơ tay thẳng đứng: Tất cả dừng, trừ xe đã ở trong ngã tư được phép đi;\nGiang tay ngang: Trái phải đi; Trước sau dừng;\nTay phải giơ trước: sau, phải dừng, trước rẽ trái, trái đi các hướng, người đi bộ qua đường đi sau người điều khiển."
   },
   {
     "type": 5,
@@ -2573,7 +2559,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-183.png",
     "result": "Mô tô, xe tải.",
-    "complain": "Giải thích: Giang ngang tay: Trái phải đi; Trước sau dừng. Xe mô tô và xe tải được phép đi là đáp án đúng."
+    "complain": "Giang ngang tay: Trái phải đi; Trước sau dừng. Xe mô tô và xe tải được phép đi là đáp án đúng."
   },
   {
     "type": 5,
@@ -2587,7 +2573,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-184.png",
     "result": "Tất cả các loại xe trên.",
-    "complain": "Giải thích: Xe khách chờ đèn đỏ rẽ trái. Xe tải đi thẳng và rẽ phải theo tín hiệu đèn xanh. Xe con đi thẳng và rẽ phải theo tín hiệu đèn xanh. Xe mô tô chờ đèn đỏ rẽ trái. Nên tất cả xe đều chấp hành."
+    "complain": "Xe khách chờ đèn đỏ rẽ trái. Xe tải đi thẳng và rẽ phải theo tín hiệu đèn xanh. Xe con đi thẳng và rẽ phải theo tín hiệu đèn xanh. Xe mô tô chờ đèn đỏ rẽ trái. Nên tất cả xe đều chấp hành."
   },
   {
     "type": 5,
@@ -2601,7 +2587,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-185.png",
     "result": "Hướng 1 và 3.",
-    "complain": "Giải thích: Hướng 2 có biển số P.104 “Cấm mô tô”\nHướng 3 Biển số P.103a “Cấm ô tô” nhưng không cấm mô tô. Nên đáp án đúng là hướng 1 và hướng 3."
+    "complain": "Hướng 2 có biển số P.104 “Cấm mô tô”\nHướng 3 Biển số P.103a “Cấm ô tô” nhưng không cấm mô tô. Nên đáp án đúng là hướng 1 và hướng 3."
   },
   {
     "type": 5,
@@ -2615,7 +2601,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-186.png",
     "result": "Xe quân sự, xe công an, xe con +mô tô.",
-    "complain": "Giải thích:\nThứ tự ưu tiên: Xe ưu tiên – Đường ưu tiên – Bên phải trống – Rẽ phải – Đi thẳng – Rẽ trái.\n1. Xe quân sự: Xe ưu tiên cùng cấp xe công an nhưng đi thẳng;\n2. Xe công an: Xe ưu tiên; rẽ trái;\n3. Xe con và xe mô tô: Cùng đi thẳng."
+    "complain": "Thứ tự ưu tiên: Xe ưu tiên – Đường ưu tiên – Bên phải trống – Rẽ phải – Đi thẳng – Rẽ trái.\n1. Xe quân sự: Xe ưu tiên cùng cấp xe công an nhưng đi thẳng;\n2. Xe công an: Xe ưu tiên; rẽ trái;\n3. Xe con và xe mô tô: Cùng đi thẳng."
   },
   {
     "type": 5,
@@ -2629,7 +2615,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-187.png",
     "result": "Xe con (E), mô tô (C).",
-    "complain": "Giải thích: Xe mô tô C chạy vào làn danh riêng xe ô tô: Vi phạm; Xe con E chạy vào làn danh riêng xe máy: Vi phạm."
+    "complain": "Xe mô tô C chạy vào làn danh riêng xe ô tô: Vi phạm; Xe con E chạy vào làn danh riêng xe máy: Vi phạm."
   },
   {
     "type": 5,
@@ -2643,7 +2629,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-188.png",
     "result": "Xe con (E), mô tô (D).",
-    "complain": "Giải thích: Nhìn vào bảng chỉ dẫn loại phương tiện theo làn đường: Xe con (E) đi trên làn danh riêng cho mô tô nên vi phạm: Xe mô tô (D) chạy trên làn dành riêng cho ô tô nên cũng vi phạm."
+    "complain": "Nhìn vào bảng chỉ dẫn loại phương tiện theo làn đường: Xe con (E) đi trên làn danh riêng cho mô tô nên vi phạm: Xe mô tô (D) chạy trên làn dành riêng cho ô tô nên cũng vi phạm."
   },
   {
     "type": 5,
@@ -2657,7 +2643,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-189.png",
     "result": "Không được vượt.",
-    "complain": "Giải thích: Tại nơi giao nhau, trên đoạn đường có làn đường danh cho người đi bộ cắt ngang qua thì không được phép vượt."
+    "complain": "Tại nơi giao nhau, trên đoạn đường có làn đường danh cho người đi bộ cắt ngang qua thì không được phép vượt."
   },
   {
     "type": 5,
@@ -2671,7 +2657,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-190.png",
     "result": "Cả hai xe.",
-    "complain": "Giải thích: Biển số R.301a chỉ cho phép các phương tiện đi thẳng trong khi cả 2 xe đều có tín hiệu xe nhan rẽ sang hướng khách nên cả 2 xe đều vi phạm quy tắc giao thông."
+    "complain": "Biển số R.301a chỉ cho phép các phương tiện đi thẳng trong khi cả 2 xe đều có tín hiệu xe nhan rẽ sang hướng khách nên cả 2 xe đều vi phạm quy tắc giao thông."
   },
   {
     "type": 5,
@@ -2685,7 +2671,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-191.png",
     "result": "Xe tải.",
-    "complain": "Giải thích: Xe con trong cả 2 phía đều đang đúng làn đường và đi theo hướng mà đèn xanh đang bật nên đúng quy tắc giao thông.\nXe tải trong cả 2 phía đều ở sai làn đường so với hướng rẽ nên vi phạm quy tắc giao thông."
+    "complain": "Xe con trong cả 2 phía đều đang đúng làn đường và đi theo hướng mà đèn xanh đang bật nên đúng quy tắc giao thông.\nXe tải trong cả 2 phía đều ở sai làn đường so với hướng rẽ nên vi phạm quy tắc giao thông."
   },
   {
     "type": 5,
@@ -2699,7 +2685,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-192.png",
     "result": "Xe khách, xe tải.",
-    "complain": "Giải thích: Xe con và xe mô tô đang ở đúng làn đường, đúng hướng rẽ với tín hiệu đèn xanh nên đúng quy tắc giao thông.\nXe khách và xe tải đang ở sai làn đường so với hướng rẽ nên đều vi phạm."
+    "complain": "Xe con và xe mô tô đang ở đúng làn đường, đúng hướng rẽ với tín hiệu đèn xanh nên đúng quy tắc giao thông.\nXe khách và xe tải đang ở sai làn đường so với hướng rẽ nên đều vi phạm."
   },
   {
     "type": 5,
@@ -2713,7 +2699,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-193.png",
     "result": "Xe tải, xe khách, xe mô tô.",
-    "complain": "Giải thích:\nXe con đi đúng làn đường theo hướng rẽ và tín hiệu đèn.\nXe khách: Sai làn đường và tín hiệu đèn.\nXe tải: Đi thẳng vi phạm đèn đỏ.\nXe mô tô: Đi thẳng vi phạm đèn đỏ."
+    "complain": "Xe con đi đúng làn đường theo hướng rẽ và tín hiệu đèn.\nXe khách: Sai làn đường và tín hiệu đèn.\nXe tải: Đi thẳng vi phạm đèn đỏ.\nXe mô tô: Đi thẳng vi phạm đèn đỏ."
   },
   {
     "type": 5,
@@ -2727,7 +2713,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-194.png",
     "result": "Xe khách, mô tô.",
-    "complain": "Giải thích: Xe con và xe tải: Vi phạm tín hiệu đèn;\nXe khách và xe mô tô: Đúng làn đường và đúng tín hiệu đèn."
+    "complain": "Xe con và xe tải: Vi phạm tín hiệu đèn;\nXe khách và xe mô tô: Đúng làn đường và đúng tín hiệu đèn."
   },
   {
     "type": 5,
@@ -2741,7 +2727,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-195.png",
     "result": "Mô tô, xe con, xe của bạn.",
-    "complain": "Giải thích: Thứ tự ưu tiên: Xe ưu tiên – Đường ưu tiên – Đường cùng cấp: Bên phải trống, rẽ phải, đi thẳng, rẽ trái.\nBiển báo phía trước là đường ưu tiên và biển phụ báo hướng di chuyển của xe mô tô là hướng ưu tiên.\n1. Xe mô tô: Đường ưu tiên;\n2. Xe con: Đường không ưu tiên, bên phải trống;\n3. Xe của bạn: Đường không ưu tiên, bên phải vướng xe con."
+    "complain": "Thứ tự ưu tiên: Xe ưu tiên – Đường ưu tiên – Đường cùng cấp: Bên phải trống, rẽ phải, đi thẳng, rẽ trái.\nBiển báo phía trước là đường ưu tiên và biển phụ báo hướng di chuyển của xe mô tô là hướng ưu tiên.\n1. Xe mô tô: Đường ưu tiên;\n2. Xe con: Đường không ưu tiên, bên phải trống;\n3. Xe của bạn: Đường không ưu tiên, bên phải vướng xe con."
   },
   {
     "type": 5,
@@ -2755,7 +2741,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-196.png",
     "result": "Xe con, xe của bạn, mô tô.",
-    "complain": "Giải thích: Thứ tự ưu tiên: Xe ưu tiên – Đường ưu tiên – Đường cùng cấp: Bên phải trống, rẽ phải, đi thẳng, rẽ trái.\n1. Xe con: Rẽ phải; 2: Xe của bạn: Đi thẳng; 3. Mô tô: Rẽ trái."
+    "complain": "Thứ tự ưu tiên: Xe ưu tiên – Đường ưu tiên – Đường cùng cấp: Bên phải trống, rẽ phải, đi thẳng, rẽ trái.\n1. Xe con: Rẽ phải; 2: Xe của bạn: Đi thẳng; 3. Mô tô: Rẽ trái."
   },
   {
     "type": 5,
@@ -2769,7 +2755,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-197.png",
     "result": "Giảm tốc độ, rẽ phải sau xe tải và xe đạp.",
-    "complain": "Giải thích: Xe tải đã vào nơi giao nhau trước nên sẽ được ưu tiên trước. Biển báo phía trước là đường ưu tiên dành cho xe thô sơ nên phải nhường đường cho xe đạp. Do đó, xe bạn rẽ phải sau xe tải và xe đạp."
+    "complain": "Xe tải đã vào nơi giao nhau trước nên sẽ được ưu tiên trước. Biển báo phía trước là đường ưu tiên dành cho xe thô sơ nên phải nhường đường cho xe đạp. Do đó, xe bạn rẽ phải sau xe tải và xe đạp."
   },
   {
     "type": 5,
@@ -2783,7 +2769,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-198.png",
     "result": "Xe con.",
-    "complain": "Giải thích:Biển số W.211a “Giao nhau với đường sắt không có rào chắn” thì các phương tiện đứng cách xa đường sắt tối thiểu 5m nên xe con đúng."
+    "complain": "iển số W.211a “Giao nhau với đường sắt không có rào chắn” thì các phương tiện đứng cách xa đường sắt tối thiểu 5m nên xe con đúng."
   },
   {
     "type": 5,
@@ -2797,7 +2783,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-199.png",
     "result": "Dừng lại trước rào chắn một khoảng cách an toàn.",
-    "complain": "Giải thích: Bắt buộc phải dừng xe."
+    "complain": "Bắt buộc phải dừng xe."
   },
   {
     "type": 5,
@@ -2811,7 +2797,7 @@
     ],
     "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-200.png",
     "result": "Giảm tốc độ chờ xe container rẽ xong rồi tiếp tục đi.",
-    "complain": "Giải thích: Giảm tốc độc chờ xe đầu kéo rẽ phải rồi mới tiếp tục đi."
+    "complain": "Giảm tốc độc chờ xe đầu kéo rẽ phải rồi mới tiếp tục đi."
   },
   {
     "type": 0,

@@ -2,7 +2,6 @@ package com.htnguyen.gplxapp.view.fragment.learning
 
 import android.os.Bundle
 import android.speech.tts.TextToSpeech
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -13,7 +12,6 @@ import androidx.viewpager2.widget.ViewPager2.OnPageChangeCallback
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.htnguyen.gplxapp.R
 import com.htnguyen.gplxapp.base.BaseFragment
-import com.htnguyen.gplxapp.base.adapter.BaseRecyclerViewAdapter
 import com.htnguyen.gplxapp.base.utils.BaseConst
 import com.htnguyen.gplxapp.base.utils.observe
 import com.htnguyen.gplxapp.base.utils.parseJsonToListTrafficLearn
@@ -21,11 +19,11 @@ import com.htnguyen.gplxapp.base.utils.readJSONFromAsset
 import com.htnguyen.gplxapp.databinding.FragmentLearningDetailBinding
 import com.htnguyen.gplxapp.model.StatusLearn
 import com.htnguyen.gplxapp.model.TrafficsLearn
-import com.htnguyen.gplxapp.view.adapter.TraffigLearnResultAdapter
-import com.htnguyen.gplxapp.view.adapter.TraffigsLearnDetailAdapter
+import com.htnguyen.gplxapp.model.TrafficsLearnDetail
+import com.htnguyen.gplxapp.view.adapter.TrafficLearnResultAdapter
+import com.htnguyen.gplxapp.view.adapter.TrafficsLearnDetailAdapter
 import com.htnguyen.gplxapp.viewModels.LearningDetailViewModel
 import java.util.*
-import kotlin.collections.ArrayList
 
 
 class LearningDetailFragment : BaseFragment<FragmentLearningDetailBinding>(),
@@ -33,11 +31,12 @@ class LearningDetailFragment : BaseFragment<FragmentLearningDetailBinding>(),
     var bottomSheetBehavior: BottomSheetBehavior<*>? = null
     var layoutBottomSheet: LinearLayout? = null
     var layoutManager: LinearLayoutManager? = null
-    private val adapter = TraffigsLearnDetailAdapter()
-    private val adapterResult = TraffigLearnResultAdapter()
+    private val adapter = TrafficsLearnDetailAdapter()
+    private val adapterResult = TrafficLearnResultAdapter()
     private var tts: TextToSpeech? = null
     private val learningViewModel by viewModels<LearningDetailViewModel>()
     var listStatusLearn: ArrayList<StatusLearn> = arrayListOf()
+    var listTrafficLearn: ArrayList<TrafficsLearnDetail> = arrayListOf()
     var trafficsLearn: TrafficsLearn? = null
     override fun getViewBinding(
         inflater: LayoutInflater?,
@@ -61,42 +60,77 @@ class LearningDetailFragment : BaseFragment<FragmentLearningDetailBinding>(),
             updateTrafficLearn()
         }
 
-        adapter.nextItem = { position, model, result ->
+        adapter.nextItem = { position, model, result, indexAnswer ->
+            val statusLearn =
+                learningViewModel.responseStatusLearn.value?.first { it.idAsk == model.id }
             learningViewModel.updateStatusLearn(
-                StatusLearn(model.id, model.type,  result)
+                StatusLearn(
+                    model.id,
+                    model.type,
+                    result,
+                    if (result == -1) true else statusLearn?.statusAskFail,
+                    indexAnswer
+                )
             )
             updateTrafficLearn()
         }
 
+        adapterResult.sendDataItem = { position: Int, trafficsLearn: StatusLearn? ->
+
+        }
+    }
+
+    private fun filterList(
+        parseJsonToListTrafficLearn: Array<TrafficsLearnDetail>,
+        listStatusLearn: ArrayList<StatusLearn>
+    ): List<TrafficsLearnDetail> {
+        val list: ArrayList<TrafficsLearnDetail> = arrayListOf()
+        for (statusLearn in listStatusLearn) {
+            val trafficsLearnDetail = parseJsonToListTrafficLearn.first { it.id == statusLearn.idAsk }
+            trafficsLearnDetail.isSelected = statusLearn.isSelected
+            trafficsLearnDetail.isAnswer = statusLearn.statusAsk == 1
+            list.add(trafficsLearnDetail)
+        }
+        return list
     }
 
     override fun initView(savedInstanceState: Bundle?, binding: FragmentLearningDetailBinding) {
         tts = TextToSpeech(requireContext(), this)
         setBottomSheetBehavior()
-        val json = readJSONFromAsset(requireContext(), "learn_traffic.json")
-        val list = parseJsonToListTrafficLearn(json).filter {
-            it.type == arguments?.getInt(BaseConst.ARG_TRAFFIC_LEARN_TYPE)
-                    || it.type % 10 == arguments?.getInt(BaseConst.ARG_TRAFFIC_LEARN_TYPE)
-                    || (it.type / 10 == arguments?.getInt(BaseConst.ARG_TRAFFIC_LEARN_TYPE) && it.type >= 10)
-        }
-
         with(learningViewModel) {
             observe(responseStatusLearn) {
-                listStatusLearn = it?.filter {
-                    it.idType == arguments?.getInt(BaseConst.ARG_TRAFFIC_LEARN_TYPE)
-                            || it.idType % 10 == arguments?.getInt(BaseConst.ARG_TRAFFIC_LEARN_TYPE)
-                            || (it.idType / 10 == arguments?.getInt(BaseConst.ARG_TRAFFIC_LEARN_TYPE) && it.idType >= 10)
-                } as ArrayList<StatusLearn>
+                listStatusLearn = if (arguments?.getInt(BaseConst.ARG_TRAFFIC_LEARN_TYPE) != -1) {
+                    it?.filter {
+                        it.idType == arguments?.getInt(BaseConst.ARG_TRAFFIC_LEARN_TYPE)
+                                || it.idType % 10 == arguments?.getInt(BaseConst.ARG_TRAFFIC_LEARN_TYPE)
+                                || (it.idType / 10 == arguments?.getInt(BaseConst.ARG_TRAFFIC_LEARN_TYPE) && it.idType >= 10)
+                    } as ArrayList<StatusLearn>
+                } else {
+                    it?.filter { it.statusAskFail == true } as ArrayList<StatusLearn>
+                }
                 adapterResult.setItems(listStatusLearn)
+
+                val json = readJSONFromAsset(requireContext(), "learn_traffic.json")
+                listTrafficLearn = filterList(
+                        parseJsonToListTrafficLearn(json),
+                        listStatusLearn
+                    ) as ArrayList<TrafficsLearnDetail>
+                adapter.setItems(listTrafficLearn)
             }
 
             observe(responseTrafficLearn) {
-                trafficsLearn = it?.first { it.id == arguments?.getInt(BaseConst.ARG_TRAFFIC_LEARN_TYPE) }
+                if (arguments?.getInt(BaseConst.ARG_TRAFFIC_LEARN_TYPE) != -1) {
+                    trafficsLearn =
+                        it?.first { it.id == arguments?.getInt(BaseConst.ARG_TRAFFIC_LEARN_TYPE) }
+                    binding.txtBack.text = trafficsLearn?.name
+                } else {
+                    binding.txtBack.text = resources.getString(R.string.home_wrong_good)
+                }
+
             }
         }
 
         binding.viewPager.adapter = adapter
-        adapter.setItems(list)
 
         binding.layoutBottomsheet.rcvList.adapter = adapterResult
         adapterResult.setItems(listStatusLearn)
@@ -105,7 +139,7 @@ class LearningDetailFragment : BaseFragment<FragmentLearningDetailBinding>(),
 
             override fun onPageSelected(position: Int) {
                 super.onPageSelected(position)
-                val trafficsLearn = list[position]
+                val trafficsLearn = listTrafficLearn[position]
                 var text = trafficsLearn.ask
                 trafficsLearn.answer_list?.forEachIndexed { index, s ->
                     if (s.isNotEmpty()) {
@@ -116,7 +150,11 @@ class LearningDetailFragment : BaseFragment<FragmentLearningDetailBinding>(),
                 }
                 text?.let { speakOut(it) }
                 binding.layoutBottomsheet.txtAsk.text =
-                    resources.getString(R.string.label_number_ask, position + 1, list.size)
+                    resources.getString(
+                        R.string.label_number_ask,
+                        position + 1,
+                        listTrafficLearn.size
+                    )
             }
 
         })
@@ -129,18 +167,26 @@ class LearningDetailFragment : BaseFragment<FragmentLearningDetailBinding>(),
         }
         (bottomSheetBehavior as BottomSheetBehavior<*>).addBottomSheetCallback(object :
             BottomSheetBehavior.BottomSheetCallback() {
-            override fun onStateChanged(bottomSheet: View, newState: Int) {}
-            override fun onSlide(bottomSheet: View, slideOffset: Float) {}
+            override fun onStateChanged(bottomSheet: View, newState: Int) {
+                if (newState == BottomSheetBehavior.STATE_EXPANDED) {
+                    binding.lnTopbar.visibility = View.GONE
+                    binding.viewOpenBottomSheet.visibility = View.VISIBLE
+                } else {
+                    binding.lnTopbar.visibility = View.VISIBLE
+                    binding.viewOpenBottomSheet.visibility = View.GONE
+                }
+            }
+            override fun onSlide(bottomSheet: View, slideOffset: Float) {
+
+            }
         })
         binding.layoutBottomsheet.bottomSheet.setOnClickListener { v: View? ->
             if ((bottomSheetBehavior as BottomSheetBehavior<*>).state != BottomSheetBehavior.STATE_EXPANDED) {
                 (bottomSheetBehavior as BottomSheetBehavior<*>).state =
                     BottomSheetBehavior.STATE_EXPANDED
-                binding.lnTopbar.visibility = View.GONE
             } else {
                 (bottomSheetBehavior as BottomSheetBehavior<*>).state =
                     BottomSheetBehavior.STATE_COLLAPSED
-                binding.lnTopbar.visibility = View.VISIBLE
             }
         }
 
@@ -151,12 +197,16 @@ class LearningDetailFragment : BaseFragment<FragmentLearningDetailBinding>(),
         binding.layoutBottomsheet.imgPrevious.setOnClickListener {
             binding.viewPager.setCurrentItem(binding.viewPager.currentItem - 1, true)
         }
+
+        binding.viewOpenBottomSheet.setOnClickListener {
+            (bottomSheetBehavior as BottomSheetBehavior<*>).state = BottomSheetBehavior.STATE_COLLAPSED
+        }
     }
 
     override fun onInit(status: Int) {
         if (status == TextToSpeech.SUCCESS) {
             val locale = Locale("vi", "VN")
-            val result = tts!!.setLanguage(Locale.US)
+            val result = tts!!.setLanguage(locale)
 
             if (result == TextToSpeech.LANG_MISSING_DATA || result == TextToSpeech.LANG_NOT_SUPPORTED) {
 
@@ -171,10 +221,10 @@ class LearningDetailFragment : BaseFragment<FragmentLearningDetailBinding>(),
     }
 
     fun updateTrafficLearn() {
-        Log.d("ThaoNH", trafficsLearn.toString())
         trafficsLearn?.completeLesson = listStatusLearn.count { it.statusAsk == 1 }
         trafficsLearn?.let { learningViewModel.updateTrafficLearn(it) }
     }
+
     override fun onDestroy() {
         updateTrafficLearn()
         if (tts != null) {

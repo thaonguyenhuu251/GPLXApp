@@ -48,9 +48,9 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
         TrafficsLearn(
             3,
             "KĨ THUẬT LÁI XE",
-            "Gồm 13 câu hỏi (5 câu điểm liệt)",
+            "Gồm 12 câu hỏi (5 câu điểm liệt)",
             "https://png.pngtree.com/png-vector/20190130/ourlarge/pngtree-simple-green-car-cartoon-material-png-image_603239.jpg",
-            13,
+            12,
             0,
         ),
         TrafficsLearn(
@@ -103,7 +103,7 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
         list.forEachIndexed { index, trafficsLearnDetail ->
             viewModelScope.launch(Dispatchers.IO) {
                 repositoryStatusLearn.insert(
-                    StatusLearn(trafficsLearnDetail.id, trafficsLearnDetail.type, 0)
+                    StatusLearn(trafficsLearnDetail.id, trafficsLearnDetail.type, 0, false)
                 )
             }
         }

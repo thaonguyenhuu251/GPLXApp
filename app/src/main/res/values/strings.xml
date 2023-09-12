@@ -31,5 +31,6 @@
     <string name="description_notification_reminder">CÁC CÂU HAY</string>
     <string name="reminder_everyday">Nhắc nhở hằng ngày</string>
     <string name="label_number_ask">Câu %d/%d</string>
+    <string name="complain_result">Giải thích đáp án</string>
 
 </resources>

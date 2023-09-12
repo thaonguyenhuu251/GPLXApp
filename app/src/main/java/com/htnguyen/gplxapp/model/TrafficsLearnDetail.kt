@@ -13,6 +13,8 @@ data class TrafficsLearnDetail (
     @SerializedName("urlImage") val urlImage : String?,
     @SerializedName("result") val result : String?,
     @SerializedName("complain") val complain : String?,
+    var isSelected : Int? = -1,
+    var isAnswer : Boolean? = false,
 ) : BaseItem(), Serializable {
     override val layoutResourceId: Int
         get() = R.layout.item_trafic_learn_detail
