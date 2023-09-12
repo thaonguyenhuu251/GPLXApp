@@ -32,5 +32,6 @@
     <string name="reminder_everyday">Nhắc nhở hằng ngày</string>
     <string name="label_number_ask">Câu %d/%d</string>
     <string name="label_finish">KẾT THÚC</string>
+    <string name="label_for_start_exam">Đề thi bằng lái gồm 25 câu hỏi làm bài trong thời gian 19 phút. \n \n Để vượt qua bài thi, bạn cần trả lời đúng 21/25 câu hỏi và không sai câu điểm liệt nào</string>
 
 </resources>
