@@ -28,7 +28,8 @@ class TrafficsLearnDetailAdapter : BaseRecyclerViewAdapter<TrafficsLearnDetail>(
         val list = arrayListOf<TrafficsLearnResult>()
         model.answer_list?.forEachIndexed { index, result ->
             if (result.isNotEmpty()) {
-                list.add(TrafficsLearnResult(index + 1, result, model.isSelected == index))
+                list.add(TrafficsLearnResult(index + 1, result, model.isSelected == index, result == model.result
+                ))
             }
         }
         val recyclerView =

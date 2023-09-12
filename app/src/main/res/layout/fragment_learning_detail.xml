@@ -30,10 +30,22 @@
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/txtBack"
                     style="@style/myColoredButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
                     android:text="@string/home_learn"
+                    android:gravity="start|center_vertical"
                     android:textColor="@color/white"/>
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:id="@+id/cbSpeakers"
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:button="@null"
+                    android:checked="true"
+                    android:background="@drawable/checkbox_speak"
+                    android:layout_gravity="center"/>
 
             </LinearLayout>
 
