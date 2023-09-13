@@ -3,12 +3,19 @@ package com.htnguyen.gplxapp.viewModels
 import android.app.Application
 import android.content.Context
 import androidx.lifecycle.*
+import com.htnguyen.gplxapp.base.utils.parseJsonToListExam
 import com.htnguyen.gplxapp.base.utils.parseJsonToListTrafficLearn
 import com.htnguyen.gplxapp.base.utils.readJSONFromAsset
+import com.htnguyen.gplxapp.database.ExamDatabase
+import com.htnguyen.gplxapp.database.StatusExamDatabase
 import com.htnguyen.gplxapp.database.StatusLearnDatabase
 import com.htnguyen.gplxapp.database.TrafficLearnDatabase
+import com.htnguyen.gplxapp.model.Exam
+import com.htnguyen.gplxapp.model.StatusExam
 import com.htnguyen.gplxapp.model.StatusLearn
 import com.htnguyen.gplxapp.model.TrafficsLearn
+import com.htnguyen.gplxapp.repo.ExamRepo
+import com.htnguyen.gplxapp.repo.StatusExamRepo
 import com.htnguyen.gplxapp.repo.StatusLearnRepo
 import com.htnguyen.gplxapp.repo.TrafficLearnRepo
 import kotlinx.coroutines.Dispatchers
@@ -16,9 +23,12 @@ import kotlinx.coroutines.launch
 
 class MainViewModel(application: Application) : AndroidViewModel(application) {
     private val repository: TrafficLearnRepo
+    private val repositoryExam: ExamRepo
     private val repositoryStatusLearn: StatusLearnRepo
+    private val repositoryStatusExam: StatusExamRepo
 
     var responseTrafficLearn: LiveData<List<TrafficsLearn>>
+    var responseExam: LiveData<List<Exam>>
 
     var listAdd: ArrayList<TrafficsLearn> = arrayListOf(
         TrafficsLearn(
@@ -69,16 +79,81 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
             35,
             0,
         )
+    )
 
+    var listAddExam: ArrayList<Exam> = arrayListOf(
+        Exam(
+            1,
+            "Đề số 1",
+            "25 câu/19 phút",
+            "0",
+            0
+        ),
+        Exam(
+            2,
+            "Đề số 2",
+            "25 câu/19 phút",
+            "0",
+            0
+        ),
+        Exam(
+            3,
+            "Đề số 3",
+            "25 câu/19 phút",
+            "0",
+            0,
+        ),
+        Exam(
+            4,
+            "Đề số 4",
+            "25 câu/19 phút",
+            "0",
+            0
+        ),
+        Exam(
+            5,
+            "Đề số 5",
+            "25 câu/19 phút",
+            "0",
+            0
+        ),
+        Exam(
+            6,
+            "Đề số 6",
+            "25 câu/19 phút",
+            "0",
+            0
+        ),
+
+        Exam(
+            7,
+            "Đề số 7",
+            "25 câu/19 phút",
+            "0",
+            0
+        ),
+
+        Exam(
+            8,
+            "Đề số 8",
+            "25 câu/19 phút",
+            "0",
+            0
+        )
 
     )
 
     init {
         val trafficLearnDao = TrafficLearnDatabase.getInstance(application).trafficLearnDao()
+        val examDao = ExamDatabase.getInstance(application).examDao()
         val trafficStatusLearnDao = StatusLearnDatabase.getInstance(application).statusLearnDao()
+        val statusExamDao = StatusExamDatabase.getInstance(application).statusExamDao()
         repository = TrafficLearnRepo(trafficLearnDao)
+        repositoryExam = ExamRepo(examDao)
         repositoryStatusLearn = StatusLearnRepo(trafficStatusLearnDao)
+        repositoryStatusExam = StatusExamRepo(statusExamDao)
         responseTrafficLearn = repository.getAll()
+        responseExam = repositoryExam.getAll()
     }
 
     fun addData(context: Context) {
@@ -95,15 +170,38 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
                     )
                 )
             }
-
+        }
+        listAddExam.forEachIndexed { index, exam ->
+            viewModelScope.launch(Dispatchers.IO) {
+                repositoryExam.insert(
+                    Exam(
+                        exam.id,
+                        exam.name,
+                        exam.content,
+                        exam.time,
+                        exam.completeExam
+                    )
+                )
+            }
         }
         val json = readJSONFromAsset(context, "learn_traffic.json")
         val list = parseJsonToListTrafficLearn(json)
-        val listStatus : ArrayList<StatusLearn> = arrayListOf()
+        val listStatus: ArrayList<StatusLearn> = arrayListOf()
         list.forEachIndexed { index, trafficsLearnDetail ->
             viewModelScope.launch(Dispatchers.IO) {
                 repositoryStatusLearn.insert(
                     StatusLearn(trafficsLearnDetail.id, trafficsLearnDetail.type, 0, false)
+                )
+            }
+        }
+
+        val jsonExam = readJSONFromAsset(context, "exam.json")
+        val listExam = parseJsonToListExam(jsonExam)
+        val listStatusExam: ArrayList<StatusExam> = arrayListOf()
+        listExam.forEachIndexed { index, examDetail ->
+            viewModelScope.launch(Dispatchers.IO) {
+                repositoryStatusExam.insert(
+                    StatusExam(examDetail.id,examDetail.id_exam, examDetail.type, 0)
                 )
             }
         }

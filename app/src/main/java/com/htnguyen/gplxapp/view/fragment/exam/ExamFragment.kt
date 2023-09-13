@@ -28,8 +28,6 @@ class ExamFragment : BaseFragment<FragmentExamBinding>() {
         binding.lifecycleOwner = activity
         binding.rcvExam.adapter = adapter
 
-        examViewModel.addData()
-
         with(examViewModel) {
             observe(responseExam) {
                 it?.let {

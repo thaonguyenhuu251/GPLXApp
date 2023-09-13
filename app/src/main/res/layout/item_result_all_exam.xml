@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="model"
+            type="com.htnguyen.gplxapp.model.StatusExam" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtNumberAsk"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@{!model.isSelected ? @drawable/bg_circle_border : @drawable/bg_circle_green }"
+            android:padding="@dimen/_8sdp"
+            android:layout_marginVertical="@dimen/_8sdp"
+            android:layout_marginHorizontal="@dimen/_8sdp"
+            android:text="@{String.valueOf(model.idAsk)}"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"
+            android:gravity="center"
+            android:textStyle="bold"
+            tools:text="25"/>
+    </FrameLayout>
+
+
+
+</layout>

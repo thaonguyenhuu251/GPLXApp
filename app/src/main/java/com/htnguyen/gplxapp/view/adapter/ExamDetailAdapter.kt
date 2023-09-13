@@ -30,10 +30,6 @@ class ExamDetailAdapter : BaseRecyclerViewAdapter<ExamDetail>(){
         }
         baseViewHolder.viewDataBinding.root.findViewById<RecyclerView>(R.id.listResult).adapter = adapter
         adapter.setItems(list)
-
-        adapter.onClickItem = { position, view ->
-
-        }
     }
 
     fun setItems(listItems: ArrayList<ExamDetail>) {

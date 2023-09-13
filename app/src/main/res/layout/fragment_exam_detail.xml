@@ -28,12 +28,31 @@
                     android:background="@drawable/ic_back"/>
 
                 <com.google.android.material.button.MaterialButton
-                    android:id="@+id/txtBack"
+                    android:id="@+id/txtCountDownTimer"
                     style="@style/myColoredButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/home_exam"
                     android:textColor="@color/white"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/txtFinish"
+                    style="@style/myColoredButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_finish"
+                    android:textColor="@color/white"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_mute"
+                    android:background="@color/primary_dark"
+                    />
 
             </LinearLayout>
 

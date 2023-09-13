@@ -1,22 +1,28 @@
 package com.htnguyen.gplxapp.view.fragment.exam_detail
+
 import android.annotation.SuppressLint
 import android.os.Bundle
+import android.os.CountDownTimer
 import android.speech.tts.TextToSpeech
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
+import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.htnguyen.gplxapp.R
 import com.htnguyen.gplxapp.base.BaseFragment
+import com.htnguyen.gplxapp.base.utils.observe
 import com.htnguyen.gplxapp.base.utils.parseJsonToListExam
 import com.htnguyen.gplxapp.base.utils.readJSONFromAsset
 import com.htnguyen.gplxapp.databinding.FragmentExamDetailBinding
-import com.htnguyen.gplxapp.model.ExamDetail
+import com.htnguyen.gplxapp.model.*
 import com.htnguyen.gplxapp.view.adapter.ExamDetailAdapter
+import com.htnguyen.gplxapp.view.adapter.ExamTableResultAdapter
+import com.htnguyen.gplxapp.viewModels.ExamDetailViewModel
+import java.text.FieldPosition
 import java.util.*
 
 
@@ -25,8 +31,18 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
     var layoutBottomSheet: LinearLayout? = null
     var layoutManager: LinearLayoutManager? = null
     private val adapter = ExamDetailAdapter()
+    private val adapterResult = ExamTableResultAdapter()
     private var tts: TextToSpeech? = null
-    var idExam : Int = -1
+    var idExam: Int = -1
+    private val examDetailViewModel by viewModels<ExamDetailViewModel>()
+    var listStatusExam: ArrayList<StatusExam> = arrayListOf()
+    var exam: Exam? = null
+
+    private val START_TIME_IN_MILLIS: Long = 1140000
+    private var mCountDownTimer: CountDownTimer? = null
+    private var mTimeLeftInMillis = START_TIME_IN_MILLIS
+
+
     override fun getViewBinding(
         inflater: LayoutInflater?,
         container: ViewGroup?
@@ -44,20 +60,28 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
             onClickBack()
         }
 
-        binding.txtBack.setOnClickListener {
+        binding.txtFinish.setOnClickListener {
             onClickBack()
-        }
-
-        adapter.nextItem = {
-            binding.viewPager.setCurrentItem(binding.viewPager.currentItem + 1, true)
         }
 
     }
 
     override fun initView(savedInstanceState: Bundle?, binding: FragmentExamDetailBinding) {
+
+        mCountDownTimer = object : CountDownTimer(mTimeLeftInMillis, 1000) {
+            override fun onTick(millisUntilFinished: Long) {
+                mTimeLeftInMillis = millisUntilFinished
+                updateCountDownText()
+            }
+
+            override fun onFinish() {
+            }
+        }.start()
+
+
         tts = TextToSpeech(requireContext(), this)
         setBottomSheetBehavior()
-        val json = readJSONFromAsset(requireContext(), "exam.json" )
+        val json = readJSONFromAsset(requireContext(), "exam.json")
         val list = parseJsonToListExam(json)
         binding.viewPager.adapter = adapter
         val bundle = arguments
@@ -66,13 +90,30 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
         }
         var listExam = ArrayList<ExamDetail>()
         list.forEach {
-            if (it.id_exam == idExam){
+            if (it.id_exam == idExam) {
                 listExam.add(it)
             }
         }
-        adapter.setItems(listExam.toList())
+        with(examDetailViewModel) {
+            observe(responseStatusExam) { it ->
+                listStatusExam =  it?.filter {
+                    it.idExam == idExam
+                } as ArrayList<StatusExam>
+                listStatusExam[0].isSelected = true
+                adapterResult.setItems(listStatusExam)
+            }
+        }
 
-        binding.viewPager.registerOnPageChangeCallback(object: ViewPager2.OnPageChangeCallback() {
+        adapter.setItems(listExam.toList())
+        adapterResult.onClickItem = { position, view ->
+            binding.viewPager.setCurrentItem(position, true)
+            setTextPageCurrent(position +1)
+        }
+        binding.layoutBottomsheet.rcvList.adapter = adapterResult
+
+
+        binding.viewPager.registerOnPageChangeCallback(object :
+            ViewPager2.OnPageChangeCallback() {
             override fun onPageScrolled(
                 position: Int,
                 positionOffset: Float,
@@ -93,6 +134,7 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
 
                 }
                 text?.let { speakOut(it) }
+                setTextPageCurrent(position +1)
             }
 
             override fun onPageScrollStateChanged(state: Int) {
@@ -109,17 +151,20 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
         bottomSheetBehavior = BottomSheetBehavior.from(layoutBottomSheet!!).apply {
             this.state = BottomSheetBehavior.STATE_COLLAPSED
         }
-        (bottomSheetBehavior as BottomSheetBehavior<*>).addBottomSheetCallback(object : BottomSheetBehavior.BottomSheetCallback() {
+        (bottomSheetBehavior as BottomSheetBehavior<*>).addBottomSheetCallback(object :
+            BottomSheetBehavior.BottomSheetCallback() {
             override fun onStateChanged(bottomSheet: View, newState: Int) {}
             override fun onSlide(bottomSheet: View, slideOffset: Float) {}
         })
         binding.layoutBottomsheet.bottomSheet.setOnClickListener { v: View? ->
             if ((bottomSheetBehavior as BottomSheetBehavior<*>).state != BottomSheetBehavior.STATE_EXPANDED) {
-                (bottomSheetBehavior as BottomSheetBehavior<*>).state = BottomSheetBehavior.STATE_EXPANDED
+                (bottomSheetBehavior as BottomSheetBehavior<*>).state =
+                    BottomSheetBehavior.STATE_EXPANDED
                 binding.lnTopbar.visibility = View.GONE
                 binding.layoutBottomsheet.imgShow.setImageResource(R.drawable.ic_drop_down_white)
             } else {
-                (bottomSheetBehavior as BottomSheetBehavior<*>).state = BottomSheetBehavior.STATE_COLLAPSED
+                (bottomSheetBehavior as BottomSheetBehavior<*>).state =
+                    BottomSheetBehavior.STATE_COLLAPSED
                 binding.lnTopbar.visibility = View.VISIBLE
                 binding.layoutBottomsheet.imgShow.setImageResource(R.drawable.ic_drop_up)
             }
@@ -127,16 +172,14 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
 
         binding.layoutBottomsheet.imgNext.setOnClickListener {
             binding.viewPager.setCurrentItem(binding.viewPager.currentItem + 1, true)
-            positionNextPageExam = (binding.viewPager.currentItem +1)
-            Log.e("AAA", positionNextPageExam.toString())
-            binding.layoutBottomsheet.txtAsk.text = "Câu $positionNextPageExam/25"
+            positionNextPageExam = (binding.viewPager.currentItem + 1)
+            setTextPageCurrent(positionNextPageExam)
         }
 
         binding.layoutBottomsheet.imgPrevious.setOnClickListener {
             binding.viewPager.setCurrentItem(binding.viewPager.currentItem - 1, true)
-            positionPreviousPageExam = positionNextPageExam - (positionNextPageExam - binding.viewPager.currentItem) +1
-            Log.e("AAA", positionNextPageExam.toString())
-            binding.layoutBottomsheet.txtAsk.text = "Câu $positionPreviousPageExam/25"
+            positionPreviousPageExam = positionNextPageExam - (positionNextPageExam - binding.viewPager.currentItem) + 1
+            setTextPageCurrent(positionPreviousPageExam)
         }
 
     }
@@ -153,8 +196,27 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
             }
         }
     }
+
     private fun speakOut(text: String) {
-        tts!!.speak(text, TextToSpeech.QUEUE_FLUSH, null,"")
+        tts!!.speak(text, TextToSpeech.QUEUE_FLUSH, null, "")
+    }
+
+    private fun updateCountDownText() {
+        val minutes = (mTimeLeftInMillis / 1000).toInt() / 60
+        val seconds = (mTimeLeftInMillis / 1000).toInt() % 60
+        val timeLeftFormatted = String.format(Locale.getDefault(), "%02d:%02d", minutes, seconds)
+        binding.txtCountDownTimer.text = timeLeftFormatted
+    }
+
+    private fun setTextPageCurrent(position: Int){
+        binding.layoutBottomsheet.txtAsk.text = "Câu $position/25"
+        if (listStatusExam.isNotEmpty()){
+            listStatusExam.forEach {
+                it.isSelected = false
+            }
+            listStatusExam[position-1].isSelected = true
+            adapterResult.updateItems(listStatusExam)
+        }
     }
 
     override fun onDestroy() {

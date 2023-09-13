@@ -210,7 +210,7 @@
    "complain": "Giải thích: Đỗ xe là đứng yên không giới hạn thời gian."
 },
  {
-   "type": 1,
+   "type": 10,
    "id": 15,
    "id_exam": 0,
    "ask": "Cuộc đua xe chỉ được thực hiện khi nào?",
@@ -225,7 +225,7 @@
    "complain": "Giải thích: Cuộc đua xe cần cấp phép."
 },
  {
-   "type": 1,
+   "type": 10,
    "id": 16,
    "id_exam": 0,
    "ask": "Người điều khiển phương tiện giao thông đường bộ mà trong cơ thể có chất ma túy có bịnghiêm cấm hay không?",
@@ -240,7 +240,7 @@
    "complain": "Giải thích: Có ma tuý bị nghiêm cấm."
 },
  {
-   "type": 1,
+   "type": 10,
    "id": 17,
    "id_exam": 0,
    "ask": "Sử dụng rượu, bia khi lái xe, nếu bị phát hiện thì bị xử lý như thế nào?",
@@ -255,7 +255,7 @@
    "complain": "Giải thích: Sử dụng rượu, bia khi lái xe bị phạt hành chính hoặc xử lý hình sự."
 },
  {
-   "type": 1,
+   "type": 10,
    "id": 18,
    "id_exam": 0,
    "ask": "Theo luật phòng chống tác hại của rượu, bia, đối tượng nào dưới đây bị cấm sử dụngrượu, bia khi tham gia giao thông?",
@@ -270,7 +270,7 @@
    "complain": "Giải thích: Người điều khiển bị cấm sử dụng rượu, bia khi tham gia giao thông."
 },
  {
-   "type": 1,
+   "type": 10,
    "id": 19,
    "id_exam": 0,
    "ask": "Hành vi điều khiển xe cơ giới chạy quá tốc độ quy định, giành đường, vượt ẩu có bịnghiêm cấm hay không?",
@@ -330,7 +330,7 @@
    "complain": "Giải thích: Lắp đặt còi đèn không đúng thiết kế phải được chấp thuận của cơ quan có thẩm quyền."
 },
  {
-   "type": 1,
+   "type": 10,
    "id": 23,
    "id_exam": 0,
    "ask": "Ở phần đường dành cho người đi bộ qua đường, trên cầu, đầu cầu, đường cao tốc, đườnghẹp, đường dốc, tại nơi đường bộ giao nhau cùng mức với đường sắt có được quay đầu xe hay không?",
@@ -375,7 +375,7 @@
    "complain": "Giải thích: Không được vượt khi đang phát tín hiệu ưu tiên."
 },
  {
-   "type": 1,
+   "type": 10,
    "id": 26,
    "id_exam": 1,
    "ask": "Người điều khiển xe mô tô hai bánh, ba bánh, xe gắn máy có được phép sử dụng xe đểkéo hoặc đẩy các phương tiện khác khi tham gia giao thông không?",
@@ -390,7 +390,7 @@
    "complain": ""
 },
  {
-   "type": 1,
+   "type": 10,
    "id": 27,
    "id_exam": 1,
    "ask": "Khi điều khiển xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy, những hành vi buông cảhai tay; sử dụng xe để kéo, đẩy xe khác, vật khác; sử dụng chân chống của xe quệt xuống đường khi xeđang chạy có được phép hay không?",
@@ -405,7 +405,7 @@
    "complain": ""
 },
  {
-   "type": 1,
+   "type": 10,
    "id": 28,
    "id_exam": 1,
    "ask": "Khi điều khiển xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy, những hành vi nàokhông được phép?",
@@ -420,7 +420,7 @@
    "complain": ""
 },
  {
-   "type": 1,
+   "type": 10,
    "id": 29,
    "id_exam": 1,
    "ask": "Người ngồi trên xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy khi tham gia giao thôngcó được mang, vác vật cồng kềnh hay không?",
@@ -435,7 +435,7 @@
    "complain": "Giải thích: Xe mô tô không được mang vác vật cồng kềnh."
 },
  {
-   "type": 1,
+   "type": 10,
    "id": 30,
    "id_exam": 1,
    "ask": "Người ngồi trên xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy khi tham gia giao thôngcó được bám, kéo hoặc đẩy các phương tiện khác không?",
@@ -450,7 +450,7 @@
    "complain": "Giải thích: Xe mô tô không được kéo xe khác."
 },
  {
-   "type": 1,
+   "type": 10,
    "id": 31,
    "id_exam": 1,
    "ask": "Người ngồi trên xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy khi tham gia giao thôngcó được sử dụng ô khi trời mưa hay không?",
@@ -465,7 +465,7 @@
    "complain": "Giải thích: Không được sử dụng ô."
 },
  {
-   "type": 1,
+   "type": 10,
    "id": 32,
    "id_exam": 1,
    "ask": "Khi đang lên dốc người ngồi trên xe mô tô có được kéo theo người đang điều khiển xeđạp hay không?",
@@ -480,7 +480,7 @@
    "complain": "Giải thích: Xe mô tô không được kéo xe khác."
 },
  {
-   "type": 1,
+   "type": 10,
    "id": 33,
    "id_exam": 1,
    "ask": "Hành vi sử dụng xe mô tô để kéo, đẩy xe mô tô khác bị hết xăng đến trạm mua xăng cóđược phép hay không?",
@@ -495,7 +495,7 @@
    "complain": "Giải thích: Xe mô tô không được kéo xe khác."
 },
  {
-   "type": 1,
+   "type": 10,
    "id": 34,
    "id_exam": 1,
    "ask": "Hành vi vận chuyển đồ vật cồng kềnh bằng xe mô tô, xe gắn máy khi tham gia giao thôngcó được phép hay không?",
@@ -570,7 +570,7 @@
    "complain": "Giải thích: A1 mô tô dưới 175cm3 và xe 3 bánh của người khuyết tật; A2 mô tô 175cm3 trở lên; A3 xe 3 bánh."
 },
  {
-   "type": 5,
+   "type": 1,
    "id": 39,
    "id_exam": 1,
    "ask": "Biển báo hiệu có dạng hình tròn, viền đỏ, nền trắng, trên nền có hình vẽ hoặc chữ số, chữ viếtmàu đen là loại biển gì dưới đây?",
@@ -585,7 +585,7 @@
    "complain": "Giải thích: Biển cấm: vòng tròn đỏ."
 },
  {
-   "type": 5,
+   "type": 1,
    "id": 40,
    "id_exam": 1,
    "ask": "Biển báo hiệu có dạng tam giác đều, viền đỏ, nền màu vàng, trên có hình vẽ màu đen là loạibiển gì dưới đây?",
@@ -600,7 +600,7 @@
    "complain": "Giải thích: Biển nguy hiểm: Hình tam giác vàng."
 },
  {
-   "type": 5,
+   "type": 1,
    "id": 41,
    "id_exam": 1,
    "ask": "Biển báo hiệu hình tròn có nền xanh lam có hình vẽ màu trắng là loại biển gì dưới đây?",
@@ -615,7 +615,7 @@
    "complain": "Giải thích: Biển hiệu lệnh: Vòng tròn xanh."
 },
  {
-   "type": 5,
+   "type": 1,
    "id": 42,
    "id_exam": 1,
    "ask": "Biển báo hiệu hình chữ nhật hoặc hình vuông hoặc hình mũi tên nền xanh lam là loại biển gìdưới đây?",
@@ -645,7 +645,7 @@
    "complain": "Giải thích: 05 năm không cấp lại nếu sử dụng bằng lái đã khai báo mất."
 },
  {
-   "type": 5,
+   "type": 1,
    "id": 44,
    "id_exam": 1,
    "ask": "Khi gặp hiệu lệnh như dưới đây của cảnh sát giao thông thì người tham gia giao thông phải đinhư thế nào là đúng quy tắc giao thông?",
@@ -660,7 +660,7 @@
    "complain": "Giải thích: Người điều khiển giao thông tay giang ngang thì trước mặt và sau lưng dừng lại."
 },
  {
-   "type": 5,
+   "type": 1,
    "id": 45,
    "id_exam": 1,
    "ask": "Khi gặp hiệu lệnh như dưới đây của cảnh sát giao thông thì người tham gia giao thông phải đinhư thế nào là đúng quy tắc giao thông?",
@@ -855,7 +855,7 @@
    "complain": "Giải thích: Trong hầm chỉ đường dừng xe, đỗ xe ở nơi quy định."
 },
  {
-   "type": 1,
+   "type": 10,
    "id": 58,
    "id_exam": 2,
    "ask": "Người ngồi trên xe mô tô 2 bánh, xe gắn máy phải đội mũ bảo hiểm có cài quai đúng quycách khi nào?",
@@ -900,7 +900,7 @@
    "complain": "Giải thích: Xe mô tô 2 bánh không được đi vào phần đường cho người đi bộ."
 },
  {
-   "type": 1,
+   "type": 10,
    "id": 61,
    "id_exam": 2,
    "ask": "Người điều khiển xe mô tô hai bánh, xe gắn máy có được đi xe dàn hàng ngang; xe đi vàophần đường dành cho người đi bộ và phương tiện khác; sử dụng ô, điện thoại di động, thiết bị âm thanh(trừ thiết bị trợ thính) hay không?",
@@ -1155,7 +1155,7 @@
    "complain": "Giải thích: Đứng cách ray đường sắt 5m."
 },
  {
-   "type": 1,
+   "type": 10,
    "id": 78,
    "id_exam": 3,
    "ask": "Người lái xe phải xử lý như thế nào khi quan sát phía trước thấy người đi bộ đang sang đường tại nơi có vạch đường dành cho người đi bộ để đảm bảo an toàn?",
@@ -1245,7 +1245,7 @@
    "complain": "Giải thích: Xe buýt đang dừng đón trả khách thì giảm tốc độ và từ từ vượt qua xe buýt."
 },
  {
-   "type": 1,
+   "type": 2,
    "id": 84,
    "id_exam": 3,
    "ask": "Khái niệm về văn hóa giao thông được hiểu như thế nào là đúng?",
@@ -1260,7 +1260,7 @@
    "complain": ""
 },
  {
-   "type": 1,
+   "type": 2,
    "id": 85,
    "id_exam": 3,
    "ask": "Trong các hành vi dưới đây, người lái xe mô tô có văn hóa giao thông phải ứng xử như thếnào?",
@@ -1275,7 +1275,7 @@
    "complain": ""
 },
  {
-   "type": 1,
+   "type": 2,
    "id": 86,
    "id_exam": 3,
    "ask": "Trong các hành vi dưới đây, người lái xe ô tô, mô tô có văn hóa giao thông phải ứng xử nhưthế nào?",
@@ -1290,7 +1290,7 @@
    "complain": ""
 },
  {
-   "type": 1,
+   "type": 2,
    "id": 87,
    "id_exam": 3,
    "ask": "Khi xảy ra tai nạn giao thông, có người bị thương nghiêm trọng, người lái xe và người có mặttại hiện trường vụ tai nạn phải thực hiện các công việc gì dưới đây?",
@@ -1305,7 +1305,7 @@
    "complain": ""
 },
  {
-   "type": 1,
+   "type": 2,
    "id": 88,
    "id_exam": 3,
    "ask": "Trên đường đang xảy ra ùn tắc có những hành vi nào sau đây là thiếu văn hóa khi tham giagiao thông?",
@@ -1320,7 +1320,7 @@
    "complain": ""
 },
  {
-   "type": 1,
+   "type": 30,
    "id": 89,
    "id_exam": 3,
    "ask": "Khi điều khiển xe mô tô tay ga chạy xuống đường dốc dài, độ dốc cao, người lái xe cầnthực hiện những thao tác nào dưới đây để đảm bảo an toàn?",
@@ -1335,7 +1335,7 @@
    "complain": "Giải thích: Xe mô tô xuống dốc dài cần sử dụng cả phanh trước và phanh sau để giảm tốc độ."
 },
  {
-   "type": 1,
+   "type": 3,
    "id": 90,
    "id_exam": 3,
    "ask": "Khi quay đầu xe, người lái xe cần phải quan sát và thực hiện các thao tác nào để đảm bảo an toàn giao thông?",
@@ -1350,7 +1350,7 @@
    "complain": "Giải thích: Thực hiện quay đầu xe với tốc độ thấp."
 },
  {
-   "type": 1,
+   "type": 3,
    "id": 91,
    "id_exam": 3,
    "ask": "Khi tránh nhau trên đường hẹp, người lái xe cần phải chú ý những điểm nào để đảm bảo an toàn giao thông?",
@@ -1365,7 +1365,7 @@
    "complain": "Giải thích: Cả ý 1 và 2 đều đúng. Ý 3 tránh nhau ban đêm bật đèn pha là sai."
 },
  {
-   "type": 1,
+   "type": 3,
    "id": 92,
    "id_exam": 3,
    "ask": "Khi điều khiển xe trên đường vòng người lái xe cần phải làm gì để đảm bảo an toàn?",
@@ -1380,7 +1380,7 @@
    "complain": "Giải thích: Điều khiển xe trên đường vòng cần giảm tốc độ."
 },
  {
-   "type": 1,
+   "type": 3,
    "id": 93,
    "id_exam": 3,
    "ask": "Để đạt được hiệu quả phanh cao nhất, người lái xe mô tô phải sử dụng các kỹ năng như thếnào dưới đây?",
@@ -1395,7 +1395,7 @@
    "complain": "Giải thích: Khi phanh xe mô tô thì giảm hết ga."
 },
  {
-   "type": 1,
+   "type": 30,
    "id": 94,
    "id_exam": 3,
    "ask": "Khi đang lái xe mô tô và ô tô, nếu có nhu cầu sử dụng điện thoại để nhắn tin hoặc gọiđiện, người lái xe phải thực hiện như thế nào trong các tình huống nêu dưới đây?",
@@ -1410,7 +1410,7 @@
    "complain": "GIải thích: Khi cần nghe điện thoại thì giảm tốc độ và dừng xe ở nơi cho phép dừng xe."
 },
  {
-   "type": 1,
+   "type": 3,
    "id": 95,
    "id_exam": 3,
    "ask": "Những thói quen nào dưới đây khi điều khiển xe mô tô tay ga tham gia giao thông dễ gây tai nạn nguy hiểm?",
@@ -1425,7 +1425,7 @@
    "complain": "Giải thích: Xe mô tô tay ga chỉ sử dụng phanh trước thì rất nguy hiểm."
 },
  {
-   "type": 1,
+   "type": 3,
    "id": 96,
    "id_exam": 3,
    "ask": "Khi điều khiển xe mô tô quay đầu người lái xe cần thực hiện như thế nào để đảm bảo an toàn?",
@@ -1440,7 +1440,7 @@
    "complain": ""
 },
  {
-   "type": 1,
+   "type": 3,
    "id": 97,
    "id_exam": 3,
    "ask": "Tay ga trên xe mô tô hai bánh có tác dụng gì trong các trường hợp dưới đây?",
@@ -1455,7 +1455,7 @@
    "complain": ""
 },
  {
-   "type": 1,
+   "type": 3,
    "id": 98,
    "id_exam": 3,
    "ask": "Gương chiếu hậu của xe mô tô hai bánh có tác dụng gì trong các trường hợp dưới đây?",
@@ -1470,7 +1470,7 @@
    "complain": ""
 },
  {
-   "type": 1,
+   "type": 3,
    "id": 99,
    "id_exam": 3,
    "ask": "Để đảm bảo an toàn khi tham gia giao thông, người lái xe mô tô hai bánh cần điều khiển tayga như thế nào trong các trường hợp dưới đây?",
@@ -1485,7 +1485,7 @@
    "complain": ""
 },
  {
-   "type": 1,
+   "type": 3,
    "id": 100,
    "id_exam": 3,
    "ask": "Kỹ thuật cơ bản để giữ thăng bằng khi điều khiển xe mô tô đi trên đường gồ ghề như thếnào trong các trường hợp dưới đây?",
@@ -1500,7 +1500,7 @@
    "complain": ""
 },
  {
-   "type": 5,
+   "type": 4,
    "id": 101,
    "id_exam": 4,
    "ask": "Biển nào dưới đây xe gắn máy được phép đi vào?",
@@ -1515,7 +1515,7 @@
    "complain": "Giải thích: Biển 104 “Cấm mô tô” và biển 103a “Cấm ô tô” không cấm xe gắn máy (không phải mô tô). Nên cả 2 biển đều cho phép xe gắn máy đi vào."
 },
  {
-   "type": 5,
+   "type": 4,
    "id": 102,
    "id_exam": 4,
    "ask": "Biển nào báo hiệu cấm xe mô tô hai bánh đi vào?",
@@ -1530,7 +1530,7 @@
    "complain": ""
 },
  {
-   "type": 5,
+   "type": 4,
    "id": 103,
    "id_exam": 4,
    "ask": "Khi gặp biển nào thì xe mô tô hai bánh được đi vào?",
@@ -1545,7 +1545,7 @@
    "complain": ""
 },
  {
-   "type": 5,
+   "type": 4,
    "id": 104,
    "id_exam": 4,
    "ask": "Biển nào cấm quay đầu xe?",
@@ -1560,7 +1560,7 @@
    "complain": "Giải thích: P. 123a “Cấm rẽ trái” không cấm quay đầu xe; Biển 2: P.124a “Cấm quay xe” không cấm rẽ trái."
 },
  {
-   "type": 5,
+   "type": 4,
    "id": 105,
    "id_exam": 4,
    "ask": "Biển nào cấm xe rẽ trái?",
@@ -1575,7 +1575,7 @@
    "complain": "Giải thích: P. 123a “Cấm rẽ trái” không cấm quay đầu xe; Biển 2: P.124a “Cấm quay xe” không cấm rẽ trái. Nên Biển 1 là đáp án đúng."
 },
  {
-   "type": 5,
+   "type": 4,
    "id": 106,
    "id_exam": 4,
    "ask": "Khi gặp biển nào xe được rẽ trái?",
@@ -1590,7 +1590,7 @@
    "complain": "Giải thích: P. 123a “Cấm rẽ trái” không cấm quay đầu xe; Biển 2: P.124a “Cấm quay xe” không cấm rẽ trái. Nên Biển 2 là đáp án đúng."
 },
  {
-   "type": 5,
+   "type": 4,
    "id": 107,
    "id_exam": 4,
    "ask": "Biển nào cấm các phương tiện giao thông đường bộ rẽ phải?",
@@ -1605,7 +1605,7 @@
    "complain": "Giải thích: P. 123b “Cấm rẽ phải” ; Biển 2: P.124d “Cấm rẽ phải và cấm quay xe”; Biển 3: 124f “cấm ô tô rẽ phải và quay xe”. Nên Biển 3 chỉ cấm ô tô, còn biển 1 và biển 2 cấm toàn bộ phương tiện rẽ phải."
 },
  {
-   "type": 5,
+   "type": 4,
    "id": 108,
    "id_exam": 4,
    "ask": "Biển nào cấm các phương tiện giao thông đường bộ rẽ trái?",
@@ -1620,7 +1620,7 @@
    "complain": "Giải thích: 124a “cấm rẽ trái”; Biển 2: 124c “cấm rẽ trái và quay xe”; Biển 3: 124e “cấm ô tô rẽ trái và quay xe”. Nên biển 3 chỉ cấm xe ô tô, còn biển 1 và biển 2 cấm toàn bộ phương tiện rẽ trái"
 },
  {
-   "type": 5,
+   "type": 4,
    "id": 109,
    "id_exam": 4,
    "ask": "Biển nào cho phép xe rẽ trái?",
@@ -1635,7 +1635,7 @@
    "complain": "Giải thích: Theo QCVN41:2019 thì biển 2: I.410 “Khu vực quay xe” chỉ dẫn khu vưc được phép quay đầu xe. Biển này thuộc nhóm biển chỉ dẫn nên KHÔNG cấm rẽ trái. Do đó, đáp án đúng là câu 2."
 },
  {
-   "type": 5,
+   "type": 4,
    "id": 110,
    "id_exam": 4,
    "ask": "Biển nào xe được phép quay đầu nhưng không được rẽ trái?",
@@ -1650,7 +1650,7 @@
    "complain": "Giải thích: Biển 1: P.123a “cấm rẽ trái” không cấm quay đầu xe; Biển 2: I.410 “Khu vực quay xe” . Nên cả 2 biển cho phép quay đầu xe là đáp án đúng."
 },
  {
-   "type": 5,
+   "type": 4,
    "id": 111,
    "id_exam": 4,
    "ask": "Biển nào xe được phép quay đầu nhưng không được rẽ trái ?",
@@ -1665,7 +1665,7 @@
    "complain": "Giải thích: Biển 1: 123a “cấm rẽ trái” nhưng không cấm quay đầu xe. Biển 2: R.301e đặt trước ngã ba ngã tư chỉ được rẽ trái ở phạm vi ngã ba, ngã tư phía sau mặt biển nên không thể quay đầu xe."
 },
  {
-   "type": 5,
+   "type": 4,
    "id": 112,
    "id_exam": 4,
    "ask": "Biển nào là biển “Cấm đi ngược chiều”?",
@@ -1680,7 +1680,7 @@
    "complain": "Giải thích: Biển 1: P.101 “Đường cấm”; Biển 2: P.102 “cấm đi ngược chiều”; Biển 3: P.301a “Cấm đỗ xe”. Nên biển 2 là cấm đi ngược chiều."
 },
  {
-   "type": 5,
+   "type": 4,
    "id": 113,
    "id_exam": 4,
    "ask": "Biển nào dưới đây các phương tiện không được phép đi vào?",
@@ -1695,7 +1695,7 @@
    "complain": "Giải thích: Biển 1: P.101 “Đường cấm”;\nBiển 2: P.102 “Cấm đi ngược chiều” cấm đi vào theo chiều đặt biển;\nBiển 3: P.301a “Cấm đỗ xe”.\nNên biển 1 và biển 2 là cấm các phương tiện không được phép đi vào."
 },
  {
-   "type": 5,
+   "type": 4,
    "id": 114,
    "id_exam": 4,
    "ask": "Khi gặp biển nào xe ưu tiên theo luật định vẫn phải dừng lại?",
@@ -1710,7 +1710,7 @@
    "complain": "Giải thích: P.101 “Đườn cấm” không cấm xe ưu tiên;\nBiển 2: R.122 “Dừng lại” áp dụng với cả xe ưu tiên;\nBiển 3: P.102 “Cấm đi ngược chiều” không áp dụng với xe ưu tiên;\nNên Biển 2 là đáp án đúng, áp dụng với cả xe ưu tiên."
 },
  {
-   "type": 5,
+   "type": 4,
    "id": 115,
    "id_exam": 4,
    "ask": "Biển nào cấm tất cả các loại xe cơ giới và thô sơ đi lại trên đường, trừ xe ưu tiên theo luậtđịnh (nếu đường vẫn cho xe chạy được)?",
@@ -1725,7 +1725,7 @@
    "complain": "Giải thích: P.101 “Đườn cấm” không cấm xe ưu tiên;\nBiển 2: R.122 “Dừng lại” áp dụng với cả xe ưu tiên;\nNên biển 1 là đáp án đúng."
 },
  {
-   "type": 5,
+   "type": 4,
    "id": 116,
    "id_exam": 4,
    "ask": "Gặp biển nào xe xích lô được phép đi vào?",
@@ -1740,7 +1740,7 @@
    "complain": ""
 },
  {
-   "type": 5,
+   "type": 4,
    "id": 117,
    "id_exam": 4,
    "ask": "Gặp biển nào xe lam, xe xích lô máy được phép đi vào?",
@@ -1755,7 +1755,7 @@
    "complain": ""
 },
  {
-   "type": 5,
+   "type": 4,
    "id": 118,
    "id_exam": 4,
    "ask": "Biển báo này có ý nghĩa như thế nào?",
@@ -1770,7 +1770,7 @@
    "complain": ""
 },
  {
-   "type": 5,
+   "type": 4,
    "id": 119,
    "id_exam": 4,
    "ask": "Chiều dài đoạn đường 500 m từ nơi đặt biển này, người lái xe có được phép bấm còi không?",
@@ -1785,7 +1785,7 @@
    "complain": "Giải thích: Biển phụ là biển S.501 “Phạm vi tác dụng của biển” xác định chiều dài áp dụng biển chính từ nơi đặt biển."
 },
  {
-   "type": 5,
+   "type": 4,
    "id": 120,
    "id_exam": 4,
    "ask": "Biển nào xe mô tô hai bánh được đi vào?",
@@ -1800,7 +1800,7 @@
    "complain": "Giải thích: Biển chính là P.101 “Đường cấm”, có biển phụ thì áp dụng cấm theo biển phụ. Nên Biển 1 và Biển 3 không áp dụng với xe mô tô là câu trả lời đúng."
 },
  {
-   "type": 5,
+   "type": 4,
    "id": 121,
    "id_exam": 4,
    "ask": "Biển nào xe mô tô hai bánh không được đi vào?",
@@ -1815,7 +1815,7 @@
    "complain": "Giải thích: Biển chính là P.101 “Đường cấm”, có biển phụ thì áp dụng cấm theo biển phụ. Nên Biển 2 áp dụng với xe mô tô là câu trả lời đúng."
 },
  {
-   "type": 5,
+   "type": 4,
    "id": 122,
    "id_exam": 4,
    "ask": "Biển báo nào báo hiệu bắt đầu đoạn đường vào phạm vi khu dân cư, các phương tiện thamgia giao thông phải tuân theo các quy định đi đường được áp dụng ở khu đông dân cư?",
@@ -1830,7 +1830,7 @@
    "complain": ""
 },
  {
-   "type": 5,
+   "type": 4,
    "id": 123,
    "id_exam": 4,
    "ask": "Gặp biển nào người lái xe phải nhường đường cho người đi bộ ?",
@@ -1845,7 +1845,7 @@
    "complain": "Giải thích: Biển 1: W.224 “Đường người đi bộ cắt ngang”;\nBiển 2: P.112 “Cấm người đi bộ”; Biển 3: R.305 “Đường dành cho người đi bộ”.\nBiển 1 báo ưu tiên cho người đi bộ nên phải nhường đường."
 },
  {
-   "type": 5,
+   "type": 4,
    "id": 124,
    "id_exam": 4,
    "ask": "Biển nào chỉ đường dành cho người đi bộ, các loại xe không được đi vào khi gặp biển này?",
@@ -1860,7 +1860,7 @@
    "complain": "Giải thích: Biển 1: W.224 “Đường người đi bộ cắt ngang”;\nBiển 2: P.112 “Cấm người đi bộ”; Biển 3: R.305 “Đường dành cho người đi bộ”.\nBiển 3 báo đường dành cho người đi bộ nên phương tiện khác không được đi vào."
 },
  {
-   "type": 5,
+   "type": 4,
    "id": 125,
    "id_exam": 4,
    "ask": "Biển nào báo hiệu “Đường dành cho xe thô sơ”?",
@@ -1875,7 +1875,7 @@
    "complain": ""
 },
  {
-   "type": 5,
+   "type": 4,
    "id": 126,
    "id_exam": 5,
    "ask": "Biển nào báo hiệu sắp đến chỗ giao nhau nguy hiểm?",
@@ -1890,7 +1890,7 @@
    "complain": "Giải thích: Biển 1: W.210 “Giao nhau với đường sắt có rào chắn”; Biển : W.208 “Giao nhau với đường ưu tiên”; Biển 3: W209 “Giao nhau có tín hiệu đèn”"
 },
  {
-   "type": 5,
+   "type": 4,
    "id": 127,
    "id_exam": 5,
    "ask": "Biển nào báo hiệu “Giao nhau với đường sắt có rào chắn”?",
@@ -1905,7 +1905,7 @@
    "complain": "Giải thích: Biển 1: W.210 “Giao nhau với đường sắt có rào chắn”; Biển : W.208 “Giao nhau với đường ưu tiên”; Biển 3: W209 “Giao nhau có tín hiệu đèn”"
 },
  {
-   "type": 5,
+   "type": 4,
    "id": 128,
    "id_exam": 5,
    "ask": "Biển nào báo hiệu “Giao nhau với tín hiệu đèn”?",
@@ -1920,7 +1920,7 @@
    "complain": "Giải thích: Biển 1: W.210 “Giao nhau với đường sắt có rào chắn”; Biển : W.208 “Giao nhau với đường ưu tiên”; Biển 3: W209 “Giao nhau có tín hiệu đèn”"
 },
  {
-   "type": 5,
+   "type": 4,
    "id": 129,
    "id_exam": 5,
    "ask": "Biển nào báo hiệu nguy hiểm giao nhau với đường sắt?",
@@ -1935,7 +1935,7 @@
    "complain": "Giải thích: Biển 1: W.210 “Giao nhau với đường sắt có rào chắn”; Biển 2: W.234 “Giao nhau với đường 2 chiều”; Biển 3: W.242a “Nơi đường sắt giao vuông gốc với đường bộ”."
 },
  {
-   "type": 5,
+   "type": 4,
    "id": 130,
    "id_exam": 5,
    "ask": "Biển nào báo hiệu đường sắt giao nhau với đường bộ không có rào chắn?",
@@ -1950,7 +1950,7 @@
    "complain": "Giải thích: Biển 1: W.210 “Giao nhau với đường sắt có rào chắn”; Biển 2: W.211a “Giao nhau với đường sắt không có rào chắn”; Biển 3: W.242a “Nơi đường sắt giao vuông gốc với đường bộ” ổ sung cho biển W.211a. Nên cả 2 biển 2 và 3 đều đúng."
 },
  {
-   "type": 5,
+   "type": 4,
    "id": 131,
    "id_exam": 5,
    "ask": "Biển nào báo hiệu sắp đến chỗ giao nhau giữa đường bộ và đường sắt?",
@@ -1965,7 +1965,7 @@
    "complain": "Giải thích: Biển 211a Giao nhau với đường sắt không có rào chắn.\nBiển 2: Biển 208 Giao nhau với đường ưu tiên.\nBiển 3: Biển 211b Giao nhau với tàu điện."
 },
  {
-   "type": 5,
+   "type": 4,
    "id": 132,
    "id_exam": 5,
    "ask": "Biển nào báo hiệu, chỉ dẫn xe đi trên đường này được quyền ưu tiên qua nơi giao nhau?",
@@ -1980,7 +1980,7 @@
    "complain": "Giải thích: Biển 1: W.207a “Giao nhau với đường không ưu tiên”;\nBiển 2: W.208 “Giao nhau với đường ưu tiên”;\nBiển 3: I.401 “Bắt đầu đường ưu tiên”. Nên biến 1 và Biển 3 là đáp án đúng."
 },
  {
-   "type": 5,
+   "type": 4,
    "id": 133,
    "id_exam": 5,
    "ask": "Biển nào báo hiệu “Giao nhau với đường không ưu tiên”?",
@@ -1995,7 +1995,7 @@
    "complain": "Giải thích: Biển 1: W.207a “Giao nhau với đường không ưu tiên”;\nBiển 2: W.208 “Giao nhau với đường ưu tiên”;\nBiển 3: I.401 “Bắt đầu đường ưu tiên”."
 },
  {
-   "type": 5,
+   "type": 4,
    "id": 134,
    "id_exam": 5,
    "ask": "Biển nào báo hiệu “Giao nhau với đường ưu tiên”?",
@@ -2010,7 +2010,7 @@
    "complain": "Giải thích: Biển 1: W.207a “Giao nhau với đường không ưu tiên”;\nBiển 2: W.208 “Giao nhau với đường ưu tiên”;\nBiển 3: I.401 “Bắt đầu đường ưu tiên”."
 },
  {
-   "type": 5,
+   "type": 4,
    "id": 135,
    "id_exam": 5,
    "ask": "Biển nào báo hiệu “Đường bị thu hẹp”?",
@@ -2025,7 +2025,7 @@
    "complain": "Giải thích: Biển 1:W.203a “Đường bị hép cả 2 bên”;\nBiển 2: W.203b “Đường bị hẹp về phía trái”\nBiển 3: W.201b “Chỗ ngoặt nguy hiểm vòng bên phải”. Nên đáp án đúng là biển 1 và biển 2."
 },
  {
-   "type": 5,
+   "type": 4,
    "id": 136,
    "id_exam": 5,
    "ask": "Khi gặp biển nào, người lái xe phải giảm tốc độ, chú ý xe đi ngược chiều, xe đi ở phía đườngbị hẹp phải nhường đường cho xe đi ngược chiều?",
@@ -2040,7 +2040,7 @@
    "complain": "Giải thích: Biển 1: W.236 “Hết đường đôi; Biển 2:W.203b ‘Đường đi bị hẹp về phía trái”; Biển 2: W.203c “Đường bị hẹp về phía phải”. Câu này hỏi về việc đường bị thu hẹp nên câu tả lời đúng là Biển 2 và Biển 3."
 },
  {
-   "type": 5,
+   "type": 4,
    "id": 137,
    "id_exam": 5,
    "ask": "Biển nào báo hiệu “Đường giao nhau” của các tuyến đường cùng cấp?",
@@ -2055,7 +2055,7 @@
    "complain": "Giải thích: Biển 1: W.205a “Đường giao nhau cùng cấp; Biển 2: W.207a “Giao nhauvới đường không ưu tiên”; Biển 3: W.208 “Giao nhau với đường ưu tiên”."
 },
  {
-   "type": 5,
+   "type": 4,
    "id": 138,
    "id_exam": 5,
    "ask": "Biển nào báo hiệu “Đường đôi”?",
@@ -2070,7 +2070,7 @@
    "complain": ""
 },
  {
-   "type": 5,
+   "type": 4,
    "id": 139,
    "id_exam": 5,
    "ask": "Biển nào báo hiệu “Đường đôi”?",
@@ -2085,7 +2085,7 @@
    "complain": ""
 },
  {
-   "type": 5,
+   "type": 4,
    "id": 140,
    "id_exam": 5,
    "ask": "Biển nào báo hiệu “Giao nhau với đường hai chiều”?",
@@ -2100,7 +2100,7 @@
    "complain": ""
 },
  {
-   "type": 5,
+   "type": 4,
    "id": 141,
    "id_exam": 5,
    "ask": "Biển nào báo hiệu “Đường hai chiều”?",
@@ -2115,7 +2115,7 @@
    "complain": ""
 },
  {
-   "type": 5,
+   "type": 4,
    "id": 142,
    "id_exam": 5,
    "ask": "Biển nào báo hiệu “Giao nhau với đường hai chiều”?",
@@ -2130,7 +2130,7 @@
    "complain": ""
 },
  {
-   "type": 5,
+   "type": 4,
    "id": 143,
    "id_exam": 5,
    "ask": "Biển nào báo hiệu “Chú ý chướng ngại vật”?",
@@ -2145,7 +2145,7 @@
    "complain": ""
 },
  {
-   "type": 5,
+   "type": 4,
    "id": 144,
    "id_exam": 5,
    "ask": "Gặp biển nào người tham gia giao thông phải đi chậm và thận trọng đề phòng khả năng xuấthiện và di chuyển bất ngờ của trẻ em trên mặt đường?",
@@ -2160,7 +2160,7 @@
    "complain": ""
 },
  {
-   "type": 5,
+   "type": 4,
    "id": 145,
    "id_exam": 5,
    "ask": "Biển nào chỉ dẫn nơi bắt đầu đoạn đường dành cho người đi bộ?",
@@ -2175,7 +2175,7 @@
    "complain": "Giải thích: W.224 “Đường người đi bộ cắt ngang”;\nBiển 2: I.423c “Điểm bắt đầu đường đi bộ”\nBiển3: W.225 “trẻ em”"
 },
  {
-   "type": 5,
+   "type": 4,
    "id": 146,
    "id_exam": 5,
    "ask": "Biển báo này có ý nghĩa gì?",
@@ -2190,7 +2190,7 @@
    "complain": "Giải thích: Biển W221b “Đường có sóng mấp mô nhân tạo”."
 },
  {
-   "type": 5,
+   "type": 4,
    "id": 147,
    "id_exam": 5,
    "ask": "Biển nào (đặt trước ngã ba, ngã tư) cho phép xe được rẽ sang hướng khác?",
@@ -2205,7 +2205,7 @@
    "complain": "Giải thích: Biển 1: R.301a “Hướng đi phải theo” chỉ được đi thẳng đặt trước ngã ba, ngã tư;\nBiển 2: R.301h “Hướng đi phải theo” chỉ được rẽ trái hoặc rẽ phải đặt sau ngã ba, ngã tư;\nNên đáp án đúng là không có biển nào."
 },
  {
-   "type": 5,
+   "type": 4,
    "id": 148,
    "id_exam": 5,
    "ask": "Biển nào báo hiệu “Hướng đi thẳng phải theo”?",
@@ -2220,7 +2220,7 @@
    "complain": "Giải thích: Biển 1: R.301a “Hướng đi phải theo” chỉ được đi thẳng đặt trước ngã ba, ngã tư;\nBiển 2: I.407a “Đường một chiều” không liên quan hướng đi phải theo.\nNên Biển 1 là đáp án đúng."
 },
  {
-   "type": 5,
+   "type": 4,
    "id": 149,
    "id_exam": 5,
    "ask": "Biển nào báo hiệu “Đường một chiều”?",
@@ -2235,7 +2235,7 @@
    "complain": "Giải thích: Biển 1: R.301a “Hướng đi phải theo” chỉ được đi thẳng đặt trước ngã ba, ngã tư;\nBiển 2: I.407a “Đường một chiều” không liên quan hướng đi phải theo.\nNên biển 2 là đáp án đúng."
 },
  {
-   "type": 5,
+   "type": 4,
    "id": 150,
    "id_exam": 5,
    "ask": "Trong các biển dưới đây biển nào là biển “Hết tốc độ tối đa cho phép”?",
@@ -2250,7 +2250,7 @@
    "complain": "Giải thích:\nBiển 1: DP134 “Hết hạn chế tốc độ tối đa”\nBiển 2: DP135 “Hết mọi lệnh cấm”;\nBiển 3: R307 “Hết hạn chế tốc độ tối thiểu”.\nNên biển 1 là biển “Hết hạn chế tốc độ tối đa”. Chú ý câu này hỏi ý nghĩa của biển."
 },
  {
-   "type": 5,
+   "type": 4,
    "id": 151,
    "id_exam": 6,
    "ask": "Hiệu lực của biển “Tốc độ tối đa cho phép” hết tác dụng khi gặp biển nào dưới đây?",
@@ -2265,7 +2265,7 @@
    "complain": "Giải thích:\nBiển 1: DP134 “Hết hạn chế tốc độ tối đa”\nBiển 2: DP135 “Hết mọi lệnh cấm”;\nBiển 3: R307 “Hết hạn chế tốc độ tối thiểu”.\nNên Biển 1 và Biển 2 là biển “Hết hạn chế tốc độ tối đa”. Chú ý câu hỏi các biển hết hạn chế, không phải hỏi ý nghĩa của biển."
 },
  {
-   "type": 5,
+   "type": 4,
    "id": 152,
    "id_exam": 6,
    "ask": "Trong các biển dưới đây biển nào là biển “Hết tốc độ tối thiểu”?",
@@ -2280,7 +2280,7 @@
    "complain": "Giải thích:\nBiển 1: DP134 “Hết hạn chế tốc độ tối đa”\nBiển 2: DP135 “Hết mọi lệnh cấm”;\nBiển 3: R307 “Hết hạn chế tốc độ tối thiểu”.\nNên Biển 3 là biển “Hết hạn chế tốc độ tối thiểu”. Câu này hỏi ý nghĩa của biển."
 },
  {
-   "type": 5,
+   "type": 4,
    "id": 153,
    "id_exam": 6,
    "ask": "Biển nào dưới đây báo hiệu hết cấm vượt?",
@@ -2295,7 +2295,7 @@
    "complain": "Giải thích:\nBiển 1: DP134 “Hết hạn chế tốc độ tối đa”\nBiển 2: DP135 “Hết mọi lệnh cấm”;\nBiển 3: DP.133 “Hết cấm vượt”\nNên đáp án đúng phải là Biển 2 và Biển 3."
 },
  {
-   "type": 5,
+   "type": 4,
    "id": 154,
    "id_exam": 6,
    "ask": "Trong các biển dưới đây biển nào là biển “Hết mọi lệnh cấm”?",
@@ -2310,7 +2310,7 @@
    "complain": "Giải thích:\nBiển 1: DP134 “Hết hạn chế tốc độ tối đa”\nBiển 2: DP135 “Hết mọi lệnh cấm”;\nBiển 3: R307 “Hết hạn chế tốc độ tối thiểu”."
 },
  {
-   "type": 5,
+   "type": 4,
    "id": 155,
    "id_exam": 6,
    "ask": "Biển nào chỉ dẫn cho người đi bộ sử dụng cầu vượt qua đường?",
@@ -2325,7 +2325,7 @@
    "complain": "Giải thích:\nBiển 1: I424a “Cầu vượt qua đường cho người đi bộ; Biển 2: I424c “Hầm chui qua đường cho người đi bộ” nên đáp án đúng là biển 1."
 },
  {
-   "type": 5,
+   "type": 4,
    "id": 156,
    "id_exam": 6,
    "ask": "Biển nào chỉ dẫn cho người đi bộ sử dụng hầm chui qua đường?",
@@ -2340,7 +2340,7 @@
    "complain": "Giải thích: Biển 1: I424b “Cầu vượt qua đường cho người đi bộ”; Biển 2: I424d “Hầm chui qua đường cho người đi bộ” nên đáp án đúng là biển 2."
 },
  {
-   "type": 5,
+   "type": 4,
    "id": 157,
    "id_exam": 6,
    "ask": "Biển nào báo hiệu “Nơi đỗ xe dành cho người khuyết tật”?",
@@ -2355,7 +2355,7 @@
    "complain": ""
 },
  {
-   "type": 5,
+   "type": 4,
    "id": 158,
    "id_exam": 6,
    "ask": "Gặp biển báo này, người tham gia giao thông phải xử lý như thế nào?",
@@ -2370,7 +2370,7 @@
    "complain": "Giải thích: Biển I.436 “Trạm cảnh sát giảo thông”. Các phương tiện phải giảm tốc độ đến mức an toàn và không được vượt khi đi qua khu vực này."
 },
  {
-   "type": 5,
+   "type": 4,
    "id": 159,
    "id_exam": 6,
    "ask": "Biển số 1 có ý nghĩa gì?",
@@ -2385,7 +2385,7 @@
    "complain": ""
 },
  {
-   "type": 5,
+   "type": 4,
    "id": 160,
    "id_exam": 6,
    "ask": "Vạch kẻ đường nào dưới đây là vạch phân chia các làn xe cùng chiều?",
@@ -2400,7 +2400,7 @@
    "complain": ""
 },
  {
-   "type": 5,
+   "type": 4,
    "id": 161,
    "id_exam": 6,
    "ask": "Vạch kẻ đường nào dưới đây là vạch phân chia hai chiều xe chạy (vạch tim đường), xekhông được lấn làn, không được đè lên vạch?",
@@ -2415,7 +2415,7 @@
    "complain": ""
 },
  {
-   "type": 5,
+   "type": 4,
    "id": 162,
    "id_exam": 6,
    "ask": "Vạch kẻ đường nào dưới đây là vạch phân chia hai chiều xe chạy (vạch tim đường)?",
@@ -2430,7 +2430,7 @@
    "complain": ""
 },
  {
-   "type": 5,
+   "type": 4,
    "id": 163,
    "id_exam": 6,
    "ask": "Các vạch dưới đây có tác dụng gì?",
@@ -2445,7 +2445,7 @@
    "complain": ""
 },
  {
-   "type": 5,
+   "type": 4,
    "id": 164,
    "id_exam": 6,
    "ask": "Khi gặp vạch kẻ đường nào các xe được phép đè vạch?",
@@ -2460,7 +2460,7 @@
    "complain": ""
 },
  {
-   "type": 5,
+   "type": 4,
    "id": 165,
    "id_exam": 6,
    "ask": "Vạch dưới đây có ý nghĩa gì?",
@@ -2740,7 +2740,7 @@
       "Mô tô, xe tải.",
       "Cả ba xe."
    ],
-   "urlImage": "#N/A",
+   "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-7.png",
    "result": "Mô tô, xe tải.",
    "complain": "Giải thích: Giang ngang tay: Trái phải đi; Trước sau dừng. Xe mô tô và xe tải được phép đi là đáp án đúng."
 },
@@ -2755,7 +2755,7 @@
       "Không xe nào chấp hành đúng quy tắc giao thông.",
       ""
    ],
-   "urlImage": "#N/A",
+   "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-7.png",
    "result": "Tất cả các loại xe trên.",
    "complain": "Giải thích: Xe khách chờ đèn đỏ rẽ trái. Xe tải đi thẳng và rẽ phải theo tín hiệu đèn xanh. Xe con đi thẳng và rẽ phải theo tín hiệu đèn xanh. Xe mô tô chờ đèn đỏ rẽ trái. Nên tất cả xe đều chấp hành."
 },
@@ -2770,7 +2770,7 @@
       "Hướng 1 và 3.",
       "Hướng 2 và 3."
    ],
-   "urlImage": "#N/A",
+   "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-7.png",
    "result": "Hướng 1 và 3.",
    "complain": "Giải thích: Hướng 2 có biển số P.104 “Cấm mô tô”\nHướng 3 Biển số P.103a “Cấm ô tô” nhưng không cấm mô tô. Nên đáp án đúng là hướng 1 và hướng 3."
 },
@@ -2785,7 +2785,7 @@
       "Xe mô tô + xe con, xe quân sự, xe công an.",
       ""
    ],
-   "urlImage": "#N/A",
+   "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-7.png",
    "result": "Xe quân sự, xe công an, xe con +mô tô.",
    "complain": "Giải thích:\nThứ tự ưu tiên: Xe ưu tiên – Đường ưu tiên – Bên phải trống – Rẽ phải – Đi thẳng – Rẽ trái.\n1. Xe quân sự: Xe ưu tiên cùng cấp xe công an nhưng đi thẳng;\n2. Xe công an: Xe ưu tiên; rẽ trái;\n3. Xe con và xe mô tô: Cùng đi thẳng."
 },
@@ -2800,7 +2800,7 @@
       "Xe khách (B), mô tô (C).",
       "Xe khách (B), mô tô (D)."
    ],
-   "urlImage": "#N/A",
+   "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-7.png",
    "result": "Xe con (E), mô tô (C).",
    "complain": "Giải thích: Xe mô tô C chạy vào làn danh riêng xe ô tô: Vi phạm; Xe con E chạy vào làn danh riêng xe máy: Vi phạm."
 },
@@ -2815,7 +2815,7 @@
       "Xe con (E), mô tô (D).",
       "Tất cả các loại xe trên."
    ],
-   "urlImage": "#N/A",
+   "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-7.png",
    "result": "Xe con (E), mô tô (D).",
    "complain": "Giải thích: Nhìn vào bảng chỉ dẫn loại phương tiện theo làn đường: Xe con (E) đi trên làn danh riêng cho mô tô nên vi phạm: Xe mô tô (D) chạy trên làn dành riêng cho ô tô nên cũng vi phạm."
 },
@@ -2830,7 +2830,7 @@
       "",
       ""
    ],
-   "urlImage": "#N/A",
+   "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-7.png",
    "result": "Không được vượt.",
    "complain": "Giải thích: Tại nơi giao nhau, trên đoạn đường có làn đường danh cho người đi bộ cắt ngang qua thì không được phép vượt."
 },
@@ -2845,7 +2845,7 @@
       "Không xe nào vi phạm.",
       "Cả hai xe."
    ],
-   "urlImage": "#N/A",
+   "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-7.png",
    "result": "Cả hai xe.",
    "complain": "Giải thích: Biển số R.301a chỉ cho phép các phương tiện đi thẳng trong khi cả 2 xe đều có tín hiệu xe nhan rẽ sang hướng khách nên cả 2 xe đều vi phạm quy tắc giao thông."
 },
@@ -2860,7 +2860,7 @@
       "Xe con, xe tải.",
       ""
    ],
-   "urlImage": "#N/A",
+   "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-7.png",
    "result": "Xe tải.",
    "complain": "Giải thích: Xe con trong cả 2 phía đều đang đúng làn đường và đi theo hướng mà đèn xanh đang bật nên đúng quy tắc giao thông.\nXe tải trong cả 2 phía đều ở sai làn đường so với hướng rẽ nên vi phạm quy tắc giao thông."
 },
@@ -2875,7 +2875,7 @@
       "Xe khách, xe tải.",
       ""
    ],
-   "urlImage": "#N/A",
+   "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-7.png",
    "result": "Xe khách, xe tải.",
    "complain": "Giải thích: Xe con và xe mô tô đang ở đúng làn đường, đúng hướng rẽ với tín hiệu đèn xanh nên đúng quy tắc giao thông.\nXe khách và xe tải đang ở sai làn đường so với hướng rẽ nên đều vi phạm."
 },
@@ -2890,7 +2890,7 @@
       "Xe khách, xe mô tô, xe con.",
       "Cả bốn xe."
    ],
-   "urlImage": "#N/A",
+   "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-7.png",
    "result": "Xe tải, xe khách, xe mô tô.",
    "complain": "Giải thích:\nXe con đi đúng làn đường theo hướng rẽ và tín hiệu đèn.\nXe khách: Sai làn đường và tín hiệu đèn.\nXe tải: Đi thẳng vi phạm đèn đỏ.\nXe mô tô: Đi thẳng vi phạm đèn đỏ."
 },
@@ -2905,7 +2905,7 @@
       "Xe tải, xe con.",
       "Mô tô, xe con."
    ],
-   "urlImage": "#N/A",
+   "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-7.png",
    "result": "Xe khách, mô tô.",
    "complain": "Giải thích: Xe con và xe tải: Vi phạm tín hiệu đèn;\nXe khách và xe mô tô: Đúng làn đường và đúng tín hiệu đèn."
 },
@@ -2920,7 +2920,7 @@
       "Mô tô, xe con, xe của bạn.",
       ""
    ],
-   "urlImage": "#N/A",
+   "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-7.png",
    "result": "Mô tô, xe con, xe của bạn.",
    "complain": "Giải thích: Thứ tự ưu tiên: Xe ưu tiên – Đường ưu tiên – Đường cùng cấp: Bên phải trống, rẽ phải, đi thẳng, rẽ trái.\nBiển báo phía trước là đường ưu tiên và biển phụ báo hướng di chuyển của xe mô tô là hướng ưu tiên.\n1. Xe mô tô: Đường ưu tiên;\n2. Xe con: Đường không ưu tiên, bên phải trống;\n3. Xe của bạn: Đường không ưu tiên, bên phải vướng xe con."
 },
@@ -2935,7 +2935,7 @@
       "Mô tô, xe con, xe của bạn.",
       ""
    ],
-   "urlImage": "#N/A",
+   "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-7.png",
    "result": "Xe con, xe của bạn, mô tô.",
    "complain": "Giải thích: Thứ tự ưu tiên: Xe ưu tiên – Đường ưu tiên – Đường cùng cấp: Bên phải trống, rẽ phải, đi thẳng, rẽ trái.\n1. Xe con: Rẽ phải; 2: Xe của bạn: Đi thẳng; 3. Mô tô: Rẽ trái."
 },
@@ -2950,7 +2950,7 @@
       "Tăng tốc độ, rẽ phải trước xe đạp.",
       ""
    ],
-   "urlImage": "#N/A",
+   "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-7.png",
    "result": "Giảm tốc độ, rẽ phải sau xe tải và xe đạp.",
    "complain": "Giải thích: Xe tải đã vào nơi giao nhau trước nên sẽ được ưu tiên trước. Biển báo phía trước là đường ưu tiên dành cho xe thô sơ nên phải nhường đường cho xe đạp. Do đó, xe bạn rẽ phải sau xe tải và xe đạp."
 },
@@ -2965,7 +2965,7 @@
       "Cả hai xe đều đúng.",
       ""
    ],
-   "urlImage": "#N/A",
+   "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-7.png",
    "result": "Xe con.",
    "complain": "Giải thích:Biển số W.211a “Giao nhau với đường sắt không có rào chắn” thì các phương tiện đứng cách xa đường sắt tối thiểu 5m nên xe con đúng."
 },
@@ -2980,7 +2980,7 @@
       "Ra tín hiệu, yêu cầu người gác chắn tàu kéo chậm Barie để xe bạn qua.",
       ""
    ],
-   "urlImage": "#N/A",
+   "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-7.png",
    "result": "Dừng lại trước rào chắn một khoảng cách an toàn.",
    "complain": "Giải thích: Bắt buộc phải dừng xe."
 },
@@ -2995,8 +2995,908 @@
       "Vượt về phía bên trái để đi tiếp.",
       ""
    ],
-   "urlImage": "#N/A",
+   "urlImage": "https://thibanglaixe24h.net/wp-content/uploads/2020/08/bien-cau-7.png",
    "result": "Giảm tốc độ chờ xe container rẽ xong rồi tiếp tục đi.",
    "complain": "Giải thích: Giảm tốc độc chờ xe đầu kéo rẽ phải rồi mới tiếp tục đi."
+},
+ {
+   "type": 0,
+   "id": 201,
+   "id_exam": 8,
+   "ask": "Hành vi nào dưới đây bị nghiêm cấm ?",
+   "answer_list": [
+      "Đỗ xe trên đường phố",
+      "Sử dụng xe đạp đi trên các tuyến quốc lộ có tốc độ cao",
+      "Làm hỏng (cố ý) cọc tiêu, gương cầu, dải phân cách",
+      "Sử dụng còi và quay đầu xe trong khu dân cư"
+   ],
+   "urlImage": "",
+   "result": "Làm hỏng (cố ý) cọc tiêu, gương cầu, dải phân cách",
+   "complain": ""
+},
+ {
+   "type": 0,
+   "id": 202,
+   "id_exam": 8,
+   "ask": "Hành vi đưa xe cơ giới, xe máy chuyên dùng không bảo đảm tiêu chuẩn an toàn kỹ thuật và bảo vệ môi trường vào tham gia giao thông đường bộ có bị nghiêm cấm hay không?",
+   "answer_list": [
+      "Không nghiêm cấm",
+      "Bị nghiêm cấm",
+      "Bị nghiêm cấm tuỳ theo các tuyến đường",
+      "Bị nghiêm cấm tuỳ theo loại xe"
+   ],
+   "urlImage": "",
+   "result": "Bị nghiêm cấm",
+   "complain": ""
+},
+ {
+   "type": 0,
+   "id": 203,
+   "id_exam": 8,
+   "ask": "uộc đua xe chỉ được thực hiện khi nào?",
+   "answer_list": [
+      "Diễn ra trên đường phố không có người qua lại",
+      "Được người dân ủng hộ",
+      "Được cơ quan có thẩm quyền cấp phép",
+      ""
+   ],
+   "urlImage": "",
+   "result": "Được cơ quan có thẩm quyền cấp phép",
+   "complain": ""
+},
+ {
+   "type": 0,
+   "id": 204,
+   "id_exam": 8,
+   "ask": "Người điều khiển phương tiện giao thông đường bộ mà trong cơ thể có chất ma tuý có bị nghiêm cấm hay không?",
+   "answer_list": [
+      "Bị nghiêm cấm",
+      "Không bị nghiêm cấm",
+      "Không bị nghiêm cấm, nếu có chất ma tuý ở mức nhẹ, có thể điều khiển phương tiện tham gia giao thông",
+      ""
+   ],
+   "urlImage": "",
+   "result": "Bị nghiêm cấm",
+   "complain": ""
+},
+ {
+   "type": 0,
+   "id": 205,
+   "id_exam": 8,
+   "ask": "Việc lái xe mô tô, ô tô, máy kéo ngay sau khi uống rượu, bia có được phép hay không?",
+   "answer_list": [
+      "Không được phép",
+      "Chỉ được lái ở tốc độ chậm và quãng đường ngắn",
+      "Chỉ được lái nếu trong cơ thể có nồng độ cồn thấp",
+      ""
+   ],
+   "urlImage": "",
+   "result": "Không được phép",
+   "complain": ""
+},
+ {
+   "type": 0,
+   "id": 206,
+   "id_exam": 8,
+   "ask": "Người điều khiển xe môtô, ô tô, máy kéo trên đường mà trong máu hoặc hơi thở có nồng độ cồn có bị nghiêm cấm không?",
+   "answer_list": [
+      "Bị nghiêm cấm",
+      "Không bị nghiêm cấm",
+      "Không bị nghiêm cấm, nếu nồng độ cồn trong máu ở mức nhẹ, có thể điều khiển phương tiện tham gia giao thông",
+      ""
+   ],
+   "urlImage": "",
+   "result": "Bị nghiêm cấm",
+   "complain": ""
+},
+ {
+   "type": 0,
+   "id": 207,
+   "id_exam": 8,
+   "ask": "Sử dụng rượu bia khi lái xe, nếu bị phát hiện thì bị xử lý như thế nào?",
+   "answer_list": [
+      "Chỉ bị nhắc nhở",
+      "Bị xử phạt hành chính hoặc có thể bị xử lý hình sự tùy theo mức độ vi phạm",
+      "Không bị xử lý hình sự",
+      ""
+   ],
+   "urlImage": "",
+   "result": "Bị xử phạt hành chính hoặc có thể bị xử lý hình sự tùy theo mức độ vi phạm",
+   "complain": ""
+},
+ {
+   "type": 0,
+   "id": 208,
+   "id_exam": 8,
+   "ask": "Theo Luật phòng chống tác hại của rượu, bia, đối tượng nào dưới đây bị cấm sử dụng rượu bia khi tham gia giao thông?",
+   "answer_list": [
+      "Người điều khiển: Xe ô tô, xe mô tô, xe đạp, xe gắn máy",
+      "Người ngồi phía sau người điều khiển xe cơ giới",
+      "Người đi bộ",
+      "Cả ý 1 và ý 2"
+   ],
+   "urlImage": "",
+   "result": "Người điều khiển: Xe ô tô, xe mô tô, xe đạp, xe gắn máy",
+   "complain": ""
+},
+ {
+   "type": 0,
+   "id": 209,
+   "id_exam": 8,
+   "ask": "Hành vi giao xe cơ giới, xe máy chuyên dùng cho người không đủ điều kiện để điều khiển xe tham gia giao thông có được phép hay không?",
+   "answer_list": [
+      "Chỉ được thực hiện nếu đã hướng dẫn đầy đủ",
+      "Không được phép",
+      "Được phép tuỳ từng trường hợp",
+      "Chỉ được phép thực hiện với thành viên trong gia đình"
+   ],
+   "urlImage": "",
+   "result": "Không được phép",
+   "complain": ""
+},
+ {
+   "type": 0,
+   "id": 210,
+   "id_exam": 8,
+   "ask": "Hành vi điều khiển xe cơ giới chạy quá tốc độ quy định, giành đường, vượt ẩu có bị nghiêm cấm hay không ?",
+   "answer_list": [
+      "Bị nghiêm cấm tuỳ từng trường hợp",
+      "Không bị nghiêm cấm",
+      "Bị nghiêm cấm",
+      ""
+   ],
+   "urlImage": "",
+   "result": "Bị nghiêm cấm",
+   "complain": ""
+},
+ {
+   "type": 0,
+   "id": 211,
+   "id_exam": 8,
+   "ask": "Khi lái xe trên đường, người lái xe cần quan sát và bảo đảm tốc độ phương tiện như thế nào?",
+   "answer_list": [
+      "Chỉ lớn hơn tốc độ tối đa cho phép khi đường vắng",
+      "Chỉ lớn hơn tốc độ tối đa cho phép vào ban đêm",
+      "Không vượt quá tốc độ cho phép",
+      ""
+   ],
+   "urlImage": "",
+   "result": "Không vượt quá tốc độ cho phép",
+   "complain": ""
+},
+ {
+   "type": 0,
+   "id": 212,
+   "id_exam": 8,
+   "ask": "Phương tiện giao thông đường bộ di chuyển với tốc độ thấp hơn phải đi như thế nào?",
+   "answer_list": [
+      "Đi về phía bên trái",
+      "Đi về phía bên phải",
+      "Đi ở giữa",
+      ""
+   ],
+   "urlImage": "",
+   "result": "Đi về phía bên phải",
+   "complain": ""
+},
+ {
+   "type": 0,
+   "id": 213,
+   "id_exam": 8,
+   "ask": "Trên đường có nhiều làn đường, khi điều khiển phương tiện ở tốc độ chậm bạn phải đi ở làn đường nào?",
+   "answer_list": [
+      "Đi ở làn bên phải trong cùng",
+      "Đi ở làn phía bên trái",
+      "Đi ở làn giữa",
+      "Đi ở bất cứ làn nào nhưng phải bấm đèn cảnh báo nguy hiểm để báo hiệu cho các phương tiên khác"
+   ],
+   "urlImage": "",
+   "result": "Đi ở làn bên phải trong cùng",
+   "complain": ""
+},
+ {
+   "type": 0,
+   "id": 214,
+   "id_exam": 8,
+   "ask": "Hành vi vượt xe tại các vị trí có tầm nhìn hạn chế, đường vòng, đầu dốc có bị nghiêm cấm hay không?",
+   "answer_list": [
+      "Không bị nghiêm cấm",
+      "Không bị nghiêm cấm khi rất vội",
+      "Bị nghiêm cấm",
+      "Không bị nghiêm cấm khi khẩn cấp"
+   ],
+   "urlImage": "",
+   "result": "Bị nghiêm cấm",
+   "complain": ""
+},
+ {
+   "type": 0,
+   "id": 215,
+   "id_exam": 8,
+   "ask": "Hành vi lắp đặt, sử dụng còi, đèn không đúng thiết kế của nhà sản xuất đối với từng loại xe cơ giới có được phép hay không ?",
+   "answer_list": [
+      "Được phép",
+      "Không được phép",
+      "Được phép tùy từng trường hợp",
+      ""
+   ],
+   "urlImage": "",
+   "result": "Không được phép",
+   "complain": ""
+},
+ {
+   "type": 0,
+   "id": 216,
+   "id_exam": 8,
+   "ask": "Việc sản xuất, mua bán, sử dụng biển số xe cơ giới, xe máy chuyên dùng được quy định như thế nào trong Luật Giao thông đường bộ?",
+   "answer_list": [
+      "Được phép sản xuất, sử dụng khi bị mất biển số",
+      "Được phép mua bán, sử dụng khi bị mất biển số",
+      "Nghiêm cấm sản xuất, mua bán, sử dụng trái phép",
+      ""
+   ],
+   "urlImage": "",
+   "result": "Nghiêm cấm sản xuất, mua bán, sử dụng trái phép",
+   "complain": ""
+},
+ {
+   "type": 0,
+   "id": 217,
+   "id_exam": 8,
+   "ask": "Người lái xe không được vượt xe khác khi gặp trường hợp nào ghi ở dưới đây?",
+   "answer_list": [
+      "Trên cầu hẹp có một làn xe. Nơi đường giao nhau, đường bộ giao nhau cùng mức với đường sắt; xe được quyền ưu tiên đang phát tín hiệu ưu tiên đi làm nhiệm vụ",
+      "Trên cầu có từ 02 làn xe trở lên; nơi đường bộ giao nhau không cùng mức với đường sắt; xe được quyền ưu tiên đang đi phía trước nhưng không phát tín hiệu ưu tiên",
+      "Trên đường có 2 làn đường được phân chia làn bằng vạch kẻ nét đứt",
+      ""
+   ],
+   "urlImage": "",
+   "result": "Trên cầu hẹp có một làn xe. Nơi đường giao nhau, đường bộ giao nhau cùng mức với đường sắt; xe được quyền ưu tiên đang phát tín hiệu ưu tiên đi làm nhiệm vụ",
+   "complain": ""
+},
+ {
+   "type": 0,
+   "id": 218,
+   "id_exam": 8,
+   "ask": "Ở phần đường dành cho người đi bộ qua đường, trên cầu, đầu cầu, đường cao tốc, đường hẹp, đường dốc, tại nơi đường bộ giao nhau cùng mức với đường sắt có được quay đầu xe hay không?",
+   "answer_list": [
+      "Được phép",
+      "Không được phép",
+      "Tùy từng trường hợp",
+      ""
+   ],
+   "urlImage": "",
+   "result": "Không được phép",
+   "complain": ""
+},
+ {
+   "type": 0,
+   "id": 219,
+   "id_exam": 8,
+   "ask": "Người lái xe không được quay đầu xe trong các trường hợp nào dưới đây?",
+   "answer_list": [
+      "Ở phần đường dành cho người đi bộ qua đường, trên cầu, đầu cầu, đường cao tốc, đường hẹp, đường dốc, tại nơi đường bộ giao nhau cùng mức với đường sắt",
+      "Ở phía trước hoặc phía sau của phần đường dành cho người đi bộ qua đường, trên đường quốc lộ, tại nơi đường bộ giao nhau không cùng mức với đường sắt",
+      "Cả ý 1 và ý 2",
+      ""
+   ],
+   "urlImage": "",
+   "result": "Ở phần đường dành cho người đi bộ qua đường, trên cầu, đầu cầu, đường cao tốc, đường hẹp, đường dốc, tại nơi đường bộ giao nhau cùng mức với đường sắt",
+   "complain": ""
+},
+ {
+   "type": 0,
+   "id": 220,
+   "id_exam": 8,
+   "ask": "Người điều khiển phương tiện giao thông trên đường phố có được dừng xe, đỗ xe trên miệng cống thoát nước, miệng hầm của đường điện thoại, điện cao thế, chỗ dành riêng cho xe chữa cháy lấy nước hay không?",
+   "answer_list": [
+      "Được dừng xe, đỗ xe trong trường hợp cần thiết",
+      "Không được dừng xe, đỗ xe",
+      "Được dừng xe, không được đỗ xe",
+      ""
+   ],
+   "urlImage": "",
+   "result": "Không được dừng xe, đỗ xe",
+   "complain": ""
+},
+ {
+   "type": 0,
+   "id": 221,
+   "id_exam": 8,
+   "ask": "Người điều khiển xe mô tô hai bánh, ba bánh, xe gắn máy có được phép sử dụng xe để kéo hoặc đẩy các phương tiện khác khi tham gia giao thông không?",
+   "answer_list": [
+      "Được phép",
+      "Nếu phương tiện được kéo, đẩy có khối lượng nhỏ hơn phương tiện của mình",
+      "Tuỳ trường hợp",
+      "Không được phép"
+   ],
+   "urlImage": "",
+   "result": "Không được phép",
+   "complain": ""
+},
+ {
+   "type": 0,
+   "id": 222,
+   "id_exam": 8,
+   "ask": "Khi điều khiển xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy, những hành vi buông cả hai tay; sử dụng xe để kéo, đẩy xe khác, vật khác; sử dụng chân chống của xe quệt xuống đường khi xe đang chạy có được phép hay không?",
+   "answer_list": [
+      "Được phép",
+      "Tuỳ trường hợp",
+      "Không được phép",
+      ""
+   ],
+   "urlImage": "",
+   "result": "Không được phép",
+   "complain": ""
+},
+ {
+   "type": 0,
+   "id": 223,
+   "id_exam": 8,
+   "ask": "Khi điều khiển xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy, những hành vi nào không được phép?",
+   "answer_list": [
+      "Buông cả hai tay; sử dụng xe để kéo, đẩy xe khác, vật khác; sử dụng chân chống của xe quệt xuống đường khi xe đang chạy",
+      "Buông một tay; sử dụng xe để chở người hoặc hàng hoá; để chân chạm xuống đất khi khởi hành",
+      "Đội mũ bảo hiểm; chạy xe đúng tốc độ quy định và chấp hành đúng quy tắc giao thông đường bộ",
+      "Chở người ngồi sau dưới 16 tuổi"
+   ],
+   "urlImage": "",
+   "result": "Buông cả hai tay; sử dụng xe để kéo, đẩy xe khác, vật khác; sử dụng chân chống của xe quệt xuống đường khi xe đang chạy",
+   "complain": ""
+},
+ {
+   "type": 0,
+   "id": 224,
+   "id_exam": 8,
+   "ask": "Người ngồi trên xe mô tô hai bánh, ba bánh, xe gắn máy khi tham gia giao thông có được mang, vác vật cồng kềnh hay không?",
+   "answer_list": [
+      "Được mang, vác tuỳ trường hợp cụ thể",
+      "Không được mang, vác",
+      "Được mang, vác nhưng phải đảm bảo an toàn",
+      "Được mang vác tùy theo sức khỏe của bản thân"
+   ],
+   "urlImage": "",
+   "result": "Không được mang, vác",
+   "complain": ""
+},
+ {
+   "type": 0,
+   "id": 225,
+   "id_exam": 8,
+   "ask": "Người ngồi trên xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy khi tham gia giao thông có được bám, kéo hoặc đẩy các phương tiện khác không?",
+   "answer_list": [
+      "Được phép",
+      "Được bám trong trường hợp phương tiện của mình bị hỏng",
+      "Được kéo, đẩy trong trường hợp phương tiện khác bị hỏng",
+      "Không được phép"
+   ],
+   "urlImage": "",
+   "result": "Không được phép",
+   "complain": ""
+},
+ {
+   "type": 0,
+   "id": 226,
+   "id_exam": 9,
+   "ask": "Người ngồi trên xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy khi tham gia giao thông có được sử dụng ô khi trời mưa hay không?",
+   "answer_list": [
+      "Được sử dụng",
+      "Chỉ người ngồi sau được sử dụng",
+      "Không được sử dụng",
+      "Được sử dụng nếu không có áo mưa"
+   ],
+   "urlImage": "",
+   "result": "Không được sử dụng",
+   "complain": ""
+},
+ {
+   "type": 0,
+   "id": 227,
+   "id_exam": 9,
+   "ask": "Khi đang lên dốc người ngồi trên xe mô tô có được phép kéo theo người đang điều khiển xe đạp hay không?",
+   "answer_list": [
+      "Chỉ được phép nếu cả hai đội mũ bảo hiểm",
+      "Không được phép",
+      "Chỉ được phép thực hiện trên đường thật vắng",
+      "Chỉ được phép khi người đi xe đạp đã quá mệt"
+   ],
+   "urlImage": "",
+   "result": "Không được phép",
+   "complain": ""
+},
+ {
+   "type": 0,
+   "id": 228,
+   "id_exam": 9,
+   "ask": "Hành vi sử dụng xe mô tô để kéo, đẩy xe mô tô khác bị hết xăng đến trạm mua xăng có được phép hay không?",
+   "answer_list": [
+      "Chỉ được kéo nếu đã nhìn thấy trạm xăng",
+      "Chỉ được thực hiện trên đường vắng phương tiện cùng tham gia giao thông",
+      "Không được phép",
+      ""
+   ],
+   "urlImage": "",
+   "result": "Không được phép",
+   "complain": ""
+},
+ {
+   "type": 0,
+   "id": 229,
+   "id_exam": 9,
+   "ask": "Hành vi vận chuyển đồ vật cồng kềnh bằng xe mô tô, xe gắn máy khi tham gia giao thông có được phép hay không?",
+   "answer_list": [
+      "Không được vận chuyển",
+      "Chỉ được vận chuyển khi đã chằng buộc cẩn thận",
+      "Chỉ được vận chuyển vật cồng kềnh trên xe máy nếu khoảng cách về nhà ngắn hơn 2 km",
+      ""
+   ],
+   "urlImage": "",
+   "result": "Không được vận chuyển",
+   "complain": ""
+},
+ {
+   "type": 0,
+   "id": 230,
+   "id_exam": 9,
+   "ask": "Trên đường giao thông, khi hiệu lệnh của người điều khiển giao thông trái với hiệu lệnh của đèn hoặc biển báo hiệu thì người tham gia giao thông phải chấp hành theo hiệu lệnh nào?",
+   "answer_list": [
+      "Hiệu lệnh của người điều khiển giao thông",
+      "Hiệu lệnh của đèn điều khiển giao thông",
+      "Hiệu lệnh của biển báo hiệu đường bộ",
+      "Theo quyết định của người tham gia giao thông nhưng phải bảo đảm an toàn"
+   ],
+   "urlImage": "",
+   "result": "Hiệu lệnh của người điều khiển giao thông",
+   "complain": ""
+},
+ {
+   "type": 0,
+   "id": 231,
+   "id_exam": 9,
+   "ask": "Người lái xe phải làm gì khi quay đầu xe trên cầu, đường ngầm hay khu vực đường bộ giao nhau cùng mức với đường sắt?",
+   "answer_list": [
+      "Không được quay đầu xe",
+      "Lợi dụng chỗ rộng và phải có người làm tín hiệu sau xe để bảo đảm an toàn",
+      "Lợi dụng chỗ rộng có thể quay đầu được để quay đầu xe cho an toàn",
+      ""
+   ],
+   "urlImage": "",
+   "result": "Không được quay đầu xe",
+   "complain": ""
+},
+ {
+   "type": 0,
+   "id": 232,
+   "id_exam": 9,
+   "ask": "Trên đoạn đường bộ giao nhau cùng mức với đường sắt, cầu đường bộ đi chung với đường sắt thì loại phương tiện nào được quyền ưu tiên đi trước?",
+   "answer_list": [
+      "Phương tiện nào bên phải không vướng",
+      "Phương tiện nào ra tín hiệu xin đường trước",
+      "Phương tiện giao thông đường sắt",
+      ""
+   ],
+   "urlImage": "",
+   "result": "Phương tiện giao thông đường sắt",
+   "complain": ""
+},
+ {
+   "type": 0,
+   "id": 233,
+   "id_exam": 9,
+   "ask": "Người lái xe phải làm gì khi điều khiển xe vào đường cao tốc?",
+   "answer_list": [
+      "Phải có tín hiệu xin vào và phải nhường đường cho xe đang chạy trên đường; khi thấy an toàn mới cho xe nhập vào dòng xe ở làn đường sát mép ngoài; nếu có làn đường tăng tốc thì phải cho xe chạy trên làn đường đó trước khi vào làn đường của đường cao tốc",
+      "Phải có tín hiệu xin vào và phải nhanh chóng vượt xe đang chạy trên đường để nhập vào dòng xe ở làn đường sát mép ngoài; nếu có làn đường tăng tốc thì phải cho xe chạy qua làn đường đó để vào làn đường của đường cao tốc",
+      "",
+      ""
+   ],
+   "urlImage": "",
+   "result": "Phải có tín hiệu xin vào và phải nhường đường cho xe đang chạy trên đường; khi thấy an toàn mới cho xe nhập vào dòng xe ở làn đường sát mép ngoài; nếu có làn đường tăng tốc thì phải cho xe chạy trên làn đường đó trước khi vào làn đường của đường cao tốc",
+   "complain": ""
+},
+ {
+   "type": 0,
+   "id": 234,
+   "id_exam": 9,
+   "ask": "Người ngồi trên xe mô tô 2 bánh, xe gắn máy phải đội mũ bảo hiểm có cài quai đúng quy cách khi nào?",
+   "answer_list": [
+      "Khi tham gia giao thông đường bộ",
+      "Chỉ khi đi trên đường chuyên dùng; đường cao tốc",
+      "Khi tham gia giao thông trên đường tỉnh lộ hoặc quốc lộ",
+      ""
+   ],
+   "urlImage": "",
+   "result": "Khi tham gia giao thông đường bộ",
+   "complain": ""
+},
+ {
+   "type": 0,
+   "id": 235,
+   "id_exam": 9,
+   "ask": "Người điều khiển xe mô tô hai bánh, xe gắn máy có được đi xe dàn hàng ngang; đi xe vào phần đường dành cho người đi bộ và phương tiện khác; sử dụng ô, điện thoại di động, thiết bị âm thanh (trừ thiết bị trợ thính) hay không?",
+   "answer_list": [
+      "Được phép nhưng phải đảm bảo an toàn",
+      "Không được phép",
+      "Được phép tùy từng hoàn cảnh, điều kiện cụ thể",
+      ""
+   ],
+   "urlImage": "",
+   "result": "Không được phép",
+   "complain": ""
+},
+ {
+   "type": 0,
+   "id": 236,
+   "id_exam": 9,
+   "ask": "Khi gặp một đoàn xe, một đoàn xe tang hay gặp một đoàn người có tổ chức theo đội ngũ, người lái xe phải xử lý như thế nào?",
+   "answer_list": [
+      "Từ từ đi cắt qua đoàn người, đoàn xe",
+      "Không được cắt ngang qua đoàn người, đoàn xe",
+      "Báo hiệu từ từ cho xe đi cắt qua để bảo đảm an toàn",
+      ""
+   ],
+   "urlImage": "",
+   "result": "Không được cắt ngang qua đoàn người, đoàn xe",
+   "complain": ""
+},
+ {
+   "type": 0,
+   "id": 237,
+   "id_exam": 9,
+   "ask": "Khi lái xe trên đường vắng mà cảm thấy buồn ngủ, người lái xe nên chọn cách xử lý như thế nào cho phù hợp?",
+   "answer_list": [
+      "Tăng tốc độ kết hợp với nghe nhạc và đi tiếp",
+      "Quan sát, dừng xe tại nơi quy định; nghỉ cho đến khi hết buồn ngủ và đi tiếp",
+      "Sử dụng một ít rượu và bia để hết buồn ngủ và đi tiếp",
+      ""
+   ],
+   "urlImage": "",
+   "result": "Quan sát, dừng xe tại nơi quy định; nghỉ cho đến khi hết buồn ngủ và đi tiếp",
+   "complain": ""
+},
+ {
+   "type": 0,
+   "id": 238,
+   "id_exam": 9,
+   "ask": "Trên đường cao tốc, người lái xe xử lý như thế nào khi đã vượt quá lối ra của đường định rẽ?",
+   "answer_list": [
+      "Quay xe, chạy trên lề đường bên phải và rẽ khỏi đường cao tốc",
+      "Lùi xe sát lề đường bên phải và rẽ khỏi đường cao tốc",
+      "Tiếp tục chạy đến lối ra tiếp theo",
+      ""
+   ],
+   "urlImage": "",
+   "result": "Tiếp tục chạy đến lối ra tiếp theo",
+   "complain": ""
+},
+ {
+   "type": 0,
+   "id": 239,
+   "id_exam": 9,
+   "ask": "Tại các điểm giao cắt giữa đường bộ và đường sắt quyền ưu tiên thuộc về loại phương tiện nào dưới đây?",
+   "answer_list": [
+      "Xe cứu hỏa",
+      "Xe cứu thương",
+      "Phương tiện giao thông đường sắt",
+      "Ô tô, mô tô và xe máy chuyên dùng"
+   ],
+   "urlImage": "",
+   "result": "Phương tiện giao thông đường sắt",
+   "complain": ""
+},
+ {
+   "type": 0,
+   "id": 240,
+   "id_exam": 9,
+   "ask": "Trên đoạn đường bộ giao nhau đồng mức với đường sắt, người không có nhiệm vụ có được tự ý mở chắn đường ngang khi chắn đã đóng hay không?",
+   "answer_list": [
+      "Không được phép",
+      "Được phép nhưng phải đảm bảo an toàn",
+      "Được phép tùy từng hoàn cảnh và điều kiện cụ thể",
+      ""
+   ],
+   "urlImage": "",
+   "result": "Không được phép",
+   "complain": ""
+},
+ {
+   "type": 0,
+   "id": 241,
+   "id_exam": 9,
+   "ask": "Khi điều khiển phương tiện tham giao giao thông, những hành vi nào dưới đây bị nghiêm cấm?",
+   "answer_list": [
+      "Thay đổi tốc độ của xe trên đường bộ",
+      "Thay đổi tay số của xe trên đường bộ",
+      "Lạng lách, đánh võng trên đường bộ",
+      ""
+   ],
+   "urlImage": "",
+   "result": "Lạng lách, đánh võng trên đường bộ",
+   "complain": ""
+},
+ {
+   "type": 0,
+   "id": 242,
+   "id_exam": 9,
+   "ask": "Khi xe ô tô, mô tô đến gần vị trí giao nhau giữa đường bộ và đường sắt không có rào chắn, khi đèn tín hiệu màu đỏ đã bật sáng hoặc khi có tiếng chuông báo hiệu, người lái xe xử lý như thế nào?",
+   "answer_list": [
+      "Giảm tốc độ cho xe vượt qua đường sắt",
+      "Nhanh chóng cho xe vượt qua đường sắt trước khi tàu hỏa tới",
+      "Giảm tốc độ cho xe vượt qua đường sắt trước khi tàu hỏa tới",
+      "Cho xe dừng ngay lại và giữ khoảng cách tối thiểu 5 mét tính từ ray gấn nhất"
+   ],
+   "urlImage": "",
+   "result": "Cho xe dừng ngay lại và giữ khoảng cách tối thiểu 5 mét tính từ ray gấn nhất",
+   "complain": ""
+},
+ {
+   "type": 0,
+   "id": 243,
+   "id_exam": 9,
+   "ask": "Người lái xe phải xử lý như thế nào khi quan sát phía trước thấy người đi bộ đang sang đường tại nơi có vạch đường dành cho người đi bộ để đảm bảo an toàn?",
+   "answer_list": [
+      "Giảm tốc độ, đi từ từ để vượt qua trước người đi bộ",
+      "Giảm tốc độ, có thể dừng lại nếu cần thiết trước vạch dừng xe để nhường đường cho người đi bộ qua đường",
+      "Tăng tốc độ để vượt qua trước người đi bộ",
+      ""
+   ],
+   "urlImage": "",
+   "result": "Giảm tốc độ, có thể dừng lại nếu cần thiết trước vạch dừng xe để nhường đường cho người đi bộ qua đường",
+   "complain": ""
+},
+ {
+   "type": 0,
+   "id": 244,
+   "id_exam": 9,
+   "ask": "Khi muốn lùi xe nhưng không quan sát được phía sau, cần làm gì để đảm bảo an toàn?",
+   "answer_list": [
+      "Phải lùi thật chậm",
+      "Có thể được lùi xe nhưng phải mở cửa xe",
+      "Không được lùi xe",
+      "Bấm còi 3 lần liên tiếp trước khi lùi"
+   ],
+   "urlImage": "",
+   "result": "Không được lùi xe",
+   "complain": ""
+},
+ {
+   "type": 0,
+   "id": 245,
+   "id_exam": 9,
+   "ask": "Khi tham gia giao thông trên đường cao tốc, người điều khiển phương tiện cơ giới có được dừng đỗ xe trên phần đường xe chạy hay không?",
+   "answer_list": [
+      "Được dừng, đỗ",
+      "Không được dừng, đỗ",
+      "Được dừng, đỗ nhưng phải đảm bảo an toàn",
+      ""
+   ],
+   "urlImage": "",
+   "result": "Không được dừng, đỗ",
+   "complain": ""
+},
+ {
+   "type": 0,
+   "id": 246,
+   "id_exam": 9,
+   "ask": "Người lái xe cố tình không phân biệt làn đường, vạch phân làn, phóng nhanh, vượt ẩu, vượt đèn đỏ, đi vào đường cấm, đường một chiều được coi là hành vi nào trong các hành vi dưới đây?",
+   "answer_list": [
+      "Là bình thường",
+      "Là thiếu văn hóa giao thông",
+      "Là có văn hóa giao thông",
+      ""
+   ],
+   "urlImage": "",
+   "result": "Là thiếu văn hóa giao thông",
+   "complain": ""
+},
+ {
+   "type": 0,
+   "id": 247,
+   "id_exam": 9,
+   "ask": "Hành vi bỏ trốn sau khi gây tai nạn để trốn tránh trách nhiệm hoặc khi có điều kiện mà cố ý không cứu giúp người bị tai nạn giao thông có bị nghiêm cấm hay không?",
+   "answer_list": [
+      "Không bị nghiêm cấm",
+      "Nghiêm cấm tuỳ từng trường hợp cụ thể",
+      "Bị nghiêm cấm",
+      ""
+   ],
+   "urlImage": "",
+   "result": "Bị nghiêm cấm",
+   "complain": ""
+},
+ {
+   "type": 0,
+   "id": 248,
+   "id_exam": 9,
+   "ask": "Khi xảy ra tai nạn giao thông, những hành vi nào dưới đây bị nghiêm cấm?",
+   "answer_list": [
+      "Xâm phạm tính mạng, sức khoẻ, tài sản của người bị nạn và người gây tai nạn.",
+      "Bỏ trốn sau khi gây ra tai nạn để trốn tránh trách nhiệm",
+      "Cả ý 1 và ý 2",
+      ""
+   ],
+   "urlImage": "",
+   "result": "Cả ý 1 và ý 2",
+   "complain": ""
+},
+ {
+   "type": 0,
+   "id": 249,
+   "id_exam": 9,
+   "ask": "Khi xảy ra tai nạn giao thông, những hành vi nào dưới đây bị nghiêm cấm?",
+   "answer_list": [
+      "Xâm phạm tính mạng, sức khoẻ, tài sản của người bị nạn và người gây tai nạn",
+      "Sơ cứu người bị nạn khi cơ quan có thẩm quyền chưa cho phép",
+      "Sơ cứu người gây tai nạn khi cơ quan có thẩm quyền chưa cho phép",
+      ""
+   ],
+   "urlImage": "",
+   "result": "Xâm phạm tính mạng, sức khoẻ, tài sản của người bị nạn và người gây tai nạn",
+   "complain": ""
+},
+ {
+   "type": 0,
+   "id": 250,
+   "id_exam": 9,
+   "ask": "Khi điều khiển xe mô tô tay ga xuống đường dốc dài, độ dốc cao, người lái xe cần thực hiện các thao tác nào dưới đây để đảm bảo an toàn?",
+   "answer_list": [
+      "Giữ tay ga ở mức độ phù hợp, sử dụng phanh trước và phanh sau để giảm tốc độ",
+      "Nhả hết tay ga, tắt động cơ, sử dụng phanh trước và phanh sau để giảm tốc độ",
+      "Sử dụng phanh trước để giảm tốc độ kết hợp với tắt chìa khóa điện của xe",
+      ""
+   ],
+   "urlImage": "",
+   "result": "Giữ tay ga ở mức độ phù hợp, sử dụng phanh trước và phanh sau để giảm tốc độ",
+   "complain": ""
+},
+ {
+   "type": 0,
+   "id": 251,
+   "id_exam": 10,
+   "ask": "Khi điều khiển ô tô xuống dốc cao, người lái xe cần thực hiện các thao tác nào dưới đây để đảm bảo an toàn?",
+   "answer_list": [
+      "Tăng lên số cao, nhả bàn đạp ga ở mức độ phù hợp, kết hợp với phanh chân để khống chế tốc độ",
+      "Về số thấp, nhả bàn đạp ga ở mức độ phù hợp, kết hợp với phanh chân để khống chế tốc độ",
+      "Về số không (0), nhả bàn đạp ga ở mức độ phù hợp, kết hợp với phanh chân để khống chế tốc độ",
+      ""
+   ],
+   "urlImage": "",
+   "result": "Về số thấp, nhả bàn đạp ga ở mức độ phù hợp, kết hợp với phanh chân để khống chế tốc độ",
+   "complain": ""
+},
+ {
+   "type": 0,
+   "id": 252,
+   "id_exam": 10,
+   "ask": "Khi điều khiển xe qua đường sắt, người lái xe cần phải thực hiện các thao tác nào dưới đây để đảm bảo an toàn?",
+   "answer_list": [
+      "Khi có chuông báo hoặc thanh chắn đã hạ xuống, người lái xe phải dừng xe tạm thời đúng khoảng cách an toàn, kéo phanh tay nếu đường dốc hoặc phải chờ lâu",
+      "Khi không có chuông báo hoặc thanh chắn không hạ xuống, người lái xe phải quan sát nếu thấy đủ điều kiện an toàn thì về số thấp, tăng ga nhẹ và không thay đổi số trong quá trình vượt qua đường sắt để tránh động cơ chết máy cho xe vượt qua",
+      "Cả ý 1 và ý 2",
+      ""
+   ],
+   "urlImage": "",
+   "result": "Cả ý 1 và ý 2",
+   "complain": ""
+},
+ {
+   "type": 0,
+   "id": 253,
+   "id_exam": 10,
+   "ask": "Để giảm tốc độ khi ô tô đi xuống đường dốc dài, người lái xe phải thực hiện các thao tác nào để đảm bảo an toàn?",
+   "answer_list": [
+      "Nhả bàn đạp ga, đạp ly hợp (côn) hết hành trình, đạp mạnh phanh chân để giảm tốc độ",
+      "Về số thấp phù hợp, nhả bàn đạp ga, kết hợp đạp phanh chân với mức độ phù hợp, để giảm tốc độ",
+      "Nhả bàn đạp ga, tăng lên số cao, đạp phanh chân với mức độ phù hợp để giảm tốc độ",
+      ""
+   ],
+   "urlImage": "",
+   "result": "Về số thấp phù hợp, nhả bàn đạp ga, kết hợp đạp phanh chân với mức độ phù hợp, để giảm tốc độ",
+   "complain": ""
+},
+ {
+   "type": 0,
+   "id": 254,
+   "id_exam": 10,
+   "ask": "Khi đã đỗ xe ô tô sát lề đường bên phải, người lái xe phải thực hiện các thao tác nào dưới đây khi mở cửa xuống xe để đảm bảo an toàn?",
+   "answer_list": [
+      "Quan sát tình hình giao thông phía trước và sau, mở hé cánh cửa, nếu đảm bảo an toàn thì mở cửa ở mức cần thiết để xuống xe ô tô",
+      "Mở cánh cửa và quan sát tình hình giao thông phía trước, nếu đảm bảo an toàn thì mở cửa ở mức cần thiết để xuống xe ô tô",
+      "Mở cánh cửa hết hành trình và nhanh chóng ra khỏi xe ô tô",
+      ""
+   ],
+   "urlImage": "",
+   "result": "Quan sát tình hình giao thông phía trước và sau, mở hé cánh cửa, nếu đảm bảo an toàn thì mở cửa ở mức cần thiết để xuống xe ô tô",
+   "complain": ""
+},
+ {
+   "type": 0,
+   "id": 255,
+   "id_exam": 10,
+   "ask": "Khi điều khiển ô tô có hộp số tự động đi trên đường trơn trượt, lầy lội hoặc xuống dốc cao và dài, người lái xe để cần số ở vị trí nào để đảm bảo an toàn?",
+   "answer_list": [
+      "Về số thấp, kết hợp phanh chân để giảm tốc độ",
+      "Giữ nguyên tay số D, kết hợp phanh tay để giảm tốc độ",
+      "Về số N (số 0), kết hợp phanh chân để giảm tốc độ",
+      ""
+   ],
+   "urlImage": "",
+   "result": "Về số thấp, kết hợp phanh chân để giảm tốc độ",
+   "complain": ""
+},
+ {
+   "type": 0,
+   "id": 256,
+   "id_exam": 10,
+   "ask": "Khi tầm nhìn bị hạn chế bởi sương mù hoặc mưa to, người lái xe phải thực hiện các thao tác nào?",
+   "answer_list": [
+      "Tăng tốc độ, chạy gần xe trước, nhìn đèn hậu để định hướng",
+      "Giảm tốc độ, chạy cách xa xe trước với khoảng cách an toàn, bật đèn sương mù và đèn chiếu gần",
+      "Tăng tốc độ, bật đèn pha vượt qua xe chạy trước",
+      ""
+   ],
+   "urlImage": "",
+   "result": "Giảm tốc độ, chạy cách xa xe trước với khoảng cách an toàn, bật đèn sương mù và đèn chiếu gần",
+   "complain": ""
+},
+ {
+   "type": 0,
+   "id": 257,
+   "id_exam": 10,
+   "ask": "Người lái xe được dừng xe, đỗ xe trên làn dừng khẩn cấp của đường cao tốc trong trường hợp nào dưới đây?",
+   "answer_list": [
+      "Xe gặp sự cố, tai nạn, hoặc trường hợp khẩn cấp không thể di chuyển bình thường",
+      "Để nghỉ ngơi, đi vệ sinh, chụp ảnh, làm việc riêng",
+      "Cả ý 1 và ý 2",
+      ""
+   ],
+   "urlImage": "",
+   "result": "Xe gặp sự cố, tai nạn, hoặc trường hợp khẩn cấp không thể di chuyển bình thường",
+   "complain": ""
+},
+ {
+   "type": 0,
+   "id": 258,
+   "id_exam": 10,
+   "ask": "Khi điều khiển ô tô xuống đường dốc dài, độ dốc cao, người lái xe số tự động cần thực hiện các thao tác nào dưới đây để đảm bảo an toàn?",
+   "answer_list": [
+      "Nhả bàn đạp ga, về số thấp (sử dụng số L hoặc 1, 2), đạp phanh chân với mức độ phù hợp để giảm tốc độ",
+      "Nhả bàn đạp ga, về số không (N) đạp phanh chân và kéo phanh tay để giảm tốc độ",
+      "",
+      ""
+   ],
+   "urlImage": "",
+   "result": "Nhả bàn đạp ga, về số thấp (sử dụng số L hoặc 1, 2), đạp phanh chân với mức độ phù hợp để giảm tốc độ",
+   "complain": ""
+},
+ {
+   "type": 0,
+   "id": 259,
+   "id_exam": 10,
+   "ask": "Khi đi từ đường nhánh ra đường chính, người lái xe phải xử lý như nào là đúng quy tắc giao thông?",
+   "answer_list": [
+      "Giảm tốc độ, nhường đường cho xe trên đường chính từ bất kì hướng nào tới",
+      "Nháy đèn, bấm còi để xe đi trên đường chính biết và tăng tốc độ cho xe đi ra đường chính",
+      "Quan sát xe đang đi trên đường chính, nếu là xe có kích thước lớn hơn thì nhường đường, xe có kích thước nhỏ hơn thì tăng tốc độ cho xe đi ra đường chính",
+      ""
+   ],
+   "urlImage": "",
+   "result": "Giảm tốc độ, nhường đường cho xe trên đường chính từ bất kì hướng nào tới",
+   "complain": ""
+},
+ {
+   "type": 0,
+   "id": 260,
+   "id_exam": 10,
+   "ask": "Khi đang lái xe mô tô và ô tô, nếu có nhu cầu sử dụng điện thoại để nhắn tin hoặc gọi điện, người lái xe phải thực hiện như thế nào trong các tình huống nêu dưới đây?",
+   "answer_list": [
+      "Giảm tốc độ để đảm bảo an toàn với xe phía trước và sử dụng điện thoại để liên lạc",
+      "Giảm tốc độ để dừng xe ở nơi cho phép dừng xe sau đó sử dụng điện thoại để liên lạc",
+      "Tăng tốc độ để cách xa xe phía sau và sử dụng điện thoại để liên lạc",
+      ""
+   ],
+   "urlImage": "",
+   "result": "Giảm tốc độ để dừng xe ở nơi cho phép dừng xe sau đó sử dụng điện thoại để liên lạc",
+   "complain": ""
 }
 ]
