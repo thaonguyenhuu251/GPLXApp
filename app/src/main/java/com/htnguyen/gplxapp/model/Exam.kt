@@ -13,7 +13,7 @@ data class Exam(
     @SerializedName("id") val id : Int,
     @SerializedName("name") val name : String?,
     @SerializedName("content") val content : String?,
-    @SerializedName("time") val time : String?,
+    @SerializedName("time") val time : Long?,
     @SerializedName("completeExam") val completeExam : Int?,
 ) : BaseItem(), Serializable {
     override val layoutResourceId: Int

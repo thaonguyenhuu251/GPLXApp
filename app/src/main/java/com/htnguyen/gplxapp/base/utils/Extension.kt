@@ -1,5 +1,6 @@
 package com.htnguyen.gplxapp.base.utils
 
+import android.annotation.SuppressLint
 import android.app.ActionBar.LayoutParams
 import android.app.Dialog
 import android.content.Context
@@ -123,6 +124,57 @@ fun Context.showChangeSizeDialog(
 
     val mLayoutInflater = LayoutInflater.from(this)
     val mView: View = mLayoutInflater.inflate(R.layout.dialog_alert_change_size, null)
+
+    val positiveButton = mView.findViewById<TextView>(R.id.btn_positive)
+    val negativeButton = mView.findViewById<TextView>(R.id.btn_negative)
+
+    builder.setCustomTitle(mView)
+    val dialog = builder.create()
+    dialog.show()
+    dialog.window?.setGravity(Gravity.BOTTOM)
+    dialog.window?.setLayout(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT)
+    positiveButton.setOnClickListener {
+        dialog.dismiss()
+        onPositiveClickListener()
+    }
+
+
+    negativeButton.setOnClickListener {
+        dialog.dismiss()
+        onNegativeClickListener()
+    }
+}
+
+@SuppressLint("MissingInflatedId")
+fun Context.showStartExamDialog(
+    onPositiveClickListener: () -> Unit = {},
+) {
+    val builder = AlertDialog.Builder(this, R.style.FinishActionDialog)
+
+    val mLayoutInflater = LayoutInflater.from(this)
+    val mView: View = mLayoutInflater.inflate(R.layout.dialog_alert_start_exam, null)
+
+    val positiveButton = mView.findViewById<TextView>(R.id.btnPositive)
+
+    builder.setCustomTitle(mView)
+    val dialog = builder.create()
+    dialog.show()
+    dialog.window?.setGravity(Gravity.BOTTOM)
+    dialog.window?.setLayout(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT)
+    positiveButton.setOnClickListener {
+        dialog.dismiss()
+        onPositiveClickListener()
+    }
+}
+
+fun Context.showPauseExamDialog(
+    onPositiveClickListener: () -> Unit = {},
+    onNegativeClickListener: () -> Unit = {},
+) {
+    val builder = AlertDialog.Builder(this, R.style.FinishActionDialog)
+
+    val mLayoutInflater = LayoutInflater.from(this)
+    val mView: View = mLayoutInflater.inflate(R.layout.dialog_alert_pause_exam_size, null)
 
     val positiveButton = mView.findViewById<TextView>(R.id.btn_positive)
     val negativeButton = mView.findViewById<TextView>(R.id.btn_negative)

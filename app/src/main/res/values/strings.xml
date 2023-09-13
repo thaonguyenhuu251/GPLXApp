@@ -24,6 +24,7 @@
     <string name="label_start">LÀM BÀI</string>
     <string name="label_continue">TIẾP TỤC</string>
     <string name="label_fail">TRƯỢT</string>
+    <string name="label_done">VƯỢT QUA</string>
     <string name="label_complete_ask">%d/%d</string>
 
     <string name="reminders_notification_channel_id">com.htnguyen.gplxapp</string>

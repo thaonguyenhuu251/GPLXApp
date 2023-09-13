@@ -86,42 +86,42 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
             1,
             "Đề số 1",
             "25 câu/19 phút",
-            "0",
+            0,
             0
         ),
         Exam(
             2,
             "Đề số 2",
             "25 câu/19 phút",
-            "0",
+            0,
             0
         ),
         Exam(
             3,
             "Đề số 3",
             "25 câu/19 phút",
-            "0",
+            0,
             0,
         ),
         Exam(
             4,
             "Đề số 4",
             "25 câu/19 phút",
-            "0",
+            0,
             0
         ),
         Exam(
             5,
             "Đề số 5",
             "25 câu/19 phút",
-            "0",
+            0,
             0
         ),
         Exam(
             6,
             "Đề số 6",
             "25 câu/19 phút",
-            "0",
+            0,
             0
         ),
 
@@ -129,7 +129,7 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
             7,
             "Đề số 7",
             "25 câu/19 phút",
-            "0",
+            0,
             0
         ),
 
@@ -137,7 +137,7 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
             8,
             "Đề số 8",
             "25 câu/19 phút",
-            "0",
+            0,
             0
         )
 

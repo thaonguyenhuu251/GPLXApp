@@ -14,9 +14,7 @@ import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.htnguyen.gplxapp.R
 import com.htnguyen.gplxapp.base.BaseFragment
-import com.htnguyen.gplxapp.base.utils.observe
-import com.htnguyen.gplxapp.base.utils.parseJsonToListExam
-import com.htnguyen.gplxapp.base.utils.readJSONFromAsset
+import com.htnguyen.gplxapp.base.utils.*
 import com.htnguyen.gplxapp.databinding.FragmentExamDetailBinding
 import com.htnguyen.gplxapp.model.*
 import com.htnguyen.gplxapp.view.adapter.ExamDetailAdapter
@@ -42,6 +40,10 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
     private var mCountDownTimer: CountDownTimer? = null
     private var mTimeLeftInMillis = START_TIME_IN_MILLIS
 
+    var minutes  = 0
+    var seconds  = 0
+    var timeLeftFormatted = ""
+
 
     override fun getViewBinding(
         inflater: LayoutInflater?,
@@ -57,7 +59,15 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
 
     override fun initEvent() {
         binding.imgBack.setOnClickListener {
-            onClickBack()
+            context?.showPauseExamDialog (
+                onPositiveClickListener = {
+                    UpdateExam(1)
+                    onClickBack()
+                },
+                onNegativeClickListener = {
+
+                }
+            )
         }
 
         binding.txtFinish.setOnClickListener {
@@ -67,7 +77,14 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
     }
 
     override fun initView(savedInstanceState: Bundle?, binding: FragmentExamDetailBinding) {
-
+        val bundle = arguments
+        if (bundle != null) {
+            idExam = bundle.getInt("id_Exam")
+            mTimeLeftInMillis = bundle.getLong("time_exam")
+            if(mTimeLeftInMillis.toInt() == 0){
+                mTimeLeftInMillis = START_TIME_IN_MILLIS
+            }
+        }
         mCountDownTimer = object : CountDownTimer(mTimeLeftInMillis, 1000) {
             override fun onTick(millisUntilFinished: Long) {
                 mTimeLeftInMillis = millisUntilFinished
@@ -75,6 +92,8 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
             }
 
             override fun onFinish() {
+                UpdateExam(-1)
+                onClickBack()
             }
         }.start()
 
@@ -84,10 +103,6 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
         val json = readJSONFromAsset(requireContext(), "exam.json")
         val list = parseJsonToListExam(json)
         binding.viewPager.adapter = adapter
-        val bundle = arguments
-        if (bundle != null) {
-            idExam = bundle.getInt("id_Exam")
-        }
         var listExam = ArrayList<ExamDetail>()
         list.forEach {
             if (it.id_exam == idExam) {
@@ -124,7 +139,7 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
 
             override fun onPageSelected(position: Int) {
                 super.onPageSelected(position)
-                val exam = list[position]
+                val exam = listExam[position]
                 var text = exam.ask
                 exam.answer_list?.forEachIndexed { index, s ->
                     if (s.isNotEmpty()) {
@@ -202,9 +217,9 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
     }
 
     private fun updateCountDownText() {
-        val minutes = (mTimeLeftInMillis / 1000).toInt() / 60
-        val seconds = (mTimeLeftInMillis / 1000).toInt() % 60
-        val timeLeftFormatted = String.format(Locale.getDefault(), "%02d:%02d", minutes, seconds)
+        minutes = (mTimeLeftInMillis / 1000).toInt() / 60
+        seconds = (mTimeLeftInMillis / 1000).toInt() % 60
+        timeLeftFormatted = String.format(Locale.getDefault(), "%02dp:%02ds", minutes, seconds)
         binding.txtCountDownTimer.text = timeLeftFormatted
     }
 
@@ -217,6 +232,22 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
             listStatusExam[position-1].isSelected = true
             adapterResult.updateItems(listStatusExam)
         }
+    }
+
+    private fun UpdateExam(completeExam : Int) {
+        var statusComplete = BaseConst.STATUS_NOT_DONE_EXAM
+        if (mTimeLeftInMillis.toInt() > 0) {
+            statusComplete = 1
+        }
+        examDetailViewModel.updateExam(
+            Exam(
+                idExam + 1,
+                "Đề số ${idExam + 1}",
+                "Còn $timeLeftFormatted",
+                mTimeLeftInMillis,
+                completeExam
+            )
+        )
     }
 
     override fun onDestroy() {

@@ -1,4 +1,5 @@
 package com.htnguyen.gplxapp.view.fragment.exam
+
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -8,13 +9,16 @@ import com.htnguyen.gplxapp.base.BaseFragment
 import com.htnguyen.gplxapp.base.adapter.BaseRecyclerViewAdapter
 import com.htnguyen.gplxapp.base.utils.BaseConst
 import com.htnguyen.gplxapp.base.utils.observe
+import com.htnguyen.gplxapp.base.utils.showChangeSizeDialog
+import com.htnguyen.gplxapp.base.utils.showStartExamDialog
 import com.htnguyen.gplxapp.databinding.FragmentExamBinding
 import com.htnguyen.gplxapp.model.Exam
+import com.htnguyen.gplxapp.view.adapter.ExamAdapter
 import com.htnguyen.gplxapp.view.fragment.exam_detail.ExamDetailFragment
 import com.htnguyen.gplxapp.view.fragment.learning.ExamViewModel
 
 class ExamFragment : BaseFragment<FragmentExamBinding>() {
-    private val adapter = BaseRecyclerViewAdapter<Exam>()
+    private val adapter = ExamAdapter()
     private val examViewModel by viewModels<ExamViewModel>()
 
     override fun getViewBinding(
@@ -46,10 +50,18 @@ class ExamFragment : BaseFragment<FragmentExamBinding>() {
             onClickBack()
         }
 
-        adapter.onClickItem = { i,v ->
-            val bundle = Bundle()
-            bundle.putInt("id_Exam", i)
-            transitFragmentAnimation(ExamDetailFragment(), R.id.container,bundle)
+        adapter.sendDataItem = { i, model ->
+
+            context?.showStartExamDialog(
+                onPositiveClickListener = {
+                    val bundle = Bundle()
+                    bundle.putInt("id_Exam", i)
+                    if (model != null) {
+                        model.time?.let { bundle.putLong("time_exam", it) }
+                    }
+                    transitFragmentAnimation(ExamDetailFragment(), R.id.container, bundle)
+                }
+            )
         }
     }
 
