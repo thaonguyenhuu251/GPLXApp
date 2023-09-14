@@ -4,10 +4,12 @@ import android.annotation.SuppressLint
 import android.os.Bundle
 import android.os.CountDownTimer
 import android.speech.tts.TextToSpeech
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
+import android.widget.Toast
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.viewpager2.widget.ViewPager2
@@ -40,8 +42,8 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
     private var mCountDownTimer: CountDownTimer? = null
     private var mTimeLeftInMillis = START_TIME_IN_MILLIS
 
-    var minutes  = 0
-    var seconds  = 0
+    var minutes = 0
+    var seconds = 0
     var timeLeftFormatted = ""
 
 
@@ -59,7 +61,7 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
 
     override fun initEvent() {
         binding.imgBack.setOnClickListener {
-            context?.showPauseExamDialog (
+            context?.showPauseExamDialog(
                 onPositiveClickListener = {
                     UpdateExam(1)
                     onClickBack()
@@ -71,9 +73,46 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
         }
 
         binding.txtFinish.setOnClickListener {
-            onClickBack()
+            var isSuccesExam = true
+            listStatusExam.forEach {
+                if (it.statusAsk != 1 && it.statusAsk != -1) {
+                    isSuccesExam = false
+                }
+            }
+            if (isSuccesExam) {
+                onClickBack()
+            } else {
+                Toast.makeText(context, "bạn chưa làm hết các câu hỏi", Toast.LENGTH_SHORT).show()
+            }
         }
 
+        adapter.doExamItem = { position, model, result, answerChoose ->
+            examDetailViewModel.updateStatusExam(
+                StatusExam(
+                    model.id,
+                    idExam,
+                    model.type,
+                    result,
+                    answerChoose,
+                    model.result
+                )
+            )
+        }
+
+    }
+
+    private fun filterList(
+        parseJsonToListExam: Array<ExamDetail>,
+        listStatusExam: ArrayList<StatusExam>
+    ): List<ExamDetail> {
+        val list: ArrayList<ExamDetail> = arrayListOf()
+        for (statusExam in listStatusExam) {
+            val examDetail = parseJsonToListExam.first { it.id == statusExam.idAsk }
+         //   examDetail.isSelected = statusExam.isSelected
+            examDetail.isAnswer = statusExam.statusAsk == 1
+            list.add(examDetail)
+        }
+        return list
     }
 
     override fun initView(savedInstanceState: Bundle?, binding: FragmentExamDetailBinding) {
@@ -81,7 +120,7 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
         if (bundle != null) {
             idExam = bundle.getInt("id_Exam")
             mTimeLeftInMillis = bundle.getLong("time_exam")
-            if(mTimeLeftInMillis.toInt() == 0){
+            if (mTimeLeftInMillis.toInt() < 3) {
                 mTimeLeftInMillis = START_TIME_IN_MILLIS
             }
         }
@@ -111,18 +150,19 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
         }
         with(examDetailViewModel) {
             observe(responseStatusExam) { it ->
-                listStatusExam =  it?.filter {
+                listStatusExam = it?.filter {
                     it.idExam == idExam
                 } as ArrayList<StatusExam>
                 listStatusExam[0].isSelected = true
                 adapterResult.setItems(listStatusExam)
             }
+
         }
 
         adapter.setItems(listExam.toList())
         adapterResult.onClickItem = { position, view ->
             binding.viewPager.setCurrentItem(position, true)
-            setTextPageCurrent(position +1)
+            setTextPageCurrent(position + 1)
         }
         binding.layoutBottomsheet.rcvList.adapter = adapterResult
 
@@ -149,7 +189,7 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
 
                 }
                 text?.let { speakOut(it) }
-                setTextPageCurrent(position +1)
+                setTextPageCurrent(position + 1)
             }
 
             override fun onPageScrollStateChanged(state: Int) {
@@ -193,7 +233,8 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
 
         binding.layoutBottomsheet.imgPrevious.setOnClickListener {
             binding.viewPager.setCurrentItem(binding.viewPager.currentItem - 1, true)
-            positionPreviousPageExam = positionNextPageExam - (positionNextPageExam - binding.viewPager.currentItem) + 1
+            positionPreviousPageExam =
+                positionNextPageExam - (positionNextPageExam - binding.viewPager.currentItem) + 1
             setTextPageCurrent(positionPreviousPageExam)
         }
 
@@ -223,26 +264,26 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
         binding.txtCountDownTimer.text = timeLeftFormatted
     }
 
-    private fun setTextPageCurrent(position: Int){
+    private fun setTextPageCurrent(position: Int) {
         binding.layoutBottomsheet.txtAsk.text = "Câu $position/25"
-        if (listStatusExam.isNotEmpty()){
+        if (listStatusExam.isNotEmpty()) {
             listStatusExam.forEach {
                 it.isSelected = false
             }
-            listStatusExam[position-1].isSelected = true
+            listStatusExam[position - 1].isSelected = true
             adapterResult.updateItems(listStatusExam)
         }
     }
 
-    private fun UpdateExam(completeExam : Int) {
+    private fun UpdateExam(completeExam: Int) {
         var statusComplete = BaseConst.STATUS_NOT_DONE_EXAM
         if (mTimeLeftInMillis.toInt() > 0) {
             statusComplete = 1
         }
         examDetailViewModel.updateExam(
             Exam(
-                idExam + 1,
-                "Đề số ${idExam + 1}",
+                idExam,
+                "Đề số ${idExam}",
                 "Còn $timeLeftFormatted",
                 mTimeLeftInMillis,
                 completeExam

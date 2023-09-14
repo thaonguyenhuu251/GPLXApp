@@ -55,7 +55,7 @@ class ExamFragment : BaseFragment<FragmentExamBinding>() {
             context?.showStartExamDialog(
                 onPositiveClickListener = {
                     val bundle = Bundle()
-                    bundle.putInt("id_Exam", i)
+                    bundle.putInt("id_Exam", i+1)
                     if (model != null) {
                         model.time?.let { bundle.putLong("time_exam", it) }
                     }

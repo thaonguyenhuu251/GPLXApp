@@ -3,24 +3,20 @@ package com.htnguyen.gplxapp.viewModels
 import android.app.Application
 import android.util.Log
 import androidx.lifecycle.*
-import com.htnguyen.gplxapp.database.ExamDatabase
-import com.htnguyen.gplxapp.database.StatusExamDatabase
-import com.htnguyen.gplxapp.database.StatusLearnDatabase
-import com.htnguyen.gplxapp.database.TrafficLearnDatabase
+import com.htnguyen.gplxapp.database.*
 import com.htnguyen.gplxapp.model.*
-import com.htnguyen.gplxapp.repo.ExamRepo
-import com.htnguyen.gplxapp.repo.StatusExamRepo
-import com.htnguyen.gplxapp.repo.StatusLearnRepo
-import com.htnguyen.gplxapp.repo.TrafficLearnRepo
+import com.htnguyen.gplxapp.repo.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
 class ExamDetailViewModel(application: Application) : AndroidViewModel(application) {
     private val repository: ExamRepo
     private val repositoryStatusExam: StatusExamRepo
+    private val repositoryCompetition: CompetitionRepo
 
     var responseExam: LiveData<List<Exam>>
     var responseStatusExam: LiveData<List<StatusExam>>
+    var responseCompetition: LiveData<List<Competition>>
 
     init {
         val examDao = ExamDatabase.getInstance(application).examDao()
@@ -29,6 +25,9 @@ class ExamDetailViewModel(application: Application) : AndroidViewModel(applicati
         val statusExamDao = StatusExamDatabase.getInstance(application).statusExamDao()
         repositoryStatusExam = StatusExamRepo(statusExamDao)
         responseStatusExam = repositoryStatusExam.getAll()
+        val competitionDao = CompetitionDatabase.getInstance(application).competitionDao()
+        repositoryCompetition = CompetitionRepo(competitionDao)
+        responseCompetition = repositoryCompetition.getAll()
     }
 
     fun updateExam(exam: Exam) {
@@ -37,9 +36,15 @@ class ExamDetailViewModel(application: Application) : AndroidViewModel(applicati
         }
     }
 
-    fun updateStatusLearn(statusLearn: StatusExam) {
+    fun updateStatusExam(statusLearn: StatusExam) {
         viewModelScope.launch(Dispatchers.IO) {
             repositoryStatusExam.update(statusLearn)
+        }
+    }
+
+    fun updateCompetition(competition : Competition) {
+        viewModelScope.launch(Dispatchers.IO) {
+            repositoryCompetition.update(competition)
         }
     }
 

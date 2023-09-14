@@ -6,18 +6,9 @@ import androidx.lifecycle.*
 import com.htnguyen.gplxapp.base.utils.parseJsonToListExam
 import com.htnguyen.gplxapp.base.utils.parseJsonToListTrafficLearn
 import com.htnguyen.gplxapp.base.utils.readJSONFromAsset
-import com.htnguyen.gplxapp.database.ExamDatabase
-import com.htnguyen.gplxapp.database.StatusExamDatabase
-import com.htnguyen.gplxapp.database.StatusLearnDatabase
-import com.htnguyen.gplxapp.database.TrafficLearnDatabase
-import com.htnguyen.gplxapp.model.Exam
-import com.htnguyen.gplxapp.model.StatusExam
-import com.htnguyen.gplxapp.model.StatusLearn
-import com.htnguyen.gplxapp.model.TrafficsLearn
-import com.htnguyen.gplxapp.repo.ExamRepo
-import com.htnguyen.gplxapp.repo.StatusExamRepo
-import com.htnguyen.gplxapp.repo.StatusLearnRepo
-import com.htnguyen.gplxapp.repo.TrafficLearnRepo
+import com.htnguyen.gplxapp.database.*
+import com.htnguyen.gplxapp.model.*
+import com.htnguyen.gplxapp.repo.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
@@ -26,6 +17,7 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     private val repositoryExam: ExamRepo
     private val repositoryStatusLearn: StatusLearnRepo
     private val repositoryStatusExam: StatusExamRepo
+    private val repositoryCompetition: CompetitionRepo
 
     var responseTrafficLearn: LiveData<List<TrafficsLearn>>
     var responseExam: LiveData<List<Exam>>
@@ -148,10 +140,12 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
         val examDao = ExamDatabase.getInstance(application).examDao()
         val trafficStatusLearnDao = StatusLearnDatabase.getInstance(application).statusLearnDao()
         val statusExamDao = StatusExamDatabase.getInstance(application).statusExamDao()
+        val competitionDao = CompetitionDatabase.getInstance(application).competitionDao()
         repository = TrafficLearnRepo(trafficLearnDao)
         repositoryExam = ExamRepo(examDao)
         repositoryStatusLearn = StatusLearnRepo(trafficStatusLearnDao)
         repositoryStatusExam = StatusExamRepo(statusExamDao)
+        repositoryCompetition = CompetitionRepo(competitionDao)
         responseTrafficLearn = repository.getAll()
         responseExam = repositoryExam.getAll()
     }
@@ -201,7 +195,10 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
         listExam.forEachIndexed { index, examDetail ->
             viewModelScope.launch(Dispatchers.IO) {
                 repositoryStatusExam.insert(
-                    StatusExam(examDetail.id,examDetail.id_exam, examDetail.type, 0)
+                    StatusExam(examDetail.id,examDetail.id_exam, examDetail.type, 0,"","")
+                )
+                repositoryCompetition.insert(
+                    Competition(examDetail.id,index+1,examDetail.id_exam,examDetail.type,0,"",examDetail.result)
                 )
             }
         }
