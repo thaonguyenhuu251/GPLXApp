@@ -38,6 +38,7 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
     var listStatusExam: ArrayList<StatusExam> = arrayListOf()
     var listExamDetail: ArrayList<ExamDetail> = arrayListOf()
     var exam: Exam? = null
+    var positionStatusExam = 0
 
     private val START_TIME_IN_MILLIS: Long = 1140000
     private var mCountDownTimer: CountDownTimer? = null
@@ -87,7 +88,7 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
             }
         }
 
-        adapter.doExamItem = { position, model, result, answerChoose ->
+        adapter.doExamItem = { position, model, result, answerChoose, indexAnswer ->
             examDetailViewModel.updateStatusExam(
                 StatusExam(
                     model.id,
@@ -95,7 +96,8 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
                     model.type,
                     result,
                     answerChoose,
-                    model.result
+                    model.result,
+                    indexAnswer
                 )
             )
         }
@@ -136,6 +138,7 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
             override fun onFinish() {
                 UpdateExam(-1)
                 onClickBack()
+                Toast.makeText(context,mTimeLeftInMillis.toString(),Toast.LENGTH_LONG).show()
             }
         }.start()
 
@@ -144,7 +147,12 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
                 listStatusExam = it?.filter {
                     it.idExam == idExam
                 } as ArrayList<StatusExam>
-                listStatusExam[0].isSelected = true
+                if (positionStatusExam <0){
+                    listStatusExam[0].isSelected = true
+                } else {
+                    listStatusExam[positionStatusExam].isSelected = true
+                }
+
                 adapterResult.setItems(listStatusExam)
 
                 val json = readJSONFromAsset(requireContext(), "exam.json")
@@ -160,7 +168,8 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
 
         binding.viewPager.adapter = adapter
         adapterResult.onClickItem = { position, view ->
-            binding.viewPager.setCurrentItem(position, true)
+            binding.viewPager.setCurrentItem(position, false)
+            positionStatusExam = position
             setTextPageCurrent(position + 1)
         }
         binding.layoutBottomsheet.rcvList.adapter = adapterResult

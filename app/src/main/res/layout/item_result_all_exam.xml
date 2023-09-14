@@ -28,6 +28,16 @@
             android:gravity="center"
             android:textStyle="bold"
             tools:text="25"/>
+        <TextView
+            android:id="@+id/txtNumberChoose"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:text="@{String.valueOf(model.positionChoose+1)}"
+            android:background="@drawable/bg_circle_boder_orange"
+            android:gravity="center"
+            android:textColor="@color/primary_dark"
+            android:visibility="@{model.positionChoose > -1 ? View.VISIBLE : View.GONE }"
+            />
     </FrameLayout>
 
 

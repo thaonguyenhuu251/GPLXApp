@@ -6,7 +6,6 @@ import com.google.gson.annotations.SerializedName
 import com.htnguyen.gplxapp.R
 import com.htnguyen.gplxapp.base.adapter.BaseItem
 import java.io.Serializable
-import java.text.FieldPosition
 
 @Entity(tableName = "StatusExam")
 data class StatusExam(
