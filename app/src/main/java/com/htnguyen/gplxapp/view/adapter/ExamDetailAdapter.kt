@@ -28,7 +28,7 @@ class ExamDetailAdapter : BaseRecyclerViewAdapter<ExamDetail>(){
         val list = arrayListOf<ExamResult>()
         model.answer_list?.forEachIndexed { index, result ->
             if (result.isNotEmpty()) {
-                list.add(ExamResult(index + 1, result,model.isSelected == index))
+                list.add(ExamResult(index + 1, result,model.positionChoose == index))
             }
         }
         baseViewHolder.viewDataBinding.root.findViewById<RecyclerView>(R.id.listResult).adapter = adapter

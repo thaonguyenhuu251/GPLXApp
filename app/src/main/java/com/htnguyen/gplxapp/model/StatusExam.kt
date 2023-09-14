@@ -6,6 +6,7 @@ import com.google.gson.annotations.SerializedName
 import com.htnguyen.gplxapp.R
 import com.htnguyen.gplxapp.base.adapter.BaseItem
 import java.io.Serializable
+import java.text.FieldPosition
 
 @Entity(tableName = "StatusExam")
 data class StatusExam(
@@ -16,6 +17,7 @@ data class StatusExam(
     @SerializedName("statusAsk") val statusAsk : Int?,
     @SerializedName("answer") val answer : String?,
     @SerializedName("result") val result : String?,
+    var positionChoose: Int = -1,
     var isSelected : Boolean = false
 ) : BaseItem(), Serializable {
     override val layoutResourceId: Int

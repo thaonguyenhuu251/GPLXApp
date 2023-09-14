@@ -195,7 +195,7 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
         listExam.forEachIndexed { index, examDetail ->
             viewModelScope.launch(Dispatchers.IO) {
                 repositoryStatusExam.insert(
-                    StatusExam(examDetail.id,examDetail.id_exam, examDetail.type, 0,"","")
+                    StatusExam(examDetail.id,examDetail.id_exam, examDetail.type, 0,"",examDetail.result)
                 )
                 repositoryCompetition.insert(
                     Competition(examDetail.id,index+1,examDetail.id_exam,examDetail.type,0,"",examDetail.result)

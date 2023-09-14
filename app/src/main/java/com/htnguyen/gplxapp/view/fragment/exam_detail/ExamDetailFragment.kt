@@ -36,6 +36,7 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
     var idExam: Int = -1
     private val examDetailViewModel by viewModels<ExamDetailViewModel>()
     var listStatusExam: ArrayList<StatusExam> = arrayListOf()
+    var listExamDetail: ArrayList<ExamDetail> = arrayListOf()
     var exam: Exam? = null
 
     private val START_TIME_IN_MILLIS: Long = 1140000
@@ -108,8 +109,8 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
         val list: ArrayList<ExamDetail> = arrayListOf()
         for (statusExam in listStatusExam) {
             val examDetail = parseJsonToListExam.first { it.id == statusExam.idAsk }
-         //   examDetail.isSelected = statusExam.isSelected
-            examDetail.isAnswer = statusExam.statusAsk == 1
+            examDetail.positionChoose = statusExam.positionChoose
+            examDetail.isCorrectResult = statusExam.statusAsk == 1
             list.add(examDetail)
         }
         return list
@@ -124,6 +125,8 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
                 mTimeLeftInMillis = START_TIME_IN_MILLIS
             }
         }
+        tts = TextToSpeech(requireContext(), this)
+        setBottomSheetBehavior()
         mCountDownTimer = object : CountDownTimer(mTimeLeftInMillis, 1000) {
             override fun onTick(millisUntilFinished: Long) {
                 mTimeLeftInMillis = millisUntilFinished
@@ -136,18 +139,6 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
             }
         }.start()
 
-
-        tts = TextToSpeech(requireContext(), this)
-        setBottomSheetBehavior()
-        val json = readJSONFromAsset(requireContext(), "exam.json")
-        val list = parseJsonToListExam(json)
-        binding.viewPager.adapter = adapter
-        var listExam = ArrayList<ExamDetail>()
-        list.forEach {
-            if (it.id_exam == idExam) {
-                listExam.add(it)
-            }
-        }
         with(examDetailViewModel) {
             observe(responseStatusExam) { it ->
                 listStatusExam = it?.filter {
@@ -155,11 +146,19 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
                 } as ArrayList<StatusExam>
                 listStatusExam[0].isSelected = true
                 adapterResult.setItems(listStatusExam)
+
+                val json = readJSONFromAsset(requireContext(), "exam.json")
+                listExamDetail = filterList(
+                    parseJsonToListExam(json),
+                    listStatusExam
+                ) as ArrayList<ExamDetail>
+                adapter.setItems(listExamDetail)
+
             }
 
         }
 
-        adapter.setItems(listExam.toList())
+        binding.viewPager.adapter = adapter
         adapterResult.onClickItem = { position, view ->
             binding.viewPager.setCurrentItem(position, true)
             setTextPageCurrent(position + 1)
@@ -179,7 +178,7 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
 
             override fun onPageSelected(position: Int) {
                 super.onPageSelected(position)
-                val exam = listExam[position]
+                val exam = listExamDetail[position]
                 var text = exam.ask
                 exam.answer_list?.forEachIndexed { index, s ->
                     if (s.isNotEmpty()) {
