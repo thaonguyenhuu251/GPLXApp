@@ -76,7 +76,15 @@ class LearningDetailFragment : BaseFragment<FragmentLearningDetailBinding>(),
         }
 
         adapterResult.sendDataItem = { position: Int, trafficsLearn: StatusLearn? ->
+            binding.viewPager.setCurrentItem(position, false)
+        }
 
+        binding.cbSpeakers.setOnCheckedChangeListener { buttonView, isChecked ->
+            if (!isChecked) {
+                tts!!.stop()
+            } else {
+                generateSpeakText(binding.viewPager.currentItem)
+            }
         }
     }
 
@@ -96,6 +104,7 @@ class LearningDetailFragment : BaseFragment<FragmentLearningDetailBinding>(),
 
     override fun initView(savedInstanceState: Bundle?, binding: FragmentLearningDetailBinding) {
         tts = TextToSpeech(requireContext(), this)
+
         setBottomSheetBehavior()
         with(learningViewModel) {
             observe(responseStatusLearn) {
@@ -116,6 +125,7 @@ class LearningDetailFragment : BaseFragment<FragmentLearningDetailBinding>(),
                         listStatusLearn
                     ) as ArrayList<TrafficsLearnDetail>
                 adapter.setItems(listTrafficLearn)
+                generateSpeakText(binding.viewPager.currentItem)
             }
 
             observe(responseTrafficLearn) {
@@ -126,7 +136,6 @@ class LearningDetailFragment : BaseFragment<FragmentLearningDetailBinding>(),
                 } else {
                     binding.txtBack.text = resources.getString(R.string.home_wrong_good)
                 }
-
             }
         }
 
@@ -139,16 +148,7 @@ class LearningDetailFragment : BaseFragment<FragmentLearningDetailBinding>(),
 
             override fun onPageSelected(position: Int) {
                 super.onPageSelected(position)
-                val trafficsLearn = listTrafficLearn[position]
-                var text = trafficsLearn.ask
-                trafficsLearn.answer_list?.forEachIndexed { index, s ->
-                    if (s.isNotEmpty()) {
-                        val result = "Đáp án ${index + 1} ${s}"
-                        text += result
-                    }
-
-                }
-                text?.let { speakOut(it) }
+                generateSpeakText(position)
                 binding.layoutBottomsheet.txtAsk.text =
                     resources.getString(
                         R.string.label_number_ask,
@@ -158,6 +158,19 @@ class LearningDetailFragment : BaseFragment<FragmentLearningDetailBinding>(),
             }
 
         })
+    }
+
+    private fun generateSpeakText(position: Int) {
+        val trafficsLearn = listTrafficLearn[position]
+        var text = trafficsLearn.ask
+        trafficsLearn.answer_list?.forEachIndexed { index, s ->
+            if (s.isNotEmpty()) {
+                val result = "Đáp án ${index + 1} ${s}"
+                text += result
+            }
+
+        }
+        text?.let { speakOut(it) }
     }
 
     private fun setBottomSheetBehavior() {
@@ -217,7 +230,9 @@ class LearningDetailFragment : BaseFragment<FragmentLearningDetailBinding>(),
     }
 
     private fun speakOut(text: String) {
-        tts!!.speak(text, TextToSpeech.QUEUE_FLUSH, null, "")
+        if (binding.cbSpeakers.isChecked) {
+            tts!!.speak(text, TextToSpeech.QUEUE_FLUSH, null, "")
+        }
     }
 
     fun updateTrafficLearn() {

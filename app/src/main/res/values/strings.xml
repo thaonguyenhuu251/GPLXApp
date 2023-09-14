@@ -26,6 +26,13 @@
     <string name="label_fail">TRƯỢT</string>
     <string name="label_done">VƯỢT QUA</string>
     <string name="label_complete_ask">%d/%d</string>
+    <string name="home_test_more">THI THỬ SÁT HẠCH\n<font color="#bdbdbd" size="12">Tổng hợp đề thi thử 200 câu hỏi </font></string>
+    <string name="home_learn_more">HỌC LÝ THUYẾT\n<font color="#bdbdbd" size="12">Tổng hợp đề thi thử 200 câu hỏi </font></string>
+    <string name="home_stop_more">BIỂN BÁO ĐƯỜNG BỘ\n<font color="#bdbdbd" size="12">Tổng hợp đề thi thử 200 câu hỏi </font></string>
+    <string name="home_tips_more">MẸO THI KẾT QUẢ CAO\n<font color="#bdbdbd" size="12">Tổng hợp đề thi thử 200 câu hỏi </font></string>
+    <string name="home_search_law_more">TRA CỨU LUẬT\n<font color="#bdbdbd" size="12">Tổng hợp đề thi thử 200 câu hỏi </font></string>
+    <string name="home_wrong_good_more">CÁC CÂU HAY SAI\n<font color="#bdbdbd" size="12">Tổng hợp đề thi thử 200 câu hỏi </font></string>
+
 
     <string name="reminders_notification_channel_id">com.htnguyen.gplxapp</string>
     <string name="title_notification_reminder">CÁC CÂU HAY SAI</string>
