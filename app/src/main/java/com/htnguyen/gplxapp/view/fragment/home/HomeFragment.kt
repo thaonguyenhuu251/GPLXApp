@@ -2,21 +2,16 @@ package com.htnguyen.gplxapp.view.fragment.home
 
 import android.os.Bundle
 import android.view.*
-import android.widget.FrameLayout
 import android.widget.TextView
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
-import androidx.navigation.NavController
 import androidx.navigation.ui.AppBarConfiguration
 import com.google.android.material.navigation.NavigationView
 import com.htnguyen.gplxapp.BuildConfig
 import com.htnguyen.gplxapp.R
-import com.htnguyen.gplxapp.base.BaseBottomBehavior
-import com.htnguyen.gplxapp.base.BaseBottomSheet
 import com.htnguyen.gplxapp.base.BaseFragment
 import com.htnguyen.gplxapp.base.utils.BaseConst
 import com.htnguyen.gplxapp.base.utils.showChangeSizeDialog
-import com.htnguyen.gplxapp.databinding.BottomBehaviorListAnswerBinding
 import com.htnguyen.gplxapp.databinding.FragmentHomeBinding
 import com.htnguyen.gplxapp.view.fragment.chagevoice.ChangeVoiceFragment
 import com.htnguyen.gplxapp.view.fragment.exam.ExamFragment
@@ -28,7 +23,6 @@ import com.htnguyen.gplxapp.view.fragment.setting.SettingFragment
 import com.htnguyen.gplxapp.view.fragment.tips.TipsFragment
 import com.htnguyen.gplxapp.view.fragment.trafficsigns.TrafficSignsFragment
 import com.htnguyen.gplxapp.view.fragment.webview.WebViewFragment
-import org.koin.android.ext.android.bind
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 
@@ -38,8 +32,6 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(), NavigationView.OnNavig
   private lateinit var mAppBarConfiguration: AppBarConfiguration
   private lateinit var mDrawerLayout: DrawerLayout
   private lateinit var navHeader: NavigationView
-  private lateinit var navFooter: NavigationView
-  private lateinit var navController: NavController
 
   override fun getViewBinding(
     inflater: LayoutInflater?,
@@ -55,7 +47,6 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(), NavigationView.OnNavig
     }
     mDrawerLayout = binding.drawerMain
     navHeader = binding.navViewHeader
-    navFooter = binding.navViewFooter
     mAppBarConfiguration = AppBarConfiguration(
       setOf(
         R.id.nav_home,
@@ -66,7 +57,6 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(), NavigationView.OnNavig
     )
 
     navHeader.setNavigationItemSelectedListener(this)
-    navFooter.setNavigationItemSelectedListener(this)
     navHeader.menu.findItem(R.id.nav_home).isChecked = true
 
     binding.btnHomeStop.setOnClickListener {
@@ -102,7 +92,6 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(), NavigationView.OnNavig
     context?.showChangeSizeDialog(
 
     )
-
   }
 
 
