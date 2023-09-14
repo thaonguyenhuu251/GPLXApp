@@ -47,6 +47,7 @@
                 android:id="@+id/listResult"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                tools:itemCount="3"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                 tools:listitem="@layout/item_trafic_learn_result" />
 
@@ -65,9 +66,11 @@
                 android:id="@+id/txtDescriptionComplain"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/bg_rounded"
+                android:backgroundTint="@color/primary_dark"
                 android:text="@{model.complain}"
                 android:visibility="@{model.isAnswer &amp;&amp; model.isSelected != -1 &amp;&amp; !model.complain.empty ? View.VISIBLE : View.GONE}"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="@dimen/_14ssp" />
 
         </LinearLayout>
