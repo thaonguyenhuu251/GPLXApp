@@ -18,8 +18,8 @@
             android:id="@+id/txtNumberAsk"
             android:layout_width="@dimen/_50sdp"
             android:layout_height="@dimen/_50sdp"
-            android:background="@drawable/bg_circle_border"
-            android:backgroundTint="@{model.statusAsk == 0 ? @color/white : model.statusAsk == 1 ? @color/primary_light : @color/text_red}"
+            android:background="@{model.isSelected ? @drawable/bg_circle_border_orance : @drawable/bg_circle}"
+
             android:padding="@dimen/_8sdp"
             android:layout_marginVertical="@dimen/_8sdp"
             android:layout_marginHorizontal="@dimen/_8sdp"
@@ -30,7 +30,5 @@
             android:textStyle="bold"
             tools:text="25"/>
     </FrameLayout>
-
-
 
 </layout>
