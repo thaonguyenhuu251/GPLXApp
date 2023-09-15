@@ -26,125 +26,130 @@ import com.htnguyen.gplxapp.view.fragment.webview.WebViewFragment
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 
-class HomeFragment : BaseFragment<FragmentHomeBinding>(), NavigationView.OnNavigationItemSelectedListener {
+class HomeFragment : BaseFragment<FragmentHomeBinding>(),
+    NavigationView.OnNavigationItemSelectedListener {
 
-  private val homeViewModel: HomeViewModel by viewModel()
-  private lateinit var mAppBarConfiguration: AppBarConfiguration
-  private lateinit var mDrawerLayout: DrawerLayout
-  private lateinit var navHeader: NavigationView
+    private val homeViewModel: HomeViewModel by viewModel()
+    private lateinit var mAppBarConfiguration: AppBarConfiguration
+    private lateinit var mDrawerLayout: DrawerLayout
+    private lateinit var navHeader: NavigationView
 
-  override fun getViewBinding(
-    inflater: LayoutInflater?,
-    container: ViewGroup?
-  ): FragmentHomeBinding {
-    binding = FragmentHomeBinding.inflate(layoutInflater, container, false)
-    return binding
-  }
-
-  override fun initView(savedInstanceState: Bundle?, binding: FragmentHomeBinding) {
-    binding.toolbar.setNavigationOnClickListener {
-      binding.drawerMain.openDrawer(GravityCompat.START)
-    }
-    mDrawerLayout = binding.drawerMain
-    navHeader = binding.navViewHeader
-    mAppBarConfiguration = AppBarConfiguration(
-      setOf(
-        R.id.nav_home,
-        R.id.nav_choose_grade,
-        R.id.nav_study_guide,
-        R.id.nav_change_voice
-      ), mDrawerLayout
-    )
-
-    navHeader.setNavigationItemSelectedListener(this)
-    navHeader.menu.findItem(R.id.nav_home).isChecked = true
-
-    binding.btnHomeStop.setOnClickListener {
-      transitFragmentAnimation(TrafficSignsFragment(), R.id.container)
+    override fun getViewBinding(
+        inflater: LayoutInflater?,
+        container: ViewGroup?
+    ): FragmentHomeBinding {
+        binding = FragmentHomeBinding.inflate(layoutInflater, container, false)
+        return binding
     }
 
-    binding.btnTips.setOnClickListener {
-      transitFragmentAnimation(TipsFragment(), R.id.container)
+    override fun initView(savedInstanceState: Bundle?, binding: FragmentHomeBinding) {
+        binding.toolbar.setNavigationOnClickListener {
+            binding.drawerMain.openDrawer(GravityCompat.START)
+        }
+        mDrawerLayout = binding.drawerMain
+        navHeader = binding.navViewHeader
+        mAppBarConfiguration = AppBarConfiguration(
+            setOf(
+                R.id.nav_home,
+                R.id.nav_choose_grade,
+                R.id.nav_study_guide,
+                R.id.nav_change_voice
+            ), mDrawerLayout
+        )
+
+        navHeader.setNavigationItemSelectedListener(this)
+        navHeader.menu.findItem(R.id.nav_home).isChecked = true
+
+        binding.btnHomeStop.setOnClickListener {
+            transitFragmentAnimation(TrafficSignsFragment(), R.id.container)
+        }
+
+        binding.btnTips.setOnClickListener {
+            transitFragmentAnimation(TipsFragment(), R.id.container)
+        }
+
+        binding.btnHomeLearn.setOnClickListener {
+            transitFragmentAnimation(LearningFragment(), R.id.container)
+        }
+
+        binding.btnHomeExam.setOnClickListener {
+            transitFragmentAnimation(ExamFragment(), R.id.container)
+        }
+
+        binding.btnAskWrong.setOnClickListener {
+            val bundle = Bundle()
+            bundle.putInt(BaseConst.ARG_TRAFFIC_LEARN_TYPE, -1)
+            transitFragmentAnimation(LearningDetailFragment(), R.id.container, bundle)
+        }
+
+        binding.btnHomeSearch.setOnClickListener {
+            val bundle = Bundle()
+            bundle.putString(BaseConst.ARG_TITLE_FROM_HOME, binding.btnHomeSearch.text.toString())
+            transitFragmentAnimation(WebViewFragment(), R.id.container, bundle)
+        }
+
+        binding.navViewHeader.getHeaderView(0).findViewById<TextView>(R.id.txtVersionName).text =
+            BuildConfig.VERSION_NAME
+
+        context?.showChangeSizeDialog(
+
+        )
     }
 
-    binding.btnHomeLearn.setOnClickListener {
-      transitFragmentAnimation(LearningFragment(), R.id.container)
+
+    override fun onResume() {
+        super.onResume()
+        navHeader.menu.findItem(R.id.nav_home).isChecked = true
     }
 
-    binding.btnHomeExam.setOnClickListener {
-      transitFragmentAnimation(ExamFragment(), R.id.container)
-    }
-
-    binding.btnAskWrong.setOnClickListener {
-      val bundle = Bundle()
-      bundle.putInt(BaseConst.ARG_TRAFFIC_LEARN_TYPE, -1)
-      transitFragmentAnimation(LearningDetailFragment(), R.id.container, bundle)
-    }
-
-    binding.btnHomeSearch.setOnClickListener {
-      val bundle = Bundle()
-      bundle.putString(BaseConst.ARG_TITLE_FROM_HOME, binding.btnHomeSearch.text.toString())
-      transitFragmentAnimation(WebViewFragment(), R.id.container, bundle)
-    }
-
-    binding.navViewHeader.getHeaderView(0).findViewById<TextView>(R.id.txtVersionName).text = BuildConfig.VERSION_NAME
-
-    context?.showChangeSizeDialog(
-
-    )
-  }
-
-
-  override fun onResume() {
-    super.onResume()
-    navHeader.menu.findItem(R.id.nav_home).isChecked = true
-  }
-
-  override fun initData() {
-
-  }
-
-  override fun initEvent() {
-
-  }
-
-  override fun onNavigationItemSelected(item: MenuItem): Boolean {
-    when (item.itemId) {
-      R.id.nav_home -> {
-        mDrawerLayout.closeDrawer(GravityCompat.START)
-      }
-
-      R.id.nav_change_voice -> {
-        mDrawerLayout.closeDrawer(GravityCompat.START)
-        transitFragmentAnimation(ChangeVoiceFragment(), R.id.container)
-      }
-
-      R.id.nav_choose_grade -> {
-        mDrawerLayout.closeDrawer(GravityCompat.START)
-        val bundle = Bundle()
-        bundle.putString(BaseConst.ARG_FROM_HOME, BaseConst.ARG_FROM_HOME)
-        transitFragmentAnimation(ChooseLicenseFragment(), R.id.container,bundle)
-      }
-
-      R.id.nav_study_guide -> {
-        mDrawerLayout.closeDrawer(GravityCompat.START)
-        val bundle = Bundle()
-        bundle.putString(BaseConst.ARG_FROM_HOME, BaseConst.ARG_FROM_HOME)
-        transitFragmentAnimation(IntroductionAppFragment(), R.id.container,bundle)
-      }
-
-      R.id.footerSettingApp -> {
-        mDrawerLayout.closeDrawer(GravityCompat.START)
-        transitFragmentAnimation(SettingFragment(), R.id.container)
-      }
-
-      R.id.footerPolicy -> {
-        mDrawerLayout.closeDrawer(GravityCompat.START)
-        PolicyBottomSheet().show(requireActivity().supportFragmentManager, "PolicyBottomSheet")
-      }
+    override fun initData() {
 
     }
 
-    return true
-  }
+    override fun initEvent() {
+
+    }
+
+    override fun onNavigationItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.nav_home -> {
+                mDrawerLayout.closeDrawer(GravityCompat.START)
+            }
+
+            R.id.nav_change_voice -> {
+                mDrawerLayout.closeDrawer(GravityCompat.START)
+                transitFragmentAnimation(ChangeVoiceFragment(), R.id.container)
+            }
+
+            R.id.nav_choose_grade -> {
+                mDrawerLayout.closeDrawer(GravityCompat.START)
+                val bundle = Bundle()
+                bundle.putString(BaseConst.ARG_FROM_HOME, BaseConst.ARG_FROM_HOME)
+                transitFragmentAnimation(ChooseLicenseFragment(), R.id.container, bundle)
+            }
+
+            R.id.nav_study_guide -> {
+                mDrawerLayout.closeDrawer(GravityCompat.START)
+                val bundle = Bundle()
+                bundle.putString(BaseConst.ARG_FROM_HOME, BaseConst.ARG_FROM_HOME)
+                transitFragmentAnimation(IntroductionAppFragment(), R.id.container, bundle)
+            }
+
+            R.id.footerSettingApp -> {
+                mDrawerLayout.closeDrawer(GravityCompat.START)
+                transitFragmentAnimation(SettingFragment(), R.id.container)
+            }
+
+            R.id.footerPolicy -> {
+                mDrawerLayout.closeDrawer(GravityCompat.START)
+                PolicyBottomSheet().show(
+                    requireActivity().supportFragmentManager,
+                    "PolicyBottomSheet"
+                )
+            }
+
+        }
+
+        return true
+    }
 }

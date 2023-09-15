@@ -2,6 +2,7 @@ package com.htnguyen.gplxapp.view.fragment.learning
 
 import android.os.Bundle
 import android.speech.tts.TextToSpeech
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -38,6 +39,7 @@ class LearningDetailFragment : BaseFragment<FragmentLearningDetailBinding>(),
     var listStatusLearn: ArrayList<StatusLearn> = arrayListOf()
     var listTrafficLearn: ArrayList<TrafficsLearnDetail> = arrayListOf()
     var trafficsLearn: TrafficsLearn? = null
+    var indexCurrent = 0;
     override fun getViewBinding(
         inflater: LayoutInflater?,
         container: ViewGroup?
@@ -69,7 +71,8 @@ class LearningDetailFragment : BaseFragment<FragmentLearningDetailBinding>(),
                     model.type,
                     result,
                     if (result == -1) true else statusLearn?.statusAskFail,
-                    indexAnswer
+                    indexAnswer,
+                     true
                 )
             )
             updateTrafficLearn()
@@ -95,7 +98,7 @@ class LearningDetailFragment : BaseFragment<FragmentLearningDetailBinding>(),
         val list: ArrayList<TrafficsLearnDetail> = arrayListOf()
         for (statusLearn in listStatusLearn) {
             val trafficsLearnDetail = parseJsonToListTrafficLearn.first { it.id == statusLearn.idAsk }
-            trafficsLearnDetail.isSelected = statusLearn.isSelected
+            trafficsLearnDetail.answerSelected = statusLearn.answerSelected
             trafficsLearnDetail.isAnswer = statusLearn.statusAsk == 1
             list.add(trafficsLearnDetail)
         }
@@ -125,6 +128,8 @@ class LearningDetailFragment : BaseFragment<FragmentLearningDetailBinding>(),
                         listStatusLearn
                     ) as ArrayList<TrafficsLearnDetail>
                 adapter.setItems(listTrafficLearn)
+                binding.viewPager.currentItem = listStatusLearn.indexOfFirst { it.isSelected == true }
+                indexCurrent = binding.viewPager.currentItem
                 generateSpeakText(binding.viewPager.currentItem)
             }
 
@@ -145,7 +150,6 @@ class LearningDetailFragment : BaseFragment<FragmentLearningDetailBinding>(),
         adapterResult.setItems(listStatusLearn)
 
         binding.viewPager.registerOnPageChangeCallback(object : OnPageChangeCallback() {
-
             override fun onPageSelected(position: Int) {
                 super.onPageSelected(position)
                 generateSpeakText(position)
@@ -155,8 +159,31 @@ class LearningDetailFragment : BaseFragment<FragmentLearningDetailBinding>(),
                         position + 1,
                         listTrafficLearn.size
                     )
-            }
 
+                learningViewModel.updateStatusLearn(
+                    StatusLearn(
+                        listStatusLearn[indexCurrent].idAsk,
+                        listStatusLearn[indexCurrent].idType,
+                        listStatusLearn[indexCurrent].statusAsk,
+                        listStatusLearn[indexCurrent].statusAskFail,
+                        listStatusLearn[indexCurrent].answerSelected,
+                        false
+                    )
+                )
+
+                learningViewModel.updateStatusLearn(
+                    StatusLearn(
+                        listStatusLearn[position].idAsk,
+                        listStatusLearn[position].idType,
+                        listStatusLearn[position].statusAsk,
+                        listStatusLearn[position].statusAskFail,
+                        listStatusLearn[position].answerSelected,
+                        true
+                    )
+                )
+
+                indexCurrent = position
+            }
         })
     }
 

@@ -56,7 +56,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/complain_result"
-                android:visibility="@{model.isAnswer &amp;&amp; model.isSelected != -1 &amp;&amp; !model.complain.empty ? View.VISIBLE : View.GONE}"
+                android:visibility="@{model.isAnswer &amp;&amp; model.answerSelected != -1 &amp;&amp; !model.complain.empty ? View.VISIBLE : View.GONE}"
                 android:textColor="@color/primary_dark"
                 android:textSize="@dimen/_14ssp"
                 android:textStyle="bold"
@@ -69,8 +69,9 @@
                 android:background="@drawable/bg_rounded"
                 android:backgroundTint="@color/primary_dark"
                 android:text="@{model.complain}"
-                android:visibility="@{model.isAnswer &amp;&amp; model.isSelected != -1 &amp;&amp; !model.complain.empty ? View.VISIBLE : View.GONE}"
+                android:visibility="@{model.isAnswer &amp;&amp; model.answerSelected != -1 &amp;&amp; !model.complain.empty ? View.VISIBLE : View.GONE}"
                 android:textColor="@color/white"
+                android:padding="@dimen/_4sdp"
                 android:textSize="@dimen/_14ssp" />
 
         </LinearLayout>
