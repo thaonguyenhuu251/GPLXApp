@@ -79,42 +79,60 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
             "Đề số 1",
             "25 câu/19 phút",
             0,
-            0
+            2,
+            -1,
+            -1,
+            -1
         ),
         Exam(
             2,
             "Đề số 2",
             "25 câu/19 phút",
             0,
-            0
+            2,
+            -1,
+            -1,
+            -1
         ),
         Exam(
             3,
             "Đề số 3",
             "25 câu/19 phút",
             0,
-            0,
+            2,
+            -1,
+            -1,
+            -1
         ),
         Exam(
             4,
             "Đề số 4",
             "25 câu/19 phút",
             0,
-            0
+            2,
+            -1,
+            -1,
+            -1
         ),
         Exam(
             5,
             "Đề số 5",
             "25 câu/19 phút",
             0,
-            0
+            2,
+            -1,
+            -1,
+            -1
         ),
         Exam(
             6,
             "Đề số 6",
             "25 câu/19 phút",
             0,
-            0
+            2,
+            -1,
+            -1,
+            -1
         ),
 
         Exam(
@@ -122,7 +140,10 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
             "Đề số 7",
             "25 câu/19 phút",
             0,
-            0
+            2,
+            -1,
+            -1,
+            -1
         ),
 
         Exam(
@@ -130,7 +151,10 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
             "Đề số 8",
             "25 câu/19 phút",
             0,
-            0
+            2,
+            -1,
+            -1,
+            -1
         )
 
     )
@@ -173,7 +197,10 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
                         exam.name,
                         exam.content,
                         exam.time,
-                        exam.completeExam
+                        exam.completeExam,
+                        -1,
+                        -1,
+                        -1
                     )
                 )
             }

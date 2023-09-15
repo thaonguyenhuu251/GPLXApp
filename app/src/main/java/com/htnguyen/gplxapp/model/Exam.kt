@@ -15,6 +15,9 @@ data class Exam(
     @SerializedName("content") val content : String?,
     @SerializedName("time") val time : Long?,
     @SerializedName("completeExam") val completeExam : Int?,
+    @SerializedName("countCorrectExam") val countCorrectQuestion : Int?,
+    @SerializedName("countFailQuestion") val countFailQuestion : Int?,
+    @SerializedName("paralysisPoint") val paralysisPoint : Int?,
 ) : BaseItem(), Serializable {
     override val layoutResourceId: Int
         get() = R.layout.item_do_exam

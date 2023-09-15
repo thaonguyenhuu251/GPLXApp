@@ -25,7 +25,7 @@
             android:layout_width="0dp"
             android:layout_height="@dimen/_48sdp"
             android:layout_weight="1"
-            android:src="@{ model.completeExam == 2 ? @drawable/ic_do_exam_blue : (model.completeExam != 0 ? (model.completeExam == 1 ? @drawable/ic_do_exam_yellow : @drawable/ic_do_exam_red ) : @drawable/ic_do_exam_green)}" />
+            android:src="@{ model.completeExam == 0 ? @drawable/ic_do_exam_blue : (model.completeExam != 2 ? (model.completeExam == 1 ? @drawable/ic_do_exam_yellow : @drawable/ic_do_exam_red ) : @drawable/ic_do_exam_green)}" />
 
         <LinearLayout
             android:layout_width="0dp"
@@ -59,9 +59,9 @@
             android:paddingVertical="@dimen/_4sdp"
             android:layout_gravity="center_vertical"
             android:gravity="center"
-            android:background="@{model.completeExam == 2 ? @drawable/bg_status_exam_blue_button : (model.completeExam != 0 ? (model.completeExam == 1 ? @drawable/bg_status_exam_yellow_button : @drawable/bg_status_exam_red_button ) : @drawable/bg_status_exam_green_button)}"
-            android:text="@{model.completeExam == 2 ? @string/label_done : (model.completeExam != 0 ? (model.completeExam == 1 ? @string/label_continue : @string/label_fail ) : @string/label_start)}"
-            android:textColor="@{model.completeExam == 2 ? @color/tb_doc_picker_doc : (model.completeExam != 0 ? (model.completeExam == 1 ? @color/text_yellow : @color/text_red ) : @color/text_green)}"
+            android:background="@{model.completeExam == 0 ? @drawable/bg_status_exam_blue_button : (model.completeExam != 2 ? (model.completeExam == 1 ? @drawable/bg_status_exam_yellow_button : @drawable/bg_status_exam_red_button ) : @drawable/bg_status_exam_green_button)}"
+            android:text="@{model.completeExam == 0 ? @string/label_done : (model.completeExam != 2 ? (model.completeExam == 1 ? @string/label_continue : @string/label_fail ) : @string/label_start)}"
+            android:textColor="@{model.completeExam == 0 ? @color/tb_doc_picker_doc : (model.completeExam != 2 ? (model.completeExam == 1 ? @color/text_yellow : @color/text_red ) : @color/text_green)}"
             android:textStyle="bold" />
 
     </LinearLayout>

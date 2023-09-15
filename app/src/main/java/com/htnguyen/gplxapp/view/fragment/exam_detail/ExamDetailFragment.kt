@@ -1,6 +1,7 @@
 package com.htnguyen.gplxapp.view.fragment.exam_detail
 
 import android.annotation.SuppressLint
+import android.os.Build
 import android.os.Bundle
 import android.os.CountDownTimer
 import android.speech.tts.TextToSpeech
@@ -10,7 +11,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
 import android.widget.Toast
+import androidx.activity.OnBackPressedCallback
+import androidx.activity.addCallback
 import androidx.fragment.app.viewModels
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.bottomsheet.BottomSheetBehavior
@@ -65,7 +69,7 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
         binding.imgBack.setOnClickListener {
             context?.showPauseExamDialog(
                 onPositiveClickListener = {
-                    UpdateExam(1)
+                    UpdateExam(BaseConst.STATUS_NOT_DONE_EXAM, -1, -1, -1)
                     onClickBack()
                 },
                 onNegativeClickListener = {
@@ -82,6 +86,7 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
                 }
             }
             if (isSuccesExam) {
+                scoreExam()
                 onClickBack()
             } else {
                 Toast.makeText(context, "bạn chưa làm hết các câu hỏi", Toast.LENGTH_SHORT).show()
@@ -104,6 +109,37 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
 
     }
 
+    private fun scoreExam() {
+        var countCorrectExam = 0
+        var countFailQuestion = 0
+        var paralysisPoint = 0
+        listStatusExam.forEach { statusExam ->
+            if (statusExam.statusAsk == 1) {
+                countCorrectExam += 1
+            }
+            if ((statusExam.statusAsk == -1 && statusExam.idType == 0) ||
+                (statusExam.statusAsk == -1 && statusExam.idType == 10)||
+                    (statusExam.statusAsk == -1 && statusExam.idType == 20)||
+                    (statusExam.statusAsk == -1 && statusExam.idType == 30)||
+                    (statusExam.statusAsk == -1 && statusExam.idType == 40) ||
+                    (statusExam.statusAsk == -1 && statusExam.idType == 50)){
+                paralysisPoint += 1
+            }
+        }
+        UpdateExam(
+            BaseConst.STATUS_DONE_EXAM,
+            countCorrectExam,
+            25 - countCorrectExam,
+            paralysisPoint
+        )
+        Log.e("AAA",UpdateExam(
+            BaseConst.STATUS_DONE_EXAM,
+            countCorrectExam,
+            25 - countCorrectExam,
+            paralysisPoint
+        ).toString())
+    }
+
     private fun filterList(
         parseJsonToListExam: Array<ExamDetail>,
         listStatusExam: ArrayList<StatusExam>
@@ -123,10 +159,11 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
         if (bundle != null) {
             idExam = bundle.getInt("id_Exam")
             mTimeLeftInMillis = bundle.getLong("time_exam")
-            if (mTimeLeftInMillis.toInt() < 3) {
+            if (mTimeLeftInMillis.toInt() < 1000) {
                 mTimeLeftInMillis = START_TIME_IN_MILLIS
             }
         }
+
         tts = TextToSpeech(requireContext(), this)
         setBottomSheetBehavior()
         mCountDownTimer = object : CountDownTimer(mTimeLeftInMillis, 1000) {
@@ -136,9 +173,9 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
             }
 
             override fun onFinish() {
-                UpdateExam(-1)
+                UpdateExam(BaseConst.STATUS_FAIL_EXAM, -1, -1, -1)
                 onClickBack()
-                Toast.makeText(context,mTimeLeftInMillis.toString(),Toast.LENGTH_LONG).show()
+                Toast.makeText(context, mTimeLeftInMillis.toString(), Toast.LENGTH_LONG).show()
             }
         }.start()
 
@@ -147,7 +184,7 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
                 listStatusExam = it?.filter {
                     it.idExam == idExam
                 } as ArrayList<StatusExam>
-                if (positionStatusExam <0){
+                if (positionStatusExam < 0) {
                     listStatusExam[0].isSelected = true
                 } else {
                     listStatusExam[positionStatusExam].isSelected = true
@@ -211,25 +248,33 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
         var positionNextPageExam = 0
         var positionPreviousPageExam = 0
         layoutBottomSheet = binding.layoutBottomsheet.bottomSheet
+        binding.layoutBottomsheet.rcvList.layoutManager = GridLayoutManager(requireContext(), 5)
         bottomSheetBehavior = BottomSheetBehavior.from(layoutBottomSheet!!).apply {
             this.state = BottomSheetBehavior.STATE_COLLAPSED
         }
         (bottomSheetBehavior as BottomSheetBehavior<*>).addBottomSheetCallback(object :
             BottomSheetBehavior.BottomSheetCallback() {
-            override fun onStateChanged(bottomSheet: View, newState: Int) {}
+            override fun onStateChanged(bottomSheet: View, newState: Int) {
+                if (newState == BottomSheetBehavior.STATE_EXPANDED) {
+                    binding.lnTopbar.visibility = View.GONE
+                    binding.viewOpenBottomSheet.visibility = View.VISIBLE
+                    binding.layoutBottomsheet.imgShow.setImageResource(R.drawable.ic_drop_down_white)
+                } else {
+                    binding.lnTopbar.visibility = View.VISIBLE
+                    binding.viewOpenBottomSheet.visibility = View.GONE
+                    binding.layoutBottomsheet.imgShow.setImageResource(R.drawable.ic_drop_up)
+                }
+            }
+
             override fun onSlide(bottomSheet: View, slideOffset: Float) {}
         })
         binding.layoutBottomsheet.bottomSheet.setOnClickListener { v: View? ->
             if ((bottomSheetBehavior as BottomSheetBehavior<*>).state != BottomSheetBehavior.STATE_EXPANDED) {
                 (bottomSheetBehavior as BottomSheetBehavior<*>).state =
                     BottomSheetBehavior.STATE_EXPANDED
-                binding.lnTopbar.visibility = View.GONE
-                binding.layoutBottomsheet.imgShow.setImageResource(R.drawable.ic_drop_down_white)
             } else {
                 (bottomSheetBehavior as BottomSheetBehavior<*>).state =
                     BottomSheetBehavior.STATE_COLLAPSED
-                binding.lnTopbar.visibility = View.VISIBLE
-                binding.layoutBottomsheet.imgShow.setImageResource(R.drawable.ic_drop_up)
             }
         }
 
@@ -244,6 +289,11 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
             positionPreviousPageExam =
                 positionNextPageExam - (positionNextPageExam - binding.viewPager.currentItem) + 1
             setTextPageCurrent(positionPreviousPageExam)
+        }
+
+        binding.viewOpenBottomSheet.setOnClickListener {
+            (bottomSheetBehavior as BottomSheetBehavior<*>).state =
+                BottomSheetBehavior.STATE_COLLAPSED
         }
 
     }
@@ -283,18 +333,22 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
         }
     }
 
-    private fun UpdateExam(completeExam: Int) {
-        var statusComplete = BaseConst.STATUS_NOT_DONE_EXAM
-        if (mTimeLeftInMillis.toInt() > 0) {
-            statusComplete = 1
-        }
+    private fun UpdateExam(
+        completeExam: Int,
+        countCorrectExam: Int,
+        countFailQuestion: Int,
+        paralysisPoint: Int
+    ) {
         examDetailViewModel.updateExam(
             Exam(
                 idExam,
                 "Đề số ${idExam}",
                 "Còn $timeLeftFormatted",
                 mTimeLeftInMillis,
-                completeExam
+                completeExam,
+                countCorrectExam,
+                countFailQuestion,
+                paralysisPoint
             )
         )
     }
@@ -307,5 +361,6 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
         }
         super.onDestroy()
     }
+
 
 }

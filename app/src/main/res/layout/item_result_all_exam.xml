@@ -20,8 +20,8 @@
             android:layout_height="@dimen/_50sdp"
             android:background="@{!model.isSelected ? @drawable/bg_circle_border : @drawable/bg_circle_green }"
             android:padding="@dimen/_8sdp"
-            android:layout_marginVertical="@dimen/_8sdp"
-            android:layout_marginHorizontal="@dimen/_8sdp"
+            android:layout_marginVertical="@dimen/_4sdp"
+            android:layout_marginHorizontal="@dimen/_4sdp"
             android:text="@{String.valueOf(model.idAsk)}"
             android:textColor="@color/black"
             android:textSize="@dimen/_14ssp"
@@ -30,8 +30,10 @@
             tools:text="25"/>
         <TextView
             android:id="@+id/txtNumberChoose"
-            android:layout_width="@dimen/_20sdp"
-            android:layout_height="@dimen/_20sdp"
+            android:layout_width="@dimen/_18sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginStart="@dimen/_4sdp"
             android:text="@{String.valueOf(model.positionChoose+1)}"
             android:background="@drawable/bg_circle_boder_orange"
             android:gravity="center"
