@@ -15,6 +15,7 @@ import com.htnguyen.gplxapp.databinding.FragmentExamBinding
 import com.htnguyen.gplxapp.model.Exam
 import com.htnguyen.gplxapp.view.adapter.ExamAdapter
 import com.htnguyen.gplxapp.view.fragment.exam_detail.ExamDetailFragment
+import com.htnguyen.gplxapp.view.fragment.exam_result.ExamResultFragment
 import com.htnguyen.gplxapp.view.fragment.learning.ExamViewModel
 
 class ExamFragment : BaseFragment<FragmentExamBinding>() {
@@ -52,16 +53,24 @@ class ExamFragment : BaseFragment<FragmentExamBinding>() {
 
         adapter.sendDataItem = { i, model ->
 
-            context?.showStartExamDialog(
-                onPositiveClickListener = {
+            if (model != null) {
+                if (model.completeExam == BaseConst.STATUS_NOT_DONE_EXAM || model.completeExam == BaseConst.STATUS_NOT_START_EXAM){
+                    context?.showStartExamDialog(
+                        onPositiveClickListener = {
+                            val bundle = Bundle()
+                            bundle.putInt("id_Exam", i+1)
+                            if (model != null) {
+                                model.time?.let { bundle.putLong("time_exam", it) }
+                            }
+                            transitFragmentAnimation(ExamDetailFragment(), R.id.container, bundle)
+                        }
+                    )
+                } else {
                     val bundle = Bundle()
                     bundle.putInt("id_Exam", i+1)
-                    if (model != null) {
-                        model.time?.let { bundle.putLong("time_exam", it) }
-                    }
-                    transitFragmentAnimation(ExamDetailFragment(), R.id.container, bundle)
+                    transitFragmentAnimation(ExamResultFragment(), R.id.container, bundle)
                 }
-            )
+            }
         }
     }
 

@@ -196,3 +196,32 @@ fun Context.showPauseExamDialog(
     }
 }
 
+fun Context.showFinishExamDialog(
+    onPositiveClickListener: () -> Unit = {},
+    onNegativeClickListener: () -> Unit = {},
+) {
+    val builder = AlertDialog.Builder(this, R.style.FinishActionDialog)
+
+    val mLayoutInflater = LayoutInflater.from(this)
+    val mView: View = mLayoutInflater.inflate(R.layout.dialog_alert_finish_exam, null)
+
+    val positiveButton = mView.findViewById<TextView>(R.id.btn_positive)
+    val negativeButton = mView.findViewById<TextView>(R.id.btn_negative)
+
+    builder.setCustomTitle(mView)
+    val dialog = builder.create()
+    dialog.show()
+    dialog.window?.setGravity(Gravity.BOTTOM)
+    dialog.window?.setLayout(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT)
+    positiveButton.setOnClickListener {
+        dialog.dismiss()
+        onPositiveClickListener()
+    }
+
+
+    negativeButton.setOnClickListener {
+        dialog.dismiss()
+        onNegativeClickListener()
+    }
+}
+

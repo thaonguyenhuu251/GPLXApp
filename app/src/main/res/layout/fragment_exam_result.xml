@@ -36,14 +36,34 @@
             android:src="@drawable/question_image" />
 
         <TextView
-            android:id="@+id/txtNotifiResultExam"
+            android:id="@+id/txtNotifiResultPassExam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/_22ssp"
+            android:textStyle="bold"
+            android:text="Chúc mừng bạn đã vượt qua" />
+
+        <TextView
+            android:id="@+id/txtNotifiResultFailExam"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:textColor="@color/text_red"
             android:textSize="@dimen/_22ssp"
             android:textStyle="bold"
-            tools:text="Bạn đã không vượt qua \n Đề số 4" />
+            android:text="Bạn đã không vượt qua" />
+
+        <TextView
+            android:id="@+id/txtNameExam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/text_red"
+            android:textSize="@dimen/_22ssp"
+            android:textStyle="bold"
+            tools:text="Đề số 4" />
 
         <TextView
             android:id="@+id/txtNotifiPointExam"

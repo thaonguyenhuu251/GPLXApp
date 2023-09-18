@@ -25,6 +25,7 @@ import com.htnguyen.gplxapp.databinding.FragmentExamDetailBinding
 import com.htnguyen.gplxapp.model.*
 import com.htnguyen.gplxapp.view.adapter.ExamDetailAdapter
 import com.htnguyen.gplxapp.view.adapter.ExamTableResultAdapter
+import com.htnguyen.gplxapp.view.fragment.exam_result.ExamResultFragment
 import com.htnguyen.gplxapp.viewModels.ExamDetailViewModel
 import java.text.FieldPosition
 import java.util.*
@@ -87,7 +88,6 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
             }
             if (isSuccesExam) {
                 scoreExam()
-                onClickBack()
             } else {
                 Toast.makeText(context, "bạn chưa làm hết các câu hỏi", Toast.LENGTH_SHORT).show()
             }
@@ -126,18 +126,36 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
                 paralysisPoint += 1
             }
         }
-        UpdateExam(
-            BaseConst.STATUS_DONE_EXAM,
-            countCorrectExam,
-            25 - countCorrectExam,
-            paralysisPoint
-        )
-        Log.e("AAA",UpdateExam(
-            BaseConst.STATUS_DONE_EXAM,
-            countCorrectExam,
-            25 - countCorrectExam,
-            paralysisPoint
-        ).toString())
+        if(countCorrectExam >20 && paralysisPoint <1 ){
+            UpdateExam(
+                BaseConst.STATUS_DONE_EXAM,
+                countCorrectExam,
+                25 - countCorrectExam,
+                paralysisPoint
+            )
+            context?.showFinishExamDialog(
+                onPositiveClickListener = {
+                    val bundle = Bundle()
+                    bundle.putInt("id_Exam", idExam)
+                    transitFragmentAnimation(ExamResultFragment(), R.id.container, bundle)
+                }
+            )
+        } else {
+            UpdateExam(
+                BaseConst.STATUS_FAIL_EXAM,
+                countCorrectExam,
+                25 - countCorrectExam,
+                paralysisPoint
+            )
+            context?.showFinishExamDialog(
+                onPositiveClickListener = {
+                    val bundle = Bundle()
+                    bundle.putInt("id_Exam", idExam)
+                    transitFragmentAnimation(ExamResultFragment(), R.id.container, bundle)
+                }
+            )
+        }
+
     }
 
     private fun filterList(
