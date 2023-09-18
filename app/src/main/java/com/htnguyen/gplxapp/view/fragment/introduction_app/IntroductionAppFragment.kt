@@ -71,5 +71,5 @@ class IntroductionAppFragment : BaseFragment<FragmentIntroductionAppBinding>() {
         }
     }
 
-
+    override fun onBackPress() {}
 }

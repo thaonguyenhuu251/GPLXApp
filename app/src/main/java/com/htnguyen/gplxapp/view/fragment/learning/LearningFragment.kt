@@ -54,5 +54,7 @@ class LearningFragment : BaseFragment<FragmentLearningBinding>() {
     override fun initView(savedInstanceState: Bundle?, binding: FragmentLearningBinding) {
 
     }
+    override fun onBackPress() {}
+
 
 }

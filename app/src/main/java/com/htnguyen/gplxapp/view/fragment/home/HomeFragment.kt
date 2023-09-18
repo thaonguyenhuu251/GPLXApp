@@ -152,4 +152,6 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(),
 
         return true
     }
+    override fun onBackPress() {}
+
 }

@@ -46,4 +46,5 @@ class TipsFragment : BaseFragment<FragmentTipsBinding>() {
 
     }
 
+    override fun onBackPress() {}
 }

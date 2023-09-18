@@ -26,12 +26,12 @@
     <string name="label_fail">TRƯỢT</string>
     <string name="label_done">VƯỢT QUA</string>
     <string name="label_complete_ask">%d/%d</string>
-    <string name="home_test_more">THI THỬ SÁT HẠCH\n<font color="#bdbdbd" size="12">Tổng hợp đề thi thử 200 câu hỏi </font></string>
-    <string name="home_learn_more">HỌC LÝ THUYẾT\n<font color="#bdbdbd" size="12">Tổng hợp đề thi thử 200 câu hỏi </font></string>
-    <string name="home_stop_more">BIỂN BÁO ĐƯỜNG BỘ\n<font color="#bdbdbd" size="12">Tổng hợp đề thi thử 200 câu hỏi </font></string>
-    <string name="home_tips_more">MẸO THI KẾT QUẢ CAO\n<font color="#bdbdbd" size="12">Tổng hợp đề thi thử 200 câu hỏi </font></string>
-    <string name="home_search_law_more">TRA CỨU LUẬT\n<font color="#bdbdbd" size="12">Tổng hợp đề thi thử 200 câu hỏi </font></string>
-    <string name="home_wrong_good_more">CÁC CÂU HAY SAI\n<font color="#bdbdbd" size="12">Tổng hợp đề thi thử 200 câu hỏi </font></string>
+    <string name="home_test_more">THI THỬ SÁT HẠCH\n<font color="#bdbdbd" size="12">Tổng hợp đề thi thử\n200 câu hỏi</font></string>
+    <string name="home_learn_more">HỌC LÝ THUYẾT\n<font color="#bdbdbd" size="12">7 chủ đề\n200Câu hỏi</font></string>
+    <string name="home_stop_more">BIỂN BÁO ĐƯỜNG BỘ\n<font color="#bdbdbd" size="12">Đầy đủ biển báo giao thông</font></string>
+    <string name="home_tips_more">MẸO THI KẾT QUẢ CAO\n<font color="#bdbdbd" size="12">Mẹo trả lời phân theo các câu hỏi</font></string>
+    <string name="home_search_law_more">TRA CỨU LUẬT\n<font color="#bdbdbd" size="12">Tra cứu nhanh và mức phạt tiền</font></string>
+    <string name="home_wrong_good_more">CÁC CÂU HAY SAI\n<font color="#bdbdbd" size="12">Lưu lại các câu bạn trả lời sai</font></string>
 
 
     <string name="reminders_notification_channel_id">com.htnguyen.gplxapp</string>

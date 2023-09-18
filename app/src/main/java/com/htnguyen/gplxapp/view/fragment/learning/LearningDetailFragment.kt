@@ -39,7 +39,7 @@ class LearningDetailFragment : BaseFragment<FragmentLearningDetailBinding>(),
     var listStatusLearn: ArrayList<StatusLearn> = arrayListOf()
     var listTrafficLearn: ArrayList<TrafficsLearnDetail> = arrayListOf()
     var trafficsLearn: TrafficsLearn? = null
-    var indexCurrent = 0;
+    var indexCurrent = 0
     override fun getViewBinding(
         inflater: LayoutInflater?,
         container: ViewGroup?
@@ -86,7 +86,7 @@ class LearningDetailFragment : BaseFragment<FragmentLearningDetailBinding>(),
             if (!isChecked) {
                 tts!!.stop()
             } else {
-                generateSpeakText(binding.viewPager.currentItem)
+                if (listTrafficLearn.isNotEmpty()) generateSpeakText(binding.viewPager.currentItem)
             }
         }
     }
@@ -123,14 +123,19 @@ class LearningDetailFragment : BaseFragment<FragmentLearningDetailBinding>(),
                 adapterResult.setItems(listStatusLearn)
 
                 val json = readJSONFromAsset(requireContext(), "learn_traffic.json")
-                listTrafficLearn = filterList(
+                if (listStatusLearn.isNotEmpty()) {
+                    listTrafficLearn = filterList(
                         parseJsonToListTrafficLearn(json),
                         listStatusLearn
                     ) as ArrayList<TrafficsLearnDetail>
+                }
                 adapter.setItems(listTrafficLearn)
                 binding.viewPager.currentItem = listStatusLearn.indexOfFirst { it.isSelected == true }
                 indexCurrent = binding.viewPager.currentItem
-                generateSpeakText(binding.viewPager.currentItem)
+                if (it.isNotEmpty()) {
+                    generateSpeakText(binding.viewPager.currentItem)
+                }
+
             }
 
             observe(responseTrafficLearn) {
@@ -188,16 +193,19 @@ class LearningDetailFragment : BaseFragment<FragmentLearningDetailBinding>(),
     }
 
     private fun generateSpeakText(position: Int) {
-        val trafficsLearn = listTrafficLearn[position]
-        var text = trafficsLearn.ask
-        trafficsLearn.answer_list?.forEachIndexed { index, s ->
-            if (s.isNotEmpty()) {
-                val result = "Đáp án ${index + 1} ${s}"
-                text += result
-            }
+        if (listTrafficLearn.isNotEmpty()) {
+            val trafficsLearn = listTrafficLearn[position]
+            var text = trafficsLearn.ask
+            trafficsLearn.answer_list?.forEachIndexed { index, s ->
+                if (s.isNotEmpty()) {
+                    val result = "Đáp án ${index + 1} ${s}"
+                    text += result
+                }
 
+            }
+            text?.let { speakOut(it) }
         }
-        text?.let { speakOut(it) }
+
     }
 
     private fun setBottomSheetBehavior() {
@@ -275,5 +283,7 @@ class LearningDetailFragment : BaseFragment<FragmentLearningDetailBinding>(),
         }
         super.onDestroy()
     }
+
+    override fun onBackPress() {}
 
 }

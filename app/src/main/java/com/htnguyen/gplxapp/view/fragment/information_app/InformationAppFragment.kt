@@ -54,4 +54,6 @@ class InformationAppFragment : BaseFragment<FragmentInformationAppBinding>() {
         }, 100)
     }
 
+    override fun onBackPress() {}
+
 }
