@@ -46,6 +46,9 @@ class ChangeVoiceFragment : BaseFragment<FragmentChangeVoiceBinding>(), TextToSp
             speakOut()
         }
     }
+
+    override fun onBackPress() {}
+
     override fun initView(savedInstanceState: Bundle?, binding: FragmentChangeVoiceBinding) {
         tts = TextToSpeech(requireContext(), this)
         binding.lifecycleOwner = activity

@@ -238,4 +238,11 @@ class SettingFragment : BaseFragment<FragmentSettingBinding>() {
             }
         }
 
+    override fun onBackPress() {
+        if (changeData) {
+            openActivity(MainActivity::class.java, false)
+            SharePreference.fontText = progressChange
+        }
+    }
+
 }

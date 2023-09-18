@@ -50,5 +50,5 @@ class TurnForbiddenFragment : BaseFragment<FragmentTurnForbiddenBinding>() {
         }
     }
 
-
+    override fun onBackPress() {}
 }

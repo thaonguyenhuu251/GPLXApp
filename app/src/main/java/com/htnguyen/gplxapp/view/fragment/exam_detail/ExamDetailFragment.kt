@@ -380,5 +380,7 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
         super.onDestroy()
     }
 
+    override fun onBackPress() {}
+
 
 }

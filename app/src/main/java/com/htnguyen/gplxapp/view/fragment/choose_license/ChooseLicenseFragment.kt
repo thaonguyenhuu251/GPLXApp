@@ -84,5 +84,5 @@ class ChooseLicenseFragment : BaseFragment<FragmentChooseLicenseBinding>() {
             }
         }
     }
-
+    override fun onBackPress() {}
 }

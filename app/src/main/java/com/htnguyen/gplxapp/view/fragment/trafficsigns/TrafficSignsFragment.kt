@@ -70,7 +70,5 @@ class TrafficSignsFragment : BaseFragment<FragmentTrafficSignsBinding>() {
         })
     }
 
-
-
-
+    override fun onBackPress() {}
 }

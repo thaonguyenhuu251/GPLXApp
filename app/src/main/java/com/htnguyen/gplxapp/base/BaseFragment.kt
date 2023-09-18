@@ -1,19 +1,14 @@
 package com.htnguyen.gplxapp.base
 
-import android.content.Context
 import android.content.Intent
-import android.content.res.Configuration
 import android.os.Bundle
-import android.util.DisplayMetrics
+import android.view.KeyEvent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.view.WindowManager
 import android.widget.EditText
 import androidx.annotation.AnimRes
 import androidx.annotation.IdRes
-import androidx.core.content.ContextCompat.getSystemService
-import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.viewbinding.ViewBinding
 import com.htnguyen.gplxapp.R
@@ -21,10 +16,11 @@ import org.greenrobot.eventbus.EventBus
 import org.greenrobot.eventbus.Subscribe
 import org.greenrobot.eventbus.ThreadMode
 
+
 abstract class BaseFragment<VB : ViewBinding> : Fragment() {
     lateinit var binding: VB
     private val TAG = this::class.java.name
-    private lateinit var activity: com.htnguyen.gplxapp.base.BaseActivity
+    private lateinit var activity: BaseActivity
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -36,7 +32,7 @@ abstract class BaseFragment<VB : ViewBinding> : Fragment() {
         } else {
             (root.parent as ViewGroup?)?.endViewTransition(root)
         }
-        activity = requireActivity() as com.htnguyen.gplxapp.base.BaseActivity
+        activity = requireActivity() as BaseActivity
         return root
 
     }
@@ -46,6 +42,15 @@ abstract class BaseFragment<VB : ViewBinding> : Fragment() {
         initView(savedInstanceState, binding)
         initData()
         initEvent()
+        requireView().isFocusableInTouchMode = true
+        requireView().requestFocus()
+        requireView().setOnKeyListener { v, keyCode, event ->
+            if (event.action === KeyEvent.ACTION_UP && keyCode == KeyEvent.KEYCODE_BACK) {
+                onBackPress()
+                true
+            } else false
+        }
+
     }
 
     protected abstract fun getViewBinding(inflater: LayoutInflater?, container: ViewGroup?): VB
@@ -61,6 +66,7 @@ abstract class BaseFragment<VB : ViewBinding> : Fragment() {
         super.onStop()
         EventBus.getDefault().unregister(this)
     }
+
 
     @Subscribe(threadMode = ThreadMode.MAIN)
     fun receiveEvent(event: Any?) {
@@ -220,5 +226,6 @@ abstract class BaseFragment<VB : ViewBinding> : Fragment() {
     protected abstract fun initData()
     protected abstract fun initEvent()
 
+    protected abstract fun onBackPress()
 
 }

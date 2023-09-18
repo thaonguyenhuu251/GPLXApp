@@ -78,4 +78,5 @@ class ExamFragment : BaseFragment<FragmentExamBinding>() {
 
     }
 
+    override fun onBackPress() {}
 }

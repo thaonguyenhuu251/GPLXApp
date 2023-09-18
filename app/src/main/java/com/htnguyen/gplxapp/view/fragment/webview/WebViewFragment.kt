@@ -54,4 +54,6 @@ class WebViewFragment : BaseFragment<FragmentSearchWebviewBinding>() {
 
     }
 
+    override fun onBackPress() {}
+
 }
