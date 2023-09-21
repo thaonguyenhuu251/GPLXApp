@@ -71,6 +71,13 @@ fun parseJsonToListExam(json: String) : Array<ExamDetail> {
     return tutorials
 }
 
+fun parseJsonToListExamHistory(json: String) : Array<ExamHistory> {
+    val gson = Gson()
+    val arrayTutorialType = object : TypeToken<Array<ExamHistory>>() {}.type
+    val tutorials: Array<ExamHistory> = gson.fromJson(json, arrayTutorialType)
+    return tutorials
+}
+
 fun ImageView.loadImageUrl(url: String?) {
     print(url)
     url?.let {
@@ -146,7 +153,7 @@ fun Context.showChangeSizeDialog(
 }
 
 @SuppressLint("MissingInflatedId")
-fun Context.showStartExamDialog(
+fun Context.showStartExamDialog(text : String,
     onPositiveClickListener: () -> Unit = {},
 ) {
     val builder = AlertDialog.Builder(this, R.style.FinishActionDialog)
@@ -155,6 +162,7 @@ fun Context.showStartExamDialog(
     val mView: View = mLayoutInflater.inflate(R.layout.dialog_alert_start_exam, null)
 
     val positiveButton = mView.findViewById<TextView>(R.id.btnPositive)
+    positiveButton.text = text
 
     builder.setCustomTitle(mView)
     val dialog = builder.create()

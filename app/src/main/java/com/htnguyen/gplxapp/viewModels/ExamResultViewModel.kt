@@ -12,11 +12,9 @@ import kotlinx.coroutines.launch
 class ExamResultViewModel(application: Application) : AndroidViewModel(application) {
     private val repository: ExamRepo
     private val repositoryStatusExam: StatusExamRepo
-    private val repositoryCompetition: CompetitionRepo
 
     var responseExam: LiveData<List<Exam>>
     var responseStatusExam: LiveData<List<StatusExam>>
-    var responseCompetition: LiveData<List<Competition>>
 
     init {
         val examDao = ExamDatabase.getInstance(application).examDao()
@@ -25,9 +23,6 @@ class ExamResultViewModel(application: Application) : AndroidViewModel(applicati
         val statusExamDao = StatusExamDatabase.getInstance(application).statusExamDao()
         repositoryStatusExam = StatusExamRepo(statusExamDao)
         responseStatusExam = repositoryStatusExam.getAll()
-        val competitionDao = CompetitionDatabase.getInstance(application).competitionDao()
-        repositoryCompetition = CompetitionRepo(competitionDao)
-        responseCompetition = repositoryCompetition.getAll()
     }
 
     fun updateExam(exam: Exam) {
@@ -39,12 +34,6 @@ class ExamResultViewModel(application: Application) : AndroidViewModel(applicati
     fun updateStatusExam(statusLearn: StatusExam) {
         viewModelScope.launch(Dispatchers.IO) {
             repositoryStatusExam.update(statusLearn)
-        }
-    }
-
-    fun updateCompetition(competition : Competition) {
-        viewModelScope.launch(Dispatchers.IO) {
-            repositoryCompetition.update(competition)
         }
     }
 

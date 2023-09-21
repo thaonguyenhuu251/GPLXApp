@@ -102,7 +102,9 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
                     result,
                     answerChoose,
                     model.result,
+                    model.complain,
                     indexAnswer
+
                 )
             )
         }
@@ -137,7 +139,7 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
                 onPositiveClickListener = {
                     val bundle = Bundle()
                     bundle.putInt("id_Exam", idExam)
-                    transitFragmentAnimation(ExamResultFragment(), R.id.container, bundle)
+                    transitFragment(ExamResultFragment(), R.id.container,false, bundle)
                 }
             )
         } else {
@@ -151,7 +153,7 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
                 onPositiveClickListener = {
                     val bundle = Bundle()
                     bundle.putInt("id_Exam", idExam)
-                    transitFragmentAnimation(ExamResultFragment(), R.id.container, bundle)
+                    transitFragment(ExamResultFragment(), R.id.container,false, bundle)
                 }
             )
         }
@@ -193,7 +195,6 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
             override fun onFinish() {
                 UpdateExam(BaseConst.STATUS_FAIL_EXAM, -1, -1, -1)
                 onClickBack()
-                Toast.makeText(context, mTimeLeftInMillis.toString(), Toast.LENGTH_LONG).show()
             }
         }.start()
 
@@ -380,7 +381,17 @@ class ExamDetailFragment : BaseFragment<FragmentExamDetailBinding>(), TextToSpee
         super.onDestroy()
     }
 
-    override fun onBackPress() {}
+    override fun onBackPress() {
+        context?.showPauseExamDialog(
+            onPositiveClickListener = {
+                UpdateExam(BaseConst.STATUS_NOT_DONE_EXAM, -1, -1, -1)
+                onClickBack()
+            },
+            onNegativeClickListener = {
+
+            }
+        )
+    }
 
 
 }

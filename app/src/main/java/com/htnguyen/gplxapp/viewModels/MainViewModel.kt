@@ -17,7 +17,6 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     private val repositoryExam: ExamRepo
     private val repositoryStatusLearn: StatusLearnRepo
     private val repositoryStatusExam: StatusExamRepo
-    private val repositoryCompetition: CompetitionRepo
 
     var responseTrafficLearn: LiveData<List<TrafficsLearn>>
     var responseExam: LiveData<List<Exam>>
@@ -164,12 +163,10 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
         val examDao = ExamDatabase.getInstance(application).examDao()
         val trafficStatusLearnDao = StatusLearnDatabase.getInstance(application).statusLearnDao()
         val statusExamDao = StatusExamDatabase.getInstance(application).statusExamDao()
-        val competitionDao = CompetitionDatabase.getInstance(application).competitionDao()
         repository = TrafficLearnRepo(trafficLearnDao)
         repositoryExam = ExamRepo(examDao)
         repositoryStatusLearn = StatusLearnRepo(trafficStatusLearnDao)
         repositoryStatusExam = StatusExamRepo(statusExamDao)
-        repositoryCompetition = CompetitionRepo(competitionDao)
         responseTrafficLearn = repository.getAll()
         responseExam = repositoryExam.getAll()
     }
@@ -222,10 +219,7 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
         listExam.forEachIndexed { index, examDetail ->
             viewModelScope.launch(Dispatchers.IO) {
                 repositoryStatusExam.insert(
-                    StatusExam(examDetail.id,examDetail.id_exam, examDetail.type, 0,"",examDetail.result)
-                )
-                repositoryCompetition.insert(
-                    Competition(examDetail.id,index+1,examDetail.id_exam,examDetail.type,0,"",examDetail.result)
+                    StatusExam(examDetail.id,examDetail.id_exam, examDetail.type, 0,"",examDetail.result,examDetail.complain)
                 )
             }
         }

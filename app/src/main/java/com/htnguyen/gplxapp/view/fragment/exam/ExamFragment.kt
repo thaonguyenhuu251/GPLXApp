@@ -16,6 +16,7 @@ import com.htnguyen.gplxapp.model.Exam
 import com.htnguyen.gplxapp.view.adapter.ExamAdapter
 import com.htnguyen.gplxapp.view.fragment.exam_detail.ExamDetailFragment
 import com.htnguyen.gplxapp.view.fragment.exam_result.ExamResultFragment
+import com.htnguyen.gplxapp.view.fragment.home.HomeFragment
 import com.htnguyen.gplxapp.view.fragment.learning.ExamViewModel
 
 class ExamFragment : BaseFragment<FragmentExamBinding>() {
@@ -54,18 +55,28 @@ class ExamFragment : BaseFragment<FragmentExamBinding>() {
         adapter.sendDataItem = { i, model ->
 
             if (model != null) {
-                if (model.completeExam == BaseConst.STATUS_NOT_DONE_EXAM || model.completeExam == BaseConst.STATUS_NOT_START_EXAM){
+                if ( model.completeExam == BaseConst.STATUS_NOT_START_EXAM){
                     context?.showStartExamDialog(
+                        "Bắt Đầu Làm Bài",
                         onPositiveClickListener = {
                             val bundle = Bundle()
                             bundle.putInt("id_Exam", i+1)
-                            if (model != null) {
-                                model.time?.let { bundle.putLong("time_exam", it) }
-                            }
+                            model.time?.let { bundle.putLong("time_exam", it) }
                             transitFragmentAnimation(ExamDetailFragment(), R.id.container, bundle)
                         }
                     )
-                } else {
+                } else if (model.completeExam == BaseConst.STATUS_NOT_DONE_EXAM ){
+                    context?.showStartExamDialog(
+                        "Tiếp Tục Làm Bài",
+                        onPositiveClickListener = {
+                            val bundle = Bundle()
+                            bundle.putInt("id_Exam", i+1)
+                            model.time?.let { bundle.putLong("time_exam", it) }
+                            transitFragmentAnimation(ExamDetailFragment(), R.id.container, bundle)
+                        }
+                    )
+                }
+                else {
                     val bundle = Bundle()
                     bundle.putInt("id_Exam", i+1)
                     transitFragmentAnimation(ExamResultFragment(), R.id.container, bundle)
@@ -75,8 +86,14 @@ class ExamFragment : BaseFragment<FragmentExamBinding>() {
     }
 
     override fun initView(savedInstanceState: Bundle?, binding: FragmentExamBinding) {
-
+        val bundle = arguments
+        if (bundle != null) {
+           var idExam = bundle.getInt("id_Exam")
+            transitFragmentAnimation(ExamDetailFragment(), R.id.container, bundle)
+        }
     }
 
-    override fun onBackPress() {}
+    override fun onBackPress() {
+        onClickBack()
+    }
 }

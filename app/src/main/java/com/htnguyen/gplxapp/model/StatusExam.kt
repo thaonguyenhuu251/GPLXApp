@@ -13,9 +13,10 @@ data class StatusExam(
     @SerializedName("idAsk") val idAsk : Int,
     @SerializedName("idExam") val idExam : Int,
     @SerializedName("idType") val idType: Int,
-    @SerializedName("statusAsk") val statusAsk : Int?,
-    @SerializedName("answer") val answer : String?,
+    @SerializedName("statusAsk") var statusAsk : Int?,
+    @SerializedName("answer") var answer : String?,
     @SerializedName("result") val result : String?,
+    @SerializedName("complain") val complain : String?,
     var positionChoose: Int = -1,
     var isSelected : Boolean = false
 ) : BaseItem(), Serializable {

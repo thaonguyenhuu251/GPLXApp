@@ -10,15 +10,25 @@ import androidx.fragment.app.viewModels
 import com.htnguyen.gplxapp.R
 import com.htnguyen.gplxapp.base.BaseFragment
 import com.htnguyen.gplxapp.base.utils.observe
+import com.htnguyen.gplxapp.base.utils.parseJsonToListExam
+import com.htnguyen.gplxapp.base.utils.readJSONFromAsset
 import com.htnguyen.gplxapp.databinding.FragmentExamResultBinding
 import com.htnguyen.gplxapp.model.Exam
+import com.htnguyen.gplxapp.model.ExamDetail
+import com.htnguyen.gplxapp.model.ExamHistoryAnswer
+import com.htnguyen.gplxapp.model.StatusExam
+import com.htnguyen.gplxapp.view.fragment.exam.ExamFragment
+import com.htnguyen.gplxapp.view.fragment.exam_detail.ExamDetailFragment
+import com.htnguyen.gplxapp.view.fragment.exam_history.ExamHistoryFragment
 import com.htnguyen.gplxapp.view.fragment.home.HomeFragment
 import com.htnguyen.gplxapp.viewModels.ExamResultViewModel
+import java.util.ArrayList
 
 class ExamResultFragment : BaseFragment<FragmentExamResultBinding>() {
     var idExam: Int = -1
     lateinit var exam: Exam
     private val examResultViewModel by viewModels<ExamResultViewModel>()
+    var listStatusExam: ArrayList<StatusExam> = arrayListOf()
     override fun getViewBinding(
         inflater: LayoutInflater?,
         container: ViewGroup?
@@ -32,8 +42,46 @@ class ExamResultFragment : BaseFragment<FragmentExamResultBinding>() {
 
     override fun initEvent() {
         binding.btnDoNextExam.setOnClickListener {
-            transitFragmentAnimation(HomeFragment(), R.id.container)
+            transitFragment(ExamFragment(),R.id.container,false)
         }
+
+        binding.layoutManager.setOnClickListener {  }
+
+        binding.btnRestartExam.setOnClickListener {
+            listStatusExam.forEach {
+              it.statusAsk = 0
+                it.positionChoose = -1
+                it.answer = ""
+                examResultViewModel.updateStatusExam(it)
+            }
+
+            examResultViewModel.updateExam(
+                Exam(
+                    idExam,
+                    "Đề số ${idExam}",
+                    "25 câu/19 phút",
+                    0,
+                    2,
+                    -1,
+                    -1,
+                    0
+                )
+            )
+
+            val bundle = Bundle()
+            bundle.putInt("id_Exam", idExam)
+            transitFragmentAnimation(ExamFragment(), R.id.container, bundle)
+        }
+
+        binding.btnWatchExam.setOnClickListener {
+            val bundle = Bundle()
+            bundle.putInt("id_Exam", idExam)
+            transitFragmentAnimation(ExamHistoryFragment(),R.id.container, bundle)
+        }
+    }
+
+    override fun onBackPress() {
+
     }
 
     override fun initView(savedInstanceState: Bundle?, binding: FragmentExamResultBinding) {
@@ -48,6 +96,11 @@ class ExamResultFragment : BaseFragment<FragmentExamResultBinding>() {
                     exam = it.first { it.id == idExam }
                     genData()
                 }
+            }
+            observe(responseStatusExam) { it ->
+                listStatusExam = it?.filter {
+                    it.idExam == idExam
+                } as ArrayList<StatusExam>
             }
         }
 
