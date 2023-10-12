@@ -22,9 +22,9 @@ abstract class BaseBottomBehavior<B : ViewBinding> : BottomSheetDialogFragment()
     override fun onCreateDialog(savedInstanceState: Bundle?): BottomSheetDialog {
         val dialog = super.onCreateDialog(savedInstanceState) as BottomSheetDialog
         dialog.setOnShowListener { dialog ->
-            val d = dialog as BottomSheetDialog
+            /*val d = dialog as BottomSheetDialog
             val llBottomSheet = d.findViewById<FrameLayout>(R.id.frameBottomSheet)
-            BottomSheetBehavior.from(llBottomSheet!!).state = BottomSheetBehavior.STATE_EXPANDED
+            BottomSheetBehavior.from(llBottomSheet!!).state = BottomSheetBehavior.STATE_EXPANDED*/
         }
 
         return dialog

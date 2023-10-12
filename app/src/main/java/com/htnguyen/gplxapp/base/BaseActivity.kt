@@ -180,8 +180,6 @@ abstract class BaseActivity : AppCompatActivity() {
         if (SharePreference.countAnswerNotification > 2) {
             dialogSetNotification()
         }
-
-        Log.d("ThaoNH", SharePreference.countAnswerNotification.toString())
     }
 
     fun createNotificationChannel() {

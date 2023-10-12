@@ -2,6 +2,7 @@ package com.htnguyen.gplxapp.view.fragment.learning
 
 import android.app.Application
 import androidx.lifecycle.*
+import com.htnguyen.gplxapp.base.utils.SharePreference
 import com.htnguyen.gplxapp.database.TrafficLearnDatabase
 import com.htnguyen.gplxapp.model.TrafficsLearn
 import com.htnguyen.gplxapp.repo.TrafficLearnRepo

@@ -11,11 +11,12 @@ import com.htnguyen.gplxapp.BuildConfig
 import com.htnguyen.gplxapp.R
 import com.htnguyen.gplxapp.base.BaseFragment
 import com.htnguyen.gplxapp.base.utils.BaseConst
+import com.htnguyen.gplxapp.base.utils.SharePreference
 import com.htnguyen.gplxapp.base.utils.showChangeSizeDialog
 import com.htnguyen.gplxapp.databinding.FragmentHomeBinding
 import com.htnguyen.gplxapp.view.fragment.chagevoice.ChangeVoiceFragment
-import com.htnguyen.gplxapp.view.fragment.exam.ExamFragment
 import com.htnguyen.gplxapp.view.fragment.choose_license.ChooseLicenseFragment
+import com.htnguyen.gplxapp.view.fragment.exam.ExamFragment
 import com.htnguyen.gplxapp.view.fragment.introduction_app.IntroductionAppFragment
 import com.htnguyen.gplxapp.view.fragment.learning.LearningDetailFragment
 import com.htnguyen.gplxapp.view.fragment.learning.LearningFragment
@@ -91,15 +92,24 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(),
         binding.navViewHeader.getHeaderView(0).findViewById<TextView>(R.id.txtVersionName).text =
             BuildConfig.VERSION_NAME
 
-        context?.showChangeSizeDialog(
+        if (SharePreference.isLoginFirst) {
+            context?.showChangeSizeDialog(
+                onPositiveClickListener = {
 
-        )
+                },
+                onNegativeClickListener = {
+                    transitFragmentAnimation(SettingFragment(), R.id.container)
+                }
+            )
+            SharePreference.isLoginFirst = false
+        }
+
+        binding.navViewHeader.menu.getItem(0).isChecked = true
     }
 
 
     override fun onResume() {
         super.onResume()
-        navHeader.menu.findItem(R.id.nav_home).isChecked = true
     }
 
     override fun initData() {

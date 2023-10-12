@@ -6,6 +6,7 @@ import androidx.fragment.app.viewModels
 import com.htnguyen.gplxapp.R
 import com.htnguyen.gplxapp.base.BaseFragment
 import com.htnguyen.gplxapp.base.utils.BaseConst
+import com.htnguyen.gplxapp.base.utils.SharePreference
 import com.htnguyen.gplxapp.base.utils.observe
 import com.htnguyen.gplxapp.databinding.FragmentLearningBinding
 import com.htnguyen.gplxapp.view.adapter.TrafficLearnAdapter
@@ -27,9 +28,14 @@ class LearningFragment : BaseFragment<FragmentLearningBinding>() {
         binding.rcvLearn.adapter = adapter
 
         with(learningViewModel) {
-            observe(responseTrafficLearn) {
-                it?.let {
-                    adapter.setItems(it)
+            observe(responseTrafficLearn) { listTrafficLearn ->
+                listTrafficLearn?.let { it ->
+                    it as ArrayList
+                    adapter.setItems(if (SharePreference.lience == "A1") {
+                        it.filter { it.id <= 6 }
+                    } else {
+                        it.filter { it.id > 6 }
+                    })
                 }
             }
         }
@@ -55,6 +61,5 @@ class LearningFragment : BaseFragment<FragmentLearningBinding>() {
 
     }
     override fun onBackPress() {}
-
 
 }

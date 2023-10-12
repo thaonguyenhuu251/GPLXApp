@@ -35,13 +35,13 @@ class ChooseLicenseFragment : BaseFragment<FragmentChooseLicenseBinding>() {
 
         binding.apply {
             val bundle = arguments
+            var license = SharePreference.lience
             if (bundle != null) {
                 fromHome = bundle.getString(BaseConst.ARG_FROM_HOME).toString()
-                if (fromHome.isEmpty()) {
+                if (SharePreference.isLoginFirst || fromHome.isEmpty()) {
                     btnBack.visibility = View.GONE
                 } else {
                     btnBack.visibility = View.VISIBLE
-                    var license = SharePreference.lience
                     if (license == "A1") {
                         icCheckA1.visibility = View.VISIBLE
                         icCheckA2.visibility = View.INVISIBLE
@@ -55,21 +55,17 @@ class ChooseLicenseFragment : BaseFragment<FragmentChooseLicenseBinding>() {
             btnLicenseA1.setOnClickListener {
                 icCheckA1.visibility = View.VISIBLE
                 icCheckA2.visibility = View.INVISIBLE
-                SharePreference.lience =  "A1"
-                if (fromHome.isEmpty()) {
-                    Timer().schedule(timerTask {
-                        replaceFragment(InformationAppFragment(), R.id.container, false)
-                    }, 1000)
-                } else {
-                    onClickBack()
-                }
-
+                license =  "A1"
             }
 
             btnLicenseA2.setOnClickListener {
                 icCheckA1.visibility = View.INVISIBLE
                 icCheckA2.visibility = View.VISIBLE
-                SharePreference.lience = "A2"
+                license = "A2"
+            }
+
+            icDone.setOnClickListener {
+                SharePreference.lience = license
                 if (fromHome.isEmpty()) {
                     Timer().schedule(timerTask {
                         replaceFragment(InformationAppFragment(), R.id.container, false)

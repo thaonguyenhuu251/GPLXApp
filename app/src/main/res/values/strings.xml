@@ -33,7 +33,6 @@
     <string name="home_search_law_more">TRA CỨU LUẬT\n<font color="#bdbdbd" size="12">Tra cứu nhanh và mức phạt tiền</font></string>
     <string name="home_wrong_good_more">CÁC CÂU HAY SAI\n<font color="#bdbdbd" size="12">Lưu lại các câu bạn trả lời sai</font></string>
 
-
     <string name="reminders_notification_channel_id">com.htnguyen.gplxapp</string>
     <string name="title_notification_reminder">CÁC CÂU HAY SAI</string>
     <string name="description_notification_reminder">CÁC CÂU HAY</string>
@@ -44,5 +43,17 @@
     <string name="complain_result">Giải thích đáp án</string>
     <string name="label_result_exam_title">Kết quả thi sát hạch</string>
     <string name="label_history_exam">Xem lại bài thi</string>
+    <string name="license_aone_title">Bằng A1</string>
+    <string name="license_aone_content">Áp dụng cho gười từ đủ 18 tuổi và chạy những loại Xe mô tô hai bánh có dung tích xi-lanh từ 50 cm3 đến dưới 175 cm3</string>
+    <string name="license_atwo">Bằng A2</string>
+    <string name="license_atwo_content">Áp dụng cho người từ đủ 18 tuổi và chạy những loại xe mô tô hai bánh có dung tích xi-lanh từ 175 cm3 trở lên</string>
+    <string name="choose_license_title">CHỌN LOẠI BẰNG LÁI XE MÁY!</string>
+    <string name="choose_license_content">Chọn hạng bằng thi</string>
+    <string name="light_mode">Nền sáng</string>
+    <string name="dark_mode">Nền tối</string>
+    <string name="change_size_text_and_mode">Thay đổi kích thước chữ và chế độ nền</string>
+    <string name="change_content"><![CDATA[Ấn biểu tượng menu bên trái trên cùng màn hình trang chủ -> vào Cài đặt ứng dụng để thay đổi kích thước phông chữ và chế độ hiển thị. Chọn chế độ nề tối để bảo vệ mắt của bạn đỡ mỏi khi ôn thi trong 1 thời gian dài]]></string>
+    <string name="cancel">HUỶ BỎ</string>
+    <string name="agree">ĐỒNG Ý</string>
 
 </resources>

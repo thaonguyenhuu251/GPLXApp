@@ -53,7 +53,6 @@ class IntroductionAppFragment : BaseFragment<FragmentIntroductionAppBinding>() {
             } else {
                 btnNext.setOnClickListener {
                     replaceFragment(HomeFragment(), R.id.container, false)
-                    SharePreference.isLoginFirst = false
                 }
             }
 

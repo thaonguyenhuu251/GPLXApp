@@ -13,10 +13,7 @@ import androidx.viewpager2.widget.ViewPager2.OnPageChangeCallback
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.htnguyen.gplxapp.R
 import com.htnguyen.gplxapp.base.BaseFragment
-import com.htnguyen.gplxapp.base.utils.BaseConst
-import com.htnguyen.gplxapp.base.utils.observe
-import com.htnguyen.gplxapp.base.utils.parseJsonToListTrafficLearn
-import com.htnguyen.gplxapp.base.utils.readJSONFromAsset
+import com.htnguyen.gplxapp.base.utils.*
 import com.htnguyen.gplxapp.databinding.FragmentLearningDetailBinding
 import com.htnguyen.gplxapp.model.StatusLearn
 import com.htnguyen.gplxapp.model.TrafficsLearn
@@ -107,15 +104,17 @@ class LearningDetailFragment : BaseFragment<FragmentLearningDetailBinding>(),
 
     override fun initView(savedInstanceState: Bundle?, binding: FragmentLearningDetailBinding) {
         tts = TextToSpeech(requireContext(), this)
-
+        val learnType = arguments?.getInt(BaseConst.ARG_TRAFFIC_LEARN_TYPE)
+            ?.plus(if(SharePreference.lience == "A1") 10 else 14)
+        Log.d("ThaoNH", learnType.toString())
         setBottomSheetBehavior()
         with(learningViewModel) {
             observe(responseStatusLearn) {
-                listStatusLearn = if (arguments?.getInt(BaseConst.ARG_TRAFFIC_LEARN_TYPE) != -1) {
+                listStatusLearn = if (learnType != -1) {
                     it?.filter {
-                        it.idType == arguments?.getInt(BaseConst.ARG_TRAFFIC_LEARN_TYPE)
-                                || it.idType % 10 == arguments?.getInt(BaseConst.ARG_TRAFFIC_LEARN_TYPE)
-                                || (it.idType / 10 == arguments?.getInt(BaseConst.ARG_TRAFFIC_LEARN_TYPE) && it.idType >= 10)
+                        it.idType == learnType
+                                || it.idType % 10 == learnType
+                                || (it.idType / 10 == learnType && it.idType >= 10)
                     } as ArrayList<StatusLearn>
                 } else {
                     it?.filter { it.statusAskFail == true } as ArrayList<StatusLearn>
