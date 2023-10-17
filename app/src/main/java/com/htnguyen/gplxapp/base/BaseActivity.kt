@@ -53,7 +53,6 @@ abstract class BaseActivity : AppCompatActivity() {
         window.apply {
             clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
             addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
-            statusBarColor = resources.getColor(R.color.primary_dark, this@BaseActivity.theme)
         }
         rootView = DataBindingUtil.inflate(layoutInflater, R.layout.activity_base, null, false)
         binding = getBindingView()

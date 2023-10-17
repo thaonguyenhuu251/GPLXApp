@@ -2,15 +2,15 @@
     <!-- Base application theme. -->
     <style name="Theme.CalculatorExample" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/primary_dark</item>
-        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorPrimary">@color/black_little</item>
+        <item name="colorPrimaryVariant">@color/black_little</item>
         <item name="colorOnPrimary">@color/black</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/primary_dark</item>
-        <item name="colorSecondaryVariant">@color/primary_dark</item>
+        <item name="colorSecondary">@color/black_little</item>
+        <item name="colorSecondaryVariant">@color/black_little</item>
         <item name="colorOnSecondary">@color/white</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor">@color/black_little</item>
         <!-- Customize your theme here. -->
         <item name="android:textColorPrimary">@color/white</item>
         <item name="android:colorBackground">@color/black_little</item>
